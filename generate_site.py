@@ -430,6 +430,432 @@ FAQ_SECTION = {
 }
 
 
+PROOF_SECTION = {
+    "tr": {
+        "eyebrow": "Kullanim Senaryolari",
+        "title": "SnapVend'in en guclu oldugu saha akislarini gosterin",
+        "lead": "Dogrulanmis musteri yorumu veya marka logosu eklenene kadar, urune en iyi oturan kullanim senaryolarini ve ekip profillerini burada ozetliyoruz.",
+        "use_label": "Kullanim Senaryolari",
+        "reference_label": "Referans Profilleri",
+        "use_cases": [
+            {"title": "Dugun ve davet secimi", "body": "Cekim devam ederken ya da hemen sonrasinda misafire QR ile galeri acin, secimleri toplayin ve ayni cihazdan teslim edin."},
+            {"title": "Studyo secim masasi", "body": "Portre veya aile cekimlerinde musteriyle yan yana durup kareleri birlikte eleyin, onaylayin ve tek ekrandan ilerleyin."},
+            {"title": "Okul ve spor oturumlari", "body": "Birden fazla seansi karistirmadan sinif, takim veya kulup bazli secim ve teslim akislarini ayri tutun."},
+            {"title": "Kurumsal etkinlik standi", "body": "Etkinlik alaninda anlik cekim, QR girisi ve ZIP teslimi ile markali bir deneyim sunun."},
+        ],
+        "references": [
+            {"title": "Hizli teslim ekipleri", "body": "Sahada cekim alip ayni gun secim ve teslim surecini kapatmak isteyen ekipler icin uygun."},
+            {"title": "Markali deneyim arayan studyolar", "body": "Ozel logo, isletme adi ve kontrollu musteri akisi isteyen profesyonel studyolar icin guclu bir yapi sunar."},
+            {"title": "Yerel ag ile calisan operasyonlar", "body": "Internet baglantisina guvenmeden hotspot veya yerel ag uzerinden isleyen ekipler icin dogrudan uyumludur."},
+            {"title": "Coklu oturum yoneten ekipler", "body": "Farkli musteri veya organizasyonlari ayri akislarda tutmak isteyen yogun saha operasyonlari icin tasarlanmistir."},
+        ],
+    },
+    "en": {
+        "eyebrow": "Use Cases",
+        "title": "Show the field workflows where SnapVend fits best",
+        "lead": "Until verified customer logos and named testimonials are added, this section highlights the strongest operating scenarios and team profiles for the product.",
+        "use_label": "Use Cases",
+        "reference_label": "Reference Profiles",
+        "use_cases": [
+            {"title": "Wedding and guest selection flow", "body": "Open a QR gallery during or right after the shoot, collect selections and complete delivery from the same device."},
+            {"title": "Studio review desk", "body": "Stand next to the client in portrait sessions, narrow the set together and move to approval from one screen."},
+            {"title": "School and sports sessions", "body": "Keep classes, teams and session groups separate while managing many deliveries in one day."},
+            {"title": "Corporate event booth", "body": "Run quick captures, QR access and ZIP delivery on location with a more branded handoff."},
+        ],
+        "references": [
+            {"title": "Fast delivery teams", "body": "Strong for crews that want to shoot, review and close delivery on the same day."},
+            {"title": "Brand-focused studios", "body": "A solid fit for studios that want custom branding, cleaner approval flow and controlled presentation."},
+            {"title": "Local-network operations", "body": "Designed for teams that prefer hotspot or local network workflows instead of depending on internet."},
+            {"title": "Multi-session field crews", "body": "Built for teams that manage separate clients or event groups without mixing deliveries."},
+        ],
+    },
+    "es": {
+        "eyebrow": "Casos De Uso",
+        "title": "Muestre los flujos de campo donde SnapVend encaja mejor",
+        "lead": "Hasta agregar logos o testimonios verificados, esta seccion resume los escenarios y perfiles de equipo donde el producto destaca.",
+        "use_label": "Casos De Uso",
+        "reference_label": "Perfiles De Referencia",
+        "use_cases": [
+            {"title": "Bodas y seleccion de invitados", "body": "Abra la galeria QR durante o despues del trabajo, recoja selecciones y entregue desde el mismo dispositivo."},
+            {"title": "Mesa de revision en estudio", "body": "Revise retratos con el cliente al lado, descarte fotos y avance a la aprobacion desde una sola pantalla."},
+            {"title": "Sesiones de escuela y deporte", "body": "Separe clases, equipos o grupos mientras gestiona muchas entregas en una sola jornada."},
+            {"title": "Stand en eventos corporativos", "body": "Maneje captura rapida, acceso por QR y entrega ZIP con una experiencia mas cuidada."},
+        ],
+        "references": [
+            {"title": "Equipos de entrega rapida", "body": "Ideal para equipos que quieren fotografiar, revisar y cerrar la entrega el mismo dia."},
+            {"title": "Estudios con enfoque de marca", "body": "Muy util para estudios que necesitan branding propio y una presentacion mas controlada."},
+            {"title": "Operaciones por red local", "body": "Pensado para equipos que trabajan con hotspot o red local sin depender de internet."},
+            {"title": "Equipos con muchas sesiones", "body": "Ayuda a manejar varios clientes o grupos sin mezclar entregas."},
+        ],
+    },
+    "fr": {
+        "eyebrow": "Cas D Usage",
+        "title": "Montrez les flux terrain ou SnapVend est le plus pertinent",
+        "lead": "En attendant de vrais logos clients ou temoignages verifies, cette section resume les scenarios et profils d equipe les plus adaptes.",
+        "use_label": "Cas D Usage",
+        "reference_label": "Profils De Reference",
+        "use_cases": [
+            {"title": "Mariage et selection des invites", "body": "Ouvrez la galerie QR pendant ou juste apres la prise de vue, recupererez les choix puis livrez depuis le meme appareil."},
+            {"title": "Table de selection en studio", "body": "Travaillez avec le client a cote de vous, triez les portraits et passez a la validation sur un seul ecran."},
+            {"title": "Ecole et sport", "body": "Gardez classes, equipes et groupes bien separes meme quand le volume de livraison augmente."},
+            {"title": "Stand evenementiel corporate", "body": "Associez prise de vue rapide, acces QR et livraison ZIP dans une experience plus professionnelle."},
+        ],
+        "references": [
+            {"title": "Equipes de livraison rapide", "body": "Adapte aux equipes qui veulent photographier, faire choisir et livrer le meme jour."},
+            {"title": "Studios centres sur la marque", "body": "Bon choix pour les studios qui veulent une image de marque plus forte et un parcours client maitrise."},
+            {"title": "Operations en reseau local", "body": "Concu pour les equipes qui preferent hotspot ou reseau local au lieu d'une dependance internet."},
+            {"title": "Equipes multi sessions", "body": "Permet de gerer plusieurs clients ou groupes sans melanger les livraisons."},
+        ],
+    },
+    "de": {
+        "eyebrow": "Einsatzszenarien",
+        "title": "Zeigen Sie die Einsatzablaufe, in denen SnapVend am starksten ist",
+        "lead": "Bis verifizierte Kundenlogos oder Testimonials vorliegen, fasst dieser Bereich die passendsten Szenarien und Teamprofile zusammen.",
+        "use_label": "Use Cases",
+        "reference_label": "Referenzprofile",
+        "use_cases": [
+            {"title": "Hochzeit und Gasteauswahl", "body": "Offnen Sie die QR Galerie wahrend oder direkt nach dem Shooting, sammeln Sie Auswahlen und liefern Sie vom selben Gerat."},
+            {"title": "Studio Auswahlplatz", "body": "Sichten Sie Portratfotos gemeinsam mit dem Kunden und gehen Sie direkt zur Freigabe uber."},
+            {"title": "Schule und Sport", "body": "Halten Sie Klassen, Teams und Gruppen sauber getrennt, auch bei vielen Sessions pro Tag."},
+            {"title": "Corporate Event Stand", "body": "Verbinden Sie schnelle Aufnahme, QR Zugang und ZIP Auslieferung in einem professionellen Vor Ort Ablauf."},
+        ],
+        "references": [
+            {"title": "Schnelle Lieferteams", "body": "Passend fur Crews, die Aufnahme, Auswahl und Auslieferung am selben Tag abschliessen wollen."},
+            {"title": "Markenorientierte Studios", "body": "Gut fur Studios mit Bedarf an eigenem Branding und kontrollierter Kundenprasentation."},
+            {"title": "Lokale Netzwerk Teams", "body": "Entwickelt fur Teams, die lieber per Hotspot oder lokalem Netzwerk als uber Internet arbeiten."},
+            {"title": "Mehrfach Session Crews", "body": "Hilft beim getrennten Verwalten vieler Kunden oder Gruppen ohne Lieferchaos."},
+        ],
+    },
+    "pt": {
+        "eyebrow": "Casos De Uso",
+        "title": "Mostre os fluxos de campo onde o SnapVend funciona melhor",
+        "lead": "Enquanto logos ou depoimentos reais nao sao adicionados, esta area resume os cenarios e perfis de equipe mais adequados ao produto.",
+        "use_label": "Casos De Uso",
+        "reference_label": "Perfis De Referencia",
+        "use_cases": [
+            {"title": "Casamentos e selecao de convidados", "body": "Abra a galeria QR durante ou apos a sessao, receba as escolhas e conclua a entrega no mesmo dispositivo."},
+            {"title": "Mesa de selecao no estudio", "body": "Revise retratos ao lado do cliente, filtre as fotos e avance para aprovacao em uma unica tela."},
+            {"title": "Escola e esporte", "body": "Separe turmas, times e grupos mesmo quando o volume de sessoes e entregas aumenta."},
+            {"title": "Stand em evento corporativo", "body": "Combine captura rapida, acesso por QR e entrega ZIP em uma experiencia mais profissional."},
+        ],
+        "references": [
+            {"title": "Equipes de entrega rapida", "body": "Bom encaixe para equipes que querem fotografar, revisar e entregar no mesmo dia."},
+            {"title": "Estudios com foco em marca", "body": "Ideal para estudios que querem branding proprio e um fluxo de aprovacao mais organizado."},
+            {"title": "Operacoes em rede local", "body": "Pensado para equipes que preferem hotspot ou rede local sem depender da internet."},
+            {"title": "Equipes com muitas sessoes", "body": "Ajuda a manter clientes e grupos separados sem misturar entregas."},
+        ],
+    },
+    "ru": {
+        "eyebrow": "Сценарии",
+        "title": "Покажите полевые сценарии, где SnapVend особенно силен",
+        "lead": "Пока на сайте нет подтвержденных логотипов клиентов и именных отзывов, этот блок показывает самые подходящие сценарии и профили команд.",
+        "use_label": "Сценарии Использования",
+        "reference_label": "Профили Команд",
+        "use_cases": [
+            {"title": "Свадьбы и выбор гостей", "body": "Откройте QR галерею во время или сразу после съемки, соберите выбор и завершите выдачу с того же устройства."},
+            {"title": "Студийный стол отбора", "body": "Просматривайте портреты вместе с клиентом, быстро отбирайте кадры и переходите к подтверждению на одном экране."},
+            {"title": "Школа и спорт", "body": "Держите классы, команды и группы отдельно даже при большом количестве сессий и выдач."},
+            {"title": "Корпоративная стойка", "body": "Запускайте съемку, вход по QR и ZIP выдачу прямо на площадке в более профессиональном формате."},
+        ],
+        "references": [
+            {"title": "Команды быстрой выдачи", "body": "Подходит для команд, которым нужно снять, показать и выдать в тот же день."},
+            {"title": "Студии с акцентом на бренд", "body": "Удобно для студий, которым важны собственный логотип, имя и более управляемый клиентский путь."},
+            {"title": "Локальные сетевые операции", "body": "Создано для работы через hotspot или локальную сеть без зависимости от интернета."},
+            {"title": "Полевые команды с многими сессиями", "body": "Помогает вести несколько клиентов и групп без смешивания выдач."},
+        ],
+    },
+    "ar": {
+        "eyebrow": "سيناريوهات الاستخدام",
+        "title": "اعرض مسارات العمل الميدانية التي يتفوق فيها SnapVend",
+        "lead": "الى حين اضافة شعارات عملاء حقيقية او شهادات موثقة، يوضح هذا القسم اهم السيناريوهات وملفات الفرق المناسبة للمنتج.",
+        "use_label": "سيناريوهات الاستخدام",
+        "reference_label": "ملفات الفرق",
+        "use_cases": [
+            {"title": "حفلات الزفاف واختيار الضيوف", "body": "افتح معرض QR اثناء التصوير او بعده مباشرة، اجمع الاختيارات واكمل التسليم من نفس الجهاز."},
+            {"title": "طاولة الاختيار في الاستوديو", "body": "راجع الصور مع العميل وجها لوجه، استبعد اللقطات وانتقل الى الاعتماد من شاشة واحدة."},
+            {"title": "المدارس والرياضة", "body": "افصل الصفوف والفرق والمجموعات حتى مع عدد كبير من الجلسات وعمليات التسليم."},
+            {"title": "جناح الفعاليات", "body": "ادمج التصوير السريع ودخول QR وتسليم ZIP في تجربة ميدانية اكثر احترافية."},
+        ],
+        "references": [
+            {"title": "فرق التسليم السريع", "body": "مناسب للفرق التي تريد التصوير والمراجعة والتسليم في اليوم نفسه."},
+            {"title": "استوديوهات تهتم بالعلامة", "body": "ملائم للاستوديوهات التي تريد شعارها واسمها وتجربة عميل اكثر تنظيما."},
+            {"title": "عمليات تعمل عبر الشبكة المحلية", "body": "مصمم للفرق التي تعتمد على hotspot او الشبكة المحلية بدون الاعتماد على الانترنت."},
+            {"title": "فرق تدير جلسات متعددة", "body": "يساعد على ادارة عدة عملاء او مجموعات بدون خلط عمليات التسليم."},
+        ],
+    },
+    "hi": {
+        "eyebrow": "उपयोग परिदृश्य",
+        "title": "वे ऑन-site workflow दिखाएं जहां SnapVend सबसे बेहतर फिट बैठता है",
+        "lead": "जब तक verified customer logos या named testimonials नहीं जोड़े जाते, यह section product के लिए सबसे मजबूत scenarios और team profiles दिखाता है।",
+        "use_label": "Use Cases",
+        "reference_label": "Reference Profiles",
+        "use_cases": [
+            {"title": "शादी और guest selection", "body": "शूट के दौरान या तुरंत बाद QR gallery खोलें, selections लें और उसी device से delivery पूरी करें।"},
+            {"title": "studio review desk", "body": "क्लाइंट के साथ portrait shots देखें, shortlist करें और एक ही screen से approval पर जाएं।"},
+            {"title": "school और sports sessions", "body": "कई classes, teams और groups को अलग रखते हुए delivery flow संभालें।"},
+            {"title": "corporate event booth", "body": "on-site capture, QR access और ZIP delivery को एक professional flow में चलाएं।"},
+        ],
+        "references": [
+            {"title": "fast delivery teams", "body": "उन teams के लिए सही जो same-day shoot, review और delivery चाहते हैं।"},
+            {"title": "brand-focused studios", "body": "उन studios के लिए उपयोगी जिन्हें अपना logo, business name और clean approval flow चाहिए।"},
+            {"title": "local network operations", "body": "hotspot या local network पर काम करने वाली teams के लिए बनाया गया है।"},
+            {"title": "multi-session crews", "body": "कई clients या groups को अलग रखते हुए delivery manage करने में मदद करता है।"},
+        ],
+    },
+    "ja": {
+        "eyebrow": "利用シナリオ",
+        "title": "SnapVend が特に力を発揮する現場フローを紹介します",
+        "lead": "実在する顧客ロゴや確認済みレビューを追加するまで、このセクションでは製品に合う代表的なシナリオとチーム像を示します。",
+        "use_label": "利用シナリオ",
+        "reference_label": "チームプロファイル",
+        "use_cases": [
+            {"title": "結婚式とゲスト選定", "body": "撮影中または直後に QR ギャラリーを開き、選択を集めて同じ端末から納品まで進めます。"},
+            {"title": "スタジオ確認デスク", "body": "クライアントの横でポートレートを見ながら絞り込み、そのまま承認へ進めます。"},
+            {"title": "学校とスポーツ撮影", "body": "クラスやチームを分けたまま、多くのセッションと納品を整理できます。"},
+            {"title": "企業イベントブース", "body": "会場での撮影、QR アクセス、ZIP 納品を一つの流れで提供できます。"},
+        ],
+        "references": [
+            {"title": "即日納品チーム", "body": "撮影から確認、納品までを同日に終えたいチームに向いています。"},
+            {"title": "ブランド重視のスタジオ", "body": "独自ロゴや屋号、より整理された承認フローを求めるスタジオに適しています。"},
+            {"title": "ローカルネット運用", "body": "インターネット依存ではなく hotspot やローカルネットで動かしたい現場向けです。"},
+            {"title": "複数セッション運営チーム", "body": "複数の顧客やグループを混ぜずに納品管理したいチームに合います。"},
+        ],
+    },
+    "zh": {
+        "eyebrow": "使用场景",
+        "title": "展示 SnapVend 最适合的现场工作流程",
+        "lead": "在加入已验证客户标志和真实评价之前，这个部分会先展示最适合产品的典型场景和团队类型。",
+        "use_label": "使用场景",
+        "reference_label": "团队画像",
+        "use_cases": [
+            {"title": "婚礼与宾客选片", "body": "在拍摄中或拍摄后立刻打开 QR 画廊，收集选择并在同一设备上完成交付。"},
+            {"title": "影楼选片台", "body": "与客户并排查看人像照片，快速筛选并直接进入确认流程。"},
+            {"title": "学校与体育拍摄", "body": "即使有很多班级、队伍和场次，也能保持交付流程清晰分离。"},
+            {"title": "企业活动展位", "body": "把现场拍摄、QR 进入和 ZIP 交付整合成更专业的活动流程。"},
+        ],
+        "references": [
+            {"title": "快速交付团队", "body": "适合希望在同一天内完成拍摄、选片和交付的团队。"},
+            {"title": "重视品牌的影楼", "body": "适合需要自定义品牌名、logo 和更整洁客户流程的团队。"},
+            {"title": "本地网络运营团队", "body": "为希望通过 hotspot 或本地网络工作而不是依赖互联网的团队设计。"},
+            {"title": "多场次执行团队", "body": "帮助团队在不混淆客户或群组的情况下管理多场次交付。"},
+        ],
+    },
+}
+
+
+CONTACT_SECTION = {
+    "tr": {
+        "eyebrow": "Iletisim",
+        "title": "Istek, talep ve is birligi mesajlarini dogrudan bize gonderin",
+        "lead": "Formu gonderdiginizde varsayilan e-posta uygulamaniz acilir ve mesaj snapvendinfo@gmail.com adresine hazir sekilde gider.",
+        "panel_title": "Bize Yazin",
+        "panel_note": "Demo talebi, fiyat sorusu, is ortakligi veya ozel akis ihtiyaclari icin formu kullanin.",
+        "highlights": ["Demo talebi", "Fiyat ve lisans sorulari", "Ozel akis ve is ortakligi"],
+        "type_label": "Konu",
+        "topics": ["Genel Bilgi", "Demo Talebi", "Fiyatlandirma", "Is Ortakligi", "Ozel Talep"],
+        "name_label": "Ad Soyad",
+        "company_label": "Isletme / Marka",
+        "email_label": "E-posta",
+        "message_label": "Mesaj",
+        "message_placeholder": "Ihtiyacinizi, etkinlik tipinizi veya iletmek istediginiz talebi kisaca yazin.",
+        "submit": "Gonder",
+        "direct_email": "Dogrudan E-posta Gonder",
+        "disclaimer": "Gonder butonu mail uygulamanizi acar; mesaji oradan onaylayabilirsiniz.",
+        "subject_prefix": "SnapVend web talebi",
+    },
+    "en": {
+        "eyebrow": "Contact",
+        "title": "Send your request, inquiry or partnership message directly to us",
+        "lead": "When you submit the form, your default mail app opens and prepares the message for snapvendinfo@gmail.com.",
+        "panel_title": "Write To Us",
+        "panel_note": "Use this form for demo requests, pricing questions, partnerships or custom workflow needs.",
+        "highlights": ["Demo request", "Pricing and licensing", "Custom workflow or partnership"],
+        "type_label": "Topic",
+        "topics": ["General Inquiry", "Demo Request", "Pricing", "Partnership", "Custom Request"],
+        "name_label": "Full Name",
+        "company_label": "Business / Brand",
+        "email_label": "Email",
+        "message_label": "Message",
+        "message_placeholder": "Briefly describe your need, event type or request.",
+        "submit": "Send",
+        "direct_email": "Send Email Directly",
+        "disclaimer": "The send button opens your mail app so you can review and confirm the message.",
+        "subject_prefix": "SnapVend website inquiry",
+    },
+    "es": {
+        "eyebrow": "Contacto",
+        "title": "Envíe su consulta, solicitud o mensaje comercial directamente",
+        "lead": "Al enviar el formulario se abre su app de correo y el mensaje queda listo para snapvendinfo@gmail.com.",
+        "panel_title": "Escribanos",
+        "panel_note": "Use este formulario para demos, precios, alianzas o necesidades especiales.",
+        "highlights": ["Solicitud de demo", "Precios y licencias", "Alianza o flujo especial"],
+        "type_label": "Tema",
+        "topics": ["Consulta General", "Solicitud De Demo", "Precios", "Alianza", "Solicitud Especial"],
+        "name_label": "Nombre",
+        "company_label": "Empresa / Marca",
+        "email_label": "Correo",
+        "message_label": "Mensaje",
+        "message_placeholder": "Describa brevemente su necesidad o tipo de evento.",
+        "submit": "Enviar",
+        "direct_email": "Enviar Correo Directo",
+        "disclaimer": "El boton abre su correo para revisar y confirmar el mensaje.",
+        "subject_prefix": "Consulta web de SnapVend",
+    },
+    "fr": {
+        "eyebrow": "Contact",
+        "title": "Envoyez nous directement votre demande ou message commercial",
+        "lead": "Quand vous envoyez le formulaire, votre application mail s'ouvre et prepare le message pour snapvendinfo@gmail.com.",
+        "panel_title": "Ecrivez Nous",
+        "panel_note": "Utilisez ce formulaire pour une demo, des tarifs, un partenariat ou un besoin specifique.",
+        "highlights": ["Demande de demo", "Tarifs et licences", "Partenariat ou besoin special"],
+        "type_label": "Sujet",
+        "topics": ["Question Generale", "Demande De Demo", "Tarifs", "Partenariat", "Demande Speciale"],
+        "name_label": "Nom Complet",
+        "company_label": "Entreprise / Marque",
+        "email_label": "Email",
+        "message_label": "Message",
+        "message_placeholder": "Decrivez brievement votre besoin ou type d'evenement.",
+        "submit": "Envoyer",
+        "direct_email": "Envoyer Un Email",
+        "disclaimer": "Le bouton ouvre votre application mail pour verifier et confirmer le message.",
+        "subject_prefix": "Demande web SnapVend",
+    },
+    "de": {
+        "eyebrow": "Kontakt",
+        "title": "Senden Sie Anfrage, Wunsch oder Partnerschaft direkt an uns",
+        "lead": "Beim Absenden offnet sich Ihr Mail Programm und bereitet die Nachricht fur snapvendinfo@gmail.com vor.",
+        "panel_title": "Schreiben Sie Uns",
+        "panel_note": "Nutzen Sie das Formular fur Demoanfragen, Preise, Partnerschaften oder spezielle Ablaufe.",
+        "highlights": ["Demo Anfrage", "Preise und Lizenzen", "Partnerschaft oder Sonderwunsch"],
+        "type_label": "Thema",
+        "topics": ["Allgemeine Anfrage", "Demo Anfrage", "Preise", "Partnerschaft", "Sonderwunsch"],
+        "name_label": "Vollstandiger Name",
+        "company_label": "Firma / Marke",
+        "email_label": "E-Mail",
+        "message_label": "Nachricht",
+        "message_placeholder": "Beschreiben Sie kurz Ihren Bedarf oder den Einsatztyp.",
+        "submit": "Senden",
+        "direct_email": "Direkt Per E-Mail",
+        "disclaimer": "Der Senden Button offnet Ihr Mail Programm zur Bestatigung.",
+        "subject_prefix": "SnapVend Website Anfrage",
+    },
+    "pt": {
+        "eyebrow": "Contato",
+        "title": "Envie sua solicitacao, duvida ou proposta diretamente para nos",
+        "lead": "Ao enviar o formulario, seu app de e-mail abre e prepara a mensagem para snapvendinfo@gmail.com.",
+        "panel_title": "Fale Conosco",
+        "panel_note": "Use o formulario para demos, precos, parcerias ou necessidades especiais de fluxo.",
+        "highlights": ["Pedido de demo", "Precos e licencas", "Parceria ou fluxo especial"],
+        "type_label": "Assunto",
+        "topics": ["Contato Geral", "Pedido De Demo", "Precos", "Parceria", "Solicitacao Especial"],
+        "name_label": "Nome Completo",
+        "company_label": "Empresa / Marca",
+        "email_label": "E-mail",
+        "message_label": "Mensagem",
+        "message_placeholder": "Descreva rapidamente sua necessidade ou tipo de evento.",
+        "submit": "Enviar",
+        "direct_email": "Enviar E-mail Direto",
+        "disclaimer": "O botao abrirá seu app de e-mail para revisar e confirmar a mensagem.",
+        "subject_prefix": "Contato web SnapVend",
+    },
+    "ru": {
+        "eyebrow": "Контакт",
+        "title": "Отправьте запрос, пожелание или предложение напрямую",
+        "lead": "После отправки формы откроется ваша почтовая программа и подготовит письмо для snapvendinfo@gmail.com.",
+        "panel_title": "Напишите Нам",
+        "panel_note": "Форма подходит для запроса демо, цен, партнерства или особого сценария.",
+        "highlights": ["Запрос демо", "Цены и лицензии", "Партнерство или особый сценарий"],
+        "type_label": "Тема",
+        "topics": ["Общий Вопрос", "Запрос Демо", "Цены", "Партнерство", "Особый Запрос"],
+        "name_label": "Имя",
+        "company_label": "Компания / Бренд",
+        "email_label": "Email",
+        "message_label": "Сообщение",
+        "message_placeholder": "Кратко опишите задачу, тип мероприятия или запрос.",
+        "submit": "Отправить",
+        "direct_email": "Написать На Email",
+        "disclaimer": "Кнопка откроет почтовое приложение, где письмо можно проверить и отправить.",
+        "subject_prefix": "Запрос с сайта SnapVend",
+    },
+    "ar": {
+        "eyebrow": "تواصل",
+        "title": "ارسل طلبك او استفسارك او رسالة الشراكة مباشرة الينا",
+        "lead": "عند ارسال النموذج سيفتح تطبيق البريد الافتراضي لديك ويجهز الرسالة الى snapvendinfo@gmail.com.",
+        "panel_title": "اكتب لنا",
+        "panel_note": "استخدم النموذج لطلب عرض تجريبي او سؤال عن الاسعار او شراكة او احتياج خاص.",
+        "highlights": ["طلب عرض تجريبي", "اسعار وتراخيص", "شراكة او طلب خاص"],
+        "type_label": "الموضوع",
+        "topics": ["استفسار عام", "طلب عرض", "الاسعار", "شراكة", "طلب خاص"],
+        "name_label": "الاسم",
+        "company_label": "الجهة / العلامة",
+        "email_label": "البريد",
+        "message_label": "الرسالة",
+        "message_placeholder": "اكتب باختصار احتياجك او نوع الحدث او الطلب.",
+        "submit": "ارسال",
+        "direct_email": "ارسال بريد مباشر",
+        "disclaimer": "زر الارسال يفتح تطبيق البريد لتراجع الرسالة وتؤكدها.",
+        "subject_prefix": "طلب من موقع SnapVend",
+    },
+    "hi": {
+        "eyebrow": "संपर्क",
+        "title": "अपनी request, inquiry या partnership message सीधे हमें भेजें",
+        "lead": "Form submit करते ही आपका default mail app खुलेगा और message snapvendinfo@gmail.com के लिए तैयार हो जाएगा।",
+        "panel_title": "हमें लिखें",
+        "panel_note": "Demo request, pricing, partnership या custom workflow जरूरत के लिए यह form उपयोग करें।",
+        "highlights": ["Demo request", "Pricing और license", "Custom workflow या partnership"],
+        "type_label": "विषय",
+        "topics": ["General Inquiry", "Demo Request", "Pricing", "Partnership", "Custom Request"],
+        "name_label": "पूरा नाम",
+        "company_label": "Business / Brand",
+        "email_label": "Email",
+        "message_label": "Message",
+        "message_placeholder": "अपनी जरूरत या event type संक्षेप में लिखें।",
+        "submit": "Send",
+        "direct_email": "Direct Email भेजें",
+        "disclaimer": "Send बटन आपका mail app खोलेगा ताकि आप message review करके भेज सकें।",
+        "subject_prefix": "SnapVend website inquiry",
+    },
+    "ja": {
+        "eyebrow": "お問い合わせ",
+        "title": "ご要望やご相談、提携メッセージを直接お送りください",
+        "lead": "フォーム送信時に既定のメールアプリが開き、snapvendinfo@gmail.com 宛ての内容が準備されます。",
+        "panel_title": "ご連絡ください",
+        "panel_note": "デモ依頼、料金確認、提携相談、特別な運用相談にこのフォームを使えます。",
+        "highlights": ["デモ依頼", "料金とライセンス", "提携または特別相談"],
+        "type_label": "件名",
+        "topics": ["一般的な問い合わせ", "デモ依頼", "料金", "提携", "特別な依頼"],
+        "name_label": "お名前",
+        "company_label": "会社 / ブランド",
+        "email_label": "メール",
+        "message_label": "メッセージ",
+        "message_placeholder": "用途やイベント内容、相談したい内容を簡単に記入してください。",
+        "submit": "送信",
+        "direct_email": "メールを直接送る",
+        "disclaimer": "送信ボタンを押すとメールアプリが開き、内容を確認して送れます。",
+        "subject_prefix": "SnapVend サイト問い合わせ",
+    },
+    "zh": {
+        "eyebrow": "联系",
+        "title": "把需求、咨询或合作消息直接发给我们",
+        "lead": "提交表单后，系统会打开你的默认邮件应用，并自动准备发往 snapvendinfo@gmail.com 的内容。",
+        "panel_title": "给我们留言",
+        "panel_note": "这个表单可用于演示申请、价格咨询、合作沟通或特殊流程需求。",
+        "highlights": ["演示申请", "价格与授权", "合作或特殊需求"],
+        "type_label": "主题",
+        "topics": ["一般咨询", "演示申请", "价格咨询", "合作", "特殊需求"],
+        "name_label": "姓名",
+        "company_label": "公司 / 品牌",
+        "email_label": "邮箱",
+        "message_label": "留言",
+        "message_placeholder": "请简要说明你的需求、活动类型或想咨询的问题。",
+        "submit": "发送",
+        "direct_email": "直接发邮件",
+        "disclaimer": "点击发送后会打开邮件应用，你可以检查后再发送。",
+        "subject_prefix": "SnapVend 网站咨询",
+    },
+}
+
+
 COPY = {
     "tr": {
         "meta_title": "SnapVend | Fotoğrafçılar İçin QR Galeri ve Yerel Teslim",
@@ -1393,6 +1819,18 @@ def build_audience_cards(copy: dict) -> str:
     return "\n".join(cards)
 
 
+def build_proof_cards(items: list[dict]) -> str:
+    cards = []
+    for card in items:
+        cards.append(
+            f"""              <article class="proof-card reveal">
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
 def build_feature_list(features: list[str]) -> str:
     return "\n".join(f"                <li>{e(feature)}</li>" for feature in features)
 
@@ -1423,6 +1861,19 @@ def build_faq_items(faq: dict) -> str:
             </details>"""
         )
     return "\n".join(items)
+
+
+def build_contact_highlights(contact: dict) -> str:
+    return "\n".join(
+        f"""              <article class="contact-point reveal">
+                <span>{e(item)}</span>
+              </article>"""
+        for item in contact["highlights"]
+    )
+
+
+def build_contact_topics(contact: dict) -> str:
+    return "\n".join(f'                    <option value="{e(item)}">{e(item)}</option>' for item in contact["topics"])
 
 
 def store_badges(locale_code: str, copy: dict) -> str:
@@ -1479,6 +1930,14 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
             "url": logo_url,
         },
         "image": logo_url,
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "email": "snapvendinfo@gmail.com",
+                "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+            }
+        ],
     }
 
     website = {
@@ -1566,11 +2025,17 @@ def render_page(locale_code: str) -> str:
     extra_nav = NAV_EXTRA[locale_code]
     demo_copy = DEMO_SECTION[locale_code]
     faq_copy = FAQ_SECTION[locale_code]
+    proof_copy = PROOF_SECTION[locale_code]
+    contact_copy = CONTACT_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
     workflow_cards = build_workflow_cards(copy)
     audience_cards = build_audience_cards(copy)
+    proof_use_cases = build_proof_cards(proof_copy["use_cases"])
+    proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
+    contact_highlights = build_contact_highlights(contact_copy)
+    contact_topics = build_contact_topics(contact_copy)
     schema_json = build_schema(locale_code, copy, faq_copy)
     active_flag = flag_emoji(meta["app_store_country"])
     popular_label = POPULAR_LABELS[locale_code]
@@ -1743,6 +2208,36 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
+      <section class="section proof" id="use-cases">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(proof_copy["eyebrow"])}</p>
+            <h2>{e(proof_copy["title"])}</h2>
+            <p>{e(proof_copy["lead"])}</p>
+          </div>
+
+          <div class="proof-grid">
+            <div class="proof-column">
+              <div class="proof-column-head reveal">
+                <span class="proof-label">{e(proof_copy["use_label"])}</span>
+              </div>
+              <div class="proof-stack">
+{proof_use_cases}
+              </div>
+            </div>
+
+            <div class="proof-column">
+              <div class="proof-column-head reveal">
+                <span class="proof-label">{e(proof_copy["reference_label"])}</span>
+              </div>
+              <div class="proof-stack">
+{proof_references}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section pricing" id="pricing">
         <div class="container">
           <div class="section-head reveal">
@@ -1810,6 +2305,74 @@ def render_page(locale_code: str) -> str:
           <div class="faq-grid">
 {faq_items}
           </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">{e(contact_copy["eyebrow"])}</p>
+            <h2>{e(contact_copy["title"])}</h2>
+            <p class="hero-lead">{e(contact_copy["lead"])}</p>
+
+            <div class="contact-points">
+{contact_highlights}
+            </div>
+          </div>
+
+          <article class="contact-panel reveal">
+            <div class="contact-panel-head">
+              <h3>{e(contact_copy["panel_title"])}</h3>
+              <p>{e(contact_copy["panel_note"])}</p>
+            </div>
+
+            <form
+              class="contact-form"
+              data-contact-form
+              data-contact-email="snapvendinfo@gmail.com"
+              data-contact-subject-prefix="{e(contact_copy["subject_prefix"])}"
+              data-contact-label-type="{e(contact_copy["type_label"])}"
+              data-contact-label-name="{e(contact_copy["name_label"])}"
+              data-contact-label-company="{e(contact_copy["company_label"])}"
+              data-contact-label-email="{e(contact_copy["email_label"])}"
+              data-contact-label-message="{e(contact_copy["message_label"])}"
+            >
+              <label class="contact-field">
+                <span class="contact-field-label">{e(contact_copy["type_label"])}</span>
+                <select name="topic" required>
+{contact_topics}
+                </select>
+              </label>
+
+              <div class="contact-field-grid">
+                <label class="contact-field">
+                  <span class="contact-field-label">{e(contact_copy["name_label"])}</span>
+                  <input type="text" name="fullName" autocomplete="name" required>
+                </label>
+                <label class="contact-field">
+                  <span class="contact-field-label">{e(contact_copy["company_label"])}</span>
+                  <input type="text" name="company" autocomplete="organization">
+                </label>
+              </div>
+
+              <label class="contact-field">
+                <span class="contact-field-label">{e(contact_copy["email_label"])}</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+
+              <label class="contact-field">
+                <span class="contact-field-label">{e(contact_copy["message_label"])}</span>
+                <textarea name="message" rows="6" placeholder="{e(contact_copy["message_placeholder"])}" required></textarea>
+              </label>
+
+              <div class="contact-actions">
+                <button class="action-link contact-submit" type="submit">{e(contact_copy["submit"])}</button>
+                <a class="action-link action-link-secondary contact-direct-link" href="mailto:snapvendinfo@gmail.com">{e(contact_copy["direct_email"])}</a>
+              </div>
+
+              <p class="contact-disclaimer">{e(contact_copy["disclaimer"])}</p>
+            </form>
+          </article>
         </div>
       </section>
 

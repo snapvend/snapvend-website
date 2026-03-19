@@ -121,6 +121,54 @@ const toggleSetupNotes = () => {
   });
 };
 
+const setupContactForms = () => {
+  document.querySelectorAll("[data-contact-form]").forEach((form) => {
+    const emailAddress = String(form.dataset.contactEmail || "").trim();
+    if (!hasValue(emailAddress)) {
+      return;
+    }
+
+    const directLink = form.querySelector(".contact-direct-link");
+    if (directLink) {
+      directLink.href = `mailto:${emailAddress}`;
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+      const topic = String(data.get("topic") || "").trim();
+      const fullName = String(data.get("fullName") || "").trim();
+      const company = String(data.get("company") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const message = String(data.get("message") || "").trim();
+      const subjectPrefix = String(form.dataset.contactSubjectPrefix || "SnapVend").trim();
+
+      const labels = {
+        topic: String(form.dataset.contactLabelType || "Topic").trim(),
+        fullName: String(form.dataset.contactLabelName || "Name").trim(),
+        company: String(form.dataset.contactLabelCompany || "Company").trim(),
+        email: String(form.dataset.contactLabelEmail || "Email").trim(),
+        message: String(form.dataset.contactLabelMessage || "Message").trim(),
+      };
+
+      const body = [
+        `${labels.topic}: ${topic}`,
+        `${labels.fullName}: ${fullName}`,
+        `${labels.company}: ${hasValue(company) ? company : "-"}`,
+        `${labels.email}: ${email}`,
+        "",
+        `${labels.message}:`,
+        message,
+      ].join("\n");
+
+      const subject = hasValue(topic) ? `${subjectPrefix}: ${topic}` : subjectPrefix;
+      const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+    });
+  });
+};
+
 const revealOnScroll = () => {
   const items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
@@ -149,5 +197,6 @@ applyPricing();
 setupDemoMedia();
 setupStoreLinks();
 toggleSetupNotes();
+setupContactForms();
 setupClarity();
 revealOnScroll();
