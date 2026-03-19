@@ -441,6 +441,7 @@ PROOF_SECTION = {
             {"title": "Düğün ve davet seçimi", "body": "Çekim devam ederken ya da hemen sonrasında misafire QR ile galeri açın, seçimleri toplayın ve aynı cihazdan teslim edin."},
             {"title": "Stüdyo seçim masası", "body": "Portre veya aile çekimlerinde müşteriyle yan yana durup kareleri birlikte eleyin, onaylayın ve tek ekrandan ilerleyin."},
             {"title": "Okul ve spor oturumları", "body": "Birden fazla seansı karıştırmadan sınıf, takım veya kulüp bazlı seçim ve teslim akışlarını ayrı tutun."},
+            {"title": "Sokak ve turistik alan portre satışı", "body": "Sahada hızlı çekim yapın, seçilen kareleri anında gösterin ve tekli ya da paket satış akışını aynı cihaz üzerinden yönetin."},
             {"title": "Kurumsal etkinlik standı", "body": "Etkinlik alanında anlık çekim, QR girişi ve ZIP teslimi ile markalı bir deneyim sunun."},
         ],
         "references": [
@@ -460,6 +461,7 @@ PROOF_SECTION = {
             {"title": "Wedding and guest selection flow", "body": "Open a QR gallery during or right after the shoot, collect selections and complete delivery from the same device."},
             {"title": "Studio review desk", "body": "Stand next to the client in portrait sessions, narrow the set together and move to approval from one screen."},
             {"title": "School and sports sessions", "body": "Keep classes, teams and session groups separate while managing many deliveries in one day."},
+            {"title": "Street and tourist-spot portrait sales", "body": "Shoot on location, show the selected frames instantly and manage single-image or package sales from the same device."},
             {"title": "Corporate event booth", "body": "Run quick captures, QR access and ZIP delivery on location with a more branded handoff."},
         ],
         "references": [
@@ -479,6 +481,7 @@ PROOF_SECTION = {
             {"title": "Bodas y seleccion de invitados", "body": "Abra la galeria QR durante o despues del trabajo, recoja selecciones y entregue desde el mismo dispositivo."},
             {"title": "Mesa de revision en estudio", "body": "Revise retratos con el cliente al lado, descarte fotos y avance a la aprobacion desde una sola pantalla."},
             {"title": "Sesiones de escuela y deporte", "body": "Separe clases, equipos o grupos mientras gestiona muchas entregas en una sola jornada."},
+            {"title": "Ventas de retrato en calle y zonas turisticas", "body": "Fotografie en el lugar, muestre al instante las imagenes elegidas y gestione ventas unitarias o en paquete desde el mismo dispositivo."},
             {"title": "Stand en eventos corporativos", "body": "Maneje captura rapida, acceso por QR y entrega ZIP con una experiencia mas cuidada."},
         ],
         "references": [
@@ -498,6 +501,7 @@ PROOF_SECTION = {
             {"title": "Mariage et selection des invites", "body": "Ouvrez la galerie QR pendant ou juste apres la prise de vue, recupererez les choix puis livrez depuis le meme appareil."},
             {"title": "Table de selection en studio", "body": "Travaillez avec le client a cote de vous, triez les portraits et passez a la validation sur un seul ecran."},
             {"title": "Ecole et sport", "body": "Gardez classes, equipes et groupes bien separes meme quand le volume de livraison augmente."},
+            {"title": "Vente de portraits en rue et zones touristiques", "body": "Photographiez sur place, montrez aussitot les images retenues et gerez la vente a l'unite ou en pack depuis le meme appareil."},
             {"title": "Stand evenementiel corporate", "body": "Associez prise de vue rapide, acces QR et livraison ZIP dans une experience plus professionnelle."},
         ],
         "references": [
@@ -517,6 +521,7 @@ PROOF_SECTION = {
             {"title": "Hochzeit und Gasteauswahl", "body": "Offnen Sie die QR Galerie wahrend oder direkt nach dem Shooting, sammeln Sie Auswahlen und liefern Sie vom selben Gerat."},
             {"title": "Studio Auswahlplatz", "body": "Sichten Sie Portratfotos gemeinsam mit dem Kunden und gehen Sie direkt zur Freigabe uber."},
             {"title": "Schule und Sport", "body": "Halten Sie Klassen, Teams und Gruppen sauber getrennt, auch bei vielen Sessions pro Tag."},
+            {"title": "Portraitverkauf auf Strassen und Touristenorten", "body": "Fotografieren Sie vor Ort, zeigen Sie ausgewaehlte Bilder sofort und steuern Sie Einzel- oder Paketverkaeufe vom selben Geraet."},
             {"title": "Corporate Event Stand", "body": "Verbinden Sie schnelle Aufnahme, QR Zugang und ZIP Auslieferung in einem professionellen Vor Ort Ablauf."},
         ],
         "references": [
@@ -536,6 +541,7 @@ PROOF_SECTION = {
             {"title": "Casamentos e selecao de convidados", "body": "Abra a galeria QR durante ou apos a sessao, receba as escolhas e conclua a entrega no mesmo dispositivo."},
             {"title": "Mesa de selecao no estudio", "body": "Revise retratos ao lado do cliente, filtre as fotos e avance para aprovacao em uma unica tela."},
             {"title": "Escola e esporte", "body": "Separe turmas, times e grupos mesmo quando o volume de sessoes e entregas aumenta."},
+            {"title": "Venda de retratos na rua e em areas turisticas", "body": "Fotografe no local, mostre as imagens escolhidas na hora e gerencie vendas avulsas ou em pacote a partir do mesmo dispositivo."},
             {"title": "Stand em evento corporativo", "body": "Combine captura rapida, acesso por QR e entrega ZIP em uma experiencia mais profissional."},
         ],
         "references": [
@@ -555,6 +561,7 @@ PROOF_SECTION = {
             {"title": "Свадьбы и выбор гостей", "body": "Откройте QR галерею во время или сразу после съемки, соберите выбор и завершите выдачу с того же устройства."},
             {"title": "Студийный стол отбора", "body": "Просматривайте портреты вместе с клиентом, быстро отбирайте кадры и переходите к подтверждению на одном экране."},
             {"title": "Школа и спорт", "body": "Держите классы, команды и группы отдельно даже при большом количестве сессий и выдач."},
+            {"title": "Продажа портретов на улице и в туристических зонах", "body": "Снимайте на месте, сразу показывайте выбранные кадры и управляйте продажей по одной фотографии или пакетами с того же устройства."},
             {"title": "Корпоративная стойка", "body": "Запускайте съемку, вход по QR и ZIP выдачу прямо на площадке в более профессиональном формате."},
         ],
         "references": [
@@ -574,6 +581,7 @@ PROOF_SECTION = {
             {"title": "حفلات الزفاف واختيار الضيوف", "body": "افتح معرض QR اثناء التصوير او بعده مباشرة، اجمع الاختيارات واكمل التسليم من نفس الجهاز."},
             {"title": "طاولة الاختيار في الاستوديو", "body": "راجع الصور مع العميل وجها لوجه، استبعد اللقطات وانتقل الى الاعتماد من شاشة واحدة."},
             {"title": "المدارس والرياضة", "body": "افصل الصفوف والفرق والمجموعات حتى مع عدد كبير من الجلسات وعمليات التسليم."},
+            {"title": "بيع البورتريه في الشارع والمناطق السياحية", "body": "التقط الصور في الموقع واعرض اللقطات المختارة مباشرة وادِر بيع الصور بشكل فردي او ضمن باقات من نفس الجهاز."},
             {"title": "جناح الفعاليات", "body": "ادمج التصوير السريع ودخول QR وتسليم ZIP في تجربة ميدانية اكثر احترافية."},
         ],
         "references": [
@@ -593,6 +601,7 @@ PROOF_SECTION = {
             {"title": "शादी और guest selection", "body": "शूट के दौरान या तुरंत बाद QR gallery खोलें, selections लें और उसी device से delivery पूरी करें।"},
             {"title": "studio review desk", "body": "क्लाइंट के साथ portrait shots देखें, shortlist करें और एक ही screen से approval पर जाएं।"},
             {"title": "school और sports sessions", "body": "कई classes, teams और groups को अलग रखते हुए delivery flow संभालें।"},
+            {"title": "street aur tourist portrait sales", "body": "मौके पर shoot करें, चुनी हुई photos तुरंत दिखाएं और single या package sale को उसी device से manage करें।"},
             {"title": "corporate event booth", "body": "on-site capture, QR access और ZIP delivery को एक professional flow में चलाएं।"},
         ],
         "references": [
@@ -612,6 +621,7 @@ PROOF_SECTION = {
             {"title": "結婚式とゲスト選定", "body": "撮影中または直後に QR ギャラリーを開き、選択を集めて同じ端末から納品まで進めます。"},
             {"title": "スタジオ確認デスク", "body": "クライアントの横でポートレートを見ながら絞り込み、そのまま承認へ進めます。"},
             {"title": "学校とスポーツ撮影", "body": "クラスやチームを分けたまま、多くのセッションと納品を整理できます。"},
+            {"title": "ストリートと観光地でのポートレート販売", "body": "現地で撮影し、選ばれた写真をすぐ見せて、単品販売やパッケージ販売を同じ端末で進められます。"},
             {"title": "企業イベントブース", "body": "会場での撮影、QR アクセス、ZIP 納品を一つの流れで提供できます。"},
         ],
         "references": [
@@ -631,6 +641,7 @@ PROOF_SECTION = {
             {"title": "婚礼与宾客选片", "body": "在拍摄中或拍摄后立刻打开 QR 画廊，收集选择并在同一设备上完成交付。"},
             {"title": "影楼选片台", "body": "与客户并排查看人像照片，快速筛选并直接进入确认流程。"},
             {"title": "学校与体育拍摄", "body": "即使有很多班级、队伍和场次，也能保持交付流程清晰分离。"},
+            {"title": "街拍与旅游区域人像销售", "body": "在现场快速拍摄、即时展示所选照片，并通过同一设备完成单张或套餐销售流程。"},
             {"title": "企业活动展位", "body": "把现场拍摄、QR 进入和 ZIP 交付整合成更专业的活动流程。"},
         ],
         "references": [
