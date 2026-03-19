@@ -1898,6 +1898,66 @@ def build_contact_topics(contact: dict) -> str:
     return "\n".join(f'                    <option value="{e(item)}">{e(item)}</option>' for item in contact["topics"])
 
 
+def unique_strings(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for item in items:
+        value = item.strip()
+        if value and value not in seen:
+            seen.add(value)
+            ordered.append(value)
+    return ordered
+
+
+def build_keyword_string(copy: dict, proof: dict, contact: dict) -> str:
+    values = [
+        "SnapVend",
+        copy["hero_eyebrow"],
+        copy["workflow_title"],
+        copy["audience_title"],
+        proof["title"],
+        contact["title"],
+        *[card["title"] for card in copy["workflow_cards"]],
+        *[card["title"] for card in copy["audience_cards"]],
+        *[card["title"] for card in proof["use_cases"]],
+        *[card["title"] for card in proof["references"]],
+        *contact["topics"],
+    ]
+    return ", ".join(unique_strings(values))
+
+
+def build_item_list_schema(page_url: str, fragment: str, name: str, items: list[dict]) -> dict:
+    return {
+        "@type": "ItemList",
+        "@id": f"{page_url}#{fragment}",
+        "url": f"{page_url}#{fragment}",
+        "name": name,
+        "numberOfItems": len(items),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": index,
+                "item": {
+                    "@type": "Thing",
+                    "name": item["title"],
+                    "description": item["body"],
+                },
+            }
+            for index, item in enumerate(items, start=1)
+        ],
+    }
+
+
+def build_defined_term_set_schema(page_url: str, fragment: str, name: str, terms: list[str]) -> dict:
+    return {
+        "@type": "DefinedTermSet",
+        "@id": f"{page_url}#{fragment}",
+        "url": f"{page_url}#{fragment}",
+        "name": name,
+        "hasDefinedTerm": [{"@type": "DefinedTerm", "name": term} for term in terms],
+    }
+
+
 def store_badges(locale_code: str, copy: dict) -> str:
     country = LOCALE_META[locale_code]["app_store_country"]
     fallback_search = f"https://apps.apple.com/{country}/search?term=SnapVend"
@@ -1932,15 +1992,29 @@ def store_badges(locale_code: str, copy: dict) -> str:
             </div>"""
 
 
-def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
+def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: dict, keywords: str) -> str:
     pricing = SCHEMA_PRICING[locale_code]
     page_url = canonical_url(locale_code)
     logo_url = f"{SITE_URL}/assets/branding/app_icon_store_512.png"
+    contact_point_id = f"{SITE_URL}/#sales-contact"
     screenshot_urls = [
         f"{SITE_URL}/assets/marketing/01_capture_to_delivery.png",
         f"{SITE_URL}/assets/marketing/03_local_connection.png",
         f"{SITE_URL}/assets/marketing/06_reports_dashboard.png",
     ]
+    audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
+    use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
+    reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
+    contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
+
+    contact_point = {
+        "@type": "ContactPoint",
+        "@id": contact_point_id,
+        "contactType": "sales",
+        "email": "snapvendinfo@gmail.com",
+        "url": "mailto:snapvendinfo@gmail.com",
+        "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+    }
 
     organization = {
         "@type": "Organization",
@@ -1952,14 +2026,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
             "url": logo_url,
         },
         "image": logo_url,
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "contactType": "sales",
-                "email": "snapvendinfo@gmail.com",
-                "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
-            }
-        ],
+        "contactPoint": [{"@id": contact_point_id}],
     }
 
     website = {
@@ -1969,6 +2036,31 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
         "name": "SnapVend",
         "inLanguage": locale_code,
         "publisher": {"@id": organization["@id"]},
+    }
+
+    webpage = {
+        "@type": "WebPage",
+        "@id": f"{page_url}#webpage",
+        "url": page_url,
+        "name": copy["meta_title"],
+        "description": copy["meta_description"],
+        "inLanguage": locale_code,
+        "isPartOf": {"@id": website["@id"]},
+        "about": {"@id": f"{page_url}#app"},
+        "mainEntity": {"@id": f"{page_url}#app"},
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": logo_url,
+        },
+        "keywords": keywords,
+        "hasPart": [
+            {"@id": audience_list["@id"]},
+            {"@id": use_case_list["@id"]},
+            {"@id": reference_profile_list["@id"]},
+            {"@id": f"{page_url}#faq"},
+            {"@id": f"{page_url}#contact-page"},
+            {"@id": contact_topic_set["@id"]},
+        ],
     }
 
     software = {
@@ -1985,6 +2077,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
         "mainEntityOfPage": page_url,
         "image": logo_url,
         "screenshot": screenshot_urls,
+        "keywords": keywords,
         "brand": {
             "@type": "Brand",
             "name": "SnapVend",
@@ -1992,6 +2085,14 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
         "publisher": {"@id": organization["@id"]},
         "isAccessibleForFree": True,
         "featureList": [card["title"] for card in copy["workflow_cards"]],
+        "audience": [
+            {
+                "@type": "Audience",
+                "audienceType": item["title"],
+                "description": item["body"],
+            }
+            for item in copy["audience_cards"]
+        ],
         "offers": [
             {
                 "@type": "Offer",
@@ -2014,6 +2115,24 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
         "dateModified": BUILD_DATE,
     }
 
+    contact_page = {
+        "@type": "ContactPage",
+        "@id": f"{page_url}#contact-page",
+        "url": f"{page_url}#contact",
+        "name": contact["title"],
+        "description": contact["panel_note"],
+        "inLanguage": locale_code,
+        "isPartOf": {"@id": website["@id"]},
+        "about": [{"@id": software["@id"]}, {"@id": contact_topic_set["@id"]}],
+        "mainEntity": {"@id": contact_point["@id"]},
+        "potentialAction": {
+            "@type": "CommunicateAction",
+            "name": contact["submit"],
+            "target": "mailto:snapvendinfo@gmail.com",
+            "recipient": {"@id": organization["@id"]},
+        },
+    }
+
     faq_page = {
         "@type": "FAQPage",
         "@id": f"{page_url}#faq",
@@ -2032,7 +2151,19 @@ def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
 
     schema = {
         "@context": "https://schema.org",
-        "@graph": [organization, website, software, faq_page],
+        "@graph": [
+            organization,
+            contact_point,
+            website,
+            webpage,
+            software,
+            audience_list,
+            use_case_list,
+            reference_profile_list,
+            contact_topic_set,
+            contact_page,
+            faq_page,
+        ],
     }
     return json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
 
@@ -2058,7 +2189,8 @@ def render_page(locale_code: str) -> str:
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    schema_json = build_schema(locale_code, copy, faq_copy)
+    keyword_string = build_keyword_string(copy, proof_copy, contact_copy)
+    schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, keyword_string)
     active_flag = flag_emoji(meta["app_store_country"])
     popular_label = POPULAR_LABELS[locale_code]
 
@@ -2069,6 +2201,7 @@ def render_page(locale_code: str) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{e(copy["meta_title"])}</title>
     <meta name="description" content="{e(copy["meta_description"])}">
+    <meta name="keywords" content="{e(keyword_string)}">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <meta name="theme-color" content="#071b45">
     <meta http-equiv="content-language" content="{locale_code}">
@@ -2248,7 +2381,7 @@ def render_page(locale_code: str) -> str:
               </div>
             </div>
 
-            <div class="proof-column">
+            <div class="proof-column" id="reference-profiles">
               <div class="proof-column-head reveal">
                 <span class="proof-label">{e(proof_copy["reference_label"])}</span>
               </div>
@@ -2361,7 +2494,7 @@ def render_page(locale_code: str) -> str:
             >
               <label class="contact-field">
                 <span class="contact-field-label">{e(contact_copy["type_label"])}</span>
-                <select name="topic" required>
+                <select id="contact-topics" name="topic" required>
 {contact_topics}
                 </select>
               </label>
