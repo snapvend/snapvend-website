@@ -1,0 +1,1914 @@
+from __future__ import annotations
+
+import html
+import json
+from datetime import date
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+SEO_CONFIG = json.loads((ROOT / "seo-config.json").read_text(encoding="utf-8"))
+SITE_URL = SEO_CONFIG["siteUrl"].rstrip("/")
+BUILD_DATE = date.today().isoformat()
+
+
+LOCALE_META = {
+    "tr": {
+        "path": "",
+        "dir": "ltr",
+        "native": "Türkçe",
+        "english": "Turkish",
+        "og_locale": "tr_TR",
+        "app_store_country": "tr",
+        "hreflang": ["tr", "tr-TR"],
+    },
+    "en": {
+        "path": "en",
+        "dir": "ltr",
+        "native": "English",
+        "english": "English",
+        "og_locale": "en_US",
+        "app_store_country": "us",
+        "hreflang": ["en", "en-US", "en-GB", "en-CA", "en-AU"],
+    },
+    "es": {
+        "path": "es",
+        "dir": "ltr",
+        "native": "Español",
+        "english": "Spanish",
+        "og_locale": "es_ES",
+        "app_store_country": "es",
+        "hreflang": ["es", "es-ES", "es-MX", "es-AR", "es-CO"],
+    },
+    "fr": {
+        "path": "fr",
+        "dir": "ltr",
+        "native": "Français",
+        "english": "French",
+        "og_locale": "fr_FR",
+        "app_store_country": "fr",
+        "hreflang": ["fr", "fr-FR", "fr-CA", "fr-BE", "fr-CH"],
+    },
+    "de": {
+        "path": "de",
+        "dir": "ltr",
+        "native": "Deutsch",
+        "english": "German",
+        "og_locale": "de_DE",
+        "app_store_country": "de",
+        "hreflang": ["de", "de-DE", "de-AT", "de-CH"],
+    },
+    "pt": {
+        "path": "pt",
+        "dir": "ltr",
+        "native": "Português",
+        "english": "Portuguese",
+        "og_locale": "pt_BR",
+        "app_store_country": "br",
+        "hreflang": ["pt", "pt-BR", "pt-PT"],
+    },
+    "ru": {
+        "path": "ru",
+        "dir": "ltr",
+        "native": "Русский",
+        "english": "Russian",
+        "og_locale": "ru_RU",
+        "app_store_country": "ru",
+        "hreflang": ["ru", "ru-RU", "ru-KZ"],
+    },
+    "ar": {
+        "path": "ar",
+        "dir": "rtl",
+        "native": "العربية",
+        "english": "Arabic",
+        "og_locale": "ar_SA",
+        "app_store_country": "sa",
+        "hreflang": ["ar", "ar-SA", "ar-AE", "ar-EG"],
+    },
+    "hi": {
+        "path": "hi",
+        "dir": "ltr",
+        "native": "हिन्दी",
+        "english": "Hindi",
+        "og_locale": "hi_IN",
+        "app_store_country": "in",
+        "hreflang": ["hi", "hi-IN"],
+    },
+    "ja": {
+        "path": "ja",
+        "dir": "ltr",
+        "native": "日本語",
+        "english": "Japanese",
+        "og_locale": "ja_JP",
+        "app_store_country": "jp",
+        "hreflang": ["ja", "ja-JP"],
+    },
+    "zh": {
+        "path": "zh",
+        "dir": "ltr",
+        "native": "中文 (简体)",
+        "english": "Chinese (Simplified)",
+        "og_locale": "zh_CN",
+        "app_store_country": "cn",
+        "hreflang": ["zh", "zh-CN", "zh-SG"],
+    },
+}
+
+
+LOCALE_ORDER = ["tr", "en", "es", "fr", "de", "pt", "ru", "ar", "hi", "ja", "zh"]
+
+SCHEMA_PRICING = {
+    "tr": {"currency": "TRY", "monthly": 399.00, "yearly": 2499.00},
+    "en": {"currency": "USD", "monthly": 9.04, "yearly": 56.59},
+    "es": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
+    "fr": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
+    "de": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
+    "pt": {"currency": "BRL", "monthly": 47.00, "yearly": 294.37},
+    "ru": {"currency": "RUB", "monthly": 751.00, "yearly": 4704.00},
+    "ar": {"currency": "SAR", "monthly": 33.88, "yearly": 212.21},
+    "hi": {"currency": "INR", "monthly": 835.00, "yearly": 5232.00},
+    "ja": {"currency": "JPY", "monthly": 1438.00, "yearly": 9004.00},
+    "zh": {"currency": "CNY", "monthly": 61.99, "yearly": 388.26},
+}
+
+POPULAR_LABELS = {
+    "tr": "En Popüler",
+    "en": "Most Popular",
+    "es": "Más Popular",
+    "fr": "Le Plus Populaire",
+    "de": "Am Beliebtesten",
+    "pt": "Mais Popular",
+    "ru": "Самый популярный",
+    "ar": "الأكثر شعبية",
+    "hi": "सबसे लोकप्रिय",
+    "ja": "一番人気",
+    "zh": "最受欢迎",
+}
+
+NAV_EXTRA = {
+    "tr": {"demo": "Demo", "faq": "SSS"},
+    "en": {"demo": "Demo", "faq": "FAQ"},
+    "es": {"demo": "Demo", "faq": "FAQ"},
+    "fr": {"demo": "Demo", "faq": "FAQ"},
+    "de": {"demo": "Demo", "faq": "FAQ"},
+    "pt": {"demo": "Demo", "faq": "FAQ"},
+    "ru": {"demo": "Демо", "faq": "FAQ"},
+    "ar": {"demo": "عرض", "faq": "الاسئلة"},
+    "hi": {"demo": "डेमो", "faq": "FAQ"},
+    "ja": {"demo": "デモ", "faq": "FAQ"},
+    "zh": {"demo": "演示", "faq": "常见问题"},
+}
+
+DEMO_SECTION = {
+    "tr": {
+        "eyebrow": "Canlı Demo",
+        "title": "Müşterinin gördüğü akışı tek ekranda göster.",
+        "lead": "SnapVend galeri paylaşımı, QR erişimi ve teslim adımlarını ekip ve müşteri için sade bir ekran akışında toplar.",
+        "screen_label": "Örnek ürün akışı",
+        "screen_note": "Video linki eklersen bu alan otomatik olarak canlı ürün demosuna dönüşür.",
+        "cta": "Demodan sonra indir",
+        "steps": [
+            {"title": "Fotoğrafları al", "body": "Galeriden seç ya da FTP destekli kameradan aynı cihaza aktar."},
+            {"title": "QR ile müşteriyi içeri al", "body": "Aynı ağda müşteriye galeri ekranını saniyeler içinde aç."},
+            {"title": "Seçim, onay ve teslim", "body": "Seçimleri doğrula, PAC kontrolünü yap ve ZIP teslimini tamamla."},
+        ],
+    },
+    "en": {
+        "eyebrow": "Live Demo",
+        "title": "Show the full client flow on one clear screen.",
+        "lead": "SnapVend keeps gallery sharing, QR access and delivery steps inside one simple journey for both your team and your client.",
+        "screen_label": "Sample product flow",
+        "screen_note": "If you add a video URL, this area automatically turns into a live product demo.",
+        "cta": "Download after demo",
+        "steps": [
+            {"title": "Bring photos in", "body": "Select from local media or transfer from an FTP capable camera on the same device."},
+            {"title": "Open the gallery with QR", "body": "Let the client enter the browser gallery in seconds on the same network."},
+            {"title": "Approve and deliver", "body": "Confirm selections, handle PAC approval and finish delivery as ZIP."},
+        ],
+    },
+    "es": {
+        "eyebrow": "Demo",
+        "title": "Muestre todo el flujo del cliente en una sola pantalla.",
+        "lead": "SnapVend reúne galería QR, acceso del cliente y entrega final en una experiencia clara y profesional.",
+        "screen_label": "Flujo de producto",
+        "screen_note": "Si agrega un enlace de video, esta zona se convierte automáticamente en un demo en vivo.",
+        "cta": "Descargar después del demo",
+        "steps": [
+            {"title": "Importe las fotos", "body": "Tómelas desde la galería local o desde una cámara con FTP."},
+            {"title": "Abra la galería con QR", "body": "El cliente entra al instante desde la misma red."},
+            {"title": "Aprobación y entrega", "body": "Confirme la selección, valide PAC y entregue en ZIP."},
+        ],
+    },
+    "fr": {
+        "eyebrow": "Démo",
+        "title": "Montrez tout le parcours client sur un seul écran.",
+        "lead": "SnapVend réunit galerie QR, accès client et livraison finale dans une expérience claire et professionnelle.",
+        "screen_label": "Flux produit",
+        "screen_note": "Si vous ajoutez une URL vidéo, cette zone devient automatiquement une démo produit.",
+        "cta": "Télécharger après la démo",
+        "steps": [
+            {"title": "Importer les photos", "body": "Depuis la galerie locale ou depuis un appareil photo compatible FTP."},
+            {"title": "Ouvrir la galerie par QR", "body": "Le client entre instantanément depuis le même réseau."},
+            {"title": "Valider et livrer", "body": "Confirmez les sélections, validez le PAC et livrez en ZIP."},
+        ],
+    },
+    "de": {
+        "eyebrow": "Demo",
+        "title": "Zeigen Sie den gesamten Kundenfluss auf einem klaren Bildschirm.",
+        "lead": "SnapVend bündelt QR Galerie, Kundenzugang und Auslieferung in einem professionellen Ablauf.",
+        "screen_label": "Produktablauf",
+        "screen_note": "Wenn Sie eine Video URL hinterlegen, wird dieser Bereich automatisch zur Live Demo.",
+        "cta": "Nach der Demo herunterladen",
+        "steps": [
+            {"title": "Fotos importieren", "body": "Aus lokaler Galerie oder von einer FTP fähigen Kamera."},
+            {"title": "Galerie per QR öffnen", "body": "Der Kunde öffnet die Galerie in Sekunden im gleichen Netzwerk."},
+            {"title": "Freigeben und liefern", "body": "Auswahl bestätigen, PAC prüfen und als ZIP ausliefern."},
+        ],
+    },
+    "pt": {
+        "eyebrow": "Demo",
+        "title": "Mostre toda a jornada do cliente em uma unica tela.",
+        "lead": "SnapVend une galeria QR, acesso do cliente e entrega final em um fluxo claro e profissional.",
+        "screen_label": "Fluxo do produto",
+        "screen_note": "Se voce adicionar um link de video, esta area vira automaticamente um demo ao vivo.",
+        "cta": "Baixar depois do demo",
+        "steps": [
+            {"title": "Importe as fotos", "body": "Use a galeria local ou uma camera com FTP."},
+            {"title": "Abra a galeria por QR", "body": "O cliente entra em segundos na mesma rede."},
+            {"title": "Aprove e entregue", "body": "Confirme a selecao, valide o PAC e entregue em ZIP."},
+        ],
+    },
+    "ru": {
+        "eyebrow": "Демо",
+        "title": "Покажите весь клиентский путь на одном экране.",
+        "lead": "SnapVend объединяет QR галерею, доступ клиента и выдачу файлов в одном понятном сценарии.",
+        "screen_label": "Сценарий продукта",
+        "screen_note": "Если добавить ссылку на видео, этот блок автоматически станет живой демо зоной.",
+        "cta": "Скачать после демо",
+        "steps": [
+            {"title": "Импорт фото", "body": "Загрузите из галереи или с FTP камеры."},
+            {"title": "Вход по QR", "body": "Клиент открывает галерею за секунды в той же сети."},
+            {"title": "Подтверждение и выдача", "body": "Подтвердите выбор, проверьте PAC и выдайте ZIP."},
+        ],
+    },
+    "ar": {
+        "eyebrow": "عرض حي",
+        "title": "اعرض رحلة العميل كاملة على شاشة واحدة واضحة.",
+        "lead": "يجمع SnapVend بين معرض QR ودخول العميل والتسليم النهائي في تجربة احترافية واحدة.",
+        "screen_label": "تدفق المنتج",
+        "screen_note": "عند اضافة رابط فيديو سيتحول هذا القسم تلقائيا الى عرض حي للمنتج.",
+        "cta": "نزّل بعد العرض",
+        "steps": [
+            {"title": "استيراد الصور", "body": "من المعرض المحلي او من كاميرا تدعم FTP."},
+            {"title": "فتح المعرض عبر QR", "body": "يدخل العميل خلال ثوان من نفس الشبكة."},
+            {"title": "اعتماد وتسليم", "body": "اكد الاختيارات وراجع PAC وسلم الملفات بصيغة ZIP."},
+        ],
+    },
+    "hi": {
+        "eyebrow": "लाइव डेमो",
+        "title": "पूरा ग्राहक फ्लो एक साफ स्क्रीन पर दिखाएं।",
+        "lead": "SnapVend QR gallery, client access और delivery flow को एक professional अनुभव में जोड़ता है।",
+        "screen_label": "प्रोडक्ट फ्लो",
+        "screen_note": "अगर आप video URL जोड़ते हैं तो यह हिस्सा अपने आप live demo बन जाएगा।",
+        "cta": "डेमो के बाद डाउनलोड करें",
+        "steps": [
+            {"title": "फोटो इम्पोर्ट करें", "body": "लोकल गैलरी या FTP कैमरा से फोटो लाएं।"},
+            {"title": "QR से गैलरी खोलें", "body": "क्लाइंट उसी नेटवर्क पर सेकंडों में गैलरी खोलता है।"},
+            {"title": "मंजूरी और डिलीवरी", "body": "सेलेक्शन कन्फर्म करें, PAC जांचें और ZIP डिलीवर करें।"},
+        ],
+    },
+    "ja": {
+        "eyebrow": "ライブデモ",
+        "title": "クライアントの流れを1画面で分かりやすく見せる。",
+        "lead": "SnapVend は QR ギャラリー、クライアント閲覧、納品までをひとつの分かりやすい体験にまとめます。",
+        "screen_label": "製品フロー",
+        "screen_note": "動画 URL を追加すると、この領域は自動で製品デモに変わります。",
+        "cta": "デモのあとにダウンロード",
+        "steps": [
+            {"title": "写真を取り込む", "body": "ローカルメディアまたは FTP 対応カメラから取り込みます。"},
+            {"title": "QR でギャラリー共有", "body": "同じネットワーク上でクライアントがすぐに閲覧できます。"},
+            {"title": "承認して納品", "body": "選択を確認し、PAC を確認して ZIP で納品します。"},
+        ],
+    },
+    "zh": {
+        "eyebrow": "实时演示",
+        "title": "把客户完整流程放在一个清晰的界面里展示。",
+        "lead": "SnapVend 将 QR 画廊、客户进入和最终交付整合成一个更专业的体验。",
+        "screen_label": "产品流程",
+        "screen_note": "如果添加视频链接，这个区域会自动切换为产品演示。",
+        "cta": "看完演示后下载",
+        "steps": [
+            {"title": "导入照片", "body": "从本地相册或 FTP 相机导入到同一设备。"},
+            {"title": "通过 QR 打开画廊", "body": "客户在同一网络下几秒内进入浏览。"},
+            {"title": "确认并交付", "body": "确认选择、完成 PAC 检查并以 ZIP 交付。"},
+        ],
+    },
+}
+
+FAQ_SECTION = {
+    "tr": {
+        "eyebrow": "SSS",
+        "title": "Karar vermeden önce en çok sorulanlar",
+        "lead": "Müşterilerin ve saha ekiplerinin en sık sorduğu temel soruları burada topladık.",
+        "items": [
+            {"q": "SnapVend internetsiz çalışır mı?", "a": "Evet. Ana akış yerel ağ veya hotspot üzerinde çalışabilir. Bulut zorunlu değildir."},
+            {"q": "Müşteri fotoğrafları nasıl görür?", "a": "Müşteri aynı ağda QR kodu okutarak tarayıcıdan galeriye girer ve seçim yapar."},
+            {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Pro planlarda özel işletme adı, logo ve teslim markalaması açılır."},
+            {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Pro planlar günlük teslim limitini kaldırır."},
+        ],
+    },
+    "en": {
+        "eyebrow": "FAQ",
+        "title": "The most common questions before teams start",
+        "lead": "These are the core questions photographers and event teams usually ask first.",
+        "items": [
+            {"q": "Does SnapVend work without internet?", "a": "Yes. The main workflow can run over local network or hotspot. Cloud access is not required."},
+            {"q": "How do clients view the photos?", "a": "Clients scan a QR code on the same network, open the browser gallery and make their selections there."},
+            {"q": "Can I use my own business name and logo?", "a": "Yes. Pro plans unlock custom business branding, logo usage and branded delivery."},
+            {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Pro plans remove the daily delivery limit."},
+        ],
+    },
+    "es": {
+        "eyebrow": "FAQ",
+        "title": "Las preguntas mas comunes antes de empezar",
+        "lead": "Aqui reunimos las dudas clave de fotografos y equipos de eventos.",
+        "items": [
+            {"q": "¿SnapVend funciona sin internet?", "a": "Si. El flujo principal puede funcionar con red local o hotspot sin depender de la nube."},
+            {"q": "¿Como ve el cliente las fotos?", "a": "El cliente escanea un QR en la misma red y abre la galeria en el navegador."},
+            {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes Pro desbloquean nombre comercial, logo y entrega con marca propia."},
+            {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes Pro mensual y anual eliminan el limite diario."},
+        ],
+    },
+    "fr": {
+        "eyebrow": "FAQ",
+        "title": "Les questions les plus frequentes avant de commencer",
+        "lead": "Voici les points que les photographes et equipes terrain demandent le plus souvent.",
+        "items": [
+            {"q": "SnapVend fonctionne t il sans internet ?", "a": "Oui. Le flux principal peut tourner sur reseau local ou hotspot sans cloud obligatoire."},
+            {"q": "Comment le client voit il les photos ?", "a": "Le client scanne un QR sur le meme reseau et ouvre la galerie dans le navigateur."},
+            {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans Pro ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
+            {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans Pro mensuel et annuel retirent la limite quotidienne."},
+        ],
+    },
+    "de": {
+        "eyebrow": "FAQ",
+        "title": "Die wichtigsten Fragen vor dem Start",
+        "lead": "Hier stehen die Fragen, die Fotografen und Einsatzteams am haufigsten stellen.",
+        "items": [
+            {"q": "Funktioniert SnapVend ohne Internet?", "a": "Ja. Der Hauptablauf kann uber lokales Netzwerk oder Hotspot ohne Cloud laufen."},
+            {"q": "Wie sehen Kunden die Fotos?", "a": "Kunden scannen im gleichen Netzwerk den QR Code und offnen die Galerie im Browser."},
+            {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Pro schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
+            {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Pro Plan entfernen das Tageslimit."},
+        ],
+    },
+    "pt": {
+        "eyebrow": "FAQ",
+        "title": "Perguntas mais comuns antes de comecar",
+        "lead": "Aqui estao as duvidas que equipes fotograficas fazem com mais frequencia.",
+        "items": [
+            {"q": "O SnapVend funciona sem internet?", "a": "Sim. O fluxo principal pode rodar em rede local ou hotspot sem depender da nuvem."},
+            {"q": "Como o cliente ve as fotos?", "a": "O cliente escaneia um QR na mesma rede e abre a galeria no navegador."},
+            {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos Pro liberam branding, logo e entrega personalizada."},
+            {"q": "Qual plano remove o limite de entrega?", "a": "Os planos Pro mensal e anual removem o limite diario."},
+        ],
+    },
+    "ru": {
+        "eyebrow": "FAQ",
+        "title": "Частые вопросы перед стартом",
+        "lead": "Здесь собраны основные вопросы, которые чаще всего задают фотографы и выездные команды.",
+        "items": [
+            {"q": "Работает ли SnapVend без интернета?", "a": "Да. Основной сценарий может работать через локальную сеть или точку доступа без облака."},
+            {"q": "Как клиент смотрит фотографии?", "a": "Клиент сканирует QR код в той же сети и открывает галерею в браузере."},
+            {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Pro открывает фирменное имя, логотип и брендированную выдачу."},
+            {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой Pro снимают ежедневный лимит выдачи."},
+        ],
+    },
+    "ar": {
+        "eyebrow": "الاسئلة الشائعة",
+        "title": "اكثر الاسئلة شيوعا قبل البدء",
+        "lead": "جمعنا هنا الاسئلة الاساسية التي يطرحها المصورون وفرق العمل الميدانية.",
+        "items": [
+            {"q": "هل يعمل SnapVend بدون انترنت؟", "a": "نعم. يمكن تشغيل التدفق الرئيسي عبر شبكة محلية او hotspot بدون اعتماد على السحابة."},
+            {"q": "كيف يشاهد العميل الصور؟", "a": "يقوم العميل بمسح QR على نفس الشبكة ويفتح المعرض من المتصفح."},
+            {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. خطط Pro تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
+            {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية Pro يزيلان حد التسليم اليومي."},
+        ],
+    },
+    "hi": {
+        "eyebrow": "FAQ",
+        "title": "शुरू करने से पहले सबसे आम सवाल",
+        "lead": "फोटोग्राफर और ऑन साइट टीम आम तौर पर सबसे पहले यही सवाल पूछती हैं।",
+        "items": [
+            {"q": "क्या SnapVend बिना इंटरनेट के काम करता है?", "a": "हाँ। मुख्य workflow लोकल नेटवर्क या hotspot पर चल सकता है, cloud जरूरी नहीं है।"},
+            {"q": "क्लाइंट फोटो कैसे देखता है?", "a": "क्लाइंट उसी नेटवर्क पर QR स्कैन करके browser gallery खोलता है।"},
+            {"q": "क्या मैं अपना नाम और logo इस्तेमाल कर सकता हूँ?", "a": "हाँ। Pro plans custom branding, logo और branded delivery खोलते हैं।"},
+            {"q": "कौन सा plan delivery limit हटाता है?", "a": "Monthly और yearly दोनों Pro plans daily delivery limit हटाते हैं।"},
+        ],
+    },
+    "ja": {
+        "eyebrow": "FAQ",
+        "title": "導入前によくある質問",
+        "lead": "フォトグラファーや現場チームからよく聞かれる質問をまとめました。",
+        "items": [
+            {"q": "SnapVend はインターネットなしで使えますか？", "a": "はい。主なフローはローカルネットワークや hotspot 上で動作でき、クラウドは必須ではありません。"},
+            {"q": "クライアントはどうやって写真を見ますか？", "a": "同じネットワーク上で QR を読み取り、ブラウザギャラリーを開いて確認します。"},
+            {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。Pro プランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
+            {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Pro と年額 Pro の両方で日次納品制限が解除されます。"},
+        ],
+    },
+    "zh": {
+        "eyebrow": "常见问题",
+        "title": "开始前最常见的问题",
+        "lead": "这里整理了摄影团队和现场团队最常问的核心问题。",
+        "items": [
+            {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。"},
+            {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描 QR 后，就能在浏览器里打开画廊。"},
+            {"q": "我可以使用自己的品牌名和 logo 吗？", "a": "可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。"},
+            {"q": "哪个计划会移除交付限制？", "a": "月度 Pro 和年度 Pro 都会移除每日交付限制。"},
+        ],
+    },
+}
+
+
+COPY = {
+    "tr": {
+        "meta_title": "SnapVend | Fotoğrafçılar İçin QR Galeri ve Yerel Teslim",
+        "meta_description": "SnapVend, fotoğrafçıların aynı telefon veya tablette QR galeri paylaşımı, FTP kamera aktarımı ve ZIP teslim akışını yönetmesine yardımcı olur.",
+        "nav_how": "Nasıl Çalışır",
+        "nav_audience": "Kimler İçin",
+        "nav_pricing": "Fiyatlandırma",
+        "nav_download": "İndir",
+        "language_label": "Diller",
+        "hero_eyebrow": "QR galeri, FTP aktarım, yerel teslim",
+        "hero_title": "Çekimden teslimata tek cihazda akış.",
+        "hero_lead": "Fotoğrafları kameradan ya da galeriden alın, müşteriyi QR ile içeri alın, PAC onayını verin ve onaylanan dosyaları aynı cihazdan ZIP olarak teslim edin.",
+        "google_small": "Android için indir",
+        "apple_small": "iPhone ve iPad için indir",
+        "setup_note": "Aylık ve yıllık fiyatlarla doğrudan App Store bağlantısını site-config.js dosyasından güncelleyebilirsin. Apple mağaza ID'si eklenene kadar iOS logosu bölgesel App Store arama sonucunu açar.",
+        "metrics": [
+            {"value": "1 cihaz", "label": "Al, göster, teslim et"},
+            {"value": "10/gün", "label": "Ücretsiz plan teslim limiti"},
+            {"value": "0 bulut", "label": "Yerel çalışma, takip yok"},
+        ],
+        "workflow_eyebrow": "Akış",
+        "workflow_title": "Sahada hızlı, kontrollü ve anlaşılır kullanım",
+        "workflow_lead": "SnapVend çekim sırasında fotoğraf almayı, müşteriye göstermeyi ve teslimi tek bir operasyon haline getirir.",
+        "workflow_cards": [
+            {"title": "Fotoğrafları içe aktar", "body": "Yerel galeriden seçin ya da FTP destekli kameradan SnapVend akışına gönderin."},
+            {"title": "Galeriyi QR ile paylaş", "body": "Müşteri aynı ağdayken QR kodu okutur ve tarayıcıdan galeriye girer."},
+            {"title": "Seçim ve PAC onayı", "body": "Müşteri kareleri seçer, siz ödeme ve PAC doğrulamasını kontrol edersiniz."},
+            {"title": "ZIP teslim ve raporlama", "body": "Onaylanan dosyalar ZIP olarak iner; teslim ve gelir akışı uygulama içinde izlenir."},
+        ],
+        "audience_eyebrow": "Kimler İçin",
+        "audience_title": "Profesyonel saha ekipleri için tasarlandı",
+        "audience_lead": "Müşteriye hızlı önizleme ve kontrollü teslim sunmak isteyen fotoğraf ekipleri için doğru merkez.",
+        "audience_cards": [
+            {"title": "Düğün ve etkinlik fotoğrafçıları", "body": "Canlı çekimde müşteriye hızlı seçim ve teslim sunmak isteyen ekipler."},
+            {"title": "Stüdyo ve portre çekimleri", "body": "Müşteriyle birlikte seçim yapıp daha düzenli ilerlemek isteyen stüdyolar."},
+            {"title": "Okul, spor ve kurumsal işler", "body": "Oturumları karıştırmadan toplu çekimleri yönetmek isteyen ekipler."},
+            {"title": "Mobil teslim ekipleri", "body": "İnternete bağlı kalmadan yerel ağ ve hotspot ile çalışan operasyonlar."},
+        ],
+        "pricing_eyebrow": "Planlar",
+        "pricing_title": "Ücretsiz başlayın, Pro ile büyütün",
+        "pricing_lead": "Ücretsiz plan akışı öğrenmek için hazırdır. Pro planlar teslim limitini kaldırır ve işletme markalamasını açar.",
+        "config_warning": "Bu repoda kesin aylık/yıllık fiyat yok. Fiyatlar ve doğrudan App Store linki site-config.js dosyasından güncellenir.",
+        "free_badge": "Ücretsiz",
+        "free_title": "Akışı öğrenmek için ideal",
+        "free_period": "başlangıç",
+        "free_features": [
+            "Günlük 10 fotoğraf teslim limiti",
+            "SnapVend markası görünür kalır",
+            "Özel işletme adı ve logo kapalıdır",
+            "Canlı kullanım öncesi sistemi denemek için uygundur",
+        ],
+        "free_cta": "Ücretsiz başla",
+        "monthly_badge": "Pro Aylık",
+        "monthly_title": "Esnek aylık kullanım",
+        "monthly_placeholder": "Fiyatı güncelle",
+        "monthly_period": "/ ay",
+        "monthly_features": [
+            "Sınırsız günlük teslim",
+            "Özel işletme adı ve logo",
+            "Özel ZIP dosya adı",
+            "Sınırsız düğün baskı kuyruğu",
+        ],
+        "monthly_cta": "Uygulamayı indir",
+        "yearly_badge": "Pro Yıllık",
+        "yearly_title": "Düzenli kullanım için avantajlı",
+        "yearly_placeholder": "Fiyatı güncelle",
+        "yearly_period": "/ yıl",
+        "yearly_features": [
+            "Daha düşük yıllık maliyet hedefi",
+            "Sınırsız günlük teslim",
+            "Tam marka kontrolü",
+            "Yoğun saha kullanımı için kalıcı çözüm",
+        ],
+        "yearly_cta": "Uygulamayı indir",
+        "cta_eyebrow": "Hazır mısın?",
+        "cta_title": "SnapVend ile sahada daha hızlı göster, seçtir ve teslim et.",
+        "cta_lead": "QR erişimi, FTP aktarımı, yerel paylaşım ve raporlama tek deneyimde buluşur.",
+        "footer_note": "SnapVend medyayı cihaz üzerinde işler. Paylaşım yalnızca sizin başlattığınız yerel ağ akışında açılır.",
+    },
+    "en": {
+        "meta_title": "SnapVend | QR Gallery and Local Photo Delivery for Photographers",
+        "meta_description": "SnapVend helps photographers import, present and deliver photos from one phone or tablet with QR gallery sharing, FTP camera transfer and ZIP delivery.",
+        "nav_how": "How It Works",
+        "nav_audience": "Who Uses It",
+        "nav_pricing": "Pricing",
+        "nav_download": "Download",
+        "language_label": "Languages",
+        "hero_eyebrow": "QR gallery, FTP transfer, local delivery",
+        "hero_title": "One device from capture to delivery.",
+        "hero_lead": "Bring photos in from your camera or gallery, let clients enter through a QR link, confirm PAC and deliver approved files as ZIP from the same device.",
+        "google_small": "Download for Android",
+        "apple_small": "Download for iPhone and iPad",
+        "setup_note": "You can update the monthly and yearly prices plus the direct App Store link from site-config.js. Until the Apple app ID is added, the iOS logo opens the regional App Store search result.",
+        "metrics": [
+            {"value": "1 device", "label": "Receive, show and deliver"},
+            {"value": "10/day", "label": "Free plan delivery limit"},
+            {"value": "0 cloud", "label": "Local workflow, no tracking"},
+        ],
+        "workflow_eyebrow": "Workflow",
+        "workflow_title": "Fast, controlled and field-ready",
+        "workflow_lead": "SnapVend turns photo intake, client preview and delivery into one clean operation during live shoots.",
+        "workflow_cards": [
+            {"title": "Import the photos", "body": "Pick them from local media or send them into SnapVend from an FTP-capable camera."},
+            {"title": "Share the gallery with QR", "body": "The client scans the code on the same network and opens the browser gallery instantly."},
+            {"title": "Selection and PAC approval", "body": "The client selects the shots and you confirm payment plus PAC validation."},
+            {"title": "ZIP delivery and reports", "body": "Approved files download as ZIP while delivery and revenue stay visible inside the app."},
+        ],
+        "audience_eyebrow": "Who Uses It",
+        "audience_title": "Built for professional on-site teams",
+        "audience_lead": "A strong center for photographers who need quick preview, controlled selection and immediate delivery.",
+        "audience_cards": [
+            {"title": "Wedding and event photographers", "body": "Teams that need a fast selection and delivery flow during live shoots."},
+            {"title": "Studio and portrait sessions", "body": "Studios that want to review, select and deliver with the client in one place."},
+            {"title": "School, sports and corporate jobs", "body": "Crews that manage many sessions without mixing customers or deliveries."},
+            {"title": "Mobile delivery teams", "body": "Operations that work over local network or hotspot without internet dependency."},
+        ],
+        "pricing_eyebrow": "Plans",
+        "pricing_title": "Start free and grow with Pro",
+        "pricing_lead": "The free plan is ready for learning the flow. Pro removes delivery limits and unlocks business branding.",
+        "config_warning": "This repository does not include final monthly or yearly prices. Pricing and the direct App Store URL are controlled from site-config.js.",
+        "free_badge": "Free",
+        "free_title": "Ideal for learning the flow",
+        "free_period": "to start",
+        "free_features": [
+            "Daily limit of 10 delivered photos",
+            "SnapVend branding stays visible",
+            "Custom business name and logo stay locked",
+            "Good for testing before live use",
+        ],
+        "free_cta": "Start Free",
+        "monthly_badge": "Pro Monthly",
+        "monthly_title": "Flexible monthly use",
+        "monthly_placeholder": "Update price",
+        "monthly_period": "/ month",
+        "monthly_features": [
+            "Unlimited daily deliveries",
+            "Custom business name and logo",
+            "Custom ZIP file name",
+            "Unlimited wedding print queue",
+        ],
+        "monthly_cta": "Download the app",
+        "yearly_badge": "Pro Yearly",
+        "yearly_title": "Better for regular use",
+        "yearly_placeholder": "Update price",
+        "yearly_period": "/ year",
+        "yearly_features": [
+            "Lower effective annual cost target",
+            "Unlimited daily deliveries",
+            "Full branding control",
+            "Built for heavier field usage",
+        ],
+        "yearly_cta": "Download the app",
+        "cta_eyebrow": "Ready?",
+        "cta_title": "Show, select and deliver faster on location with SnapVend.",
+        "cta_lead": "QR access, FTP transfer, local sharing and reporting come together in one workflow.",
+        "footer_note": "SnapVend processes media on the device. Sharing is exposed only when you explicitly start a local delivery flow.",
+    },
+    "es": {
+        "meta_title": "SnapVend | Galería QR y entrega local para fotógrafos",
+        "meta_description": "SnapVend ayuda a fotógrafos a importar, mostrar y entregar fotos desde un solo teléfono o tablet con galería QR, FTP y entrega ZIP.",
+        "nav_how": "Cómo Funciona",
+        "nav_audience": "Para Quién",
+        "nav_pricing": "Precios",
+        "nav_download": "Descargar",
+        "language_label": "Idiomas",
+        "hero_eyebrow": "Galería QR, transferencia FTP, entrega local",
+        "hero_title": "Un solo dispositivo desde la captura hasta la entrega.",
+        "hero_lead": "Importe fotos desde la cámara o la galería, deje que el cliente entre por QR, confirme el PAC y entregue los archivos aprobados en ZIP desde el mismo dispositivo.",
+        "google_small": "Descargar para Android",
+        "apple_small": "Descargar para iPhone y iPad",
+        "setup_note": "Puede actualizar los precios mensual y anual y el enlace directo de App Store desde site-config.js. Hasta agregar el ID de Apple, el logo de iOS abre la búsqueda regional en App Store.",
+        "metrics": [
+            {"value": "1 equipo", "label": "Recibir, mostrar y entregar"},
+            {"value": "10/día", "label": "Límite del plan gratis"},
+            {"value": "0 nube", "label": "Flujo local, sin rastreo"},
+        ],
+        "workflow_eyebrow": "Flujo",
+        "workflow_title": "Rápido, controlado y listo para campo",
+        "workflow_lead": "SnapVend convierte la recepción de fotos, la vista del cliente y la entrega en una sola operación clara.",
+        "workflow_cards": [
+            {"title": "Importe las fotos", "body": "Tómelas desde la galería local o envíelas a SnapVend desde una cámara con FTP."},
+            {"title": "Comparta la galería con QR", "body": "El cliente escanea el código en la misma red y abre la galería web al instante."},
+            {"title": "Selección y validación PAC", "body": "El cliente elige las fotos y usted confirma el pago y la validación PAC."},
+            {"title": "Entrega ZIP y reportes", "body": "Los archivos aprobados bajan en ZIP y la entrega o ingresos quedan visibles en la app."},
+        ],
+        "audience_eyebrow": "Para Quién",
+        "audience_title": "Diseñado para equipos profesionales en sitio",
+        "audience_lead": "Un centro claro para fotógrafos que necesitan vista rápida, selección controlada y entrega inmediata.",
+        "audience_cards": [
+            {"title": "Fotógrafos de bodas y eventos", "body": "Equipos que necesitan selección y entrega rápidas durante un trabajo en vivo."},
+            {"title": "Estudio y retrato", "body": "Estudios que quieren revisar, seleccionar y entregar junto al cliente."},
+            {"title": "Escuela, deporte y corporativo", "body": "Equipos que gestionan muchas sesiones sin mezclar clientes ni entregas."},
+            {"title": "Equipos móviles de entrega", "body": "Operaciones que trabajan por red local u hotspot sin depender de internet."},
+        ],
+        "pricing_eyebrow": "Planes",
+        "pricing_title": "Empiece gratis y escale con Pro",
+        "pricing_lead": "El plan gratuito sirve para aprender el flujo. Pro elimina límites y abre la marca del negocio.",
+        "config_warning": "Este repositorio no incluye precios finales. Los precios y el enlace directo de App Store se actualizan desde site-config.js.",
+        "free_badge": "Gratis",
+        "free_title": "Ideal para aprender el flujo",
+        "free_period": "para empezar",
+        "free_features": [
+            "Límite diario de 10 fotos entregadas",
+            "La marca SnapVend sigue visible",
+            "Nombre y logo del negocio bloqueados",
+            "Útil para probar antes del uso real",
+        ],
+        "free_cta": "Empezar Gratis",
+        "monthly_badge": "Pro Mensual",
+        "monthly_title": "Uso mensual flexible",
+        "monthly_placeholder": "Actualizar precio",
+        "monthly_period": "/ mes",
+        "monthly_features": [
+            "Entregas diarias ilimitadas",
+            "Nombre y logo personalizados",
+            "Nombre ZIP personalizado",
+            "Cola de impresión de bodas ilimitada",
+        ],
+        "monthly_cta": "Descargar la app",
+        "yearly_badge": "Pro Anual",
+        "yearly_title": "Mejor para uso frecuente",
+        "yearly_placeholder": "Actualizar precio",
+        "yearly_period": "/ año",
+        "yearly_features": [
+            "Objetivo de menor costo anual",
+            "Entregas diarias ilimitadas",
+            "Control total de marca",
+            "Preparado para uso intensivo en campo",
+        ],
+        "yearly_cta": "Descargar la app",
+        "cta_eyebrow": "¿Listo?",
+        "cta_title": "Muestre, deje elegir y entregue más rápido con SnapVend.",
+        "cta_lead": "Acceso por QR, transferencia FTP, uso local y reportes dentro del mismo flujo.",
+        "footer_note": "SnapVend procesa el contenido en el dispositivo. La entrega solo se abre cuando usted inicia el flujo local.",
+    },
+    "fr": {
+        "meta_title": "SnapVend | Galerie QR et livraison locale pour photographes",
+        "meta_description": "SnapVend aide les photographes a importer, presenter et livrer des photos depuis un seul telephone ou tablette avec galerie QR, FTP et livraison ZIP.",
+        "nav_how": "Fonctionnement",
+        "nav_audience": "Pour Qui",
+        "nav_pricing": "Tarifs",
+        "nav_download": "Telecharger",
+        "language_label": "Langues",
+        "hero_eyebrow": "Galerie QR, transfert FTP, livraison locale",
+        "hero_title": "Un seul appareil de la prise de vue a la livraison.",
+        "hero_lead": "Importez les photos depuis l'appareil photo ou la galerie, faites entrer le client par QR, validez le PAC et livrez les fichiers approuves en ZIP depuis le meme appareil.",
+        "google_small": "Telecharger pour Android",
+        "apple_small": "Telecharger pour iPhone et iPad",
+        "setup_note": "Vous pouvez mettre a jour les prix mensuel et annuel ainsi que le lien direct App Store depuis site-config.js. Tant que l'ID Apple n'est pas ajoute, le logo iOS ouvre la recherche regionale App Store.",
+        "metrics": [
+            {"value": "1 appareil", "label": "Recevoir, montrer, livrer"},
+            {"value": "10/jour", "label": "Limite du plan gratuit"},
+            {"value": "0 cloud", "label": "Flux local, sans suivi"},
+        ],
+        "workflow_eyebrow": "Flux",
+        "workflow_title": "Rapide, controle et pret pour le terrain",
+        "workflow_lead": "SnapVend transforme l'import, l'aperçu client et la livraison en une seule operation claire.",
+        "workflow_cards": [
+            {"title": "Importez les photos", "body": "Prenez-les depuis la galerie locale ou envoyez-les dans SnapVend depuis un appareil photo compatible FTP."},
+            {"title": "Partagez la galerie par QR", "body": "Le client scanne le code sur le meme reseau et ouvre aussitot la galerie web."},
+            {"title": "Selection et validation PAC", "body": "Le client choisit les images et vous confirmez le paiement puis la validation PAC."},
+            {"title": "Livraison ZIP et rapports", "body": "Les fichiers approuves sont telecharges en ZIP et les livraisons restent visibles dans l'application."},
+        ],
+        "audience_eyebrow": "Pour Qui",
+        "audience_title": "Concu pour les equipes photo sur le terrain",
+        "audience_lead": "Un centre clair pour les photographes qui veulent un aperçu rapide, une selection controlee et une livraison immediate.",
+        "audience_cards": [
+            {"title": "Mariage et evenementiel", "body": "Des equipes qui ont besoin d'une selection et d'une livraison rapides pendant le shooting."},
+            {"title": "Studio et portrait", "body": "Des studios qui veulent choisir et livrer avec le client dans un seul espace."},
+            {"title": "Ecole, sport et corporate", "body": "Des equipes qui gerent plusieurs sessions sans melanger clients et livraisons."},
+            {"title": "Equipes mobiles", "body": "Des operations qui travaillent en reseau local ou hotspot sans dependance internet."},
+        ],
+        "pricing_eyebrow": "Forfaits",
+        "pricing_title": "Commencez gratuitement puis passez a Pro",
+        "pricing_lead": "Le plan gratuit sert a apprendre le flux. Pro supprime les limites et debloque l'image de marque.",
+        "config_warning": "Ce depot ne contient pas les prix definitifs. Les prix et le lien App Store direct se reglent dans site-config.js.",
+        "free_badge": "Gratuit",
+        "free_title": "Ideal pour apprendre le flux",
+        "free_period": "pour commencer",
+        "free_features": [
+            "Limite quotidienne de 10 photos livrees",
+            "La marque SnapVend reste visible",
+            "Nom et logo de l'entreprise verrouilles",
+            "Pratique pour tester avant un usage reel",
+        ],
+        "free_cta": "Commencer Gratuitement",
+        "monthly_badge": "Pro Mensuel",
+        "monthly_title": "Usage mensuel flexible",
+        "monthly_placeholder": "Mettre a jour le prix",
+        "monthly_period": "/ mois",
+        "monthly_features": [
+            "Livraisons quotidiennes illimitees",
+            "Nom et logo personnalises",
+            "Nom de fichier ZIP personnalise",
+            "File d'impression mariage illimitee",
+        ],
+        "monthly_cta": "Telecharger l'app",
+        "yearly_badge": "Pro Annuel",
+        "yearly_title": "Mieux pour un usage regulier",
+        "yearly_placeholder": "Mettre a jour le prix",
+        "yearly_period": "/ an",
+        "yearly_features": [
+            "Objectif de cout annuel plus bas",
+            "Livraisons quotidiennes illimitees",
+            "Controle complet de la marque",
+            "Concu pour un usage terrain intensif",
+        ],
+        "yearly_cta": "Telecharger l'app",
+        "cta_eyebrow": "Pret ?",
+        "cta_title": "Montrez, faites choisir et livrez plus vite avec SnapVend.",
+        "cta_lead": "Acces QR, transfert FTP, partage local et rapports dans un seul flux.",
+        "footer_note": "SnapVend traite les medias sur l'appareil. Le partage n'est ouvert que lorsque vous lancez la livraison locale.",
+    },
+    "de": {
+        "meta_title": "SnapVend | QR-Galerie und lokale Auslieferung fur Fotografen",
+        "meta_description": "SnapVend hilft Fotografen, Fotos von einem Telefon oder Tablet aus mit QR-Galerie, FTP-Kameraimport und ZIP-Auslieferung zu importieren, zu zeigen und zu liefern.",
+        "nav_how": "So Funktioniert's",
+        "nav_audience": "Fur Wen",
+        "nav_pricing": "Preise",
+        "nav_download": "Download",
+        "language_label": "Sprachen",
+        "hero_eyebrow": "QR-Galerie, FTP-Transfer, lokale Lieferung",
+        "hero_title": "Ein Geraet von Aufnahme bis Auslieferung.",
+        "hero_lead": "Importieren Sie Fotos aus Kamera oder Galerie, lassen Sie Kunden per QR eintreten, bestaetigen Sie PAC und liefern Sie freigegebene Dateien als ZIP vom selben Geraet.",
+        "google_small": "Fur Android laden",
+        "apple_small": "Fur iPhone und iPad laden",
+        "setup_note": "Monats- und Jahrespreise sowie der direkte App-Store-Link lassen sich in site-config.js aktualisieren. Bis die Apple-ID vorliegt, oeffnet das iOS-Logo die regionale App-Store-Suche.",
+        "metrics": [
+            {"value": "1 Geraet", "label": "Empfangen, zeigen, liefern"},
+            {"value": "10/Tag", "label": "Gratisplan-Limit"},
+            {"value": "0 Cloud", "label": "Lokal, ohne Tracking"},
+        ],
+        "workflow_eyebrow": "Ablauf",
+        "workflow_title": "Schnell, kontrolliert und einsatzbereit",
+        "workflow_lead": "SnapVend macht Import, Kundenvorschau und Auslieferung zu einem klaren Ablauf vor Ort.",
+        "workflow_cards": [
+            {"title": "Fotos importieren", "body": "Waehlen Sie sie aus lokaler Galerie oder senden Sie sie per FTP-faehiger Kamera direkt in SnapVend."},
+            {"title": "Galerie per QR teilen", "body": "Der Kunde scannt den Code im selben Netzwerk und oeffnet sofort die Web-Galerie."},
+            {"title": "Auswahl und PAC-Freigabe", "body": "Der Kunde waehlt Bilder aus und Sie bestaetigen Zahlung und PAC-Pruefung."},
+            {"title": "ZIP-Lieferung und Berichte", "body": "Freigegebene Dateien werden als ZIP geladen, waehrend Lieferung und Umsatz sichtbar bleiben."},
+        ],
+        "audience_eyebrow": "Fur Wen",
+        "audience_title": "Fur professionelle Teams im Einsatz gebaut",
+        "audience_lead": "Ein starker Mittelpunkt fuer Fotografen, die schnelle Vorschau, kontrollierte Auswahl und sofortige Lieferung brauchen.",
+        "audience_cards": [
+            {"title": "Hochzeit und Event", "body": "Teams, die waehrend des Shootings schnell zeigen, auswaehlen und liefern muessen."},
+            {"title": "Studio und Portrait", "body": "Studios, die Auswahl und Lieferung gemeinsam mit dem Kunden erledigen moechten."},
+            {"title": "Schule, Sport und Corporate", "body": "Teams, die viele Sessions ohne Vermischung von Kunden und Lieferungen verwalten."},
+            {"title": "Mobile Lieferteams", "body": "Ablaufe, die per lokalem Netzwerk oder Hotspot ohne Internetabhaengigkeit arbeiten."},
+        ],
+        "pricing_eyebrow": "Plaene",
+        "pricing_title": "Kostenlos starten und mit Pro wachsen",
+        "pricing_lead": "Der Gratisplan hilft beim Einstieg. Pro entfernt Limits und oeffnet das Business-Branding.",
+        "config_warning": "Dieses Repository enthaelt keine finalen Preise. Preise und direkter App-Store-Link werden ueber site-config.js gepflegt.",
+        "free_badge": "Kostenlos",
+        "free_title": "Ideal zum Kennenlernen",
+        "free_period": "zum Start",
+        "free_features": [
+            "Taegliches Limit von 10 gelieferten Fotos",
+            "SnapVend-Branding bleibt sichtbar",
+            "Eigener Firmenname und Logo bleiben gesperrt",
+            "Gut zum Testen vor dem Live-Einsatz",
+        ],
+        "free_cta": "Kostenlos Starten",
+        "monthly_badge": "Pro Monatlich",
+        "monthly_title": "Flexible Monatsnutzung",
+        "monthly_placeholder": "Preis aktualisieren",
+        "monthly_period": "/ Monat",
+        "monthly_features": [
+            "Unbegrenzte taegliche Lieferungen",
+            "Eigener Firmenname und Logo",
+            "Eigener ZIP-Dateiname",
+            "Unbegrenzte Hochzeitsdruck-Warteschlange",
+        ],
+        "monthly_cta": "App herunterladen",
+        "yearly_badge": "Pro Jaehrlich",
+        "yearly_title": "Besser fuer regelmaessige Nutzung",
+        "yearly_placeholder": "Preis aktualisieren",
+        "yearly_period": "/ Jahr",
+        "yearly_features": [
+            "Ziel fuer geringere Jahreskosten",
+            "Unbegrenzte taegliche Lieferungen",
+            "Volle Branding-Kontrolle",
+            "Fuer intensiven Feldeinsatz gebaut",
+        ],
+        "yearly_cta": "App herunterladen",
+        "cta_eyebrow": "Bereit?",
+        "cta_title": "Mit SnapVend vor Ort schneller zeigen, auswaehlen und liefern.",
+        "cta_lead": "QR-Zugang, FTP-Transfer, lokales Teilen und Berichte in einem Ablauf.",
+        "footer_note": "SnapVend verarbeitet Medien auf dem Geraet. Teilen wird nur aktiviert, wenn Sie den lokalen Lieferablauf starten.",
+    },
+    "pt": {
+        "meta_title": "SnapVend | Galeria QR e entrega local para fotografos",
+        "meta_description": "SnapVend ajuda fotografos a importar, apresentar e entregar fotos de um telefone ou tablet com galeria QR, transferencia FTP e entrega ZIP.",
+        "nav_how": "Como Funciona",
+        "nav_audience": "Para Quem",
+        "nav_pricing": "Precos",
+        "nav_download": "Baixar",
+        "language_label": "Idiomas",
+        "hero_eyebrow": "Galeria QR, transferencia FTP, entrega local",
+        "hero_title": "Um so dispositivo da captura ate a entrega.",
+        "hero_lead": "Importe fotos da camera ou da galeria, deixe o cliente entrar por QR, confirme o PAC e entregue os arquivos aprovados em ZIP no mesmo dispositivo.",
+        "google_small": "Baixar para Android",
+        "apple_small": "Baixar para iPhone e iPad",
+        "setup_note": "Voce pode atualizar os precos mensal e anual e o link direto da App Store em site-config.js. Ate adicionar o ID da Apple, o logo do iOS abre a busca regional na App Store.",
+        "metrics": [
+            {"value": "1 aparelho", "label": "Receber, mostrar e entregar"},
+            {"value": "10/dia", "label": "Limite do plano gratuito"},
+            {"value": "0 nuvem", "label": "Fluxo local, sem rastreio"},
+        ],
+        "workflow_eyebrow": "Fluxo",
+        "workflow_title": "Rapido, controlado e pronto para campo",
+        "workflow_lead": "SnapVend transforma entrada de fotos, visualizacao do cliente e entrega em uma operacao unica e clara.",
+        "workflow_cards": [
+            {"title": "Importe as fotos", "body": "Escolha na galeria local ou envie direto para o SnapVend de uma camera com FTP."},
+            {"title": "Compartilhe a galeria por QR", "body": "O cliente escaneia o codigo na mesma rede e abre a galeria web na hora."},
+            {"title": "Selecao e aprovacao PAC", "body": "O cliente escolhe as fotos e voce confirma o pagamento e a validacao do PAC."},
+            {"title": "Entrega ZIP e relatorios", "body": "Os arquivos aprovados baixam em ZIP e a entrega ou a receita ficam visiveis no app."},
+        ],
+        "audience_eyebrow": "Para Quem",
+        "audience_title": "Feito para equipes profissionais em campo",
+        "audience_lead": "Um centro forte para fotografos que precisam de pre-visualizacao rapida, selecao controlada e entrega imediata.",
+        "audience_cards": [
+            {"title": "Casamentos e eventos", "body": "Equipes que precisam mostrar, selecionar e entregar rapidamente durante o trabalho."},
+            {"title": "Estudio e retrato", "body": "Estudios que querem revisar, escolher e entregar junto com o cliente."},
+            {"title": "Escola, esporte e corporativo", "body": "Equipes que gerenciam muitas sessoes sem misturar clientes nem entregas."},
+            {"title": "Operacoes moveis", "body": "Fluxos que funcionam em rede local ou hotspot sem depender da internet."},
+        ],
+        "pricing_eyebrow": "Planos",
+        "pricing_title": "Comece gratis e cresca com o Pro",
+        "pricing_lead": "O plano gratuito serve para aprender o fluxo. O Pro remove limites e libera a marca do negocio.",
+        "config_warning": "Este repositorio nao inclui os precos finais. Os precos e o link direto da App Store sao controlados em site-config.js.",
+        "free_badge": "Gratis",
+        "free_title": "Ideal para aprender o fluxo",
+        "free_period": "para comecar",
+        "free_features": [
+            "Limite diario de 10 fotos entregues",
+            "A marca SnapVend continua visivel",
+            "Nome e logo do negocio ficam bloqueados",
+            "Bom para testar antes do uso real",
+        ],
+        "free_cta": "Comecar Gratis",
+        "monthly_badge": "Pro Mensal",
+        "monthly_title": "Uso mensal flexivel",
+        "monthly_placeholder": "Atualizar preco",
+        "monthly_period": "/ mes",
+        "monthly_features": [
+            "Entregas diarias ilimitadas",
+            "Nome e logo personalizados",
+            "Nome ZIP personalizado",
+            "Fila de impressao de casamento ilimitada",
+        ],
+        "monthly_cta": "Baixar o app",
+        "yearly_badge": "Pro Anual",
+        "yearly_title": "Melhor para uso frequente",
+        "yearly_placeholder": "Atualizar preco",
+        "yearly_period": "/ ano",
+        "yearly_features": [
+            "Meta de menor custo anual",
+            "Entregas diarias ilimitadas",
+            "Controle total da marca",
+            "Feito para uso intenso em campo",
+        ],
+        "yearly_cta": "Baixar o app",
+        "cta_eyebrow": "Pronto?",
+        "cta_title": "Mostre, selecione e entregue mais rapido com SnapVend.",
+        "cta_lead": "Acesso por QR, transferencia FTP, compartilhamento local e relatorios no mesmo fluxo.",
+        "footer_note": "O SnapVend processa a midia no dispositivo. O compartilhamento so e aberto quando voce inicia o fluxo local.",
+    },
+    "ru": {
+        "meta_title": "SnapVend | QR-галерея и локальная выдача для фотографов",
+        "meta_description": "SnapVend помогает фотографам импортировать, показывать и выдавать фото с одного телефона или планшета через QR-галерею, FTP и ZIP-доставку.",
+        "nav_how": "Как Работает",
+        "nav_audience": "Для Кого",
+        "nav_pricing": "Тарифы",
+        "nav_download": "Скачать",
+        "language_label": "Языки",
+        "hero_eyebrow": "QR-галерея, FTP-передача, локальная выдача",
+        "hero_title": "Одно устройство от съемки до выдачи.",
+        "hero_lead": "Загрузите фото из камеры или галереи, впустите клиента по QR, подтвердите PAC и выдайте одобренные файлы ZIP с того же устройства.",
+        "google_small": "Скачать для Android",
+        "apple_small": "Скачать для iPhone и iPad",
+        "setup_note": "Месячную и годовую цену, а также прямую ссылку App Store можно обновить в site-config.js. Пока не добавлен Apple ID приложения, логотип iOS открывает региональный поиск App Store.",
+        "metrics": [
+            {"value": "1 устройство", "label": "Получить, показать, выдать"},
+            {"value": "10/день", "label": "Лимит бесплатного плана"},
+            {"value": "0 облака", "label": "Локальная работа, без трекинга"},
+        ],
+        "workflow_eyebrow": "Поток",
+        "workflow_title": "Быстро, под контролем и готово к полю",
+        "workflow_lead": "SnapVend объединяет прием фото, показ клиенту и выдачу в одну понятную операцию на съемке.",
+        "workflow_cards": [
+            {"title": "Импортируйте фото", "body": "Берите их из локальной галереи или отправляйте в SnapVend с FTP-камеры."},
+            {"title": "Поделитесь галереей по QR", "body": "Клиент сканирует код в той же сети и сразу открывает веб-галерею."},
+            {"title": "Выбор и подтверждение PAC", "body": "Клиент выбирает кадры, а вы подтверждаете оплату и проверку PAC."},
+            {"title": "ZIP-выдача и отчеты", "body": "Одобренные файлы скачиваются ZIP, а выдача и выручка видны внутри приложения."},
+        ],
+        "audience_eyebrow": "Для Кого",
+        "audience_title": "Создано для профессиональных команд на площадке",
+        "audience_lead": "Надежный центр для фотографов, которым нужен быстрый просмотр, контролируемый выбор и мгновенная выдача.",
+        "audience_cards": [
+            {"title": "Свадьбы и мероприятия", "body": "Команды, которым нужен быстрый выбор и выдача прямо во время съемки."},
+            {"title": "Студия и портрет", "body": "Студии, которые хотят выбирать и отдавать фотографии вместе с клиентом."},
+            {"title": "Школа, спорт и корпоратив", "body": "Команды, которые ведут много сессий и не смешивают клиентов и выдачу."},
+            {"title": "Мобильные команды", "body": "Операции на локальной сети или hotspot без зависимости от интернета."},
+        ],
+        "pricing_eyebrow": "Планы",
+        "pricing_title": "Начните бесплатно и растите с Pro",
+        "pricing_lead": "Бесплатный план подходит для знакомства с процессом. Pro снимает лимиты и открывает брендинг.",
+        "config_warning": "В этом репозитории нет финальных цен. Цены и прямая ссылка App Store настраиваются через site-config.js.",
+        "free_badge": "Бесплатно",
+        "free_title": "Подходит для знакомства с потоком",
+        "free_period": "для старта",
+        "free_features": [
+            "Ежедневный лимит: 10 выданных фото",
+            "Брендинг SnapVend остается видимым",
+            "Свой бренд и логотип заблокированы",
+            "Удобно для теста перед реальной работой",
+        ],
+        "free_cta": "Начать Бесплатно",
+        "monthly_badge": "Pro Ежемесячно",
+        "monthly_title": "Гибкое помесячное использование",
+        "monthly_placeholder": "Обновить цену",
+        "monthly_period": "/ месяц",
+        "monthly_features": [
+            "Неограниченная ежедневная выдача",
+            "Свой бренд и логотип",
+            "Собственное ZIP-имя",
+            "Неограниченная очередь свадебной печати",
+        ],
+        "monthly_cta": "Скачать приложение",
+        "yearly_badge": "Pro Год",
+        "yearly_title": "Лучше для постоянной работы",
+        "yearly_placeholder": "Обновить цену",
+        "yearly_period": "/ год",
+        "yearly_features": [
+            "Цель более низкой годовой стоимости",
+            "Неограниченная ежедневная выдача",
+            "Полный контроль бренда",
+            "Решение для интенсивной полевой работы",
+        ],
+        "yearly_cta": "Скачать приложение",
+        "cta_eyebrow": "Готовы?",
+        "cta_title": "Показывайте, отбирайте и выдавайте быстрее с SnapVend.",
+        "cta_lead": "QR-доступ, FTP-передача, локальный обмен и отчеты в одном процессе.",
+        "footer_note": "SnapVend обрабатывает медиа на устройстве. Публикация включается только когда вы запускаете локальную выдачу.",
+    },
+    "ar": {
+        "meta_title": "SnapVend | معرض QR وتسليم محلي للمصورين",
+        "meta_description": "يساعد SnapVend المصورين على استيراد الصور وعرضها وتسليمها من هاتف او جهاز لوحي واحد عبر معرض QR ونقل FTP وتسليم ZIP.",
+        "nav_how": "كيف يعمل",
+        "nav_audience": "لمن",
+        "nav_pricing": "الاسعار",
+        "nav_download": "تنزيل",
+        "language_label": "اللغات",
+        "hero_eyebrow": "معرض QR، نقل FTP، تسليم محلي",
+        "hero_title": "جهاز واحد من الالتقاط حتى التسليم.",
+        "hero_lead": "استورد الصور من الكاميرا او المعرض، دع العميل يدخل عبر QR، اكد PAC ثم سلم الملفات المعتمدة كملف ZIP من الجهاز نفسه.",
+        "google_small": "تنزيل لاندرويد",
+        "apple_small": "تنزيل لايفون وايباد",
+        "setup_note": "يمكنك تحديث السعر الشهري والسنوي والرابط المباشر لـ App Store من site-config.js. وحتى اضافة معرف Apple يفتح شعار iOS نتيجة البحث الاقليمية في App Store.",
+        "metrics": [
+            {"value": "جهاز واحد", "label": "استلم، اعرض، سلم"},
+            {"value": "10/يوم", "label": "حد الخطة المجانية"},
+            {"value": "0 سحابة", "label": "عمل محلي بدون تتبع"},
+        ],
+        "workflow_eyebrow": "سير العمل",
+        "workflow_title": "سريع، منظم وجاهز للميدان",
+        "workflow_lead": "يجمع SnapVend استقبال الصور ومعاينة العميل والتسليم في عملية واحدة واضحة اثناء التصوير.",
+        "workflow_cards": [
+            {"title": "استيراد الصور", "body": "اخترها من المعرض المحلي او ارسلها الى SnapVend من كاميرا تدعم FTP."},
+            {"title": "شارك المعرض عبر QR", "body": "يمسح العميل الرمز على الشبكة نفسها ويفتح معرض الويب مباشرة."},
+            {"title": "الاختيار وتأكيد PAC", "body": "يختار العميل الصور وتؤكد انت الدفع والتحقق من PAC."},
+            {"title": "تسليم ZIP والتقارير", "body": "تنزل الملفات المعتمدة كملف ZIP وتبقى عمليات التسليم والايراد ظاهرة داخل التطبيق."},
+        ],
+        "audience_eyebrow": "لمن",
+        "audience_title": "مصمم لفرق التصوير الاحترافية في الموقع",
+        "audience_lead": "مركز واضح للمصورين الذين يحتاجون الى معاينة سريعة واختيار منظم وتسليم فوري.",
+        "audience_cards": [
+            {"title": "تصوير الاعراس والفعاليات", "body": "فرق تحتاج الى اختيار وتسليم سريع اثناء العمل المباشر."},
+            {"title": "الاستوديو والبورتريه", "body": "استوديوهات تريد مراجعة الصور واختيارها وتسليمها مع العميل."},
+            {"title": "المدارس والرياضة والشركات", "body": "فرق تدير جلسات كثيرة بدون خلط العملاء او التسليمات."},
+            {"title": "فرق التسليم المتنقلة", "body": "عمليات تعمل عبر الشبكة المحلية او نقطة الاتصال بدون اعتماد على الانترنت."},
+        ],
+        "pricing_eyebrow": "الخطط",
+        "pricing_title": "ابدأ مجانا ثم توسع مع Pro",
+        "pricing_lead": "الخطة المجانية مناسبة لتعلم التدفق. Pro يزيل الحدود ويفتح التحكم بالهوية التجارية.",
+        "config_warning": "هذا المستودع لا يحتوي على الاسعار النهائية. يتم تحديث الاسعار والرابط المباشر لـ App Store من خلال site-config.js.",
+        "free_badge": "مجاني",
+        "free_title": "مثالي لتعلم التدفق",
+        "free_period": "للبداية",
+        "free_features": [
+            "حد يومي 10 صور مسلمة",
+            "تبقى علامة SnapVend ظاهرة",
+            "اسم وشعار النشاط موقوفان",
+            "مناسب للتجربة قبل الاستخدام الفعلي",
+        ],
+        "free_cta": "ابدأ مجانا",
+        "monthly_badge": "برو شهري",
+        "monthly_title": "استخدام شهري مرن",
+        "monthly_placeholder": "حدث السعر",
+        "monthly_period": "/ شهر",
+        "monthly_features": [
+            "تسليم يومي غير محدود",
+            "اسم وشعار مخصصان",
+            "اسم ZIP مخصص",
+            "طابور طباعة اعراس غير محدود",
+        ],
+        "monthly_cta": "نزّل التطبيق",
+        "yearly_badge": "برو سنوي",
+        "yearly_title": "افضل للاستخدام المنتظم",
+        "yearly_placeholder": "حدث السعر",
+        "yearly_period": "/ سنة",
+        "yearly_features": [
+            "استهداف تكلفة سنوية اقل",
+            "تسليم يومي غير محدود",
+            "تحكم كامل بالهوية",
+            "حل مناسب للاستخدام المكثف",
+        ],
+        "yearly_cta": "نزّل التطبيق",
+        "cta_eyebrow": "جاهز؟",
+        "cta_title": "اعرض واختر وسلم بشكل اسرع مع SnapVend.",
+        "cta_lead": "دخول QR ونقل FTP ومشاركة محلية وتقارير ضمن تجربة واحدة.",
+        "footer_note": "يعالج SnapVend الوسائط على الجهاز نفسه. لا يتم فتح المشاركة الا عندما تبدأ انت تدفق التسليم المحلي.",
+    },
+    "hi": {
+        "meta_title": "SnapVend | फोटोग्राफरों के लिए QR गैलरी और लोकल डिलीवरी",
+        "meta_description": "SnapVend फोटोग्राफरों को एक ही फोन या टैबलेट से फोटो इम्पोर्ट, दिखाने और ZIP में डिलीवर करने में मदद करता है, QR गैलरी और FTP ट्रांसफर के साथ.",
+        "nav_how": "यह कैसे काम करता है",
+        "nav_audience": "किसके लिए",
+        "nav_pricing": "प्राइसिंग",
+        "nav_download": "डाउनलोड",
+        "language_label": "भाषाएं",
+        "hero_eyebrow": "QR गैलरी, FTP ट्रांसफर, लोकल डिलीवरी",
+        "hero_title": "कैप्चर से डिलीवरी तक एक ही डिवाइस.",
+        "hero_lead": "कैमरा या गैलरी से फोटो लें, ग्राहक को QR से अंदर लाएं, PAC कन्फर्म करें और मंजूर फाइलें उसी डिवाइस से ZIP में दें.",
+        "google_small": "Android के लिए डाउनलोड",
+        "apple_small": "iPhone और iPad के लिए डाउनलोड",
+        "setup_note": "मासिक और वार्षिक कीमतें तथा सीधा App Store लिंक site-config.js में अपडेट किए जा सकते हैं. जब तक Apple app ID नहीं जुड़ती, iOS लोगो क्षेत्रीय App Store search result खोलता है.",
+        "metrics": [
+            {"value": "1 डिवाइस", "label": "लो, दिखाओ, डिलीवर करो"},
+            {"value": "10/दिन", "label": "फ्री प्लान सीमा"},
+            {"value": "0 क्लाउड", "label": "लोकल फ्लो, बिना ट्रैकिंग"},
+        ],
+        "workflow_eyebrow": "वर्कफ़्लो",
+        "workflow_title": "तेज, नियंत्रित और फील्ड के लिए तैयार",
+        "workflow_lead": "SnapVend फोटो इनटेक, ग्राहक प्रीव्यू और डिलीवरी को एक साफ ऑपरेशन में बदल देता है.",
+        "workflow_cards": [
+            {"title": "फोटो इम्पोर्ट करें", "body": "लोकल गैलरी से चुनें या FTP कैमरा से सीधे SnapVend में भेजें."},
+            {"title": "QR से गैलरी शेयर करें", "body": "ग्राहक उसी नेटवर्क पर QR स्कैन करके तुरंत वेब गैलरी खोलता है."},
+            {"title": "चयन और PAC पुष्टि", "body": "ग्राहक फोटो चुनता है और आप भुगतान व PAC सत्यापन की पुष्टि करते हैं."},
+            {"title": "ZIP डिलीवरी और रिपोर्ट", "body": "मंजूर फाइलें ZIP में डाउनलोड होती हैं और डिलीवरी व आय ऐप में दिखती रहती है."},
+        ],
+        "audience_eyebrow": "किसके लिए",
+        "audience_title": "प्रोफेशनल ऑन-साइट टीमों के लिए बनाया गया",
+        "audience_lead": "उन फोटोग्राफरों के लिए एक मजबूत केंद्र जिन्हें तेज प्रीव्यू, कंट्रोल्ड सिलेक्शन और तुरंत डिलीवरी चाहिए.",
+        "audience_cards": [
+            {"title": "शादी और इवेंट फोटोग्राफर", "body": "टीमें जिन्हें लाइव शूट के दौरान तेज चयन और डिलीवरी चाहिए."},
+            {"title": "स्टूडियो और पोर्ट्रेट", "body": "स्टूडियो जो ग्राहक के साथ एक ही जगह पर समीक्षा, चयन और डिलीवरी करना चाहते हैं."},
+            {"title": "स्कूल, स्पोर्ट्स और कॉर्पोरेट", "body": "टीमें जो कई सेशन संभालती हैं और ग्राहकों या डिलीवरी को मिक्स नहीं करना चाहतीं."},
+            {"title": "मोबाइल डिलीवरी टीमें", "body": "ऐसे ऑपरेशन जो लोकल नेटवर्क या hotspot पर इंटरनेट के बिना चलते हैं."},
+        ],
+        "pricing_eyebrow": "प्लान",
+        "pricing_title": "फ्री से शुरू करें और Pro के साथ बढ़ें",
+        "pricing_lead": "फ्री प्लान फ्लो सीखने के लिए तैयार है. Pro लिमिट हटाता है और बिज़नेस ब्रांडिंग खोलता है.",
+        "config_warning": "इस रिपॉजिटरी में अंतिम कीमतें नहीं हैं. कीमतें और सीधा App Store लिंक site-config.js से कंट्रोल होते हैं.",
+        "free_badge": "फ्री",
+        "free_title": "फ्लो सीखने के लिए सही",
+        "free_period": "शुरुआत के लिए",
+        "free_features": [
+            "प्रति दिन 10 फोटो डिलीवरी सीमा",
+            "SnapVend ब्रांडिंग दिखाई देती रहती है",
+            "कस्टम बिज़नेस नाम और लोगो लॉक रहते हैं",
+            "लाइव उपयोग से पहले टेस्ट करने के लिए अच्छा",
+        ],
+        "free_cta": "फ्री शुरू करें",
+        "monthly_badge": "प्रो मासिक",
+        "monthly_title": "लचीला मासिक उपयोग",
+        "monthly_placeholder": "कीमत अपडेट करें",
+        "monthly_period": "/ महीना",
+        "monthly_features": [
+            "असीमित दैनिक डिलीवरी",
+            "कस्टम बिज़नेस नाम और लोगो",
+            "कस्टम ZIP नाम",
+            "असीमित वेडिंग प्रिंट कतार",
+        ],
+        "monthly_cta": "ऐप डाउनलोड करें",
+        "yearly_badge": "प्रो वार्षिक",
+        "yearly_title": "नियमित उपयोग के लिए बेहतर",
+        "yearly_placeholder": "कीमत अपडेट करें",
+        "yearly_period": "/ वर्ष",
+        "yearly_features": [
+            "कम वार्षिक लागत का लक्ष्य",
+            "असीमित दैनिक डिलीवरी",
+            "पूरी ब्रांडिंग कंट्रोल",
+            "भारी फील्ड उपयोग के लिए उपयुक्त",
+        ],
+        "yearly_cta": "ऐप डाउनलोड करें",
+        "cta_eyebrow": "तैयार?",
+        "cta_title": "SnapVend के साथ ऑन-साइट तेज़ी से दिखाएं, चुनवाएं और डिलीवर करें.",
+        "cta_lead": "QR एक्सेस, FTP ट्रांसफर, लोकल शेयरिंग और रिपोर्ट एक ही फ्लो में.",
+        "footer_note": "SnapVend मीडिया को डिवाइस पर प्रोसेस करता है. शेयरिंग केवल तब खुलती है जब आप लोकल डिलीवरी फ्लो शुरू करते हैं.",
+    },
+    "ja": {
+        "meta_title": "SnapVend | 写真家向けQRギャラリーとローカル納品",
+        "meta_description": "SnapVend は QR ギャラリー共有、FTP 転送、ZIP 納品を使って、1台のスマホやタブレットで写真の受け取りから納品までを支援します。",
+        "nav_how": "使い方",
+        "nav_audience": "対象ユーザー",
+        "nav_pricing": "料金",
+        "nav_download": "ダウンロード",
+        "language_label": "言語",
+        "hero_eyebrow": "QR ギャラリー、FTP 転送、ローカル納品",
+        "hero_title": "撮影から納品までを1台で。",
+        "hero_lead": "カメラやギャラリーから写真を取り込み、QR で顧客を案内し、PAC 承認後に同じ端末から ZIP 納品できます。",
+        "google_small": "Android 版を入手",
+        "apple_small": "iPhone / iPad 版を入手",
+        "setup_note": "月額・年額の価格と App Store の直接リンクは site-config.js で更新できます。Apple のアプリ ID が入るまでは、iOS ロゴは地域別 App Store 検索結果を開きます。",
+        "metrics": [
+            {"value": "1台", "label": "受け取り・提示・納品"},
+            {"value": "10/日", "label": "無料プランの納品上限"},
+            {"value": "0クラウド", "label": "ローカル運用、追跡なし"},
+        ],
+        "workflow_eyebrow": "ワークフロー",
+        "workflow_title": "現場向けに速く、明確で、管理しやすい",
+        "workflow_lead": "SnapVend は写真の受け取り、顧客プレビュー、納品をひとつの分かりやすい流れにまとめます。",
+        "workflow_cards": [
+            {"title": "写真を取り込む", "body": "端末のギャラリーから選ぶか、FTP 対応カメラから SnapVend に直接送れます。"},
+            {"title": "QR でギャラリー共有", "body": "同じネットワーク上で顧客が QR を読み取り、Web ギャラリーをすぐ開けます。"},
+            {"title": "選択と PAC 承認", "body": "顧客が写真を選び、支払いと PAC 確認はあなたが管理します。"},
+            {"title": "ZIP 納品とレポート", "body": "承認済みファイルは ZIP で渡され、納品や売上の流れもアプリ内で確認できます。"},
+        ],
+        "audience_eyebrow": "対象ユーザー",
+        "audience_title": "現場で動くプロの撮影チーム向け",
+        "audience_lead": "素早いプレビュー、管理しやすい選択、即時納品を求める写真チームのための中核です。",
+        "audience_cards": [
+            {"title": "ウェディング・イベント撮影", "body": "ライブ撮影中にすぐ見せて、選ばせて、納品したいチーム向け。"},
+            {"title": "スタジオ・ポートレート", "body": "顧客と一緒に確認しながら選定と納品を進めたいスタジオ向け。"},
+            {"title": "学校・スポーツ・法人撮影", "body": "多数のセッションを混線させずに整理したいチーム向け。"},
+            {"title": "モバイル納品チーム", "body": "インターネット不要でローカルネットワークや hotspot を使う運用向け。"},
+        ],
+        "pricing_eyebrow": "プラン",
+        "pricing_title": "無料で始めて、Pro で拡張",
+        "pricing_lead": "無料プランで流れを学べます。Pro は納品制限を外し、業務用ブランディングを解放します。",
+        "config_warning": "このリポジトリには最終価格が入っていません。価格と App Store 直リンクは site-config.js から更新できます。",
+        "free_badge": "無料",
+        "free_title": "まず流れを学ぶために最適",
+        "free_period": "開始用",
+        "free_features": [
+            "1日の納品上限は10枚",
+            "SnapVend ブランド表示は残る",
+            "独自の店名とロゴはロック",
+            "本番前のテストに向いている",
+        ],
+        "free_cta": "無料で始める",
+        "monthly_badge": "Pro 月額",
+        "monthly_title": "柔軟な月額利用",
+        "monthly_placeholder": "価格を更新",
+        "monthly_period": "/ 月",
+        "monthly_features": [
+            "1日の納品数が無制限",
+            "独自の店名とロゴ",
+            "独自 ZIP 名",
+            "ウェディング印刷キュー無制限",
+        ],
+        "monthly_cta": "アプリを入手",
+        "yearly_badge": "Pro 年額",
+        "yearly_title": "継続利用に最適",
+        "yearly_placeholder": "価格を更新",
+        "yearly_period": "/ 年",
+        "yearly_features": [
+            "より低い年間コストを想定",
+            "1日の納品数が無制限",
+            "ブランド設定を完全開放",
+            "現場での高頻度運用向け",
+        ],
+        "yearly_cta": "アプリを入手",
+        "cta_eyebrow": "準備はできましたか？",
+        "cta_title": "SnapVend なら現場でより速く見せて、選ばせて、納品できます。",
+        "cta_lead": "QR アクセス、FTP 転送、ローカル共有、レポートをひとつの流れで扱えます。",
+        "footer_note": "SnapVend はメディアを端末上で処理します。共有はローカル納品フローを開始したときだけ開かれます。",
+    },
+    "zh": {
+        "meta_title": "SnapVend | 面向摄影团队的 QR 画廊与本地交付",
+        "meta_description": "SnapVend 通过 QR 画廊、FTP 传输和 ZIP 交付，帮助摄影团队在一台手机或平板上完成照片接收、展示与交付。",
+        "nav_how": "工作方式",
+        "nav_audience": "适用对象",
+        "nav_pricing": "价格",
+        "nav_download": "下载",
+        "language_label": "语言",
+        "hero_eyebrow": "QR 画廊、FTP 传输、本地交付",
+        "hero_title": "一台设备完成拍摄到交付。",
+        "hero_lead": "从相机或画廊导入照片，让客户通过 QR 进入，完成 PAC 确认后，再从同一设备交付 ZIP 文件。",
+        "google_small": "下载 Android 版",
+        "apple_small": "下载 iPhone / iPad 版",
+        "setup_note": "月度和年度价格以及 App Store 直链都可以在 site-config.js 中更新。在 Apple 应用 ID 添加前，iOS 图标会先打开对应地区的 App Store 搜索结果。",
+        "metrics": [
+            {"value": "1 台设备", "label": "接收、展示、交付"},
+            {"value": "10/天", "label": "免费计划交付上限"},
+            {"value": "0 云依赖", "label": "本地流程，无追踪"},
+        ],
+        "workflow_eyebrow": "流程",
+        "workflow_title": "更快、更可控、更适合现场",
+        "workflow_lead": "SnapVend 把照片接收、客户预览和交付整合为一个清晰的现场流程。",
+        "workflow_cards": [
+            {"title": "导入照片", "body": "可从本地画廊选择，也可通过支持 FTP 的相机直接进入 SnapVend。"},
+            {"title": "通过 QR 分享画廊", "body": "客户在同一网络下扫描二维码，即可立即打开网页画廊。"},
+            {"title": "选择与 PAC 确认", "body": "客户选择照片，由你确认付款和 PAC 验证。"},
+            {"title": "ZIP 交付与报表", "body": "已批准的文件以 ZIP 下载，交付和收入状态在应用内可追踪。"},
+        ],
+        "audience_eyebrow": "适用对象",
+        "audience_title": "为现场工作的专业团队而设计",
+        "audience_lead": "适合需要快速预览、可控选择和即时交付的摄影团队。",
+        "audience_cards": [
+            {"title": "婚礼与活动摄影", "body": "适合需要在拍摄现场快速展示、选择和交付的团队。"},
+            {"title": "影棚与人像拍摄", "body": "适合希望与客户一起完成选片和交付的工作室。"},
+            {"title": "学校、体育与企业拍摄", "body": "适合管理多个会话而不混淆客户与交付的团队。"},
+            {"title": "移动交付团队", "body": "适合通过本地网络或热点运行且不依赖互联网的流程。"},
+        ],
+        "pricing_eyebrow": "方案",
+        "pricing_title": "先免费开始，再用 Pro 扩展",
+        "pricing_lead": "免费方案适合熟悉流程。Pro 去掉交付限制并开放品牌自定义能力。",
+        "config_warning": "此仓库中没有最终订阅价格。价格和 App Store 直链可在 site-config.js 中更新。",
+        "free_badge": "免费",
+        "free_title": "适合先熟悉流程",
+        "free_period": "开始使用",
+        "free_features": [
+            "每日最多交付 10 张照片",
+            "SnapVend 品牌保持可见",
+            "自定义店名和标识处于锁定状态",
+            "适合正式上线前测试",
+        ],
+        "free_cta": "免费开始",
+        "monthly_badge": "专业版（月）",
+        "monthly_title": "灵活的月度使用",
+        "monthly_placeholder": "更新价格",
+        "monthly_period": "/ 月",
+        "monthly_features": [
+            "无限每日交付",
+            "自定义店名和标识",
+            "自定义 ZIP 文件名",
+            "无限婚礼打印队列",
+        ],
+        "monthly_cta": "下载应用",
+        "yearly_badge": "专业版（年）",
+        "yearly_title": "更适合长期使用",
+        "yearly_placeholder": "更新价格",
+        "yearly_period": "/ 年",
+        "yearly_features": [
+            "目标更低的年化成本",
+            "无限每日交付",
+            "完整品牌控制",
+            "适合高频现场工作",
+        ],
+        "yearly_cta": "下载应用",
+        "cta_eyebrow": "准备好了吗？",
+        "cta_title": "用 SnapVend 更快地展示、选片并完成交付。",
+        "cta_lead": "QR 访问、FTP 传输、本地分享与报表在同一套流程中完成。",
+        "footer_note": "SnapVend 在设备本地处理媒体。只有当你主动启动本地交付流程时，分享才会开放。",
+    },
+}
+
+
+def e(value: str) -> str:
+    return html.escape(value, quote=True)
+
+
+def page_path(locale_code: str) -> str:
+    locale = LOCALE_META[locale_code]
+    return "/" if locale["path"] == "" else f"/{locale['path']}/"
+
+
+def canonical_url(locale_code: str) -> str:
+    return f"{SITE_URL}{page_path(locale_code)}"
+
+
+def asset_prefix(locale_code: str) -> str:
+    return "." if LOCALE_META[locale_code]["path"] == "" else ".."
+
+
+def relative_page_href(current_code: str, target_code: str) -> str:
+    current_path = LOCALE_META[current_code]["path"]
+    target_path = LOCALE_META[target_code]["path"]
+
+    if current_code == target_code:
+        return "./index.html"
+
+    if current_path == "":
+        return "./index.html" if target_path == "" else f"./{target_path}/index.html"
+
+    if target_path == "":
+        return "../index.html"
+
+    return f"../{target_path}/index.html"
+
+
+def flag_emoji(country_code: str) -> str:
+    if len(country_code) != 2:
+        return ""
+    return "".join(chr(127397 + ord(char.upper())) for char in country_code)
+
+
+def build_alternates(current_code: str) -> str:
+    links = [
+        f'    <link rel="alternate" hreflang="x-default" href="{SITE_URL}/">\n'
+    ]
+    for locale_code in LOCALE_ORDER:
+        target_url = canonical_url(locale_code)
+        for hreflang in LOCALE_META[locale_code]["hreflang"]:
+            links.append(
+                f'    <link rel="alternate" hreflang="{hreflang}" href="{target_url}">\n'
+            )
+    return "".join(links)
+
+
+def build_language_menu(current_code: str) -> str:
+    items = []
+    for locale_code in LOCALE_ORDER:
+        meta = LOCALE_META[locale_code]
+        active = " language-option-active" if locale_code == current_code else ""
+        flag = flag_emoji(meta["app_store_country"])
+        items.append(
+            f'              <a class="language-option{active}" href="{relative_page_href(current_code, locale_code)}" lang="{locale_code}" hreflang="{meta["hreflang"][0]}"><span class="language-flag" aria-hidden="true">{flag}</span><span class="language-name">{e(meta["native"])}</span></a>'
+        )
+    return "\n".join(items)
+
+
+def build_metric_cards(copy: dict) -> str:
+    cards = []
+    for metric in copy["metrics"]:
+        cards.append(
+            f"""            <article class="metric-card reveal">
+              <span class="metric-value">{e(metric["value"])}</span>
+              <span class="metric-label">{e(metric["label"])}</span>
+            </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_workflow_cards(copy: dict) -> str:
+    cards = []
+    for index, card in enumerate(copy["workflow_cards"], start=1):
+        cards.append(
+            f"""              <li class="workflow-card reveal">
+                <span class="step-index">{index:02d}</span>
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </li>"""
+        )
+    return "\n".join(cards)
+
+
+def build_audience_cards(copy: dict) -> str:
+    cards = []
+    for card in copy["audience_cards"]:
+        cards.append(
+            f"""            <article class="audience-card reveal">
+              <h3>{e(card["title"])}</h3>
+              <p>{e(card["body"])}</p>
+            </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_feature_list(features: list[str]) -> str:
+    return "\n".join(f"                <li>{e(feature)}</li>" for feature in features)
+
+
+def build_demo_steps(demo: dict) -> str:
+    steps = []
+    for index, step in enumerate(demo["steps"], start=1):
+        steps.append(
+            f"""            <article class="demo-step reveal">
+              <span class="demo-step-index">{index:02d}</span>
+              <div>
+                <h3>{e(step["title"])}</h3>
+                <p>{e(step["body"])}</p>
+              </div>
+            </article>"""
+        )
+    return "\n".join(steps)
+
+
+def build_faq_items(faq: dict) -> str:
+    items = []
+    for index, item in enumerate(faq["items"]):
+        open_attr = " open" if index == 0 else ""
+        items.append(
+            f"""            <details class="faq-item reveal"{open_attr}>
+              <summary>{e(item["q"])}</summary>
+              <p>{e(item["a"])}</p>
+            </details>"""
+        )
+    return "\n".join(items)
+
+
+def store_badges(locale_code: str, copy: dict) -> str:
+    country = LOCALE_META[locale_code]["app_store_country"]
+    fallback_search = f"https://apps.apple.com/{country}/search?term=SnapVend"
+    return f"""
+            <div class="store-badges">
+              <a class="store-badge store-badge-play" data-store-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.snapvend.gallery" target="_blank" rel="noreferrer">
+                <span class="store-logo" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path fill="#00d26a" d="M8 6.8 29.2 24 8 41.2z"></path>
+                    <path fill="#00a3ff" d="m29.2 24 5.6-4.8c2.4 1.7 2.4 7 0 8.7z"></path>
+                    <path fill="#ffd400" d="M8 6.8 20.1 18l9.1 6-9.1 6L8 41.2 14.5 24z"></path>
+                    <path fill="#ff5a5f" d="M8 6.8 20.1 18l14.7 1.2z"></path>
+                  </svg>
+                </span>
+                <span class="store-copy">
+                  <small>{e(copy["google_small"])}</small>
+                  <strong>Google Play</strong>
+                </span>
+              </a>
+
+              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-search="{fallback_search}" href="{fallback_search}" target="_blank" rel="noreferrer">
+                <span class="store-logo" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
+                  </svg>
+                </span>
+                <span class="store-copy">
+                  <small>{e(copy["apple_small"])}</small>
+                  <strong>App Store</strong>
+                </span>
+              </a>
+            </div>"""
+
+
+def build_schema(locale_code: str, copy: dict, faq: dict) -> str:
+    pricing = SCHEMA_PRICING[locale_code]
+    page_url = canonical_url(locale_code)
+    logo_url = f"{SITE_URL}/assets/branding/app_icon_store_512.png"
+    screenshot_urls = [
+        f"{SITE_URL}/assets/marketing/01_capture_to_delivery.png",
+        f"{SITE_URL}/assets/marketing/03_local_connection.png",
+        f"{SITE_URL}/assets/marketing/06_reports_dashboard.png",
+    ]
+
+    organization = {
+        "@type": "Organization",
+        "@id": f"{SITE_URL}/#organization",
+        "name": "SnapVend",
+        "url": f"{SITE_URL}/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": logo_url,
+        },
+        "image": logo_url,
+    }
+
+    website = {
+        "@type": "WebSite",
+        "@id": f"{SITE_URL}/#website",
+        "url": f"{SITE_URL}/",
+        "name": "SnapVend",
+        "inLanguage": locale_code,
+        "publisher": {"@id": organization["@id"]},
+    }
+
+    software = {
+        "@type": "SoftwareApplication",
+        "@id": f"{page_url}#app",
+        "name": "SnapVend",
+        "description": copy["meta_description"],
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Photo workflow and delivery",
+        "operatingSystem": "ANDROID, IOS",
+        "inLanguage": locale_code,
+        "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+        "url": page_url,
+        "mainEntityOfPage": page_url,
+        "image": logo_url,
+        "screenshot": screenshot_urls,
+        "brand": {
+            "@type": "Brand",
+            "name": "SnapVend",
+        },
+        "publisher": {"@id": organization["@id"]},
+        "isAccessibleForFree": True,
+        "featureList": [card["title"] for card in copy["workflow_cards"]],
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": copy["monthly_badge"],
+                "price": pricing["monthly"],
+                "priceCurrency": pricing["currency"],
+                "availability": "https://schema.org/InStock",
+                "url": f"{page_url}#pricing",
+            },
+            {
+                "@type": "Offer",
+                "name": copy["yearly_badge"],
+                "price": pricing["yearly"],
+                "priceCurrency": pricing["currency"],
+                "availability": "https://schema.org/InStock",
+                "url": f"{page_url}#pricing",
+            },
+        ],
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.snapvend.gallery",
+        "dateModified": BUILD_DATE,
+    }
+
+    faq_page = {
+        "@type": "FAQPage",
+        "@id": f"{page_url}#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": item["q"],
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": item["a"],
+                },
+            }
+            for item in faq["items"]
+        ],
+    }
+
+    schema = {
+        "@context": "https://schema.org",
+        "@graph": [organization, website, software, faq_page],
+    }
+    return json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
+
+
+def render_page(locale_code: str) -> str:
+    copy = COPY[locale_code]
+    meta = LOCALE_META[locale_code]
+    prefix = asset_prefix(locale_code)
+    og_image = f"{SITE_URL}/assets/branding/app_icon_store_512.png"
+    alternates = build_alternates(locale_code)
+    language_menu = build_language_menu(locale_code)
+    extra_nav = NAV_EXTRA[locale_code]
+    demo_copy = DEMO_SECTION[locale_code]
+    faq_copy = FAQ_SECTION[locale_code]
+    metrics = build_metric_cards(copy)
+    demo_steps = build_demo_steps(demo_copy)
+    workflow_cards = build_workflow_cards(copy)
+    audience_cards = build_audience_cards(copy)
+    faq_items = build_faq_items(faq_copy)
+    schema_json = build_schema(locale_code, copy, faq_copy)
+    active_flag = flag_emoji(meta["app_store_country"])
+    popular_label = POPULAR_LABELS[locale_code]
+
+    return f"""<!doctype html>
+<html lang="{locale_code}" dir="{meta["dir"]}" data-locale="{locale_code}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{e(copy["meta_title"])}</title>
+    <meta name="description" content="{e(copy["meta_description"])}">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="theme-color" content="#071b45">
+    <meta http-equiv="content-language" content="{locale_code}">
+    <meta name="application-name" content="SnapVend">
+    <meta property="og:site_name" content="SnapVend">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{e(copy["meta_title"])}">
+    <meta property="og:description" content="{e(copy["meta_description"])}">
+    <meta property="og:url" content="{canonical_url(locale_code)}">
+    <meta property="og:image" content="{og_image}">
+    <meta property="og:image:alt" content="{e(copy["meta_title"])}">
+    <meta property="og:locale" content="{meta["og_locale"]}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{e(copy["meta_title"])}">
+    <meta name="twitter:description" content="{e(copy["meta_description"])}">
+    <meta name="twitter:image" content="{og_image}">
+    <meta name="twitter:image:alt" content="{e(copy["meta_title"])}">
+    <link rel="canonical" href="{canonical_url(locale_code)}">
+{alternates}    <link rel="icon" type="image/png" href="{prefix}/assets/favicon.png">
+    <link rel="apple-touch-icon" href="{prefix}/assets/branding/app_icon_store_512.png">
+    <link rel="manifest" href="{prefix}/manifest.webmanifest">
+    <link rel="stylesheet" href="{prefix}/styles.css">
+    <script type="application/ld+json">{schema_json}</script>
+    <script defer src="{prefix}/site-config.js"></script>
+    <script defer src="{prefix}/script.js"></script>
+  </head>
+  <body>
+    <div class="page-aura page-aura-left" aria-hidden="true"></div>
+    <div class="page-aura page-aura-right" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="{relative_page_href(locale_code, locale_code)}">
+          <img class="brand-mark" src="{prefix}/assets/branding/snapvend_logo_square.png" alt="SnapVend">
+          <span class="brand-copy">
+            <span class="brand-kicker">Professional Photo Delivery</span>
+            <strong>SnapVend</strong>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Sections">
+          <a href="#demo">{e(extra_nav["demo"])}</a>
+          <a href="#how-it-works">{e(copy["nav_how"])}</a>
+          <a href="#audience">{e(copy["nav_audience"])}</a>
+          <a href="#pricing">{e(copy["nav_pricing"])}</a>
+          <a href="#faq">{e(extra_nav["faq"])}</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a class="pill-link" href="#download">{e(copy["nav_download"])}</a>
+          <details class="language-switcher">
+            <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">{active_flag}</span><span>{e(copy["language_label"])}</span></span></summary>
+            <div class="language-menu">
+{language_menu}
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="download">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">{e(copy["hero_eyebrow"])}</p>
+            <h1>{e(copy["hero_title"])}</h1>
+            <p class="hero-lead">{e(copy["hero_lead"])}</p>
+{store_badges(locale_code, copy)}
+            <p class="setup-note" data-setup-note data-nosnippet hidden>{e(copy["setup_note"])}</p>
+
+            <div class="metric-grid">
+{metrics}
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <article class="visual-frame visual-frame-main">
+              <img src="{prefix}/assets/marketing/01_capture_to_delivery.png" alt="SnapVend workflow screenshot" loading="eager">
+            </article>
+            <article class="visual-frame visual-frame-secondary">
+              <img src="{prefix}/assets/marketing/05_qr_gallery_page.png" alt="SnapVend QR gallery screenshot" loading="lazy">
+            </article>
+            <article class="visual-chip">
+              <span>SnapVend</span>
+              <p>{e(copy["hero_eyebrow"])}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo" id="demo">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(demo_copy["eyebrow"])}</p>
+            <h2>{e(demo_copy["title"])}</h2>
+            <p>{e(demo_copy["lead"])}</p>
+          </div>
+
+          <div class="demo-grid">
+            <article class="demo-stage reveal">
+              <div class="demo-stage-head">
+                <span>{e(demo_copy["screen_label"])}</span>
+                <strong>SnapVend</strong>
+              </div>
+              <div class="demo-stage-screen">
+                <video class="demo-video" data-demo-video playsinline autoplay muted loop controls hidden></video>
+                <img class="demo-fallback" data-demo-fallback src="{prefix}/assets/marketing/02_gallery_dashboard.png" alt="SnapVend demo screen" loading="lazy">
+              </div>
+              <p class="demo-stage-note">{e(demo_copy["screen_note"])}</p>
+            </article>
+
+            <div class="demo-steps">
+{demo_steps}
+              <a class="action-link reveal" href="#download">{e(demo_copy["cta"])}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(copy["workflow_eyebrow"])}</p>
+            <h2>{e(copy["workflow_title"])}</h2>
+            <p>{e(copy["workflow_lead"])}</p>
+          </div>
+
+          <div class="workflow-grid">
+            <ol class="workflow-list">
+{workflow_cards}
+            </ol>
+
+            <div class="shot-stack reveal">
+              <article class="shot-card shot-card-large">
+                <img src="{prefix}/assets/marketing/04_ftp_camera_flow.png" alt="SnapVend FTP screenshot" loading="lazy">
+              </article>
+              <article class="shot-card">
+                <img src="{prefix}/assets/marketing/03_local_connection.png" alt="SnapVend local connection screenshot" loading="lazy">
+              </article>
+              <article class="shot-card">
+                <img src="{prefix}/assets/marketing/06_reports_dashboard.png" alt="SnapVend reports screenshot" loading="lazy">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="audience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(copy["audience_eyebrow"])}</p>
+            <h2>{e(copy["audience_title"])}</h2>
+            <p>{e(copy["audience_lead"])}</p>
+          </div>
+
+          <div class="audience-grid">
+{audience_cards}
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(copy["pricing_eyebrow"])}</p>
+            <h2>{e(copy["pricing_title"])}</h2>
+            <p>{e(copy["pricing_lead"])}</p>
+          </div>
+
+          <p class="config-warning reveal" data-config-warning data-nosnippet hidden>{e(copy["config_warning"])}</p>
+
+          <div class="pricing-grid">
+            <article class="pricing-card reveal">
+              <span class="plan-badge">{e(copy["free_badge"])}</span>
+              <h3>{e(copy["free_title"])}</h3>
+              <div class="price-line">
+                <span class="price-value">0</span>
+                <span class="price-period">{e(copy["free_period"])}</span>
+              </div>
+              <ul class="feature-list">
+{build_feature_list(copy["free_features"])}
+              </ul>
+              <a class="action-link action-link-secondary" href="#download">{e(copy["free_cta"])}</a>
+            </article>
+
+            <article class="pricing-card reveal">
+              <span class="plan-badge">{e(copy["monthly_badge"])}</span>
+              <h3>{e(copy["monthly_title"])}</h3>
+              <div class="price-line">
+                <span class="price-value" data-config-text="monthlyPrice">{e(copy["monthly_placeholder"])}</span>
+                <span class="price-period">{e(copy["monthly_period"])}</span>
+              </div>
+              <ul class="feature-list">
+{build_feature_list(copy["monthly_features"])}
+              </ul>
+              <a class="action-link" href="#download">{e(copy["monthly_cta"])}</a>
+            </article>
+
+            <article class="pricing-card pricing-card-highlight reveal">
+              <div class="plan-heading">
+                <span class="plan-badge plan-badge-highlight">{e(copy["yearly_badge"])}</span>
+                <span class="plan-callout">{e(popular_label)}</span>
+              </div>
+              <h3>{e(copy["yearly_title"])}</h3>
+              <div class="price-line">
+                <span class="price-value" data-config-text="yearlyPrice">{e(copy["yearly_placeholder"])}</span>
+                <span class="price-period">{e(copy["yearly_period"])}</span>
+              </div>
+              <ul class="feature-list">
+{build_feature_list(copy["yearly_features"])}
+              </ul>
+              <a class="action-link" href="#download">{e(copy["yearly_cta"])}</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(faq_copy["eyebrow"])}</p>
+            <h2>{e(faq_copy["title"])}</h2>
+            <p>{e(faq_copy["lead"])}</p>
+          </div>
+
+          <div class="faq-grid">
+{faq_items}
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-panel reveal">
+          <div>
+            <p class="eyebrow">{e(copy["cta_eyebrow"])}</p>
+            <h2>{e(copy["cta_title"])}</h2>
+            <p>{e(copy["cta_lead"])}</p>
+          </div>
+{store_badges(locale_code, copy)}
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>{e(copy["footer_note"])}</p>
+        <p>© 2026 SnapVend</p>
+      </div>
+    </footer>
+  </body>
+</html>
+"""
+
+
+def write_page(locale_code: str) -> None:
+    meta = LOCALE_META[locale_code]
+    output_dir = ROOT if meta["path"] == "" else ROOT / meta["path"]
+    output_dir.mkdir(parents=True, exist_ok=True)
+    (output_dir / "index.html").write_text(render_page(locale_code), encoding="utf-8")
+
+
+def write_manifest() -> None:
+    manifest = {
+        "name": "SnapVend",
+        "short_name": "SnapVend",
+        "lang": "tr",
+        "start_url": "/",
+        "display": "standalone",
+        "background_color": "#071b45",
+        "theme_color": "#071b45",
+        "icons": [
+            {
+                "src": "/assets/branding/app_icon_store_512.png",
+                "sizes": "512x512",
+                "type": "image/png",
+            },
+            {
+                "src": "/assets/favicon.png",
+                "sizes": "192x192",
+                "type": "image/png",
+            },
+        ],
+    }
+    (ROOT / "manifest.webmanifest").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def write_robots() -> None:
+    robots = f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+"""
+    (ROOT / "robots.txt").write_text(robots, encoding="utf-8")
+
+
+def write_sitemap() -> None:
+    entries = []
+    for locale_code in LOCALE_ORDER:
+        loc = canonical_url(locale_code)
+        priority = "1.0" if locale_code == "tr" else "0.8"
+        entries.append(
+            f"""  <url>
+    <loc>{loc}</loc>
+    <lastmod>{BUILD_DATE}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>{priority}</priority>
+  </url>"""
+        )
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(entries)
+        + "\n</urlset>\n"
+    )
+    (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+
+
+def main() -> None:
+    for locale_code in LOCALE_ORDER:
+        write_page(locale_code)
+    write_manifest()
+    write_robots()
+    write_sitemap()
+
+
+if __name__ == "__main__":
+    main()

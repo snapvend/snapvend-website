@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh" dir="ltr" data-locale="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnapVend | 面向摄影团队的 QR 画廊与本地交付</title>
+    <meta name="description" content="SnapVend 通过 QR 画廊、FTP 传输和 ZIP 交付，帮助摄影团队在一台手机或平板上完成照片接收、展示与交付。">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="theme-color" content="#071b45">
+    <meta http-equiv="content-language" content="zh">
+    <meta name="application-name" content="SnapVend">
+    <meta property="og:site_name" content="SnapVend">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SnapVend | 面向摄影团队的 QR 画廊与本地交付">
+    <meta property="og:description" content="SnapVend 通过 QR 画廊、FTP 传输和 ZIP 交付，帮助摄影团队在一台手机或平板上完成照片接收、展示与交付。">
+    <meta property="og:url" content="https://snapvend.app/zh/">
+    <meta property="og:image" content="https://snapvend.app/assets/branding/app_icon_store_512.png">
+    <meta property="og:image:alt" content="SnapVend | 面向摄影团队的 QR 画廊与本地交付">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SnapVend | 面向摄影团队的 QR 画廊与本地交付">
+    <meta name="twitter:description" content="SnapVend 通过 QR 画廊、FTP 传输和 ZIP 交付，帮助摄影团队在一台手机或平板上完成照片接收、展示与交付。">
+    <meta name="twitter:image" content="https://snapvend.app/assets/branding/app_icon_store_512.png">
+    <meta name="twitter:image:alt" content="SnapVend | 面向摄影团队的 QR 画廊与本地交付">
+    <link rel="canonical" href="https://snapvend.app/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://snapvend.app/">
+    <link rel="alternate" hreflang="tr" href="https://snapvend.app/">
+    <link rel="alternate" hreflang="tr-TR" href="https://snapvend.app/">
+    <link rel="alternate" hreflang="en" href="https://snapvend.app/en/">
+    <link rel="alternate" hreflang="en-US" href="https://snapvend.app/en/">
+    <link rel="alternate" hreflang="en-GB" href="https://snapvend.app/en/">
+    <link rel="alternate" hreflang="en-CA" href="https://snapvend.app/en/">
+    <link rel="alternate" hreflang="en-AU" href="https://snapvend.app/en/">
+    <link rel="alternate" hreflang="es" href="https://snapvend.app/es/">
+    <link rel="alternate" hreflang="es-ES" href="https://snapvend.app/es/">
+    <link rel="alternate" hreflang="es-MX" href="https://snapvend.app/es/">
+    <link rel="alternate" hreflang="es-AR" href="https://snapvend.app/es/">
+    <link rel="alternate" hreflang="es-CO" href="https://snapvend.app/es/">
+    <link rel="alternate" hreflang="fr" href="https://snapvend.app/fr/">
+    <link rel="alternate" hreflang="fr-FR" href="https://snapvend.app/fr/">
+    <link rel="alternate" hreflang="fr-CA" href="https://snapvend.app/fr/">
+    <link rel="alternate" hreflang="fr-BE" href="https://snapvend.app/fr/">
+    <link rel="alternate" hreflang="fr-CH" href="https://snapvend.app/fr/">
+    <link rel="alternate" hreflang="de" href="https://snapvend.app/de/">
+    <link rel="alternate" hreflang="de-DE" href="https://snapvend.app/de/">
+    <link rel="alternate" hreflang="de-AT" href="https://snapvend.app/de/">
+    <link rel="alternate" hreflang="de-CH" href="https://snapvend.app/de/">
+    <link rel="alternate" hreflang="pt" href="https://snapvend.app/pt/">
+    <link rel="alternate" hreflang="pt-BR" href="https://snapvend.app/pt/">
+    <link rel="alternate" hreflang="pt-PT" href="https://snapvend.app/pt/">
+    <link rel="alternate" hreflang="ru" href="https://snapvend.app/ru/">
+    <link rel="alternate" hreflang="ru-RU" href="https://snapvend.app/ru/">
+    <link rel="alternate" hreflang="ru-KZ" href="https://snapvend.app/ru/">
+    <link rel="alternate" hreflang="ar" href="https://snapvend.app/ar/">
+    <link rel="alternate" hreflang="ar-SA" href="https://snapvend.app/ar/">
+    <link rel="alternate" hreflang="ar-AE" href="https://snapvend.app/ar/">
+    <link rel="alternate" hreflang="ar-EG" href="https://snapvend.app/ar/">
+    <link rel="alternate" hreflang="hi" href="https://snapvend.app/hi/">
+    <link rel="alternate" hreflang="hi-IN" href="https://snapvend.app/hi/">
+    <link rel="alternate" hreflang="ja" href="https://snapvend.app/ja/">
+    <link rel="alternate" hreflang="ja-JP" href="https://snapvend.app/ja/">
+    <link rel="alternate" hreflang="zh" href="https://snapvend.app/zh/">
+    <link rel="alternate" hreflang="zh-CN" href="https://snapvend.app/zh/">
+    <link rel="alternate" hreflang="zh-SG" href="https://snapvend.app/zh/">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/branding/app_icon_store_512.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://snapvend.app/#organization","name":"SnapVend","url":"https://snapvend.app/","logo":{"@type":"ImageObject","url":"https://snapvend.app/assets/branding/app_icon_store_512.png"},"image":"https://snapvend.app/assets/branding/app_icon_store_512.png"},{"@type":"WebSite","@id":"https://snapvend.app/#website","url":"https://snapvend.app/","name":"SnapVend","inLanguage":"zh","publisher":{"@id":"https://snapvend.app/#organization"}},{"@type":"SoftwareApplication","@id":"https://snapvend.app/zh/#app","name":"SnapVend","description":"SnapVend 通过 QR 画廊、FTP 传输和 ZIP 交付，帮助摄影团队在一台手机或平板上完成照片接收、展示与交付。","applicationCategory":"BusinessApplication","applicationSubCategory":"Photo workflow and delivery","operatingSystem":"ANDROID, IOS","inLanguage":"zh","availableLanguage":["Türkçe","English","Español","Français","Deutsch","Português","Русский","العربية","हिन्दी","日本語","中文 (简体)"],"url":"https://snapvend.app/zh/","mainEntityOfPage":"https://snapvend.app/zh/","image":"https://snapvend.app/assets/branding/app_icon_store_512.png","screenshot":["https://snapvend.app/assets/marketing/01_capture_to_delivery.png","https://snapvend.app/assets/marketing/03_local_connection.png","https://snapvend.app/assets/marketing/06_reports_dashboard.png"],"brand":{"@type":"Brand","name":"SnapVend"},"publisher":{"@id":"https://snapvend.app/#organization"},"isAccessibleForFree":true,"featureList":["导入照片","通过 QR 分享画廊","选择与 PAC 确认","ZIP 交付与报表"],"offers":[{"@type":"Offer","name":"专业版（月）","price":61.99,"priceCurrency":"CNY","availability":"https://schema.org/InStock","url":"https://snapvend.app/zh/#pricing"},{"@type":"Offer","name":"专业版（年）","price":388.26,"priceCurrency":"CNY","availability":"https://schema.org/InStock","url":"https://snapvend.app/zh/#pricing"}],"downloadUrl":"https://play.google.com/store/apps/details?id=com.snapvend.gallery","dateModified":"2026-03-19"},{"@type":"FAQPage","@id":"https://snapvend.app/zh/#faq","mainEntity":[{"@type":"Question","name":"SnapVend 可以在没有互联网时使用吗？","acceptedAnswer":{"@type":"Answer","text":"可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。"}},{"@type":"Question","name":"客户如何查看照片？","acceptedAnswer":{"@type":"Answer","text":"客户在同一网络中扫描 QR 后，就能在浏览器里打开画廊。"}},{"@type":"Question","name":"我可以使用自己的品牌名和 logo 吗？","acceptedAnswer":{"@type":"Answer","text":"可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。"}},{"@type":"Question","name":"哪个计划会移除交付限制？","acceptedAnswer":{"@type":"Answer","text":"月度 Pro 和年度 Pro 都会移除每日交付限制。"}}]}]}</script>
+    <script defer src="../site-config.js"></script>
+    <script defer src="../script.js"></script>
+  </head>
+  <body>
+    <div class="page-aura page-aura-left" aria-hidden="true"></div>
+    <div class="page-aura page-aura-right" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="./index.html">
+          <img class="brand-mark" src="../assets/branding/snapvend_logo_square.png" alt="SnapVend">
+          <span class="brand-copy">
+            <span class="brand-kicker">Professional Photo Delivery</span>
+            <strong>SnapVend</strong>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Sections">
+          <a href="#demo">演示</a>
+          <a href="#how-it-works">工作方式</a>
+          <a href="#audience">适用对象</a>
+          <a href="#pricing">价格</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a class="pill-link" href="#download">下载</a>
+          <details class="language-switcher">
+            <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">🇨🇳</span><span>语言</span></span></summary>
+            <div class="language-menu">
+              <a class="language-option" href="../index.html" lang="tr" hreflang="tr"><span class="language-flag" aria-hidden="true">🇹🇷</span><span class="language-name">Türkçe</span></a>
+              <a class="language-option" href="../en/index.html" lang="en" hreflang="en"><span class="language-flag" aria-hidden="true">🇺🇸</span><span class="language-name">English</span></a>
+              <a class="language-option" href="../es/index.html" lang="es" hreflang="es"><span class="language-flag" aria-hidden="true">🇪🇸</span><span class="language-name">Español</span></a>
+              <a class="language-option" href="../fr/index.html" lang="fr" hreflang="fr"><span class="language-flag" aria-hidden="true">🇫🇷</span><span class="language-name">Français</span></a>
+              <a class="language-option" href="../de/index.html" lang="de" hreflang="de"><span class="language-flag" aria-hidden="true">🇩🇪</span><span class="language-name">Deutsch</span></a>
+              <a class="language-option" href="../pt/index.html" lang="pt" hreflang="pt"><span class="language-flag" aria-hidden="true">🇧🇷</span><span class="language-name">Português</span></a>
+              <a class="language-option" href="../ru/index.html" lang="ru" hreflang="ru"><span class="language-flag" aria-hidden="true">🇷🇺</span><span class="language-name">Русский</span></a>
+              <a class="language-option" href="../ar/index.html" lang="ar" hreflang="ar"><span class="language-flag" aria-hidden="true">🇸🇦</span><span class="language-name">العربية</span></a>
+              <a class="language-option" href="../hi/index.html" lang="hi" hreflang="hi"><span class="language-flag" aria-hidden="true">🇮🇳</span><span class="language-name">हिन्दी</span></a>
+              <a class="language-option" href="../ja/index.html" lang="ja" hreflang="ja"><span class="language-flag" aria-hidden="true">🇯🇵</span><span class="language-name">日本語</span></a>
+              <a class="language-option language-option-active" href="./index.html" lang="zh" hreflang="zh"><span class="language-flag" aria-hidden="true">🇨🇳</span><span class="language-name">中文 (简体)</span></a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="download">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">QR 画廊、FTP 传输、本地交付</p>
+            <h1>一台设备完成拍摄到交付。</h1>
+            <p class="hero-lead">从相机或画廊导入照片，让客户通过 QR 进入，完成 PAC 确认后，再从同一设备交付 ZIP 文件。</p>
+
+            <div class="store-badges">
+              <a class="store-badge store-badge-play" data-store-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.snapvend.gallery" target="_blank" rel="noreferrer">
+                <span class="store-logo" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path fill="#00d26a" d="M8 6.8 29.2 24 8 41.2z"></path>
+                    <path fill="#00a3ff" d="m29.2 24 5.6-4.8c2.4 1.7 2.4 7 0 8.7z"></path>
+                    <path fill="#ffd400" d="M8 6.8 20.1 18l9.1 6-9.1 6L8 41.2 14.5 24z"></path>
+                    <path fill="#ff5a5f" d="M8 6.8 20.1 18l14.7 1.2z"></path>
+                  </svg>
+                </span>
+                <span class="store-copy">
+                  <small>下载 Android 版</small>
+                  <strong>Google Play</strong>
+                </span>
+              </a>
+
+              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-search="https://apps.apple.com/cn/search?term=SnapVend" href="https://apps.apple.com/cn/search?term=SnapVend" target="_blank" rel="noreferrer">
+                <span class="store-logo" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
+                  </svg>
+                </span>
+                <span class="store-copy">
+                  <small>下载 iPhone / iPad 版</small>
+                  <strong>App Store</strong>
+                </span>
+              </a>
+            </div>
+            <p class="setup-note" data-setup-note data-nosnippet hidden>月度和年度价格以及 App Store 直链都可以在 site-config.js 中更新。在 Apple 应用 ID 添加前，iOS 图标会先打开对应地区的 App Store 搜索结果。</p>
+
+            <div class="metric-grid">
+            <article class="metric-card reveal">
+              <span class="metric-value">1 台设备</span>
+              <span class="metric-label">接收、展示、交付</span>
+            </article>
+            <article class="metric-card reveal">
+              <span class="metric-value">10/天</span>
+              <span class="metric-label">免费计划交付上限</span>
+            </article>
+            <article class="metric-card reveal">
+              <span class="metric-value">0 云依赖</span>
+              <span class="metric-label">本地流程，无追踪</span>
+            </article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <article class="visual-frame visual-frame-main">
+              <img src="../assets/marketing/01_capture_to_delivery.png" alt="SnapVend workflow screenshot" loading="eager">
+            </article>
+            <article class="visual-frame visual-frame-secondary">
+              <img src="../assets/marketing/05_qr_gallery_page.png" alt="SnapVend QR gallery screenshot" loading="lazy">
+            </article>
+            <article class="visual-chip">
+              <span>SnapVend</span>
+              <p>QR 画廊、FTP 传输、本地交付</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo" id="demo">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">实时演示</p>
+            <h2>把客户完整流程放在一个清晰的界面里展示。</h2>
+            <p>SnapVend 将 QR 画廊、客户进入和最终交付整合成一个更专业的体验。</p>
+          </div>
+
+          <div class="demo-grid">
+            <article class="demo-stage reveal">
+              <div class="demo-stage-head">
+                <span>产品流程</span>
+                <strong>SnapVend</strong>
+              </div>
+              <div class="demo-stage-screen">
+                <video class="demo-video" data-demo-video playsinline autoplay muted loop controls hidden></video>
+                <img class="demo-fallback" data-demo-fallback src="../assets/marketing/02_gallery_dashboard.png" alt="SnapVend demo screen" loading="lazy">
+              </div>
+              <p class="demo-stage-note">如果添加视频链接，这个区域会自动切换为产品演示。</p>
+            </article>
+
+            <div class="demo-steps">
+            <article class="demo-step reveal">
+              <span class="demo-step-index">01</span>
+              <div>
+                <h3>导入照片</h3>
+                <p>从本地相册或 FTP 相机导入到同一设备。</p>
+              </div>
+            </article>
+            <article class="demo-step reveal">
+              <span class="demo-step-index">02</span>
+              <div>
+                <h3>通过 QR 打开画廊</h3>
+                <p>客户在同一网络下几秒内进入浏览。</p>
+              </div>
+            </article>
+            <article class="demo-step reveal">
+              <span class="demo-step-index">03</span>
+              <div>
+                <h3>确认并交付</h3>
+                <p>确认选择、完成 PAC 检查并以 ZIP 交付。</p>
+              </div>
+            </article>
+              <a class="action-link reveal" href="#download">看完演示后下载</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">流程</p>
+            <h2>更快、更可控、更适合现场</h2>
+            <p>SnapVend 把照片接收、客户预览和交付整合为一个清晰的现场流程。</p>
+          </div>
+
+          <div class="workflow-grid">
+            <ol class="workflow-list">
+              <li class="workflow-card reveal">
+                <span class="step-index">01</span>
+                <h3>导入照片</h3>
+                <p>可从本地画廊选择，也可通过支持 FTP 的相机直接进入 SnapVend。</p>
+              </li>
+              <li class="workflow-card reveal">
+                <span class="step-index">02</span>
+                <h3>通过 QR 分享画廊</h3>
+                <p>客户在同一网络下扫描二维码，即可立即打开网页画廊。</p>
+              </li>
+              <li class="workflow-card reveal">
+                <span class="step-index">03</span>
+                <h3>选择与 PAC 确认</h3>
+                <p>客户选择照片，由你确认付款和 PAC 验证。</p>
+              </li>
+              <li class="workflow-card reveal">
+                <span class="step-index">04</span>
+                <h3>ZIP 交付与报表</h3>
+                <p>已批准的文件以 ZIP 下载，交付和收入状态在应用内可追踪。</p>
+              </li>
+            </ol>
+
+            <div class="shot-stack reveal">
+              <article class="shot-card shot-card-large">
+                <img src="../assets/marketing/04_ftp_camera_flow.png" alt="SnapVend FTP screenshot" loading="lazy">
+              </article>
+              <article class="shot-card">
+                <img src="../assets/marketing/03_local_connection.png" alt="SnapVend local connection screenshot" loading="lazy">
+              </article>
+              <article class="shot-card">
+                <img src="../assets/marketing/06_reports_dashboard.png" alt="SnapVend reports screenshot" loading="lazy">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="audience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">适用对象</p>
+            <h2>为现场工作的专业团队而设计</h2>
+            <p>适合需要快速预览、可控选择和即时交付的摄影团队。</p>
+          </div>
+
+          <div class="audience-grid">
+            <article class="audience-card reveal">
+              <h3>婚礼与活动摄影</h3>
+              <p>适合需要在拍摄现场快速展示、选择和交付的团队。</p>
+            </article>
+            <article class="audience-card reveal">
+              <h3>影棚与人像拍摄</h3>
+              <p>适合希望与客户一起完成选片和交付的工作室。</p>
+            </article>
+            <article class="audience-card reveal">
+              <h3>学校、体育与企业拍摄</h3>
+              <p>适合管理多个会话而不混淆客户与交付的团队。</p>
+            </article>
+            <article class="audience-card reveal">
+              <h3>移动交付团队</h3>
+              <p>适合通过本地网络或热点运行且不依赖互联网的流程。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">方案</p>
+            <h2>先免费开始，再用 Pro 扩展</h2>
+            <p>免费方案适合熟悉流程。Pro 去掉交付限制并开放品牌自定义能力。</p>
+          </div>
+
+          <p class="config-warning reveal" data-config-warning data-nosnippet hidden>此仓库中没有最终订阅价格。价格和 App Store 直链可在 site-config.js 中更新。</p>
+
+          <div class="pricing-grid">
+            <article class="pricing-card reveal">
+              <span class="plan-badge">免费</span>
+              <h3>适合先熟悉流程</h3>
+              <div class="price-line">
+                <span class="price-value">0</span>
+                <span class="price-period">开始使用</span>
+              </div>
+              <ul class="feature-list">
+                <li>每日最多交付 10 张照片</li>
+                <li>SnapVend 品牌保持可见</li>
+                <li>自定义店名和标识处于锁定状态</li>
+                <li>适合正式上线前测试</li>
+              </ul>
+              <a class="action-link action-link-secondary" href="#download">免费开始</a>
+            </article>
+
+            <article class="pricing-card reveal">
+              <span class="plan-badge">专业版（月）</span>
+              <h3>灵活的月度使用</h3>
+              <div class="price-line">
+                <span class="price-value" data-config-text="monthlyPrice">更新价格</span>
+                <span class="price-period">/ 月</span>
+              </div>
+              <ul class="feature-list">
+                <li>无限每日交付</li>
+                <li>自定义店名和标识</li>
+                <li>自定义 ZIP 文件名</li>
+                <li>无限婚礼打印队列</li>
+              </ul>
+              <a class="action-link" href="#download">下载应用</a>
+            </article>
+
+            <article class="pricing-card pricing-card-highlight reveal">
+              <div class="plan-heading">
+                <span class="plan-badge plan-badge-highlight">专业版（年）</span>
+                <span class="plan-callout">最受欢迎</span>
+              </div>
+              <h3>更适合长期使用</h3>
+              <div class="price-line">
+                <span class="price-value" data-config-text="yearlyPrice">更新价格</span>
+                <span class="price-period">/ 年</span>
+              </div>
+              <ul class="feature-list">
+                <li>目标更低的年化成本</li>
+                <li>无限每日交付</li>
+                <li>完整品牌控制</li>
+                <li>适合高频现场工作</li>
+              </ul>
+              <a class="action-link" href="#download">下载应用</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">常见问题</p>
+            <h2>开始前最常见的问题</h2>
+            <p>这里整理了摄影团队和现场团队最常问的核心问题。</p>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item reveal" open>
+              <summary>SnapVend 可以在没有互联网时使用吗？</summary>
+              <p>可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>客户如何查看照片？</summary>
+              <p>客户在同一网络中扫描 QR 后，就能在浏览器里打开画廊。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>我可以使用自己的品牌名和 logo 吗？</summary>
+              <p>可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>哪个计划会移除交付限制？</summary>
+              <p>月度 Pro 和年度 Pro 都会移除每日交付限制。</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-panel reveal">
+          <div>
+            <p class="eyebrow">准备好了吗？</p>
+            <h2>用 SnapVend 更快地展示、选片并完成交付。</h2>
+            <p>QR 访问、FTP 传输、本地分享与报表在同一套流程中完成。</p>
+          </div>
+
+            <div class="store-badges">
+              <a class="store-badge store-badge-play" data-store-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.snapvend.gallery" target="_blank" rel="noreferrer">
+                <span class="store-logo" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path fill="#00d26a" d="M8 6.8 29.2 24 8 41.2z"></path>
+                    <path fill="#00a3ff" d="m29.2 24 5.6-4.8c2.4 1.7 2.4 7 0 8.7z"></path>
+                    <path fill="#ffd400" d="M8 6.8 20.1 18l9.1 6-9.1 6L8 41.2 14.5 24z"></path>
+                    <path fill="#ff5a5f" d="M8 6.8 20.1 18l14.7 1.2z"></path>
+                  </svg>
+                </span>
+                <span class="store-copy">
+                  <small>下载 Android 版</small>
+                  <strong>Google Play</strong>
+                </span>
+              </a>
+
+              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-search="https://apps.apple.com/cn/search?term=SnapVend" href="https://apps.apple.com/cn/search?term=SnapVend" target="_blank" rel="noreferrer">
+                <span class="store-logo" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
+                  </svg>
+                </span>
+                <span class="store-copy">
+                  <small>下载 iPhone / iPad 版</small>
+                  <strong>App Store</strong>
+                </span>
+              </a>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>SnapVend 在设备本地处理媒体。只有当你主动启动本地交付流程时，分享才会开放。</p>
+        <p>© 2026 SnapVend</p>
+      </div>
+    </footer>
+  </body>
+</html>
