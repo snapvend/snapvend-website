@@ -314,6 +314,7 @@ FAQ_SECTION = {
             {"q": "SnapVend internetsiz çalışır mı?", "a": "Evet. Ana akış yerel ağ veya hotspot üzerinde çalışabilir. Bulut zorunlu değildir."},
             {"q": "Müşteri fotoğrafları nasıl görür?", "a": "Müşteri aynı ağda QR kodu okutarak tarayıcıdan galeriye girer ve seçim yapar."},
             {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Pro planlarda özel işletme adı, logo ve teslim markalaması açılır."},
+            {"q": "Müşteriye ülkeye göre ödeme yöntemi gösterebilir miyim?", "a": "Evet. İşletme ülkesi seçildiğinde kurulumu tamamlanan yerel yöntemler ödeme popup ekranında görünür. Türkiye, İspanya, Hindistan, Çin ve Japonya için hazır yöntem setleri vardır."},
             {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Pro planlar günlük teslim limitini kaldırır."},
         ],
     },
@@ -325,6 +326,7 @@ FAQ_SECTION = {
             {"q": "Does SnapVend work without internet?", "a": "Yes. The main workflow can run over local network or hotspot. Cloud access is not required."},
             {"q": "How do clients view the photos?", "a": "Clients scan a QR code on the same network, open the browser gallery and make their selections there."},
             {"q": "Can I use my own business name and logo?", "a": "Yes. Pro plans unlock custom business branding, logo usage and branded delivery."},
+            {"q": "Can I show country-specific payment methods to clients?", "a": "Yes. Once the business country is selected, completed local methods appear in the payment popup. Ready local method sets are available for Turkey, Spain, India, China and Japan."},
             {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Pro plans remove the daily delivery limit."},
         ],
     },
@@ -336,6 +338,7 @@ FAQ_SECTION = {
             {"q": "¿SnapVend funciona sin internet?", "a": "Si. El flujo principal puede funcionar con red local o hotspot sin depender de la nube."},
             {"q": "¿Como ve el cliente las fotos?", "a": "El cliente escanea un QR en la misma red y abre la galeria en el navegador."},
             {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes Pro desbloquean nombre comercial, logo y entrega con marca propia."},
+            {"q": "¿Puedo mostrar metodos de pago segun el pais?", "a": "Si. Al elegir el pais del negocio, los metodos locales configurados aparecen en el popup de pago. Hay metodos listos para Turquia, Espana, India, China y Japon."},
             {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes Pro mensual y anual eliminan el limite diario."},
         ],
     },
@@ -347,6 +350,7 @@ FAQ_SECTION = {
             {"q": "SnapVend fonctionne t il sans internet ?", "a": "Oui. Le flux principal peut tourner sur reseau local ou hotspot sans cloud obligatoire."},
             {"q": "Comment le client voit il les photos ?", "a": "Le client scanne un QR sur le meme reseau et ouvre la galerie dans le navigateur."},
             {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans Pro ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
+            {"q": "Puis je afficher des methodes de paiement selon le pays ?", "a": "Oui. Une fois le pays de l entreprise choisi, les methodes locales configurees apparaissent dans la fenetre de paiement. Des ensembles prets existent pour la Turquie, l Espagne, l Inde, la Chine et le Japon."},
             {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans Pro mensuel et annuel retirent la limite quotidienne."},
         ],
     },
@@ -358,6 +362,7 @@ FAQ_SECTION = {
             {"q": "Funktioniert SnapVend ohne Internet?", "a": "Ja. Der Hauptablauf kann uber lokales Netzwerk oder Hotspot ohne Cloud laufen."},
             {"q": "Wie sehen Kunden die Fotos?", "a": "Kunden scannen im gleichen Netzwerk den QR Code und offnen die Galerie im Browser."},
             {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Pro schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
+            {"q": "Kann ich landerspezifische Zahlungsarten zeigen?", "a": "Ja. Sobald das Geschaeftsland gewahlt ist, erscheinen fertig eingerichtete lokale Methoden im Zahlungsfenster. Vorbereitete Sets gibt es fur die Turkei, Spanien, Indien, China und Japan."},
             {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Pro Plan entfernen das Tageslimit."},
         ],
     },
@@ -369,6 +374,7 @@ FAQ_SECTION = {
             {"q": "O SnapVend funciona sem internet?", "a": "Sim. O fluxo principal pode rodar em rede local ou hotspot sem depender da nuvem."},
             {"q": "Como o cliente ve as fotos?", "a": "O cliente escaneia um QR na mesma rede e abre a galeria no navegador."},
             {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos Pro liberam branding, logo e entrega personalizada."},
+            {"q": "Posso mostrar metodos de pagamento por pais?", "a": "Sim. Ao escolher o pais do negocio, os metodos locais configurados aparecem no popup de pagamento. Ha conjuntos prontos para Turquia, Espanha, India, China e Japao."},
             {"q": "Qual plano remove o limite de entrega?", "a": "Os planos Pro mensal e anual removem o limite diario."},
         ],
     },
@@ -380,6 +386,7 @@ FAQ_SECTION = {
             {"q": "Работает ли SnapVend без интернета?", "a": "Да. Основной сценарий может работать через локальную сеть или точку доступа без облака."},
             {"q": "Как клиент смотрит фотографии?", "a": "Клиент сканирует QR код в той же сети и открывает галерею в браузере."},
             {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Pro открывает фирменное имя, логотип и брендированную выдачу."},
+            {"q": "Можно ли показать клиенту способы оплаты по стране?", "a": "Да. После выбора страны бизнеса настроенные локальные методы появляются во всплывающем окне оплаты. Готовые наборы есть для Турции, Испании, Индии, Китая и Японии."},
             {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой Pro снимают ежедневный лимит выдачи."},
         ],
     },
@@ -391,6 +398,7 @@ FAQ_SECTION = {
             {"q": "هل يعمل SnapVend بدون انترنت؟", "a": "نعم. يمكن تشغيل التدفق الرئيسي عبر شبكة محلية او hotspot بدون اعتماد على السحابة."},
             {"q": "كيف يشاهد العميل الصور؟", "a": "يقوم العميل بمسح QR على نفس الشبكة ويفتح المعرض من المتصفح."},
             {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. خطط Pro تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
+            {"q": "هل يمكنني عرض طرق دفع حسب البلد للعميل؟", "a": "نعم. عند اختيار بلد النشاط تظهر الطرق المحلية المكتملة في نافذة الدفع. توجد مجموعات جاهزة لتركيا واسبانيا والهند والصين واليابان."},
             {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية Pro يزيلان حد التسليم اليومي."},
         ],
     },
@@ -402,6 +410,7 @@ FAQ_SECTION = {
             {"q": "क्या SnapVend बिना इंटरनेट के काम करता है?", "a": "हाँ। मुख्य workflow लोकल नेटवर्क या hotspot पर चल सकता है, cloud जरूरी नहीं है।"},
             {"q": "क्लाइंट फोटो कैसे देखता है?", "a": "क्लाइंट उसी नेटवर्क पर QR स्कैन करके browser gallery खोलता है।"},
             {"q": "क्या मैं अपना नाम और logo इस्तेमाल कर सकता हूँ?", "a": "हाँ। Pro plans custom branding, logo और branded delivery खोलते हैं।"},
+            {"q": "Kya main client ko country-based payment methods dikha sakta hoon?", "a": "Haan. Business country select karne ke baad configured local methods payment popup me dikhte hain. Turkey, Spain, India, China aur Japan ke liye ready method sets maujood hain."},
             {"q": "कौन सा plan delivery limit हटाता है?", "a": "Monthly और yearly दोनों Pro plans daily delivery limit हटाते हैं।"},
         ],
     },
@@ -413,6 +422,7 @@ FAQ_SECTION = {
             {"q": "SnapVend はインターネットなしで使えますか？", "a": "はい。主なフローはローカルネットワークや hotspot 上で動作でき、クラウドは必須ではありません。"},
             {"q": "クライアントはどうやって写真を見ますか？", "a": "同じネットワーク上で QR を読み取り、ブラウザギャラリーを開いて確認します。"},
             {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。Pro プランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
+            {"q": "国ごとの決済方法をクライアントに表示できますか？", "a": "はい。事業国を選ぶと、設定済みのローカル決済方法が支払いポップアップに表示されます。トルコ、スペイン、インド、中国、日本向けの方法セットが用意されています。"},
             {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Pro と年額 Pro の両方で日次納品制限が解除されます。"},
         ],
     },
@@ -424,6 +434,7 @@ FAQ_SECTION = {
             {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。"},
             {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描 QR 后，就能在浏览器里打开画廊。"},
             {"q": "我可以使用自己的品牌名和 logo 吗？", "a": "可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。"},
+            {"q": "可以向客户显示按国家配置的支付方式吗？", "a": "可以。选择商家所在国家后，已完成设置的本地支付方式会显示在支付弹窗中。目前已为土耳其、西班牙、印度、中国和日本准备了现成方式。"},
             {"q": "哪个计划会移除交付限制？", "a": "月度 Pro 和年度 Pro 都会移除每日交付限制。"},
         ],
     },
@@ -884,7 +895,7 @@ COPY = {
         "setup_note": "Aylık ve yıllık fiyatlarla doğrudan App Store bağlantısını site-config.js dosyasından güncelleyebilirsin. Apple mağaza ID'si eklenene kadar iOS logosu bölgesel App Store arama sonucunu açar.",
         "metrics": [
             {"value": "1 cihaz", "label": "Al, göster, teslim et"},
-            {"value": "10/gün", "label": "Ücretsiz plan teslim limiti"},
+            {"value": "6 yöntem", "label": "Hazır yerel ödeme akışı"},
             {"value": "0 bulut", "label": "Yerel çalışma, takip yok"},
         ],
         "workflow_eyebrow": "Akış",
@@ -893,6 +904,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Fotoğrafları içe aktar", "body": "Yerel galeriden seçin ya da FTP destekli kameradan SnapVend akışına gönderin."},
             {"title": "Galeriyi QR ile paylaş", "body": "Müşteri aynı ağdayken QR kodu okutur ve tarayıcıdan galeriye girer."},
+            {"title": "Yerel ödeme yöntemini göster", "body": "İşletme ülkenize göre FAST / EFT, Bizum, UPI, Alipay, WeChat Pay veya PayPay gibi hazır yöntemleri ödeme popup ekranında gösterin."},
             {"title": "Seçim ve PAC onayı", "body": "Müşteri kareleri seçer, siz ödeme ve PAC doğrulamasını kontrol edersiniz."},
             {"title": "ZIP teslim ve raporlama", "body": "Onaylanan dosyalar ZIP olarak iner; teslim ve gelir akışı uygulama içinde izlenir."},
         ],
@@ -963,7 +975,7 @@ COPY = {
         "setup_note": "You can update the monthly and yearly prices plus the direct App Store link from site-config.js. Until the Apple app ID is added, the iOS logo opens the regional App Store search result.",
         "metrics": [
             {"value": "1 device", "label": "Receive, show and deliver"},
-            {"value": "10/day", "label": "Free plan delivery limit"},
+            {"value": "6 methods", "label": "Ready local payment flow"},
             {"value": "0 cloud", "label": "Local workflow, no tracking"},
         ],
         "workflow_eyebrow": "Workflow",
@@ -972,6 +984,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Import the photos", "body": "Pick them from local media or send them into SnapVend from an FTP-capable camera."},
             {"title": "Share the gallery with QR", "body": "The client scans the code on the same network and opens the browser gallery instantly."},
+            {"title": "Show local payment methods", "body": "Display ready methods such as FAST / EFT, Bizum, UPI, Alipay, WeChat Pay or PayPay in the payment popup based on your business country."},
             {"title": "Selection and PAC approval", "body": "The client selects the shots and you confirm payment plus PAC validation."},
             {"title": "ZIP delivery and reports", "body": "Approved files download as ZIP while delivery and revenue stay visible inside the app."},
         ],
@@ -1042,7 +1055,7 @@ COPY = {
         "setup_note": "Puede actualizar los precios mensual y anual y el enlace directo de App Store desde site-config.js. Hasta agregar el ID de Apple, el logo de iOS abre la búsqueda regional en App Store.",
         "metrics": [
             {"value": "1 equipo", "label": "Recibir, mostrar y entregar"},
-            {"value": "10/día", "label": "Límite del plan gratis"},
+            {"value": "6 métodos", "label": "Pago local listo"},
             {"value": "0 nube", "label": "Flujo local, sin rastreo"},
         ],
         "workflow_eyebrow": "Flujo",
@@ -1051,6 +1064,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Importe las fotos", "body": "Tómelas desde la galería local o envíelas a SnapVend desde una cámara con FTP."},
             {"title": "Comparta la galería con QR", "body": "El cliente escanea el código en la misma red y abre la galería web al instante."},
+            {"title": "Mostrar pago local", "body": "Según el país del negocio, muestre en el popup métodos listos como FAST / EFT, Bizum, UPI, Alipay, WeChat Pay o PayPay."},
             {"title": "Selección y validación PAC", "body": "El cliente elige las fotos y usted confirma el pago y la validación PAC."},
             {"title": "Entrega ZIP y reportes", "body": "Los archivos aprobados bajan en ZIP y la entrega o ingresos quedan visibles en la app."},
         ],
@@ -1121,7 +1135,7 @@ COPY = {
         "setup_note": "Vous pouvez mettre a jour les prix mensuel et annuel ainsi que le lien direct App Store depuis site-config.js. Tant que l'ID Apple n'est pas ajoute, le logo iOS ouvre la recherche regionale App Store.",
         "metrics": [
             {"value": "1 appareil", "label": "Recevoir, montrer, livrer"},
-            {"value": "10/jour", "label": "Limite du plan gratuit"},
+            {"value": "6 methodes", "label": "Paiement local pret"},
             {"value": "0 cloud", "label": "Flux local, sans suivi"},
         ],
         "workflow_eyebrow": "Flux",
@@ -1130,6 +1144,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Importez les photos", "body": "Prenez-les depuis la galerie locale ou envoyez-les dans SnapVend depuis un appareil photo compatible FTP."},
             {"title": "Partagez la galerie par QR", "body": "Le client scanne le code sur le meme reseau et ouvre aussitot la galerie web."},
+            {"title": "Afficher le paiement local", "body": "Selon le pays de l entreprise, affichez dans la fenetre de paiement des methodes pretes comme FAST / EFT, Bizum, UPI, Alipay, WeChat Pay ou PayPay."},
             {"title": "Selection et validation PAC", "body": "Le client choisit les images et vous confirmez le paiement puis la validation PAC."},
             {"title": "Livraison ZIP et rapports", "body": "Les fichiers approuves sont telecharges en ZIP et les livraisons restent visibles dans l'application."},
         ],
@@ -1200,7 +1215,7 @@ COPY = {
         "setup_note": "Monats- und Jahrespreise sowie der direkte App-Store-Link lassen sich in site-config.js aktualisieren. Bis die Apple-ID vorliegt, oeffnet das iOS-Logo die regionale App-Store-Suche.",
         "metrics": [
             {"value": "1 Geraet", "label": "Empfangen, zeigen, liefern"},
-            {"value": "10/Tag", "label": "Gratisplan-Limit"},
+            {"value": "6 Methoden", "label": "Lokaler Zahlungsfluss"},
             {"value": "0 Cloud", "label": "Lokal, ohne Tracking"},
         ],
         "workflow_eyebrow": "Ablauf",
@@ -1209,6 +1224,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Fotos importieren", "body": "Waehlen Sie sie aus lokaler Galerie oder senden Sie sie per FTP-faehiger Kamera direkt in SnapVend."},
             {"title": "Galerie per QR teilen", "body": "Der Kunde scannt den Code im selben Netzwerk und oeffnet sofort die Web-Galerie."},
+            {"title": "Lokale Zahlarten zeigen", "body": "Je nach Geschaeftsland zeigen Sie im Zahlungsfenster vorbereitete Methoden wie FAST / EFT, Bizum, UPI, Alipay, WeChat Pay oder PayPay."},
             {"title": "Auswahl und PAC-Freigabe", "body": "Der Kunde waehlt Bilder aus und Sie bestaetigen Zahlung und PAC-Pruefung."},
             {"title": "ZIP-Lieferung und Berichte", "body": "Freigegebene Dateien werden als ZIP geladen, waehrend Lieferung und Umsatz sichtbar bleiben."},
         ],
@@ -1279,7 +1295,7 @@ COPY = {
         "setup_note": "Voce pode atualizar os precos mensal e anual e o link direto da App Store em site-config.js. Ate adicionar o ID da Apple, o logo do iOS abre a busca regional na App Store.",
         "metrics": [
             {"value": "1 aparelho", "label": "Receber, mostrar e entregar"},
-            {"value": "10/dia", "label": "Limite do plano gratuito"},
+            {"value": "6 metodos", "label": "Pagamento local pronto"},
             {"value": "0 nuvem", "label": "Fluxo local, sem rastreio"},
         ],
         "workflow_eyebrow": "Fluxo",
@@ -1288,6 +1304,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Importe as fotos", "body": "Escolha na galeria local ou envie direto para o SnapVend de uma camera com FTP."},
             {"title": "Compartilhe a galeria por QR", "body": "O cliente escaneia o codigo na mesma rede e abre a galeria web na hora."},
+            {"title": "Mostrar pagamento local", "body": "Conforme o pais do negocio, mostre no popup de pagamento metodos prontos como FAST / EFT, Bizum, UPI, Alipay, WeChat Pay ou PayPay."},
             {"title": "Selecao e aprovacao PAC", "body": "O cliente escolhe as fotos e voce confirma o pagamento e a validacao do PAC."},
             {"title": "Entrega ZIP e relatorios", "body": "Os arquivos aprovados baixam em ZIP e a entrega ou a receita ficam visiveis no app."},
         ],
@@ -1358,7 +1375,7 @@ COPY = {
         "setup_note": "Месячную и годовую цену, а также прямую ссылку App Store можно обновить в site-config.js. Пока не добавлен Apple ID приложения, логотип iOS открывает региональный поиск App Store.",
         "metrics": [
             {"value": "1 устройство", "label": "Получить, показать, выдать"},
-            {"value": "10/день", "label": "Лимит бесплатного плана"},
+            {"value": "6 методов", "label": "Готовые локальные платежи"},
             {"value": "0 облака", "label": "Локальная работа, без трекинга"},
         ],
         "workflow_eyebrow": "Поток",
@@ -1367,6 +1384,7 @@ COPY = {
         "workflow_cards": [
             {"title": "Импортируйте фото", "body": "Берите их из локальной галереи или отправляйте в SnapVend с FTP-камеры."},
             {"title": "Поделитесь галереей по QR", "body": "Клиент сканирует код в той же сети и сразу открывает веб-галерею."},
+            {"title": "Показать локальную оплату", "body": "В зависимости от страны бизнеса показывайте во всплывающем окне оплаты готовые методы: FAST / EFT, Bizum, UPI, Alipay, WeChat Pay или PayPay."},
             {"title": "Выбор и подтверждение PAC", "body": "Клиент выбирает кадры, а вы подтверждаете оплату и проверку PAC."},
             {"title": "ZIP-выдача и отчеты", "body": "Одобренные файлы скачиваются ZIP, а выдача и выручка видны внутри приложения."},
         ],
@@ -1437,7 +1455,7 @@ COPY = {
         "setup_note": "يمكنك تحديث السعر الشهري والسنوي والرابط المباشر لـ App Store من site-config.js. وحتى اضافة معرف Apple يفتح شعار iOS نتيجة البحث الاقليمية في App Store.",
         "metrics": [
             {"value": "جهاز واحد", "label": "استلم، اعرض، سلم"},
-            {"value": "10/يوم", "label": "حد الخطة المجانية"},
+            {"value": "6 طرق", "label": "دفع محلي جاهز"},
             {"value": "0 سحابة", "label": "عمل محلي بدون تتبع"},
         ],
         "workflow_eyebrow": "سير العمل",
@@ -1446,6 +1464,7 @@ COPY = {
         "workflow_cards": [
             {"title": "استيراد الصور", "body": "اخترها من المعرض المحلي او ارسلها الى SnapVend من كاميرا تدعم FTP."},
             {"title": "شارك المعرض عبر QR", "body": "يمسح العميل الرمز على الشبكة نفسها ويفتح معرض الويب مباشرة."},
+            {"title": "اعرض الدفع المحلي", "body": "بحسب بلد النشاط اعرض في نافذة الدفع طرقا جاهزة مثل FAST / EFT و Bizum و UPI و Alipay و WeChat Pay و PayPay."},
             {"title": "الاختيار وتأكيد PAC", "body": "يختار العميل الصور وتؤكد انت الدفع والتحقق من PAC."},
             {"title": "تسليم ZIP والتقارير", "body": "تنزل الملفات المعتمدة كملف ZIP وتبقى عمليات التسليم والايراد ظاهرة داخل التطبيق."},
         ],
@@ -1516,7 +1535,7 @@ COPY = {
         "setup_note": "मासिक और वार्षिक कीमतें तथा सीधा App Store लिंक site-config.js में अपडेट किए जा सकते हैं. जब तक Apple app ID नहीं जुड़ती, iOS लोगो क्षेत्रीय App Store search result खोलता है.",
         "metrics": [
             {"value": "1 डिवाइस", "label": "लो, दिखाओ, डिलीवर करो"},
-            {"value": "10/दिन", "label": "फ्री प्लान सीमा"},
+            {"value": "6 methods", "label": "Ready local payment"},
             {"value": "0 क्लाउड", "label": "लोकल फ्लो, बिना ट्रैकिंग"},
         ],
         "workflow_eyebrow": "वर्कफ़्लो",
@@ -1525,6 +1544,7 @@ COPY = {
         "workflow_cards": [
             {"title": "फोटो इम्पोर्ट करें", "body": "लोकल गैलरी से चुनें या FTP कैमरा से सीधे SnapVend में भेजें."},
             {"title": "QR से गैलरी शेयर करें", "body": "ग्राहक उसी नेटवर्क पर QR स्कैन करके तुरंत वेब गैलरी खोलता है."},
+            {"title": "Local payment dikhayein", "body": "Business country ke hisab se payment popup me FAST / EFT, Bizum, UPI, Alipay, WeChat Pay ya PayPay jaise ready methods dikhayein."},
             {"title": "चयन और PAC पुष्टि", "body": "ग्राहक फोटो चुनता है और आप भुगतान व PAC सत्यापन की पुष्टि करते हैं."},
             {"title": "ZIP डिलीवरी और रिपोर्ट", "body": "मंजूर फाइलें ZIP में डाउनलोड होती हैं और डिलीवरी व आय ऐप में दिखती रहती है."},
         ],
@@ -1595,7 +1615,7 @@ COPY = {
         "setup_note": "月額・年額の価格と App Store の直接リンクは site-config.js で更新できます。Apple のアプリ ID が入るまでは、iOS ロゴは地域別 App Store 検索結果を開きます。",
         "metrics": [
             {"value": "1台", "label": "受け取り・提示・納品"},
-            {"value": "10/日", "label": "無料プランの納品上限"},
+            {"value": "6方式", "label": "ローカル決済対応"},
             {"value": "0クラウド", "label": "ローカル運用、追跡なし"},
         ],
         "workflow_eyebrow": "ワークフロー",
@@ -1604,6 +1624,7 @@ COPY = {
         "workflow_cards": [
             {"title": "写真を取り込む", "body": "端末のギャラリーから選ぶか、FTP 対応カメラから SnapVend に直接送れます。"},
             {"title": "QR でギャラリー共有", "body": "同じネットワーク上で顧客が QR を読み取り、Web ギャラリーをすぐ開けます。"},
+            {"title": "現地向け決済を表示", "body": "事業国に応じて、支払いポップアップに FAST / EFT、Bizum、UPI、Alipay、WeChat Pay、PayPay などの方法を表示できます。"},
             {"title": "選択と PAC 承認", "body": "顧客が写真を選び、支払いと PAC 確認はあなたが管理します。"},
             {"title": "ZIP 納品とレポート", "body": "承認済みファイルは ZIP で渡され、納品や売上の流れもアプリ内で確認できます。"},
         ],
@@ -1674,7 +1695,7 @@ COPY = {
         "setup_note": "月度和年度价格以及 App Store 直链都可以在 site-config.js 中更新。在 Apple 应用 ID 添加前，iOS 图标会先打开对应地区的 App Store 搜索结果。",
         "metrics": [
             {"value": "1 台设备", "label": "接收、展示、交付"},
-            {"value": "10/天", "label": "免费计划交付上限"},
+            {"value": "6 种", "label": "本地支付流程"},
             {"value": "0 云依赖", "label": "本地流程，无追踪"},
         ],
         "workflow_eyebrow": "流程",
@@ -1683,6 +1704,7 @@ COPY = {
         "workflow_cards": [
             {"title": "导入照片", "body": "可从本地画廊选择，也可通过支持 FTP 的相机直接进入 SnapVend。"},
             {"title": "通过 QR 分享画廊", "body": "客户在同一网络下扫描二维码，即可立即打开网页画廊。"},
+            {"title": "显示本地支付方式", "body": "可根据商家所在国家，在支付弹窗中显示 FAST / EFT、Bizum、UPI、Alipay、WeChat Pay、PayPay 等现成方式。"},
             {"title": "选择与 PAC 确认", "body": "客户选择照片，由你确认付款和 PAC 验证。"},
             {"title": "ZIP 交付与报表", "body": "已批准的文件以 ZIP 下载，交付和收入状态在应用内可追踪。"},
         ],
