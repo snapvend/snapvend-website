@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://snapvend.app/sitemap.xml
+Sitemap: https://snapvendgallery.com/sitemap.xml
