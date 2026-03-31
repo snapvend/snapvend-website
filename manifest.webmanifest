@@ -13,8 +13,8 @@
       "type": "image/png"
     },
     {
-      "src": "/assets/favicon.png",
-      "sizes": "192x192",
+      "src": "/assets/branding/snapvend_logo_square.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ]

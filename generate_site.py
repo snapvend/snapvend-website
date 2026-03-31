@@ -10,6 +10,8 @@ ROOT = Path(__file__).resolve().parent
 SEO_CONFIG = json.loads((ROOT / "seo-config.json").read_text(encoding="utf-8"))
 SITE_URL = SEO_CONFIG["siteUrl"].rstrip("/")
 BUILD_DATE = date.today().isoformat()
+BRAND_MARK_ASSET = "/assets/branding/snapvend_logo_square.png"
+APP_ICON_ASSET = "/assets/branding/app_icon_store_512.png"
 
 
 LOCALE_META = {
@@ -162,145 +164,156 @@ NAV_EXTRA = {
 DEMO_SECTION = {
     "tr": {
         "eyebrow": "Canlı Demo",
-        "title": "Müşterinin gördüğü akışı tek ekranda göster.",
-        "lead": "SnapVend galeri paylaşımı, QR erişimi ve teslim adımlarını ekip ve müşteri için sade bir ekran akışında toplar.",
+        "title": "WiFi / hotspot bağlantısından session galerisine kadar akışı göster.",
+        "lead": "SnapVend müşteriyi önce WiFi veya hotspot QR bağlantısıyla aynı ağa alır, sonra session galerisine yönlendirir ve teslime kadar akışı tek deneyimde toplar.",
         "screen_label": "Örnek ürün akışı",
         "screen_note": "Video linki eklersen bu alan otomatik olarak canlı ürün demosuna dönüşür.",
         "cta": "Demodan sonra indir",
         "steps": [
-            {"title": "Fotoğrafları al", "body": "Galeriden seç ya da FTP destekli kameradan aynı cihaza aktar."},
-            {"title": "QR ile müşteriyi içeri al", "body": "Aynı ağda müşteriye galeri ekranını saniyeler içinde aç."},
-            {"title": "Seçim, onay ve teslim", "body": "Seçimleri doğrula, PAC kontrolünü yap ve ZIP teslimini tamamla."},
+            {"title": "Fotoğrafları içe al", "body": "Yerel galeriden seç ya da FTP destekli profesyonel fotoğraf makinesinden doğrudan uygulamaya aktar."},
+            {"title": "WiFi / hotspot QR bağlantısını aç", "body": "Müşteriyi uygulama indirtmeden aynı ağ ya da hotspot üstünde saniyeler içinde bağla."},
+            {"title": "Session QR ile galeriye al", "body": "Müşteri kendi session QR kodunu okutup yalnızca kendisine ait galeriye girsin."},
+            {"title": "Ödeme, PAC ve teslim", "body": "Seçimleri doğrula, ödeme ve PAC kontrolünü yap, sonra onaylanan dosyaları ZIP olarak teslim et."},
         ],
     },
     "en": {
         "eyebrow": "Live Demo",
-        "title": "Show the full client flow on one clear screen.",
-        "lead": "SnapVend keeps gallery sharing, QR access and delivery steps inside one simple journey for both your team and your client.",
+        "title": "Show the flow from WiFi / hotspot access to the session gallery.",
+        "lead": "SnapVend first brings the client onto the same network through a WiFi or hotspot QR connection, then moves them into the right session gallery and through delivery in one product journey.",
         "screen_label": "Sample product flow",
         "screen_note": "If you add a video URL, this area automatically turns into a live product demo.",
         "cta": "Download after demo",
         "steps": [
-            {"title": "Bring photos in", "body": "Select from local media or transfer from an FTP capable camera on the same device."},
-            {"title": "Open the gallery with QR", "body": "Let the client enter the browser gallery in seconds on the same network."},
-            {"title": "Approve and deliver", "body": "Confirm selections, handle PAC approval and finish delivery as ZIP."},
+            {"title": "Bring photos in", "body": "Select them from local media or transfer them directly into the app from an FTP-capable professional camera."},
+            {"title": "Open WiFi / hotspot QR access", "body": "Bring the client onto the same network in seconds without asking them to install the app."},
+            {"title": "Open the session gallery with QR", "body": "Let the client scan the session QR code and enter only the gallery created for that shoot."},
+            {"title": "Approve and deliver", "body": "Confirm payment, handle PAC approval and finish delivery as ZIP from the same device."},
         ],
     },
     "es": {
         "eyebrow": "Demo",
-        "title": "Muestre todo el flujo del cliente en una sola pantalla.",
-        "lead": "SnapVend reúne galería QR, acceso del cliente y entrega final en una experiencia clara y profesional.",
+        "title": "Muestre QR, sessions y entrega en una sola pantalla.",
+        "lead": "SnapVend reúne la transferencia FTP desde cámara profesional, la gestión por session, el acceso por QR y la entrega final en una experiencia clara y profesional.",
         "screen_label": "Flujo de producto",
         "screen_note": "Si agrega un enlace de video, esta zona se convierte automáticamente en un demo en vivo.",
         "cta": "Descargar después del demo",
         "steps": [
-            {"title": "Importe las fotos", "body": "Tómelas desde la galería local o desde una cámara con FTP."},
-            {"title": "Abra la galería con QR", "body": "El cliente entra al instante desde la misma red."},
-            {"title": "Aprobación y entrega", "body": "Confirme la selección, valide PAC y entregue en ZIP."},
+            {"title": "Importe las fotos", "body": "Use la galería local o transfiéralas directamente a la app desde una cámara profesional con FTP."},
+            {"title": "Abra una session", "body": "Cree una session separada para cada cliente, toma o evento y mantenga el flujo ordenado."},
+            {"title": "Abra la galería con QR", "body": "El cliente entra a su galería de session en segundos al escanear el QR en la misma red."},
+            {"title": "Aprobación y entrega", "body": "Confirme el pago, valide PAC y entregue los archivos aprobados en ZIP."},
         ],
     },
     "fr": {
         "eyebrow": "Démo",
-        "title": "Montrez tout le parcours client sur un seul écran.",
-        "lead": "SnapVend réunit galerie QR, accès client et livraison finale dans une expérience claire et professionnelle.",
+        "title": "Montrez QR, sessions et livraison sur un seul écran.",
+        "lead": "SnapVend réunit le transfert FTP depuis un appareil photo pro, la gestion par session, l'accès QR et la livraison finale dans une expérience claire et professionnelle.",
         "screen_label": "Flux produit",
         "screen_note": "Si vous ajoutez une URL vidéo, cette zone devient automatiquement une démo produit.",
         "cta": "Télécharger après la démo",
         "steps": [
-            {"title": "Importer les photos", "body": "Depuis la galerie locale ou depuis un appareil photo compatible FTP."},
-            {"title": "Ouvrir la galerie par QR", "body": "Le client entre instantanément depuis le même réseau."},
-            {"title": "Valider et livrer", "body": "Confirmez les sélections, validez le PAC et livrez en ZIP."},
+            {"title": "Importer les photos", "body": "Prenez-les depuis la galerie locale ou transférez-les directement dans l'app depuis un appareil photo pro compatible FTP."},
+            {"title": "Ouvrir une session", "body": "Créez une session séparée pour chaque client, prise de vue ou événement afin de garder un flux propre."},
+            {"title": "Ouvrir la galerie par QR", "body": "Le client entre dans sa galerie de session en quelques secondes via le QR sur le même réseau."},
+            {"title": "Valider et livrer", "body": "Confirmez le paiement, validez le PAC et livrez les fichiers approuvés en ZIP."},
         ],
     },
     "de": {
         "eyebrow": "Demo",
-        "title": "Zeigen Sie den gesamten Kundenfluss auf einem klaren Bildschirm.",
-        "lead": "SnapVend bündelt QR Galerie, Kundenzugang und Auslieferung in einem professionellen Ablauf.",
+        "title": "Zeigen Sie QR, Sessions und Auslieferung auf einem klaren Bildschirm.",
+        "lead": "SnapVend verbindet FTP-Transfer aus professionellen Kameras, Session-Verwaltung, QR-Zugang und Auslieferung in einem professionellen Ablauf.",
         "screen_label": "Produktablauf",
         "screen_note": "Wenn Sie eine Video URL hinterlegen, wird dieser Bereich automatisch zur Live Demo.",
         "cta": "Nach der Demo herunterladen",
         "steps": [
-            {"title": "Fotos importieren", "body": "Aus lokaler Galerie oder von einer FTP fähigen Kamera."},
-            {"title": "Galerie per QR öffnen", "body": "Der Kunde öffnet die Galerie in Sekunden im gleichen Netzwerk."},
-            {"title": "Freigeben und liefern", "body": "Auswahl bestätigen, PAC prüfen und als ZIP ausliefern."},
+            {"title": "Fotos importieren", "body": "Waehlen Sie sie aus lokaler Galerie oder uebertragen Sie sie direkt aus einer FTP-faehigen Profikamera in die App."},
+            {"title": "Session starten", "body": "Erstellen Sie fuer jeden Kunden, jedes Shooting oder Event eine eigene Session und halten Sie den Ablauf sauber getrennt."},
+            {"title": "Galerie per QR oeffnen", "body": "Der Kunde oeffnet seine Session-Galerie in Sekunden per QR im gleichen Netzwerk."},
+            {"title": "Freigeben und liefern", "body": "Zahlung bestaetigen, PAC pruefen und freigegebene Dateien als ZIP ausliefern."},
         ],
     },
     "pt": {
         "eyebrow": "Demo",
-        "title": "Mostre toda a jornada do cliente em uma unica tela.",
-        "lead": "SnapVend une galeria QR, acesso do cliente e entrega final em um fluxo claro e profissional.",
+        "title": "Mostre QR, sessions e entrega em uma unica tela.",
+        "lead": "SnapVend une transferencia FTP de camera profissional, gestao por session, acesso por QR e entrega final em um fluxo claro e profissional.",
         "screen_label": "Fluxo do produto",
         "screen_note": "Se voce adicionar um link de video, esta area vira automaticamente um demo ao vivo.",
         "cta": "Baixar depois do demo",
         "steps": [
-            {"title": "Importe as fotos", "body": "Use a galeria local ou uma camera com FTP."},
-            {"title": "Abra a galeria por QR", "body": "O cliente entra em segundos na mesma rede."},
-            {"title": "Aprove e entregue", "body": "Confirme a selecao, valide o PAC e entregue em ZIP."},
+            {"title": "Importe as fotos", "body": "Use a galeria local ou transfira direto para o app a partir de uma camera profissional com FTP."},
+            {"title": "Abra uma session", "body": "Crie uma session separada para cada cliente, ensaio ou evento e mantenha o fluxo organizado."},
+            {"title": "Abra a galeria por QR", "body": "O cliente entra na propria galeria da session em segundos ao escanear o QR na mesma rede."},
+            {"title": "Aprove e entregue", "body": "Confirme o pagamento, valide o PAC e entregue os arquivos aprovados em ZIP."},
         ],
     },
     "ru": {
         "eyebrow": "Демо",
-        "title": "Покажите весь клиентский путь на одном экране.",
-        "lead": "SnapVend объединяет QR галерею, доступ клиента и выдачу файлов в одном понятном сценарии.",
+        "title": "Покажите QR, сессии и выдачу на одном экране.",
+        "lead": "SnapVend объединяет FTP-передачу с профессиональной камеры, управление сессиями, QR-доступ и финальную выдачу в одном понятном сценарии.",
         "screen_label": "Сценарий продукта",
         "screen_note": "Если добавить ссылку на видео, этот блок автоматически станет живой демо зоной.",
         "cta": "Скачать после демо",
         "steps": [
-            {"title": "Импорт фото", "body": "Загрузите из галереи или с FTP камеры."},
-            {"title": "Вход по QR", "body": "Клиент открывает галерею за секунды в той же сети."},
-            {"title": "Подтверждение и выдача", "body": "Подтвердите выбор, проверьте PAC и выдайте ZIP."},
+            {"title": "Импорт фото", "body": "Загрузите из локальной галереи или передайте прямо в приложение с профессиональной камеры по FTP."},
+            {"title": "Откройте сессию", "body": "Создайте отдельную сессию для каждого клиента, съемки или события, чтобы не смешивать потоки."},
+            {"title": "Вход по QR", "body": "Клиент за секунды открывает свою галерею сессии по QR в той же сети."},
+            {"title": "Подтверждение и выдача", "body": "Подтвердите оплату, проверьте PAC и выдайте одобренные файлы в ZIP."},
         ],
     },
     "ar": {
         "eyebrow": "عرض حي",
-        "title": "اعرض رحلة العميل كاملة على شاشة واحدة واضحة.",
-        "lead": "يجمع SnapVend بين معرض QR ودخول العميل والتسليم النهائي في تجربة احترافية واحدة.",
+        "title": "اعرض QR و sessions والتسليم على شاشة واحدة واضحة.",
+        "lead": "يجمع SnapVend بين النقل عبر FTP من الكاميرات الاحترافية وادارة sessions ودخول QR والتسليم النهائي في تجربة احترافية واحدة.",
         "screen_label": "تدفق المنتج",
         "screen_note": "عند اضافة رابط فيديو سيتحول هذا القسم تلقائيا الى عرض حي للمنتج.",
         "cta": "نزّل بعد العرض",
         "steps": [
-            {"title": "استيراد الصور", "body": "من المعرض المحلي او من كاميرا تدعم FTP."},
-            {"title": "فتح المعرض عبر QR", "body": "يدخل العميل خلال ثوان من نفس الشبكة."},
-            {"title": "اعتماد وتسليم", "body": "اكد الاختيارات وراجع PAC وسلم الملفات بصيغة ZIP."},
+            {"title": "استيراد الصور", "body": "اخترها من المعرض المحلي او انقلها مباشرة الى التطبيق من كاميرا احترافية تدعم FTP."},
+            {"title": "افتح session", "body": "ابدأ session مستقلة لكل عميل او جلسة تصوير او فعالية حتى يبقى التدفق منظما."},
+            {"title": "فتح المعرض عبر QR", "body": "يدخل العميل الى معرض session الخاص به خلال ثوان عبر QR على نفس الشبكة."},
+            {"title": "اعتماد وتسليم", "body": "اكد الدفع وراجع PAC ثم سلم الملفات المعتمدة بصيغة ZIP."},
         ],
     },
     "hi": {
         "eyebrow": "लाइव डेमो",
-        "title": "पूरा ग्राहक फ्लो एक साफ स्क्रीन पर दिखाएं।",
-        "lead": "SnapVend QR gallery, client access और delivery flow को एक professional अनुभव में जोड़ता है।",
+        "title": "QR, session aur delivery flow ko ek saaf screen par dikhayen.",
+        "lead": "SnapVend professional camera FTP transfer, session management, QR access aur delivery ko ek professional experience me jodta hai.",
         "screen_label": "प्रोडक्ट फ्लो",
         "screen_note": "अगर आप video URL जोड़ते हैं तो यह हिस्सा अपने आप live demo बन जाएगा।",
         "cta": "डेमो के बाद डाउनलोड करें",
         "steps": [
-            {"title": "फोटो इम्पोर्ट करें", "body": "लोकल गैलरी या FTP कैमरा से फोटो लाएं।"},
-            {"title": "QR से गैलरी खोलें", "body": "क्लाइंट उसी नेटवर्क पर सेकंडों में गैलरी खोलता है।"},
-            {"title": "मंजूरी और डिलीवरी", "body": "सेलेक्शन कन्फर्म करें, PAC जांचें और ZIP डिलीवर करें।"},
+            {"title": "फोटो इम्पोर्ट करें", "body": "लोकल गैलरी से लें या professional FTP camera se direct app me transfer karein."},
+            {"title": "Session shuru karein", "body": "Har client, shoot ya event ke liye alag session kholen taaki flow mix na ho."},
+            {"title": "QR se gallery kholen", "body": "Client usi network par QR scan karke apni session gallery turant kholta hai."},
+            {"title": "Manzoori aur delivery", "body": "Payment confirm karein, PAC check karein aur approved files ko ZIP me deliver karein."},
         ],
     },
     "ja": {
         "eyebrow": "ライブデモ",
-        "title": "クライアントの流れを1画面で分かりやすく見せる。",
-        "lead": "SnapVend は QR ギャラリー、クライアント閲覧、納品までをひとつの分かりやすい体験にまとめます。",
+        "title": "QR、セッション、納品の流れを1画面で見せる。",
+        "lead": "SnapVend はプロ向けカメラからの FTP 転送、セッション管理、QR アクセス、納品までをひとつの分かりやすい体験にまとめます。",
         "screen_label": "製品フロー",
         "screen_note": "動画 URL を追加すると、この領域は自動で製品デモに変わります。",
         "cta": "デモのあとにダウンロード",
         "steps": [
-            {"title": "写真を取り込む", "body": "ローカルメディアまたは FTP 対応カメラから取り込みます。"},
-            {"title": "QR でギャラリー共有", "body": "同じネットワーク上でクライアントがすぐに閲覧できます。"},
-            {"title": "承認して納品", "body": "選択を確認し、PAC を確認して ZIP で納品します。"},
+            {"title": "写真を取り込む", "body": "ローカルメディアから選ぶか、FTP 対応のプロ向けカメラからアプリへ直接取り込みます。"},
+            {"title": "セッションを開始する", "body": "顧客、撮影、イベントごとに個別のセッションを作り、流れを整理します。"},
+            {"title": "QR でギャラリー共有", "body": "同じネットワーク上でクライアントが QR を読み取り、自分のセッションギャラリーをすぐ開けます。"},
+            {"title": "承認して納品", "body": "支払いを確認し、PAC を確認して、承認済みファイルを ZIP で納品します。"},
         ],
     },
     "zh": {
         "eyebrow": "实时演示",
-        "title": "把客户完整流程放在一个清晰的界面里展示。",
-        "lead": "SnapVend 将 QR 画廊、客户进入和最终交付整合成一个更专业的体验。",
+        "title": "把 QR、session 与交付流程放在一个清晰界面里展示。",
+        "lead": "SnapVend 将专业相机 FTP 传输、session 管理、QR 进入和最终交付整合成一个更专业的体验。",
         "screen_label": "产品流程",
         "screen_note": "如果添加视频链接，这个区域会自动切换为产品演示。",
         "cta": "看完演示后下载",
         "steps": [
-            {"title": "导入照片", "body": "从本地相册或 FTP 相机导入到同一设备。"},
-            {"title": "通过 QR 打开画廊", "body": "客户在同一网络下几秒内进入浏览。"},
-            {"title": "确认并交付", "body": "确认选择、完成 PAC 检查并以 ZIP 交付。"},
+            {"title": "导入照片", "body": "可从本地相册选择，也可通过支持 FTP 的专业相机直接传入应用。"},
+            {"title": "创建 session", "body": "为每位客户、每次拍摄或每场活动建立独立 session，避免流程混淆。"},
+            {"title": "通过 QR 打开画廊", "body": "客户在同一网络下扫描 QR，几秒内进入自己的 session 画廊。"},
+            {"title": "确认并交付", "body": "确认付款，完成 PAC 检查，并以 ZIP 方式交付已批准文件。"},
         ],
     },
 }
@@ -940,7 +953,7 @@ COPY = {
             "Sınırsız günlük teslim",
             "Özel işletme adı ve logo",
             "Özel ZIP dosya adı",
-            "Sınırsız düğün baskı kuyruğu",
+            "Sınırsız düğün baskı listesi",
         ],
         "monthly_cta": "Uygulamayı indir",
         "yearly_badge": "Pro Yıllık",
@@ -1020,7 +1033,7 @@ COPY = {
             "Unlimited daily deliveries",
             "Custom business name and logo",
             "Custom ZIP file name",
-            "Unlimited wedding print queue",
+            "Unlimited wedding print list",
         ],
         "monthly_cta": "Download the app",
         "yearly_badge": "Pro Yearly",
@@ -1100,7 +1113,7 @@ COPY = {
             "Entregas diarias ilimitadas",
             "Nombre y logo personalizados",
             "Nombre ZIP personalizado",
-            "Cola de impresión de bodas ilimitada",
+            "Lista de impresion de bodas ilimitada",
         ],
         "monthly_cta": "Descargar la app",
         "yearly_badge": "Pro Anual",
@@ -1180,7 +1193,7 @@ COPY = {
             "Livraisons quotidiennes illimitees",
             "Nom et logo personnalises",
             "Nom de fichier ZIP personnalise",
-            "File d'impression mariage illimitee",
+            "Liste d'impression mariage illimitee",
         ],
         "monthly_cta": "Telecharger l'app",
         "yearly_badge": "Pro Annuel",
@@ -1260,7 +1273,7 @@ COPY = {
             "Unbegrenzte taegliche Lieferungen",
             "Eigener Firmenname und Logo",
             "Eigener ZIP-Dateiname",
-            "Unbegrenzte Hochzeitsdruck-Warteschlange",
+            "Unbegrenzte Hochzeitsdruckliste",
         ],
         "monthly_cta": "App herunterladen",
         "yearly_badge": "Pro Jaehrlich",
@@ -1340,7 +1353,7 @@ COPY = {
             "Entregas diarias ilimitadas",
             "Nome e logo personalizados",
             "Nome ZIP personalizado",
-            "Fila de impressao de casamento ilimitada",
+            "Lista de impressao de casamento ilimitada",
         ],
         "monthly_cta": "Baixar o app",
         "yearly_badge": "Pro Anual",
@@ -1420,7 +1433,7 @@ COPY = {
             "Неограниченная ежедневная выдача",
             "Свой бренд и логотип",
             "Собственное ZIP-имя",
-            "Неограниченная очередь свадебной печати",
+            "Неограниченный список свадебной печати",
         ],
         "monthly_cta": "Скачать приложение",
         "yearly_badge": "Pro Год",
@@ -1500,7 +1513,7 @@ COPY = {
             "تسليم يومي غير محدود",
             "اسم وشعار مخصصان",
             "اسم ZIP مخصص",
-            "طابور طباعة اعراس غير محدود",
+            "قائمة طباعة الاعراس بدون حدود",
         ],
         "monthly_cta": "نزّل التطبيق",
         "yearly_badge": "برو سنوي",
@@ -1580,7 +1593,7 @@ COPY = {
             "असीमित दैनिक डिलीवरी",
             "कस्टम बिज़नेस नाम और लोगो",
             "कस्टम ZIP नाम",
-            "असीमित वेडिंग प्रिंट कतार",
+            "असीमित वेडिंग प्रिंट सूची",
         ],
         "monthly_cta": "ऐप डाउनलोड करें",
         "yearly_badge": "प्रो वार्षिक",
@@ -1660,7 +1673,7 @@ COPY = {
             "1日の納品数が無制限",
             "独自の店名とロゴ",
             "独自 ZIP 名",
-            "ウェディング印刷キュー無制限",
+            "ウェディングプリントリスト無制限",
         ],
         "monthly_cta": "アプリを入手",
         "yearly_badge": "Pro 年額",
@@ -1740,7 +1753,7 @@ COPY = {
             "无限每日交付",
             "自定义店名和标识",
             "自定义 ZIP 文件名",
-            "无限婚礼打印队列",
+            "无限婚礼打印列表",
         ],
         "monthly_cta": "下载应用",
         "yearly_badge": "专业版（年）",
@@ -1761,9 +1774,525 @@ COPY = {
     },
 }
 
+COPY_FLOW_OVERRIDES = {
+    "tr": {
+        "hero_lead": "Fotoğrafları yerel galeriden ya da FTP destekli profesyonel fotoğraf makinesinden doğrudan uygulamaya alın, WiFi veya hotspot QR bağlantısını açın, her çekim için ayrı session yönetin, müşteriyi QR galeriye alın ve onaylanan dosyaları aynı cihazdan ZIP olarak teslim edin.",
+        "metrics": [
+            {"value": "1 cihaz", "label": "Çek, göster, teslim et"},
+            {"value": "QR erişim", "label": "WiFi ya da hotspot ile bağlan"},
+            {"value": "Çoklu session", "label": "Her çekimi ayrı yönet"},
+        ],
+        "workflow_title": "QR, session ve teslim tek akışta",
+        "workflow_lead": "SnapVend profesyonel fotoğraf makinesinden doğrudan FTP aktarımını, WiFi veya hotspot üzerinden QR bağlantısını, session bazlı müşteri akışını ve teslim sonrası raporlamayı tek operasyon haline getirir.",
+        "workflow_cards": [
+            {"title": "Fotoğrafları profesyonel kameradan al", "body": "Yerel galeriden seçin ya da FTP destekli profesyonel fotoğraf makinesinden kareleri doğrudan SnapVend akışına aktarın."},
+            {"title": "WiFi / hotspot QR bağlantısını başlat", "body": "Aynı ortamda müşteriyi uygulama kurdurmadan ağa alın; bağlantı QR ekranı ağ adı, şifre ve erişim bilgisini net şekilde paylaşsın."},
+            {"title": "Session galerisini QR ile aç", "body": "Her müşteri veya etkinlik için ayrı açılan session galerisi, tarayıcıdan QR ile saniyeler içinde açılsın ve seçimler karışmadan ilerlesin."},
+            {"title": "Yerel ödeme ve PAC onayı", "body": "İşletme ülkenize göre hazır ödeme yöntemlerini gösterin, seçimi kontrol edin ve PAC doğrulamasını tamamlayın."},
+            {"title": "ZIP teslim ve satış raporu", "body": "Onaylanan dosyaları ZIP olarak teslim edin; indirme, satış, dönüşüm ve gelir akışını uygulama içindeki rapor ekranında session mantığını bozmadan izleyin."},
+        ],
+    },
+    "en": {
+        "hero_lead": "Bring photos in from local media or transfer them directly into the app from an FTP-capable professional camera, open WiFi or hotspot QR access, keep every shoot in its own session, let clients enter the QR gallery and deliver approved files as ZIP from the same device.",
+        "metrics": [
+            {"value": "1 device", "label": "Capture, show and deliver"},
+            {"value": "QR access", "label": "Connect over WiFi or hotspot"},
+            {"value": "Multi-session", "label": "Keep every shoot separate"},
+        ],
+        "workflow_title": "QR, sessions and delivery in one flow",
+        "workflow_lead": "SnapVend turns direct FTP intake from professional cameras, WiFi or hotspot QR access, session-based client flow and post-delivery reporting into one field-ready operation.",
+        "workflow_cards": [
+            {"title": "Import from a pro camera", "body": "Pick photos from local media or transfer frames directly into SnapVend from an FTP-capable professional camera."},
+            {"title": "Start WiFi / hotspot QR access", "body": "Bring clients onto the same network without asking them to install the app; the QR connection screen presents the network name, password and access details clearly."},
+            {"title": "Open the session gallery with QR", "body": "Each client or event can have its own session gallery, opened in seconds from the browser through a dedicated QR code."},
+            {"title": "Show local payment and confirm PAC", "body": "Display ready local payment methods for your business country, review the selection and complete PAC validation."},
+            {"title": "Deliver ZIP and review reports", "body": "Deliver approved files as ZIP, then track downloads, sales, conversion and revenue from the in-app reports view without losing the session structure."},
+        ],
+    },
+    "es": {
+        "hero_lead": "Importe fotos desde la galería local o transfiéralas directamente a la app desde una cámara profesional con FTP, abra una session separada para cada trabajo, deje que el cliente entre por QR y entregue los archivos aprobados en ZIP desde el mismo dispositivo.",
+        "metrics": [
+            {"value": "1 equipo", "label": "Capturar, mostrar y entregar"},
+            {"value": "Acceso QR", "label": "El cliente entra en segundos"},
+            {"value": "Multi-session", "label": "Cada toma queda separada"},
+        ],
+        "workflow_title": "QR, sessions y entrega en un solo flujo",
+        "workflow_lead": "SnapVend convierte la transferencia directa por FTP desde cámaras profesionales, la gestión por session, el acceso por QR y la entrega en una sola operación de campo.",
+        "workflow_cards": [
+            {"title": "Importe desde cámara profesional", "body": "Use la galería local o transfiera imágenes directamente a SnapVend desde una cámara profesional compatible con FTP."},
+            {"title": "Abra una session separada", "body": "Cree una session distinta para cada cliente, toma o evento para que archivos, elecciones y entregas no se mezclen."},
+            {"title": "Abra la galería por QR", "body": "El cliente escanea el QR en la misma red y entra a su propia galería de session en segundos."},
+            {"title": "Muestre pago local y confirme PAC", "body": "Enseñe métodos de pago locales según el país del negocio, revise la selección y complete la validación PAC."},
+            {"title": "Entregue ZIP y siga la session", "body": "Entregue los archivos aprobados en ZIP y mantenga visible en la app el seguimiento por session y por ingresos."},
+        ],
+    },
+    "fr": {
+        "hero_lead": "Importez les photos depuis la galerie locale ou transférez-les directement dans l'app depuis un appareil photo pro compatible FTP, ouvrez une session distincte pour chaque prise de vue, faites entrer le client par QR et livrez les fichiers approuvés en ZIP depuis le même appareil.",
+        "metrics": [
+            {"value": "1 appareil", "label": "Capturer, montrer, livrer"},
+            {"value": "Accès QR", "label": "Le client entre en quelques secondes"},
+            {"value": "Multi-session", "label": "Chaque prise reste séparée"},
+        ],
+        "workflow_title": "QR, sessions et livraison dans un seul flux",
+        "workflow_lead": "SnapVend transforme le transfert FTP direct depuis des appareils photo pros, la gestion par session, l'accès QR et la livraison en une seule opération terrain.",
+        "workflow_cards": [
+            {"title": "Importer depuis un appareil photo pro", "body": "Prenez les photos depuis la galerie locale ou transférez-les directement dans SnapVend depuis un appareil photo pro compatible FTP."},
+            {"title": "Ouvrir une session distincte", "body": "Créez une session pour chaque client, prise de vue ou événement afin d'éviter tout mélange de fichiers, choix et livraisons."},
+            {"title": "Ouvrir la galerie par QR", "body": "Le client scanne le QR sur le même réseau et entre dans sa galerie de session en quelques secondes."},
+            {"title": "Afficher le paiement local et valider le PAC", "body": "Affichez les méthodes de paiement locales selon le pays de l'entreprise, vérifiez la sélection puis terminez la validation PAC."},
+            {"title": "Livrer le ZIP et suivre la session", "body": "Livrez les fichiers approuvés en ZIP et gardez le suivi de la session ainsi que des revenus visible dans l'application."},
+        ],
+    },
+    "de": {
+        "hero_lead": "Importieren Sie Fotos aus lokaler Galerie oder uebertragen Sie sie direkt aus einer FTP-faehigen Profikamera in die App, starten Sie fuer jedes Shooting eine eigene Session, lassen Sie Kunden per QR eintreten und liefern Sie freigegebene Dateien als ZIP vom selben Geraet.",
+        "metrics": [
+            {"value": "1 Geraet", "label": "Aufnehmen, zeigen, liefern"},
+            {"value": "QR-Zugang", "label": "Kunden sind in Sekunden drin"},
+            {"value": "Multi-Session", "label": "Jedes Shooting bleibt getrennt"},
+        ],
+        "workflow_title": "QR, Sessions und Lieferung in einem Ablauf",
+        "workflow_lead": "SnapVend verbindet direkten FTP-Import aus Profikameras, Session-Verwaltung, QR-Zugang und Auslieferung zu einer einzigen Feldoperation.",
+        "workflow_cards": [
+            {"title": "Aus Profikamera importieren", "body": "Waehlen Sie Fotos aus lokaler Galerie oder uebertragen Sie Bilder direkt aus einer FTP-faehigen Profikamera in SnapVend."},
+            {"title": "Getrennte Session starten", "body": "Legen Sie fuer jeden Kunden, jedes Shooting oder Event eine eigene Session an, damit Dateien, Auswahl und Lieferung getrennt bleiben."},
+            {"title": "Session-Galerie per QR oeffnen", "body": "Der Kunde scannt im selben Netzwerk den QR-Code und oeffnet seine Session-Galerie in Sekunden."},
+            {"title": "Lokale Zahlung und PAC bestaetigen", "body": "Zeigen Sie lokale Zahlungsarten fuer Ihr Geschaeftsland, pruefen Sie die Auswahl und schliessen Sie die PAC-Bestaetigung ab."},
+            {"title": "ZIP liefern und Session verfolgen", "body": "Liefern Sie freigegebene Dateien als ZIP und behalten Sie Session-basierte Lieferung sowie Umsatz im Blick."},
+        ],
+    },
+    "pt": {
+        "hero_lead": "Importe fotos da galeria local ou transfira direto para o app a partir de uma camera profissional com FTP, abra uma session separada para cada trabalho, deixe o cliente entrar por QR e entregue os arquivos aprovados em ZIP no mesmo dispositivo.",
+        "metrics": [
+            {"value": "1 aparelho", "label": "Capturar, mostrar e entregar"},
+            {"value": "Acesso QR", "label": "Cliente entra em segundos"},
+            {"value": "Multi-session", "label": "Cada ensaio fica separado"},
+        ],
+        "workflow_title": "QR, sessions e entrega no mesmo fluxo",
+        "workflow_lead": "SnapVend transforma transferencia FTP direta de camera profissional, gestao por session, acesso por QR e entrega em uma unica operacao de campo.",
+        "workflow_cards": [
+            {"title": "Importe da camera profissional", "body": "Escolha as fotos na galeria local ou transfira direto para o SnapVend a partir de uma camera profissional com FTP."},
+            {"title": "Abra uma session separada", "body": "Crie uma session para cada cliente, ensaio ou evento para manter arquivos, escolhas e entregas organizados."},
+            {"title": "Abra a galeria por QR", "body": "O cliente escaneia o QR na mesma rede e entra na propria galeria da session em segundos."},
+            {"title": "Mostre pagamento local e confirme PAC", "body": "Exiba metodos locais conforme o pais do negocio, revise a selecao e conclua a validacao do PAC."},
+            {"title": "Entregue ZIP e acompanhe a session", "body": "Entregue os arquivos aprovados em ZIP e mantenha visiveis no app o acompanhamento da session e da receita."},
+        ],
+    },
+    "ru": {
+        "hero_lead": "Загружайте фото из локальной галереи или передавайте их прямо в приложение с профессиональной камеры по FTP, открывайте отдельную сессию для каждой съемки, впускайте клиента по QR и выдавайте одобренные файлы в ZIP с того же устройства.",
+        "metrics": [
+            {"value": "1 устройство", "label": "Снять, показать, выдать"},
+            {"value": "QR-доступ", "label": "Клиент входит за секунды"},
+            {"value": "Несколько сессий", "label": "Каждая съемка отдельно"},
+        ],
+        "workflow_title": "QR, сессии и выдача в одном потоке",
+        "workflow_lead": "SnapVend объединяет прямую FTP-передачу с профессиональной камеры, управление сессиями, QR-доступ и выдачу в одну полевую операцию.",
+        "workflow_cards": [
+            {"title": "Импорт с профкамеры", "body": "Берите фото из локальной галереи или передавайте кадры прямо в SnapVend с профессиональной камеры по FTP."},
+            {"title": "Откройте отдельную сессию", "body": "Создавайте отдельную сессию для каждого клиента, съемки или события, чтобы файлы, выбор и выдача не смешивались."},
+            {"title": "Откройте галерею по QR", "body": "Клиент сканирует QR в той же сети и за секунды входит в свою галерею сессии."},
+            {"title": "Покажите локальную оплату и подтвердите PAC", "body": "Покажите локальные способы оплаты для страны бизнеса, проверьте выбор и завершите подтверждение PAC."},
+            {"title": "Выдайте ZIP и отслеживайте сессию", "body": "Выдавайте одобренные файлы в ZIP и держите внутри приложения видимой выдачу и выручку по сессиям."},
+        ],
+    },
+    "ar": {
+        "hero_lead": "استورد الصور من المعرض المحلي او انقلها مباشرة الى التطبيق من كاميرا احترافية تدعم FTP، وافتح session مستقلة لكل جلسة تصوير، ثم دع العميل يدخل عبر QR وسلم الملفات المعتمدة بصيغة ZIP من الجهاز نفسه.",
+        "metrics": [
+            {"value": "جهاز واحد", "label": "التقاط، عرض، تسليم"},
+            {"value": "دخول QR", "label": "العميل يدخل خلال ثوان"},
+            {"value": "sessions متعددة", "label": "كل جلسة تبقى منفصلة"},
+        ],
+        "workflow_title": "QR و sessions والتسليم في تدفق واحد",
+        "workflow_lead": "يجمع SnapVend بين النقل المباشر عبر FTP من الكاميرات الاحترافية وادارة sessions ودخول QR والتسليم في عملية ميدانية واحدة.",
+        "workflow_cards": [
+            {"title": "استيراد من كاميرا احترافية", "body": "اختر الصور من المعرض المحلي او انقل اللقطات مباشرة الى SnapVend من كاميرا احترافية تدعم FTP."},
+            {"title": "افتح session مستقلة", "body": "ابدأ session منفصلة لكل عميل او جلسة تصوير او فعالية حتى لا تختلط الملفات والاختيارات وعمليات التسليم."},
+            {"title": "افتح المعرض عبر QR", "body": "يمسح العميل QR على الشبكة نفسها ويدخل الى معرض session الخاص به خلال ثوان."},
+            {"title": "اعرض الدفع المحلي واكد PAC", "body": "اعرض طرق الدفع المحلية بحسب بلد النشاط وراجع الاختيار ثم اكمل التحقق من PAC."},
+            {"title": "سلم ZIP وتابع session", "body": "سلم الملفات المعتمدة بصيغة ZIP وابق تتبع session والايراد ظاهرا داخل التطبيق."},
+        ],
+    },
+    "hi": {
+        "hero_lead": "Local gallery se photos lijiye ya professional FTP camera se direct app me transfer kijiye, har shoot ke liye alag session kholiye, client ko QR se andar layein aur approved files ko usi device se ZIP me deliver kijiye.",
+        "metrics": [
+            {"value": "1 device", "label": "Shoot, show, deliver"},
+            {"value": "QR access", "label": "Client seconds me enter kare"},
+            {"value": "Multi-session", "label": "Har shoot alag rahe"},
+        ],
+        "workflow_title": "QR, session aur delivery ek hi flow me",
+        "workflow_lead": "SnapVend professional camera se direct FTP intake, session management, QR access aur delivery ko ek hi field workflow me jodta hai.",
+        "workflow_cards": [
+            {"title": "Professional camera se import karein", "body": "Local gallery se choose karein ya FTP-enabled professional camera se frames direct SnapVend me bhejein."},
+            {"title": "Alag session shuru karein", "body": "Har client, shoot ya event ke liye alag session khol kar files, selections aur delivery ko organize rakhein."},
+            {"title": "QR se session gallery kholen", "body": "Client usi network par QR scan karke apni session gallery seconds me kholta hai."},
+            {"title": "Local payment dikhayein aur PAC confirm karein", "body": "Business country ke hisab se local payment methods dikhayein, selection review karein aur PAC validation complete karein."},
+            {"title": "ZIP deliver karein aur session track karein", "body": "Approved files ko ZIP me deliver karein aur app ke andar session-based delivery aur revenue dekhte rahein."},
+        ],
+    },
+    "ja": {
+        "hero_lead": "ローカルギャラリーから写真を取り込むか、FTP 対応のプロ向けカメラからアプリへ直接転送し、撮影ごとに個別のセッションを作成して、QR で顧客を案内し、承認済みファイルを同じ端末から ZIP 納品します。",
+        "metrics": [
+            {"value": "1台", "label": "撮る、見せる、納品する"},
+            {"value": "QR アクセス", "label": "顧客は数秒で入場"},
+            {"value": "複数セッション", "label": "撮影ごとに分けて管理"},
+        ],
+        "workflow_title": "QR、セッション、納品を一つの流れに",
+        "workflow_lead": "SnapVend はプロ向けカメラからの直接 FTP 取り込み、セッション管理、QR アクセス、納品を一つの現場フローにまとめます。",
+        "workflow_cards": [
+            {"title": "プロ向けカメラから取り込む", "body": "ローカルギャラリーから選ぶか、FTP 対応のプロ向けカメラから SnapVend に直接転送します。"},
+            {"title": "個別セッションを開始する", "body": "顧客、撮影、イベントごとに個別のセッションを作成し、ファイル、選択、納品を混ぜずに管理します。"},
+            {"title": "QR でセッションギャラリーを開く", "body": "同じネットワーク上で顧客が QR を読み取り、自分のセッションギャラリーを数秒で開きます。"},
+            {"title": "ローカル決済を表示して PAC を確認", "body": "事業国に合わせたローカル決済方法を表示し、選択内容を確認して PAC 検証を完了します。"},
+            {"title": "ZIP 納品とセッション追跡", "body": "承認済みファイルを ZIP で納品し、セッションごとの納品状況と売上をアプリ内で追跡します。"},
+        ],
+    },
+    "zh": {
+        "hero_lead": "可从本地相册导入照片，也可通过支持 FTP 的专业相机直接传入应用；为每次拍摄建立独立 session，让客户通过 QR 进入，并从同一设备交付已批准的 ZIP 文件。",
+        "metrics": [
+            {"value": "1 台设备", "label": "拍摄、展示、交付"},
+            {"value": "QR 进入", "label": "客户几秒内进入"},
+            {"value": "多 session", "label": "每次拍摄独立管理"},
+        ],
+        "workflow_title": "QR、session 与交付在同一流程中",
+        "workflow_lead": "SnapVend 将专业相机的直接 FTP 导入、session 管理、QR 进入和交付整合为一个现场工作流程。",
+        "workflow_cards": [
+            {"title": "从专业相机导入", "body": "可从本地相册选择，也可通过支持 FTP 的专业相机把照片直接传入 SnapVend。"},
+            {"title": "创建独立 session", "body": "为每位客户、每次拍摄或每场活动建立独立 session，让文件、选片和交付互不混淆。"},
+            {"title": "通过 QR 打开 session 画廊", "body": "客户在同一网络下扫描 QR，几秒内进入自己的 session 画廊。"},
+            {"title": "显示本地支付并确认 PAC", "body": "根据商家所在国家显示本地支付方式，检查所选照片并完成 PAC 验证。"},
+            {"title": "交付 ZIP 并追踪 session", "body": "以 ZIP 方式交付已批准文件，并在应用内追踪按 session 区分的交付与收入。"},
+        ],
+    },
+}
+
+FAQ_FLOW_OVERRIDES = {
+    "tr": [
+        {"q": "SnapVend internetsiz çalışır mı?", "a": "Evet. Ana akış yerel ağ veya hotspot üzerinde çalışabilir. Bulut zorunlu değildir."},
+        {"q": "Profesyonel fotoğraf makinesinden doğrudan aktarım yapabilir miyim?", "a": "Evet. FTP destekli profesyonel fotoğraf makinelerinden fotoğrafları aynı ağ veya hotspot üzerinden doğrudan SnapVend uygulamasına aktarabilirsiniz."},
+        {"q": "Müşteri fotoğrafları nasıl görür?", "a": "Müşteri önce WiFi ya da hotspot QR bağlantısıyla aynı ağa alınır, ardından session QR kodunu okutup yalnızca kendisine ait galeriyi tarayıcıdan açar."},
+        {"q": "Session yapısı ne işe yarar?", "a": "Her müşteri, çekim veya etkinlik ayrı bir session olarak tutulur. Böylece fotoğraflar, seçimler, ödeme akışı ve teslim kayıtları karışmaz; ayrıca her session'ın sonucu daha kontrollü izlenir."},
+        {"q": "Raporlar bölümünde neyi takip edebilirim?", "a": "Rapor ekranı üzerinden satış adedi, gelir, indirme hareketleri, dönüşüm ve ortalama sepet gibi temel performans göstergelerini sahadaki operasyonu kapatmadan izleyebilirsiniz."},
+        {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Pro planlarda özel işletme adı, logo ve teslim markalaması açılır."},
+        {"q": "Müşteriye ülkeye göre ödeme yöntemi gösterebilir miyim?", "a": "Evet. İşletme ülkesi seçildiğinde kurulumu tamamlanan yerel yöntemler ödeme popup ekranında görünür. Türkiye, İspanya, Hindistan, Çin ve Japonya için hazır yöntem setleri vardır."},
+        {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Pro planlar günlük teslim limitini kaldırır."},
+    ],
+    "en": [
+        {"q": "Does SnapVend work without internet?", "a": "Yes. The main workflow can run over local network or hotspot. Cloud access is not required."},
+        {"q": "Can I transfer directly from a professional camera?", "a": "Yes. Photos can move directly into SnapVend from an FTP-capable professional camera over the same network or hotspot."},
+        {"q": "How do clients view the photos?", "a": "Clients first join through a WiFi or hotspot QR connection, then scan the session QR code to open only the gallery created for them in the browser."},
+        {"q": "What does the session structure do?", "a": "Each client, shoot or event can stay in its own session so files, selections, payment flow and delivery records never get mixed, while each outcome stays easier to track."},
+        {"q": "What can I track in the reports section?", "a": "The reports view helps you monitor sales count, revenue, download activity, conversion and average basket without breaking the live field workflow."},
+        {"q": "Can I use my own business name and logo?", "a": "Yes. Pro plans unlock custom business branding, logo usage and branded delivery."},
+        {"q": "Can I show country-specific payment methods to clients?", "a": "Yes. Once the business country is selected, completed local methods appear in the payment popup. Ready local method sets are available for Turkey, Spain, India, China and Japan."},
+        {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Pro plans remove the daily delivery limit."},
+    ],
+    "es": [
+        {"q": "¿SnapVend funciona sin internet?", "a": "Si. El flujo principal puede funcionar con red local o hotspot sin depender de la nube."},
+        {"q": "¿Puedo transferir directo desde una camara profesional?", "a": "Si. Puede enviar fotos directamente a SnapVend desde una camara profesional con FTP usando la misma red o hotspot."},
+        {"q": "¿Como ve el cliente las fotos?", "a": "El cliente escanea un QR en la misma red, entra a su galeria de session en el navegador y hace alli la seleccion."},
+        {"q": "¿Para que sirve la estructura de session?", "a": "Cada cliente, toma o evento puede mantenerse en su propia session para que archivos, selecciones, pago y entrega no se mezclen."},
+        {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes Pro desbloquean nombre comercial, logo y entrega con marca propia."},
+        {"q": "¿Puedo mostrar metodos de pago segun el pais?", "a": "Si. Al elegir el pais del negocio, los metodos locales configurados aparecen en el popup de pago. Hay metodos listos para Turquia, Espana, India, China y Japon."},
+        {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes Pro mensual y anual eliminan el limite diario."},
+    ],
+    "fr": [
+        {"q": "SnapVend fonctionne t il sans internet ?", "a": "Oui. Le flux principal peut tourner sur reseau local ou hotspot sans cloud obligatoire."},
+        {"q": "Puis je transferer directement depuis un appareil photo pro ?", "a": "Oui. Vous pouvez envoyer les photos directement dans SnapVend depuis un appareil photo pro compatible FTP sur le meme reseau ou hotspot."},
+        {"q": "Comment le client voit il les photos ?", "a": "Le client scanne un QR sur le meme reseau, ouvre sa galerie de session dans le navigateur et fait ses choix."},
+        {"q": "A quoi sert la structure de session ?", "a": "Chaque client, prise de vue ou evenement peut rester dans sa propre session pour que fichiers, choix, paiement et livraison ne se melangent pas."},
+        {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans Pro ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
+        {"q": "Puis je afficher des methodes de paiement selon le pays ?", "a": "Oui. Une fois le pays de l entreprise choisi, les methodes locales configurees apparaissent dans la fenetre de paiement. Des ensembles prets existent pour la Turquie, l Espagne, l Inde, la Chine et le Japon."},
+        {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans Pro mensuel et annuel retirent la limite quotidienne."},
+    ],
+    "de": [
+        {"q": "Funktioniert SnapVend ohne Internet?", "a": "Ja. Der Hauptablauf kann uber lokales Netzwerk oder Hotspot ohne Cloud laufen."},
+        {"q": "Kann ich direkt aus einer Profikamera uebertragen?", "a": "Ja. Fotos koennen ueber dieselbe Netzwerkverbindung oder einen Hotspot direkt aus einer FTP-faehigen Profikamera in SnapVend gehen."},
+        {"q": "Wie sehen Kunden die Fotos?", "a": "Kunden scannen im gleichen Netzwerk den QR Code, oeffnen ihre Session-Galerie im Browser und treffen dort die Auswahl."},
+        {"q": "Wozu dient die Session-Struktur?", "a": "Jeder Kunde, jedes Shooting oder Event bleibt in einer eigenen Session, damit Dateien, Auswahl, Zahlung und Lieferung nicht vermischt werden."},
+        {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Pro schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
+        {"q": "Kann ich landerspezifische Zahlungsarten zeigen?", "a": "Ja. Sobald das Geschaeftsland gewahlt ist, erscheinen fertig eingerichtete lokale Methoden im Zahlungsfenster. Vorbereitete Sets gibt es fur die Turkei, Spanien, Indien, China und Japan."},
+        {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Pro Plan entfernen das Tageslimit."},
+    ],
+    "pt": [
+        {"q": "O SnapVend funciona sem internet?", "a": "Sim. O fluxo principal pode rodar em rede local ou hotspot sem depender da nuvem."},
+        {"q": "Posso transferir direto de uma camera profissional?", "a": "Sim. As fotos podem entrar direto no SnapVend a partir de uma camera profissional com FTP usando a mesma rede ou hotspot."},
+        {"q": "Como o cliente ve as fotos?", "a": "O cliente escaneia um QR na mesma rede, abre sua galeria de session no navegador e faz a selecao ali."},
+        {"q": "Para que serve a estrutura de session?", "a": "Cada cliente, ensaio ou evento pode ficar em sua propria session para que arquivos, escolhas, pagamento e entrega nao se misturem."},
+        {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos Pro liberam branding, logo e entrega personalizada."},
+        {"q": "Posso mostrar metodos de pagamento por pais?", "a": "Sim. Ao escolher o pais do negocio, os metodos locais configurados aparecem no popup de pagamento. Ha conjuntos prontos para Turquia, Espanha, India, China e Japao."},
+        {"q": "Qual plano remove o limite de entrega?", "a": "Os planos Pro mensal e anual removem o limite diario."},
+    ],
+    "ru": [
+        {"q": "Работает ли SnapVend без интернета?", "a": "Да. Основной сценарий может работать через локальную сеть или точку доступа без облака."},
+        {"q": "Можно ли передавать напрямую с профессиональной камеры?", "a": "Да. Фото можно отправлять прямо в SnapVend с профессиональной камеры по FTP через ту же сеть или hotspot."},
+        {"q": "Как клиент смотрит фотографии?", "a": "Клиент сканирует QR-код в той же сети, открывает свою галерею сессии в браузере и выбирает фотографии там."},
+        {"q": "Для чего нужна структура сессий?", "a": "Каждый клиент, съемка или событие могут идти в отдельной сессии, чтобы файлы, выбор, оплата и выдача не смешивались."},
+        {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Pro открывает фирменное имя, логотип и брендированную выдачу."},
+        {"q": "Можно ли показать клиенту способы оплаты по стране?", "a": "Да. После выбора страны бизнеса настроенные локальные методы появляются во всплывающем окне оплаты. Готовые наборы есть для Турции, Испании, Индии, Китая и Японии."},
+        {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой Pro снимают ежедневный лимит выдачи."},
+    ],
+    "ar": [
+        {"q": "هل يعمل SnapVend بدون انترنت؟", "a": "نعم. يمكن تشغيل التدفق الرئيسي عبر شبكة محلية او hotspot بدون اعتماد على السحابة."},
+        {"q": "هل يمكن النقل مباشرة من كاميرا احترافية؟", "a": "نعم. يمكن نقل الصور مباشرة الى SnapVend من كاميرا احترافية تدعم FTP عبر الشبكة نفسها او hotspot."},
+        {"q": "كيف يشاهد العميل الصور؟", "a": "يمسح العميل QR على نفس الشبكة ويدخل الى معرض session الخاص به من المتصفح ويختار الصور هناك."},
+        {"q": "ما فائدة بنية sessions؟", "a": "يمكن حفظ كل عميل او جلسة تصوير او فعالية داخل session مستقلة حتى لا تختلط الملفات والاختيارات والدفع والتسليم."},
+        {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. خطط Pro تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
+        {"q": "هل يمكنني عرض طرق دفع حسب البلد للعميل؟", "a": "نعم. عند اختيار بلد النشاط تظهر الطرق المحلية المكتملة في نافذة الدفع. توجد مجموعات جاهزة لتركيا واسبانيا والهند والصين واليابان."},
+        {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية Pro يزيلان حد التسليم اليومي."},
+    ],
+    "hi": [
+        {"q": "क्या SnapVend बिना इंटरनेट के काम करता है?", "a": "हाँ। मुख्य workflow लोकल नेटवर्क या hotspot पर चल सकता है, cloud जरूरी नहीं है।"},
+        {"q": "क्या मैं professional camera से direct transfer कर सकता हूँ?", "a": "हाँ। FTP-enabled professional camera से photos उसी network या hotspot पर सीधे SnapVend में लाई जा सकती हैं।"},
+        {"q": "क्लाइंट फोटो कैसे देखता है?", "a": "क्लाइंट उसी network पर QR scan करके browser में अपनी session gallery खोलता है और वहीं selection करता है।"},
+        {"q": "Session structure किस काम आती है?", "a": "हर client, shoot या event को अलग session में रखा जा सकता है ताकि files, selection, payment aur delivery mix न हों।"},
+        {"q": "क्या मैं अपना नाम और logo इस्तेमाल कर सकता हूँ?", "a": "हाँ। Pro plans custom branding, logo और branded delivery खोलते हैं।"},
+        {"q": "Kya main client ko country-based payment methods dikha sakta hoon?", "a": "Haan. Business country select karne ke baad configured local methods payment popup me dikhte hain. Turkey, Spain, India, China aur Japan ke liye ready method sets maujood hain."},
+        {"q": "कौन सा plan delivery limit हटाता है?", "a": "Monthly और yearly दोनों Pro plans daily delivery limit हटाते हैं।"},
+    ],
+    "ja": [
+        {"q": "SnapVend はインターネットなしで使えますか？", "a": "はい。主なフローはローカルネットワークや hotspot 上で動作でき、クラウドは必須ではありません。"},
+        {"q": "プロ向けカメラから直接取り込めますか？", "a": "はい。FTP 対応のプロ向けカメラから、同じネットワークや hotspot を通じて SnapVend へ直接取り込めます。"},
+        {"q": "クライアントはどうやって写真を見ますか？", "a": "同じネットワーク上で QR を読み取り、自分のセッションギャラリーをブラウザで開いて選択します。"},
+        {"q": "セッション構造は何のためにありますか？", "a": "顧客、撮影、イベントごとに個別のセッションで管理できるため、ファイル、選択、支払い、納品が混ざりません。"},
+        {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。Pro プランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
+        {"q": "国ごとの決済方法をクライアントに表示できますか？", "a": "はい。事業国を選ぶと、設定済みのローカル決済方法が支払いポップアップに表示されます。トルコ、スペイン、インド、中国、日本向けの方法セットが用意されています。"},
+        {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Pro と年額 Pro の両方で日次納品制限が解除されます。"},
+    ],
+    "zh": [
+        {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。"},
+        {"q": "可以直接从专业相机传入吗？", "a": "可以。支持 FTP 的专业相机可通过同一网络或 hotspot 直接把照片传入 SnapVend。"},
+        {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描 QR 后，就能在浏览器里打开自己的 session 画廊并完成选片。"},
+        {"q": "session 结构有什么作用？", "a": "每位客户、每次拍摄或每场活动都可以放在独立 session 中，这样文件、选片、付款和交付记录不会混在一起。"},
+        {"q": "我可以使用自己的品牌名和 logo 吗？", "a": "可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。"},
+        {"q": "可以向客户显示按国家配置的支付方式吗？", "a": "可以。选择商家所在国家后，已完成设置的本地支付方式会显示在支付弹窗中。目前已为土耳其、西班牙、印度、中国和日本准备了现成方式。"},
+        {"q": "哪个计划会移除交付限制？", "a": "月度 Pro 和年度 Pro 都会移除每日交付限制。"},
+    ],
+}
+
+PRINT_QUEUE_OVERRIDES = {
+    "tr": {
+        "audience_body": "Canlı çekimde hızlı seçim, anında teslim ve baskı listesini aynı akışta yönetmek isteyen düğün ekipleri için güçlü bir yapı sunar.",
+        "use_case": {
+            "title": "Düğün baskı listesi",
+            "body": "Çift, aile ve misafir seçimlerini toplarken baskıya gidecek kareleri ayrı bir baskı listesinde toplayın; sahadaki baskı akışı dijital teslimden kopmadan ilerlesin.",
+        },
+        "reference": {
+            "title": "Düğün baskı ve teslim ekipleri",
+            "body": "Hem dijital teslimi hem de baskı hazırlığını aynı operasyon içinde yönetmek isteyen düğün fotoğrafçıları için tasarlanmıştır.",
+        },
+        "faq": {
+            "q": "Baskı listesi ne işe yarar?",
+            "a": "Baskı listesi, seçilen kareleri teslim akışından koparmadan baskı için ayrı tutar. Özellikle düğün fotoğrafçılarında hangi fotoğrafın basılacağı ve baskı hazırlığının nasıl ilerlediği daha kontrollü yönetilir.",
+        },
+    },
+    "en": {
+        "audience_body": "A strong fit for wedding teams that want to manage fast selection, immediate delivery and a live print list in the same workflow.",
+        "use_case": {
+            "title": "Wedding print list",
+            "body": "Collect couple, family and guest selections while keeping print-ready frames in a separate print list, so on-site printing can move forward without breaking digital delivery.",
+        },
+        "reference": {
+            "title": "Wedding print and delivery teams",
+            "body": "Built for wedding photographers who want to manage digital delivery and print preparation inside the same operation.",
+        },
+        "faq": {
+            "q": "What does the print list do?",
+            "a": "The print list keeps selected frames ready for printing without breaking the delivery flow. It gives wedding teams a more controlled way to track which photos should be printed and how print preparation should move forward.",
+        },
+    },
+    "es": {
+        "audience_body": "Un flujo fuerte para equipos de boda que quieren gestionar seleccion rapida, entrega inmediata y lista de impresion dentro del mismo proceso.",
+        "use_case": {
+            "title": "Lista de impresion para bodas",
+            "body": "Recoja selecciones de pareja, familia e invitados y mantenga las fotos listas dentro de una lista de impresion separada sin romper la entrega digital.",
+        },
+        "reference": {
+            "title": "Equipos de impresion y entrega en bodas",
+            "body": "Pensado para fotografos de boda que quieren llevar entrega digital y preparacion de impresion dentro de la misma operacion.",
+        },
+        "faq": {
+            "q": "¿Para que sirve la lista de impresion?",
+            "a": "La lista de impresion mantiene las fotos seleccionadas listas para imprimir sin cortar el flujo de entrega. Ayuda a los equipos de boda a controlar mejor que imagen se imprimira y como avanzara la preparacion de impresion.",
+        },
+    },
+    "fr": {
+        "audience_body": "Un flux solide pour les equipes mariage qui veulent gerer selection rapide, livraison immediate et liste d'impression dans la meme operation.",
+        "use_case": {
+            "title": "Liste d'impression mariage",
+            "body": "Recuperez les choix du couple, de la famille et des invites puis gardez les images a imprimer dans une liste separee sans casser la livraison numerique.",
+        },
+        "reference": {
+            "title": "Equipes mariage impression et livraison",
+            "body": "Concu pour les photographes de mariage qui veulent gerer livraison numerique et preparation des impressions dans le meme flux.",
+        },
+        "faq": {
+            "q": "A quoi sert la liste d'impression ?",
+            "a": "La liste d'impression garde les images selectionnees pretes a imprimer sans interrompre la livraison. Elle aide les equipes mariage a mieux suivre quelles photos doivent etre imprimees et comment la preparation impression avance.",
+        },
+    },
+    "de": {
+        "audience_body": "Ein starker Ablauf fuer Hochzeitsteams, die schnelle Auswahl, sofortige Lieferung und Druckliste im selben Prozess steuern wollen.",
+        "use_case": {
+            "title": "Hochzeits-Druckliste",
+            "body": "Sammeln Sie Auswahl von Paar, Familie und Gaesten und halten Sie druckbereite Bilder in einer eigenen Druckliste, ohne die digitale Lieferung zu unterbrechen.",
+        },
+        "reference": {
+            "title": "Hochzeits-Teams fur Druck und Lieferung",
+            "body": "Gedacht fuer Hochzeitsfotografen, die digitale Lieferung und Druckvorbereitung in derselben Operation verwalten wollen.",
+        },
+        "faq": {
+            "q": "Wofuer ist die Druckliste gedacht?",
+            "a": "Die Druckliste haelt ausgewaehlte Bilder druckbereit, ohne den Lieferablauf zu stoppen. So koennen Hochzeitsteams besser verfolgen, welche Fotos gedruckt werden sollen und wie die Druckvorbereitung weitergeht.",
+        },
+    },
+    "pt": {
+        "audience_body": "Um fluxo forte para equipes de casamento que querem gerenciar selecao rapida, entrega imediata e lista de impressao dentro da mesma operacao.",
+        "use_case": {
+            "title": "Lista de impressao para casamento",
+            "body": "Recolha as escolhas de noivos, familia e convidados e mantenha as fotos prontas em uma lista de impressao separada sem quebrar a entrega digital.",
+        },
+        "reference": {
+            "title": "Equipes de impressao e entrega em casamento",
+            "body": "Feito para fotografos de casamento que querem controlar entrega digital e preparacao de impressao na mesma operacao.",
+        },
+        "faq": {
+            "q": "Para que serve a lista de impressao?",
+            "a": "A lista de impressao mantem as fotos selecionadas prontas para imprimir sem interromper a entrega. Isso ajuda equipes de casamento a controlar melhor quais fotos vao para impressao e como a preparacao deve seguir.",
+        },
+    },
+    "ru": {
+        "audience_body": "Сильный сценарий для свадебных команд, которым нужно вести быстрый отбор, мгновенную выдачу и список на печать в одном процессе.",
+        "use_case": {
+            "title": "Свадебный список на печать",
+            "body": "Собирайте выбор пары, семьи и гостей и держите кадры для печати в отдельном списке, не прерывая цифровую выдачу.",
+        },
+        "reference": {
+            "title": "Свадебные команды печати и выдачи",
+            "body": "Подходит свадебным фотографам, которые хотят вести цифровую выдачу и подготовку печати внутри одной операции.",
+        },
+        "faq": {
+            "q": "Для чего нужен список на печать?",
+            "a": "Список на печать держит выбранные кадры готовыми к печати без разрыва основного потока выдачи. Это помогает свадебным командам лучше контролировать, какие фото печатать и как должна идти подготовка печати.",
+        },
+    },
+    "ar": {
+        "audience_body": "مسار قوي لفرق تصوير الاعراس التي تريد ادارة الاختيار السريع والتسليم الفوري وقائمة الطباعة داخل العملية نفسها.",
+        "use_case": {
+            "title": "قائمة طباعة الاعراس",
+            "body": "اجمع اختيارات العروسين والعائلة والضيوف ثم احتفظ بالصور الجاهزة في قائمة طباعة منفصلة بدون قطع مسار التسليم الرقمي.",
+        },
+        "reference": {
+            "title": "فرق طباعة وتسليم الاعراس",
+            "body": "مصمم لمصوري الاعراس الذين يريدون ادارة التسليم الرقمي وتجهيز الطباعة ضمن العملية نفسها.",
+        },
+        "faq": {
+            "q": "ما فائدة قائمة الطباعة؟",
+            "a": "تحافظ قائمة الطباعة على الصور المختارة جاهزة للطباعة من دون ايقاف مسار التسليم. وتساعد فرق الاعراس على متابعة الصور التي يجب طباعتها وكيف يتقدم تجهيز الطباعة بشكل اوضح.",
+        },
+    },
+    "hi": {
+        "audience_body": "यह wedding teams के लिए खास तौर पर मजबूत flow है, जहां fast selection, instant delivery aur print list ek hi operation me manage kiye jate hain.",
+        "use_case": {
+            "title": "Wedding print list",
+            "body": "Couple, family aur guest selections collect karte hue print-ready photos ko alag print list me rakhein, taki digital delivery rukhe bina on-site printing chalti rahe.",
+        },
+        "reference": {
+            "title": "Wedding print aur delivery teams",
+            "body": "Un wedding photographers ke liye bana hai jo digital delivery aur print preparation ko ek hi operation me chalana chahte hain.",
+        },
+        "faq": {
+            "q": "Print list kya karti hai?",
+            "a": "Print list selected photos ko delivery flow tode bina print ke liye ready rakhti hai. Isse wedding teams ko yeh track karna aasaan hota hai ki kaunsi photos print hongi aur print preparation kaise aage badhegi.",
+        },
+    },
+    "ja": {
+        "audience_body": "素早い選定、即時納品、プリントリストを同じ流れで管理したいウェディングチームに特に向いています。",
+        "use_case": {
+            "title": "ウェディング向けプリントリスト",
+            "body": "新郎新婦、家族、ゲストの選定を集めながら、印刷対象の写真を別のプリントリストで管理し、デジタル納品を止めずに現場印刷を進められます。",
+        },
+        "reference": {
+            "title": "ウェディングの印刷・納品チーム",
+            "body": "デジタル納品と印刷準備を同じ運用の中で進めたいウェディングフォトグラファー向けです。",
+        },
+        "faq": {
+            "q": "プリントリストは何のためですか？",
+            "a": "プリントリストは、納品フローを止めずに選択済み写真を印刷用に整理します。どの写真を印刷するか、そして印刷準備をどう進めるかを、ウェディングチームがより管理しやすくなります。",
+        },
+    },
+    "zh": {
+        "audience_body": "非常适合需要在同一流程中管理快速选片、即时交付和打印列表的婚礼摄影团队。",
+        "use_case": {
+            "title": "婚礼打印列表",
+            "body": "在收集新人、家人和宾客选片的同时，把需要打印的照片放进独立列表，让现场打印不打断数字交付流程。",
+        },
+        "reference": {
+            "title": "婚礼打印与交付团队",
+            "body": "适合希望在同一套运营中同时管理数字交付和打印准备的婚礼摄影师。",
+        },
+        "faq": {
+            "q": "打印列表有什么作用？",
+            "a": "打印列表会在不打断交付流程的情况下，把已选照片保持为待打印状态，帮助婚礼团队更清楚地管理哪些照片要打印，以及打印准备该如何推进。",
+        },
+    },
+}
+
+for locale_code, overrides in COPY_FLOW_OVERRIDES.items():
+    COPY[locale_code].update(overrides)
+
+for locale_code, items in FAQ_FLOW_OVERRIDES.items():
+    FAQ_SECTION[locale_code]["items"] = items
+
+for locale_code, overrides in PRINT_QUEUE_OVERRIDES.items():
+    COPY[locale_code]["audience_cards"][0]["body"] = overrides["audience_body"]
+    PROOF_SECTION[locale_code]["use_cases"].insert(1, overrides["use_case"])
+    PROOF_SECTION[locale_code]["references"].insert(0, overrides["reference"])
+    FAQ_SECTION[locale_code]["items"].insert(-1, overrides["faq"])
+
+BRAND_MOTTO_BY_LOCALE = {
+    "tr": "Çek - Göster - Sat",
+    "en": "Shoot - Show - Sell",
+    "es": "Captura - Muestra - Vende",
+    "fr": "Capture - Montre - Vends",
+    "de": "Aufnehmen - Zeigen - Verkaufen",
+    "pt": "Capture - Mostre - Venda",
+    "ru": "Сними - Покажи - Продай",
+    "ar": "التقط - اعرض - بع",
+    "hi": "शूट - दिखाओ - बेचो",
+    "ja": "撮る - 見せる - 売る",
+    "zh": "拍摄 - 展示 - 销售",
+}
+
+MARKETING_ASSETS = {
+    "hero_main": "assets/marketing/google_play/01_gallery_dashboard.png",
+    "hero_secondary": "assets/marketing/google_play/02_session_qr_access.png",
+    "workflow_ftp": "assets/marketing/google_play/05_ftp_server_settings.png",
+    "workflow_dashboard": "assets/marketing/google_play/01_gallery_dashboard.png",
+    "workflow_qr": "assets/marketing/google_play/03_browser_gallery_selection.png",
+    "workflow_http_gallery": "assets/marketing/google_play/06_customer_gallery_selection_en.png",
+    "workflow_payment": "assets/marketing/google_play/04_payment_approval_flow.png",
+    "schema_report": "assets/marketing/google_play/07_reports_dashboard.png",
+}
+
+LOCALE_MARKETING_ASSET_OVERRIDES = {
+    "tr": {
+        "workflow_http_gallery": "assets/marketing/google_play/06_customer_gallery_selection_tr.png",
+    },
+}
+
+for locale_code in LOCALE_ORDER:
+    COPY[locale_code]["brand_motto"] = BRAND_MOTTO_BY_LOCALE[locale_code]
+
 
 def e(value: str) -> str:
     return html.escape(value, quote=True)
+
+
+def marketing_asset(slot: str, locale_code: str | None = None) -> str:
+    if locale_code is not None:
+        locale_overrides = LOCALE_MARKETING_ASSET_OVERRIDES.get(locale_code, {})
+        if slot in locale_overrides:
+            return locale_overrides[slot]
+    return MARKETING_ASSETS[slot]
 
 
 def page_path(locale_code: str) -> str:
@@ -1934,6 +2463,7 @@ def unique_strings(items: list[str]) -> list[str]:
 def build_keyword_string(copy: dict, proof: dict, contact: dict) -> str:
     values = [
         "SnapVend",
+        copy["brand_motto"],
         copy["hero_eyebrow"],
         copy["workflow_title"],
         copy["audience_title"],
@@ -1943,6 +2473,8 @@ def build_keyword_string(copy: dict, proof: dict, contact: dict) -> str:
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in proof["use_cases"]],
         *[card["title"] for card in proof["references"]],
+        *copy["monthly_features"],
+        *copy["yearly_features"],
         *contact["topics"],
     ]
     return ", ".join(unique_strings(values))
@@ -2017,12 +2549,17 @@ def store_badges(locale_code: str, copy: dict) -> str:
 def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: dict, keywords: str) -> str:
     pricing = SCHEMA_PRICING[locale_code]
     page_url = canonical_url(locale_code)
-    logo_url = f"{SITE_URL}/assets/branding/app_icon_store_512.png"
+    logo_url = f"{SITE_URL}{BRAND_MARK_ASSET}"
     contact_point_id = f"{SITE_URL}/#sales-contact"
     screenshot_urls = [
-        f"{SITE_URL}/assets/marketing/01_capture_to_delivery.png",
-        f"{SITE_URL}/assets/marketing/03_local_connection.png",
-        f"{SITE_URL}/assets/marketing/06_reports_dashboard.png",
+        f"{SITE_URL}/{marketing_asset('hero_main')}",
+        f"{SITE_URL}/{marketing_asset('hero_secondary')}",
+        f"{SITE_URL}/{marketing_asset('workflow_ftp')}",
+        f"{SITE_URL}/{marketing_asset('workflow_dashboard')}",
+        f"{SITE_URL}/{marketing_asset('workflow_qr')}",
+        f"{SITE_URL}/{marketing_asset('workflow_http_gallery', 'en')}",
+        f"{SITE_URL}/{marketing_asset('workflow_payment')}",
+        f"{SITE_URL}/{marketing_asset('schema_report')}",
     ]
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
@@ -2042,6 +2579,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         "@type": "Organization",
         "@id": f"{SITE_URL}/#organization",
         "name": "SnapVend",
+        "slogan": copy["brand_motto"],
         "url": f"{SITE_URL}/",
         "logo": {
             "@type": "ImageObject",
@@ -2091,7 +2629,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         "name": "SnapVend",
         "description": copy["meta_description"],
         "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "Photo workflow and delivery",
+        "applicationSubCategory": "Photo workflow, print management and delivery",
         "operatingSystem": "ANDROID, IOS",
         "inLanguage": locale_code,
         "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
@@ -2106,7 +2644,12 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         },
         "publisher": {"@id": organization["@id"]},
         "isAccessibleForFree": True,
-        "featureList": [card["title"] for card in copy["workflow_cards"]],
+        "featureList": unique_strings(
+            [card["title"] for card in copy["workflow_cards"]]
+            + copy["monthly_features"]
+            + copy["yearly_features"]
+            + [card["title"] for card in proof["use_cases"][:2]]
+        ),
         "audience": [
             {
                 "@type": "Audience",
@@ -2119,6 +2662,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
             {
                 "@type": "Offer",
                 "name": copy["monthly_badge"],
+                "description": " | ".join(copy["monthly_features"]),
                 "price": pricing["monthly"],
                 "priceCurrency": pricing["currency"],
                 "availability": "https://schema.org/InStock",
@@ -2127,6 +2671,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
             {
                 "@type": "Offer",
                 "name": copy["yearly_badge"],
+                "description": " | ".join(copy["yearly_features"]),
                 "price": pricing["yearly"],
                 "priceCurrency": pricing["currency"],
                 "availability": "https://schema.org/InStock",
@@ -2194,7 +2739,7 @@ def render_page(locale_code: str) -> str:
     copy = COPY[locale_code]
     meta = LOCALE_META[locale_code]
     prefix = asset_prefix(locale_code)
-    og_image = f"{SITE_URL}/assets/branding/app_icon_store_512.png"
+    og_image = f"{SITE_URL}{APP_ICON_ASSET}"
     alternates = build_alternates(locale_code)
     language_menu = build_language_menu(locale_code)
     extra_nav = NAV_EXTRA[locale_code]
@@ -2242,8 +2787,9 @@ def render_page(locale_code: str) -> str:
     <meta name="twitter:image" content="{og_image}">
     <meta name="twitter:image:alt" content="{e(copy["meta_title"])}">
     <link rel="canonical" href="{canonical_url(locale_code)}">
-{alternates}    <link rel="icon" type="image/png" href="{prefix}/assets/favicon.png">
-    <link rel="apple-touch-icon" href="{prefix}/assets/branding/app_icon_store_512.png">
+{alternates}    <link rel="icon" type="image/png" href="{prefix}{BRAND_MARK_ASSET}">
+    <link rel="shortcut icon" href="{prefix}{BRAND_MARK_ASSET}">
+    <link rel="apple-touch-icon" href="{prefix}{BRAND_MARK_ASSET}">
     <link rel="manifest" href="{prefix}/manifest.webmanifest">
     <link rel="stylesheet" href="{prefix}/styles.css">
     <script type="application/ld+json">{schema_json}</script>
@@ -2290,6 +2836,7 @@ def render_page(locale_code: str) -> str:
           <div class="hero-copy reveal">
             <p class="eyebrow">{e(copy["hero_eyebrow"])}</p>
             <h1>{e(copy["hero_title"])}</h1>
+            <p class="hero-motto">{e(copy["brand_motto"])}</p>
             <p class="hero-lead">{e(copy["hero_lead"])}</p>
 {store_badges(locale_code, copy)}
             <p class="setup-note" data-setup-note data-nosnippet hidden>{e(copy["setup_note"])}</p>
@@ -2301,14 +2848,14 @@ def render_page(locale_code: str) -> str:
 
           <div class="hero-visual reveal">
             <article class="visual-frame visual-frame-main">
-              <img src="{prefix}/assets/marketing/01_capture_to_delivery.png" alt="SnapVend workflow screenshot" loading="eager">
+              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="SnapVend home dashboard with live gallery and session overview" loading="eager">
             </article>
             <article class="visual-frame visual-frame-secondary">
-              <img src="{prefix}/assets/marketing/05_qr_gallery_page.png" alt="SnapVend QR gallery screenshot" loading="lazy">
+              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="SnapVend WiFi and hotspot QR connection screen" loading="lazy">
             </article>
             <article class="visual-chip">
               <span>SnapVend</span>
-              <p>{e(copy["hero_eyebrow"])}</p>
+              <p class="visual-chip-motto">{e(copy["brand_motto"])}</p>
             </article>
           </div>
         </div>
@@ -2330,7 +2877,11 @@ def render_page(locale_code: str) -> str:
               </div>
               <div class="demo-stage-screen">
                 <video class="demo-video" data-demo-video playsinline autoplay muted loop controls hidden></video>
-                <img class="demo-fallback" data-demo-fallback src="{prefix}/assets/marketing/02_gallery_dashboard.png" alt="SnapVend demo screen" loading="lazy">
+                <div class="demo-placeholder" data-demo-fallback>
+                  <span class="demo-placeholder-play" aria-hidden="true"></span>
+                  <strong>SnapVend</strong>
+                  <p>{e(demo_copy["screen_label"])}</p>
+                </div>
               </div>
               <p class="demo-stage-note">{e(demo_copy["screen_note"])}</p>
             </article>
@@ -2357,14 +2908,20 @@ def render_page(locale_code: str) -> str:
             </ol>
 
             <div class="shot-stack reveal">
-              <article class="shot-card shot-card-large">
-                <img src="{prefix}/assets/marketing/04_ftp_camera_flow.png" alt="SnapVend FTP screenshot" loading="lazy">
+              <article class="shot-card shot-card-ftp">
+                <img src="{prefix}/{marketing_asset('workflow_ftp', locale_code)}" alt="SnapVend FTP server settings for professional cameras" loading="lazy">
               </article>
-              <article class="shot-card">
-                <img src="{prefix}/assets/marketing/03_local_connection.png" alt="SnapVend local connection screenshot" loading="lazy">
+              <article class="shot-card shot-card-dashboard">
+                <img src="{prefix}/{marketing_asset('workflow_dashboard', locale_code)}" alt="SnapVend gallery home dashboard" loading="lazy">
               </article>
-              <article class="shot-card">
-                <img src="{prefix}/assets/marketing/06_reports_dashboard.png" alt="SnapVend reports screenshot" loading="lazy">
+              <article class="shot-card shot-card-qr">
+                <img src="{prefix}/{marketing_asset('workflow_qr', locale_code)}" alt="SnapVend QR codes and session access screen" loading="lazy">
+              </article>
+              <article class="shot-card shot-card-http">
+                <img src="{prefix}/{marketing_asset('workflow_http_gallery', locale_code)}" alt="SnapVend HTTP gallery with selected photos" loading="lazy">
+              </article>
+              <article class="shot-card shot-card-payment">
+                <img src="{prefix}/{marketing_asset('workflow_payment', locale_code)}" alt="SnapVend payment approval and delivery options screen" loading="lazy">
               </article>
             </div>
           </div>
@@ -2594,13 +3151,13 @@ def write_manifest() -> None:
         "theme_color": "#071b45",
         "icons": [
             {
-                "src": "/assets/branding/app_icon_store_512.png",
+                "src": APP_ICON_ASSET,
                 "sizes": "512x512",
                 "type": "image/png",
             },
             {
-                "src": "/assets/favicon.png",
-                "sizes": "192x192",
+                "src": BRAND_MARK_ASSET,
+                "sizes": "180x180",
                 "type": "image/png",
             },
         ],
