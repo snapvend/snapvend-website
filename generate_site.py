@@ -11,6 +11,7 @@ SEO_CONFIG = json.loads((ROOT / "seo-config.json").read_text(encoding="utf-8"))
 SITE_URL = SEO_CONFIG["siteUrl"].rstrip("/")
 BUILD_DATE = date.today().isoformat()
 BRAND_MARK_ASSET = "/assets/branding/snapvend_logo_square.png"
+BRAND_MARK_SITE_ASSET = "/assets/branding/snapvend_logo_square_web.png"
 APP_ICON_ASSET = "/assets/branding/app_icon_store_512.png"
 
 
@@ -2263,19 +2264,19 @@ BRAND_MOTTO_BY_LOCALE = {
 }
 
 MARKETING_ASSETS = {
-    "hero_main": "assets/marketing/google_play/01_gallery_dashboard.png",
-    "hero_secondary": "assets/marketing/google_play/02_session_qr_access.png",
-    "workflow_ftp": "assets/marketing/google_play/05_ftp_server_settings.png",
-    "workflow_dashboard": "assets/marketing/google_play/01_gallery_dashboard.png",
-    "workflow_qr": "assets/marketing/google_play/03_browser_gallery_selection.png",
-    "workflow_http_gallery": "assets/marketing/google_play/06_customer_gallery_selection_en.png",
-    "workflow_payment": "assets/marketing/google_play/04_payment_approval_flow.png",
-    "schema_report": "assets/marketing/google_play/07_reports_dashboard.png",
+    "hero_main": "assets/marketing/google_play/web/01_gallery_dashboard_web.png",
+    "hero_secondary": "assets/marketing/google_play/web/02_session_qr_access_web.png",
+    "workflow_ftp": "assets/marketing/google_play/web/05_ftp_server_settings_web.png",
+    "workflow_dashboard": "assets/marketing/google_play/web/01_gallery_dashboard_web.png",
+    "workflow_qr": "assets/marketing/google_play/web/03_browser_gallery_selection_web.png",
+    "workflow_http_gallery": "assets/marketing/google_play/web/06_customer_gallery_selection_en_web.png",
+    "workflow_payment": "assets/marketing/google_play/web/04_payment_approval_flow_web.png",
+    "schema_report": "assets/marketing/google_play/web/07_reports_dashboard_web.png",
 }
 
 LOCALE_MARKETING_ASSET_OVERRIDES = {
     "tr": {
-        "workflow_http_gallery": "assets/marketing/google_play/06_customer_gallery_selection_tr.png",
+        "workflow_http_gallery": "assets/marketing/google_play/web/06_customer_gallery_selection_tr_web.png",
     },
 }
 
@@ -2791,6 +2792,8 @@ def render_page(locale_code: str) -> str:
     <link rel="shortcut icon" href="{prefix}{BRAND_MARK_ASSET}">
     <link rel="apple-touch-icon" href="{prefix}{BRAND_MARK_ASSET}">
     <link rel="manifest" href="{prefix}/manifest.webmanifest">
+    <link rel="preload" href="{prefix}/assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="{prefix}/assets/fonts/JosefinSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="{prefix}/styles.css">
     <script type="application/ld+json">{schema_json}</script>
     <script defer src="{prefix}/site-config.js"></script>
@@ -2803,7 +2806,7 @@ def render_page(locale_code: str) -> str:
     <header class="topbar">
       <div class="container topbar-inner">
         <a class="brand" href="{relative_page_href(locale_code, locale_code)}">
-          <img class="brand-mark" src="{prefix}/assets/branding/snapvend_logo_square.png" alt="SnapVend">
+          <img class="brand-mark" src="{prefix}{BRAND_MARK_SITE_ASSET}" alt="SnapVend" width="120" height="120" decoding="async" fetchpriority="high">
           <span class="brand-copy">
             <span class="brand-kicker">Professional Photo Delivery</span>
             <strong>SnapVend</strong>
@@ -2848,10 +2851,10 @@ def render_page(locale_code: str) -> str:
 
           <div class="hero-visual reveal">
             <article class="visual-frame visual-frame-main">
-              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="SnapVend home dashboard with live gallery and session overview" loading="eager">
+              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="SnapVend home dashboard with live gallery and session overview" width="324" height="720" loading="eager" decoding="async" fetchpriority="high">
             </article>
             <article class="visual-frame visual-frame-secondary">
-              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="SnapVend WiFi and hotspot QR connection screen" loading="lazy">
+              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="SnapVend WiFi and hotspot QR connection screen" width="324" height="720" loading="eager" decoding="async">
             </article>
             <article class="visual-chip">
               <span>SnapVend</span>
@@ -2861,7 +2864,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section demo" id="demo">
+      <section class="section demo deferred-section" id="demo">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">{e(demo_copy["eyebrow"])}</p>
@@ -2894,7 +2897,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section" id="how-it-works">
+      <section class="section deferred-section" id="how-it-works">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">{e(copy["workflow_eyebrow"])}</p>
@@ -2909,26 +2912,26 @@ def render_page(locale_code: str) -> str:
 
             <div class="shot-stack reveal">
               <article class="shot-card shot-card-ftp">
-                <img src="{prefix}/{marketing_asset('workflow_ftp', locale_code)}" alt="SnapVend FTP server settings for professional cameras" loading="lazy">
+                <img src="{prefix}/{marketing_asset('workflow_ftp', locale_code)}" alt="SnapVend FTP server settings for professional cameras" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-dashboard">
-                <img src="{prefix}/{marketing_asset('workflow_dashboard', locale_code)}" alt="SnapVend gallery home dashboard" loading="lazy">
+                <img src="{prefix}/{marketing_asset('workflow_dashboard', locale_code)}" alt="SnapVend gallery home dashboard" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-qr">
-                <img src="{prefix}/{marketing_asset('workflow_qr', locale_code)}" alt="SnapVend QR codes and session access screen" loading="lazy">
+                <img src="{prefix}/{marketing_asset('workflow_qr', locale_code)}" alt="SnapVend QR codes and session access screen" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-http">
-                <img src="{prefix}/{marketing_asset('workflow_http_gallery', locale_code)}" alt="SnapVend HTTP gallery with selected photos" loading="lazy">
+                <img src="{prefix}/{marketing_asset('workflow_http_gallery', locale_code)}" alt="SnapVend HTTP gallery with selected photos" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-payment">
-                <img src="{prefix}/{marketing_asset('workflow_payment', locale_code)}" alt="SnapVend payment approval and delivery options screen" loading="lazy">
+                <img src="{prefix}/{marketing_asset('workflow_payment', locale_code)}" alt="SnapVend payment approval and delivery options screen" width="324" height="720" loading="lazy" decoding="async">
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="audience">
+      <section class="section deferred-section" id="audience">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">{e(copy["audience_eyebrow"])}</p>
@@ -2942,7 +2945,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section proof" id="use-cases">
+      <section class="section proof deferred-section" id="use-cases">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">{e(proof_copy["eyebrow"])}</p>
@@ -2972,7 +2975,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section pricing" id="pricing">
+      <section class="section pricing deferred-section" id="pricing">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">{e(copy["pricing_eyebrow"])}</p>
@@ -3028,7 +3031,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section faq" id="faq">
+      <section class="section faq deferred-section" id="faq">
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">{e(faq_copy["eyebrow"])}</p>
@@ -3042,7 +3045,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section contact" id="contact">
+      <section class="section contact deferred-section" id="contact">
         <div class="container contact-grid">
           <div class="contact-copy reveal">
             <p class="eyebrow">{e(contact_copy["eyebrow"])}</p>
@@ -3110,7 +3113,7 @@ def render_page(locale_code: str) -> str:
         </div>
       </section>
 
-      <section class="section">
+      <section class="section deferred-section">
         <div class="container cta-panel reveal">
           <div>
             <p class="eyebrow">{e(copy["cta_eyebrow"])}</p>
