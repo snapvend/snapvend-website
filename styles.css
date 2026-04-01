@@ -1672,10 +1672,6 @@ html[lang="ru"] .language-switcher summary {
     grid-template-columns: minmax(200px, 240px) minmax(0, 1fr) auto;
   }
 
-  .brand-kicker {
-    display: none;
-  }
-
   .topnav a {
     padding: 0 10px;
     font-size: 0.62rem;
@@ -1745,6 +1741,21 @@ html[lang="ru"] .language-switcher summary {
   .brand {
     width: auto;
     justify-content: flex-start;
+  }
+
+  .brand-copy {
+    gap: 2px;
+  }
+
+  .brand-copy strong {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-kicker {
+    display: block;
+    font-size: 0.54rem;
+    letter-spacing: 0.12em;
   }
 
   .topbar-menu-toggle {
@@ -1877,6 +1888,26 @@ html[lang="ru"] .language-switcher summary {
     gap: 10px;
     padding: 12px;
     border-radius: 22px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .brand-copy strong {
+    font-size: 0.95rem;
+    letter-spacing: 0.07em;
+  }
+
+  .brand-kicker {
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
   }
 
   .deferred-section {
