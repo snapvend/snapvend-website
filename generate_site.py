@@ -162,6 +162,20 @@ NAV_EXTRA = {
     "zh": {"demo": "演示", "faq": "常见问题"},
 }
 
+MOBILE_MENU_LABELS = {
+    "tr": "Menü",
+    "en": "Menu",
+    "es": "Menu",
+    "fr": "Menu",
+    "de": "Menü",
+    "pt": "Menu",
+    "ru": "Меню",
+    "ar": "القائمة",
+    "hi": "मेनू",
+    "ja": "メニュー",
+    "zh": "菜单",
+}
+
 DEMO_SECTION = {
     "tr": {
         "eyebrow": "Canlı Demo",
@@ -2761,6 +2775,7 @@ def render_page(locale_code: str) -> str:
     schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, keyword_string)
     active_flag = flag_emoji(meta["app_store_country"])
     popular_label = POPULAR_LABELS[locale_code]
+    mobile_menu_label = MOBILE_MENU_LABELS[locale_code]
 
     return f"""<!doctype html>
 <html lang="{locale_code}" dir="{meta["dir"]}" data-locale="{locale_code}">
@@ -2813,22 +2828,33 @@ def render_page(locale_code: str) -> str:
           </span>
         </a>
 
-        <nav class="topnav" aria-label="Sections">
-          <a href="#demo">{e(extra_nav["demo"])}</a>
-          <a href="#how-it-works">{e(copy["nav_how"])}</a>
-          <a href="#audience">{e(copy["nav_audience"])}</a>
-          <a href="#pricing">{e(copy["nav_pricing"])}</a>
-          <a href="#faq">{e(extra_nav["faq"])}</a>
-        </nav>
+        <button class="topbar-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-menu-toggle>
+          <span class="topbar-menu-toggle-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>{e(mobile_menu_label)}</span>
+        </button>
 
-        <div class="topbar-actions">
-          <a class="pill-link" href="#download">{e(copy["nav_download"])}</a>
-          <details class="language-switcher">
-            <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">{active_flag}</span><span>{e(copy["language_label"])}</span></span></summary>
-            <div class="language-menu">
+        <div class="topbar-menu-panel" id="primary-menu" data-menu-panel>
+          <nav class="topnav" aria-label="Sections">
+            <a href="#demo">{e(extra_nav["demo"])}</a>
+            <a href="#how-it-works">{e(copy["nav_how"])}</a>
+            <a href="#audience">{e(copy["nav_audience"])}</a>
+            <a href="#pricing">{e(copy["nav_pricing"])}</a>
+            <a href="#faq">{e(extra_nav["faq"])}</a>
+          </nav>
+
+          <div class="topbar-actions">
+            <a class="pill-link" href="#download">{e(copy["nav_download"])}</a>
+            <details class="language-switcher">
+              <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">{active_flag}</span><span>{e(copy["language_label"])}</span></span></summary>
+              <div class="language-menu">
 {language_menu}
-            </div>
-          </details>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
     </header>

@@ -169,6 +169,73 @@ const setupContactForms = () => {
   });
 };
 
+const setupMobileMenu = () => {
+  const menuToggles = document.querySelectorAll("[data-menu-toggle]");
+
+  const closeMenu = (container, toggle) => {
+    container.classList.remove("is-menu-open");
+    toggle.setAttribute("aria-expanded", "false");
+  };
+
+  const openMenu = (container, toggle) => {
+    container.classList.add("is-menu-open");
+    toggle.setAttribute("aria-expanded", "true");
+  };
+
+  menuToggles.forEach((toggle) => {
+    const container = toggle.closest(".topbar-inner");
+    const panel = container?.querySelector("[data-menu-panel]");
+
+    if (!container || !panel) {
+      return;
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = container.classList.contains("is-menu-open");
+      if (isOpen) {
+        closeMenu(container, toggle);
+      } else {
+        openMenu(container, toggle);
+      }
+    });
+
+    panel.querySelectorAll("a[href^='#']").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 820) {
+          closeMenu(container, toggle);
+        }
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (window.innerWidth > 820) {
+        return;
+      }
+
+      if (!container.contains(event.target)) {
+        closeMenu(container, toggle);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu(container, toggle);
+      }
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 820) {
+      menuToggles.forEach((toggle) => {
+        const container = toggle.closest(".topbar-inner");
+        if (!container) return;
+        container.classList.remove("is-menu-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    }
+  });
+};
+
 const revealOnScroll = () => {
   const items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
@@ -198,5 +265,6 @@ setupDemoMedia();
 setupStoreLinks();
 toggleSetupNotes();
 setupContactForms();
+setupMobileMenu();
 setupClarity();
 revealOnScroll();

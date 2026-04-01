@@ -88,19 +88,29 @@
           </span>
         </a>
 
-        <nav class="topnav" aria-label="Sections">
-          <a href="#demo">デモ</a>
-          <a href="#how-it-works">使い方</a>
-          <a href="#audience">対象ユーザー</a>
-          <a href="#pricing">料金</a>
-          <a href="#faq">FAQ</a>
-        </nav>
+        <button class="topbar-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-menu-toggle>
+          <span class="topbar-menu-toggle-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>メニュー</span>
+        </button>
 
-        <div class="topbar-actions">
-          <a class="pill-link" href="#download">ダウンロード</a>
-          <details class="language-switcher">
-            <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">🇯🇵</span><span>言語</span></span></summary>
-            <div class="language-menu">
+        <div class="topbar-menu-panel" id="primary-menu" data-menu-panel>
+          <nav class="topnav" aria-label="Sections">
+            <a href="#demo">デモ</a>
+            <a href="#how-it-works">使い方</a>
+            <a href="#audience">対象ユーザー</a>
+            <a href="#pricing">料金</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <div class="topbar-actions">
+            <a class="pill-link" href="#download">ダウンロード</a>
+            <details class="language-switcher">
+              <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">🇯🇵</span><span>言語</span></span></summary>
+              <div class="language-menu">
               <a class="language-option" href="../index.html" lang="tr" hreflang="tr"><span class="language-flag" aria-hidden="true">🇹🇷</span><span class="language-name">Türkçe</span></a>
               <a class="language-option" href="../en/index.html" lang="en" hreflang="en"><span class="language-flag" aria-hidden="true">🇺🇸</span><span class="language-name">English</span></a>
               <a class="language-option" href="../es/index.html" lang="es" hreflang="es"><span class="language-flag" aria-hidden="true">🇪🇸</span><span class="language-name">Español</span></a>
@@ -112,8 +122,9 @@
               <a class="language-option" href="../hi/index.html" lang="hi" hreflang="hi"><span class="language-flag" aria-hidden="true">🇮🇳</span><span class="language-name">हिन्दी</span></a>
               <a class="language-option language-option-active" href="./index.html" lang="ja" hreflang="ja"><span class="language-flag" aria-hidden="true">🇯🇵</span><span class="language-name">日本語</span></a>
               <a class="language-option" href="../zh/index.html" lang="zh" hreflang="zh"><span class="language-flag" aria-hidden="true">🇨🇳</span><span class="language-name">中文 (简体)</span></a>
-            </div>
-          </details>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
     </header>
