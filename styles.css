@@ -219,7 +219,12 @@ code {
 }
 
 .topbar-menu-panel {
-  display: contents;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  grid-column: 2 / 4;
 }
 
 .topnav {
@@ -1761,25 +1766,13 @@ html[lang="ru"] .language-switcher summary {
 
   .topbar-menu-panel {
     grid-column: 1 / -1;
-    display: grid;
+    display: none;
     gap: 12px;
     width: 100%;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none;
-    transform: translateY(-8px);
-    transition:
-      max-height 220ms ease,
-      opacity 180ms ease,
-      transform 180ms ease;
   }
 
   .topbar-inner.is-menu-open .topbar-menu-panel {
-    max-height: 420px;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
+    display: grid;
   }
 
   .topnav {

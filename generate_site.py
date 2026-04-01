@@ -2,14 +2,15 @@ from __future__ import annotations
 
 import html
 import json
-from datetime import date
+from datetime import datetime
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
 SEO_CONFIG = json.loads((ROOT / "seo-config.json").read_text(encoding="utf-8"))
 SITE_URL = SEO_CONFIG["siteUrl"].rstrip("/")
-BUILD_DATE = date.today().isoformat()
+BUILD_DATE = datetime.now().date().isoformat()
+BUILD_VERSION = datetime.now().strftime("%Y%m%d%H%M%S")
 BRAND_MARK_ASSET = "/assets/branding/snapvend_logo_square.png"
 BRAND_MARK_SITE_ASSET = "/assets/branding/snapvend_logo_square_web.png"
 APP_ICON_ASSET = "/assets/branding/app_icon_store_512.png"
@@ -2809,10 +2810,10 @@ def render_page(locale_code: str) -> str:
     <link rel="manifest" href="{prefix}/manifest.webmanifest">
     <link rel="preload" href="{prefix}/assets/fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="{prefix}/assets/fonts/JosefinSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="{prefix}/styles.css">
+    <link rel="stylesheet" href="{prefix}/styles.css?v={BUILD_VERSION}">
     <script type="application/ld+json">{schema_json}</script>
-    <script defer src="{prefix}/site-config.js"></script>
-    <script defer src="{prefix}/script.js"></script>
+    <script defer src="{prefix}/site-config.js?v={BUILD_VERSION}"></script>
+    <script defer src="{prefix}/script.js?v={BUILD_VERSION}"></script>
   </head>
   <body>
     <div class="page-aura page-aura-left" aria-hidden="true"></div>
