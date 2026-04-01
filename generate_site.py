@@ -2264,8 +2264,8 @@ BRAND_MOTTO_BY_LOCALE = {
 }
 
 MARKETING_ASSETS = {
-    "hero_main": "assets/marketing/google_play/web/01_gallery_dashboard_web.png",
-    "hero_secondary": "assets/marketing/google_play/web/02_session_qr_access_web.png",
+    "hero_main": "assets/marketing/google_play/web/01_gallery_dashboard_hero.jpg",
+    "hero_secondary": "assets/marketing/google_play/web/02_session_qr_access_hero.png",
     "workflow_ftp": "assets/marketing/google_play/web/05_ftp_server_settings_web.png",
     "workflow_dashboard": "assets/marketing/google_play/web/01_gallery_dashboard_web.png",
     "workflow_qr": "assets/marketing/google_play/web/03_browser_gallery_selection_web.png",
@@ -2806,7 +2806,7 @@ def render_page(locale_code: str) -> str:
     <header class="topbar">
       <div class="container topbar-inner">
         <a class="brand" href="{relative_page_href(locale_code, locale_code)}">
-          <img class="brand-mark" src="{prefix}{BRAND_MARK_SITE_ASSET}" alt="SnapVend" width="120" height="120" decoding="async" fetchpriority="high">
+          <img class="brand-mark" src="{prefix}{BRAND_MARK_SITE_ASSET}" alt="SnapVend" width="64" height="64" decoding="async" fetchpriority="high">
           <span class="brand-copy">
             <span class="brand-kicker">Professional Photo Delivery</span>
             <strong>SnapVend</strong>
@@ -2851,10 +2851,10 @@ def render_page(locale_code: str) -> str:
 
           <div class="hero-visual reveal">
             <article class="visual-frame visual-frame-main">
-              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="SnapVend home dashboard with live gallery and session overview" width="324" height="720" loading="eager" decoding="async" fetchpriority="high">
+              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="SnapVend home dashboard with live gallery and session overview" width="288" height="640" loading="eager" decoding="async" fetchpriority="high">
             </article>
             <article class="visual-frame visual-frame-secondary">
-              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="SnapVend WiFi and hotspot QR connection screen" width="324" height="720" loading="eager" decoding="async">
+              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="SnapVend WiFi and hotspot QR connection screen" width="189" height="420" loading="eager" decoding="async">
             </article>
             <article class="visual-chip">
               <span>SnapVend</span>
