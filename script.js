@@ -15,6 +15,118 @@ const marketingConfig = {
 
 const hasValue = (value) => String(value || "").trim().length > 0;
 const currentLocale = (document.documentElement.lang || "tr").toLowerCase();
+const localePreferenceKey = "snapvendPreferredLocale";
+const supportedLocalePaths = {
+  tr: "./index.html",
+  en: "./en/index.html",
+  es: "./es/index.html",
+  fr: "./fr/index.html",
+  de: "./de/index.html",
+  pt: "./pt/index.html",
+  ru: "./ru/index.html",
+  ar: "./ar/index.html",
+  hi: "./hi/index.html",
+  ja: "./ja/index.html",
+  zh: "./zh/index.html",
+};
+
+const localeAliases = {
+  tr: "tr",
+  "tr-tr": "tr",
+  en: "en",
+  "en-us": "en",
+  "en-gb": "en",
+  "en-ca": "en",
+  "en-au": "en",
+  es: "es",
+  "es-es": "es",
+  "es-mx": "es",
+  "es-ar": "es",
+  "es-co": "es",
+  fr: "fr",
+  "fr-fr": "fr",
+  "fr-ca": "fr",
+  "fr-be": "fr",
+  "fr-ch": "fr",
+  de: "de",
+  "de-de": "de",
+  "de-at": "de",
+  "de-ch": "de",
+  pt: "pt",
+  "pt-br": "pt",
+  "pt-pt": "pt",
+  ru: "ru",
+  "ru-ru": "ru",
+  "ru-kz": "ru",
+  ar: "ar",
+  "ar-sa": "ar",
+  "ar-ae": "ar",
+  "ar-eg": "ar",
+  hi: "hi",
+  "hi-in": "hi",
+  ja: "ja",
+  "ja-jp": "ja",
+  zh: "zh",
+  "zh-cn": "zh",
+  "zh-sg": "zh",
+  "zh-hans": "zh",
+};
+
+const normalizeLocaleTag = (value) => String(value || "").trim().toLowerCase().replace(/_/g, "-");
+
+const resolveSupportedLocale = (value) => {
+  const normalized = normalizeLocaleTag(value);
+
+  if (!hasValue(normalized)) {
+    return "";
+  }
+
+  if (localeAliases[normalized]) {
+    return localeAliases[normalized];
+  }
+
+  const baseLocale = normalized.split("-")[0];
+  return supportedLocalePaths[baseLocale] ? baseLocale : "";
+};
+
+const isRootPage = () => {
+  const path = window.location.pathname || "/";
+  return path === "/" || path.endsWith("/index.html");
+};
+
+const setupLocalePreference = () => {
+  document.querySelectorAll(".language-option[lang]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const selectedLocale = resolveSupportedLocale(link.getAttribute("lang"));
+      if (hasValue(selectedLocale)) {
+        window.localStorage.setItem(localePreferenceKey, selectedLocale);
+      }
+    });
+  });
+};
+
+const setupLocaleRedirect = () => {
+  if (!isRootPage() || currentLocale !== "tr") {
+    return;
+  }
+
+  const savedLocale = resolveSupportedLocale(window.localStorage.getItem(localePreferenceKey));
+  const browserLocale = [navigator.language, ...(navigator.languages || [])]
+    .map(resolveSupportedLocale)
+    .find(Boolean);
+  const preferredLocale = savedLocale || browserLocale;
+
+  if (!hasValue(preferredLocale) || preferredLocale === "tr") {
+    return;
+  }
+
+  const targetPath = supportedLocalePaths[preferredLocale];
+  if (!hasValue(targetPath)) {
+    return;
+  }
+
+  window.location.replace(targetPath);
+};
 
 const getConfiguredValue = (key) => {
   const localizedPrices = marketingConfig.pricesByLocale || {};
@@ -261,6 +373,8 @@ const revealOnScroll = () => {
 };
 
 applyPricing();
+setupLocalePreference();
+setupLocaleRedirect();
 setupDemoMedia();
 setupStoreLinks();
 toggleSetupNotes();
