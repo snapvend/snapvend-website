@@ -26,6 +26,10 @@ window.snapVendMarketingConfig = {
       monthlyPrice: "7,93 €",
       yearlyPrice: "49,69 €",
     },
+    it: {
+      monthlyPrice: "7,93 €",
+      yearlyPrice: "49,69 €",
+    },
     pt: {
       monthlyPrice: "R$ 47,00",
       yearlyPrice: "R$ 294,37",
