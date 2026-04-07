@@ -2793,7 +2793,10 @@ def build_language_support_cards(section: dict) -> str:
 def build_language_support_badges() -> str:
     badges = []
     for locale_code in LOCALE_ORDER:
-        badges.append(f'                <span class="language-support-badge">{e(LOCALE_META[locale_code]["native"])}</span>')
+        flag = flag_emoji(LOCALE_META[locale_code]["app_store_country"])
+        badges.append(
+            f'                <span class="language-support-badge"><span class="language-support-badge-flag" aria-hidden="true">{flag}</span><span class="language-support-badge-name">{e(LOCALE_META[locale_code]["native"])}</span></span>'
+        )
     return "\n".join(badges)
 
 

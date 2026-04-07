@@ -881,6 +881,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-height: 38px;
   padding: 0 14px;
   border-radius: 999px;
@@ -891,6 +892,15 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--text-primary);
+}
+
+.language-support-badge-flag {
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
+.language-support-badge-name {
+  line-height: 1.1;
 }
 
 .demo-stage {
@@ -2126,6 +2136,10 @@ html[lang="ru"] .language-switcher summary {
     min-height: 36px;
     font-size: 0.66rem;
     letter-spacing: 0.04em;
+  }
+
+  .language-support-badge-flag {
+    font-size: 0.86rem;
   }
 
   .contact-actions {
