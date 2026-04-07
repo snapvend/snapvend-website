@@ -2771,11 +2771,19 @@ def build_audience_cards(copy: dict) -> str:
 
 
 def build_language_support_cards(section: dict) -> str:
+    icons = [
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.75a9.25 9.25 0 1 0 0 18.5 9.25 9.25 0 0 0 0-18.5Zm5.87 7.75h-3.04a15.3 15.3 0 0 0-1.08-4.2 7.79 7.79 0 0 1 4.12 4.2ZM12 4.21c.73.96 1.37 2.45 1.73 4.29h-3.46C10.63 6.66 11.27 5.17 12 4.21Zm-1.48.09A15.3 15.3 0 0 0 9.43 8.5H6.39a7.79 7.79 0 0 1 4.13-4.2ZM5.92 12c0-.52.06-1.02.17-1.5h3.13c-.07.49-.11.99-.11 1.5 0 .51.04 1.01.11 1.5H6.09A7.9 7.9 0 0 1 5.92 12Zm.47 3.5h3.04c.22 1.5.61 2.88 1.09 4.2a7.79 7.79 0 0 1-4.13-4.2Zm5.61 4.29c-.73-.96-1.37-2.45-1.73-4.29h3.46c-.36 1.84-1 3.33-1.73 4.29Zm2.21-.09c.48-1.32.87-2.7 1.09-4.2h3.04a7.79 7.79 0 0 1-4.13 4.2Zm1.39-6.2c.07-.49.11-.99.11-1.5 0-.51-.04-1.01-.11-1.5h3.13c.11.48.17.98.17 1.5 0 .52-.06 1.02-.17 1.5H15.6Z" fill="currentColor"/></svg>""",
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 4.75A2.75 2.75 0 0 0 4 7.5v9A2.75 2.75 0 0 0 6.75 19.25h10.5A2.75 2.75 0 0 0 20 16.5v-9a2.75 2.75 0 0 0-2.75-2.75H6.75Zm0 1.5h10.5c.69 0 1.25.56 1.25 1.25v5.32l-2.43-2.43a1.75 1.75 0 0 0-2.48 0l-1.22 1.22-2.02-2.02a1.75 1.75 0 0 0-2.48 0L5.5 11.96V7.5c0-.69.56-1.25 1.25-1.25Zm9.75 11.5H6.75c-.69 0-1.25-.56-1.25-1.25v-2.42l3.43-3.43a.25.25 0 0 1 .35 0l2.55 2.55c.29.29.77.29 1.06 0l1.75-1.75a.25.25 0 0 1 .35 0l3.51 3.51v1.54c0 .69-.56 1.25-1.25 1.25ZM8.75 8.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z" fill="currentColor"/></svg>""",
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.75c-2.02 1.65-4.62 2.5-7.25 2.5-.41 0-.75.34-.75.75v4.93c0 4.73 2.88 8.99 7.27 10.77.18.07.38.07.56 0C16.22 19.92 19 15.66 19 10.93V6c0-.41-.34-.75-.75-.75-2.63 0-5.23-.85-7.25-2.5Zm-5.5 4c2.03-.12 4-.71 5.5-1.68 1.5.97 3.47 1.56 5.5 1.68v4.18c0 3.98-2.31 7.57-5.5 9.25-3.2-1.68-5.5-5.27-5.5-9.25V6.75Zm8.3 2.96a.75.75 0 0 1 0 1.06l-3.47 3.47a.75.75 0 0 1-1.06 0L9 12.97a.75.75 0 1 1 1.06-1.06l.74.74 2.94-2.94a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg>""",
+    ]
     cards = []
-    for card in section["cards"]:
+    for index, card in enumerate(section["cards"]):
         cards.append(
             f"""              <article class="language-support-card reveal">
-                <h3>{e(card["title"])}</h3>
+                <div class="language-support-card-head">
+                  <span class="language-support-icon" aria-hidden="true">{icons[index % len(icons)]}</span>
+                  <h3>{e(card["title"])}</h3>
+                </div>
                 <p>{e(card["body"])}</p>
               </article>"""
         )
@@ -2945,7 +2953,7 @@ def store_badges(locale_code: str, copy: dict) -> str:
             </div>"""
 
 
-def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: dict, keywords: str) -> str:
+def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: dict, language_support: dict, keywords: str) -> str:
     pricing = SCHEMA_PRICING[locale_code]
     page_url = canonical_url(locale_code)
     logo_url = f"{SITE_URL}{BRAND_MARK_ASSET}"
@@ -2961,9 +2969,16 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         f"{SITE_URL}/{marketing_asset('schema_report')}",
     ]
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
+    language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
     contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
+    supported_language_set = build_defined_term_set_schema(
+        page_url,
+        "supported-languages",
+        language_support["supported_label"],
+        [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+    )
 
     contact_point = {
         "@type": "ContactPoint",
@@ -3014,11 +3029,13 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         "keywords": keywords,
         "hasPart": [
             {"@id": audience_list["@id"]},
+            {"@id": language_support_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
             {"@id": f"{page_url}#faq"},
             {"@id": f"{page_url}#contact-page"},
             {"@id": contact_topic_set["@id"]},
+            {"@id": supported_language_set["@id"]},
         ],
     }
 
@@ -3047,8 +3064,21 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
             [card["title"] for card in copy["workflow_cards"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
+            + [card["title"] for card in language_support["cards"]]
             + [card["title"] for card in proof["use_cases"][:2]]
         ),
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "name": language_support["supported_label"],
+                "value": ", ".join(LOCALE_META[code]["native"] for code in LOCALE_ORDER),
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Localized client flow coverage",
+                "value": language_support["title"],
+            },
+        ],
         "audience": [
             {
                 "@type": "Audience",
@@ -3124,9 +3154,11 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
             webpage,
             software,
             audience_list,
+            language_support_list,
             use_case_list,
             reference_profile_list,
             contact_topic_set,
+            supported_language_set,
             contact_page,
             faq_page,
         ],
@@ -3159,10 +3191,11 @@ def render_page(locale_code: str) -> str:
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
     keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy)
-    schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, keyword_string)
+    schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, language_support_copy, keyword_string)
     active_flag = flag_emoji(meta["app_store_country"])
     popular_label = POPULAR_LABELS[locale_code]
     mobile_menu_label = MOBILE_MENU_LABELS[locale_code]
+    language_count = f"{len(LOCALE_ORDER)}+"
 
     return f"""<!doctype html>
 <html lang="{locale_code}" dir="{meta["dir"]}" data-locale="{locale_code}">
@@ -3284,6 +3317,13 @@ def render_page(locale_code: str) -> str:
               <p class="eyebrow">{e(language_support_copy["eyebrow"])}</p>
               <h2>{e(language_support_copy["title"])}</h2>
               <p>{e(language_support_copy["lead"])}</p>
+            </div>
+
+            <div class="language-support-topline reveal">
+              <div class="language-support-count">
+                <strong>{language_count}</strong>
+                <span>{e(language_support_copy["supported_label"])}</span>
+              </div>
             </div>
 
             <div class="language-support-grid">

@@ -772,6 +772,52 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.language-support-topline {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.language-support-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 76px;
+  padding: 14px 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(123, 220, 255, 0.14);
+  background:
+    radial-gradient(circle at left top, rgba(123, 220, 255, 0.16), transparent 62%),
+    rgba(8, 23, 52, 0.56);
+  box-shadow:
+    0 16px 28px rgba(2, 13, 37, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.language-support-count strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  color: #082847;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.language-support-count span {
+  font-family: var(--menu-font);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
 .language-support-card {
   padding: 22px;
   border-color: rgba(123, 220, 255, 0.12);
@@ -779,6 +825,31 @@ h1 {
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
     rgba(8, 23, 52, 0.58);
   box-shadow: none;
+}
+
+.language-support-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.language-support-icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 220, 255, 0.14);
+  background: rgba(123, 220, 255, 0.08);
+  color: #7ddcff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.language-support-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 .language-support-card h3 {
@@ -1926,6 +1997,11 @@ html[lang="ru"] .language-switcher summary {
     padding: 24px;
   }
 
+  .language-support-count {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .language-support-badges {
     grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
   }
@@ -2010,8 +2086,40 @@ html[lang="ru"] .language-switcher summary {
     border-radius: 24px;
   }
 
+  .language-support-topline {
+    display: block;
+  }
+
+  .language-support-count {
+    width: 100%;
+    min-height: 0;
+    padding: 14px 16px;
+    border-radius: 20px;
+  }
+
+  .language-support-count strong {
+    min-width: 62px;
+    height: 44px;
+    font-size: 1.8rem;
+  }
+
+  .language-support-count span {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+
   .language-support-card {
     padding: 18px;
+  }
+
+  .language-support-card-head {
+    align-items: flex-start;
+  }
+
+  .language-support-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
   }
 
   .language-support-badge {
