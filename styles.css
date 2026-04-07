@@ -716,7 +716,9 @@ h1 {
 .audience-grid,
 .pricing-grid,
 .proof-grid,
-.contact-points {
+.contact-points,
+.language-support-grid,
+.language-support-badges {
   display: grid;
   gap: 16px;
 }
@@ -727,6 +729,7 @@ h1 {
 }
 
 .metric-card,
+.language-support-card,
 .workflow-card,
 .audience-card,
 .proof-card,
@@ -749,6 +752,74 @@ h1 {
 
 .metric-card {
   padding: 16px;
+}
+
+.language-support-shell {
+  display: grid;
+  gap: 24px;
+  padding: 28px;
+  border-radius: 30px;
+  border: 1px solid rgba(123, 220, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(17, 42, 89, 0.86), rgba(8, 23, 52, 0.92)),
+    rgba(8, 23, 52, 0.84);
+  box-shadow:
+    0 24px 48px rgba(2, 13, 37, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.language-support-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.language-support-card {
+  padding: 22px;
+  border-color: rgba(123, 220, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(8, 23, 52, 0.58);
+  box-shadow: none;
+}
+
+.language-support-card h3 {
+  font-family: var(--menu-font);
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.26;
+}
+
+.language-support-card p {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+}
+
+.language-support-footer {
+  display: grid;
+  gap: 14px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.language-support-badges {
+  grid-template-columns: repeat(auto-fit, minmax(118px, max-content));
+  gap: 10px;
+}
+
+.language-support-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(123, 220, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  font-family: var(--ui-font);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
 }
 
 .demo-stage {
@@ -1696,6 +1767,7 @@ html[lang="ru"] .language-switcher summary {
   }
 
   .audience-grid,
+  .language-support-grid,
   .proof-grid,
   .pricing-grid,
   .faq-grid {
@@ -1810,6 +1882,7 @@ html[lang="ru"] .language-switcher summary {
     overflow: visible;
   }
 
+  .language-support-grid,
   .proof-grid,
   .contact-field-grid,
   .contact-points {
@@ -1843,9 +1916,18 @@ html[lang="ru"] .language-switcher summary {
 
   .metric-grid,
   .audience-grid,
+  .language-support-grid,
   .pricing-grid,
   .faq-grid {
     grid-template-columns: 1fr;
+  }
+
+  .language-support-shell {
+    padding: 24px;
+  }
+
+  .language-support-badges {
+    grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
   }
 
   .shot-stack {
@@ -1921,6 +2003,21 @@ html[lang="ru"] .language-switcher summary {
 
   .contact-panel {
     padding: 20px;
+  }
+
+  .language-support-shell {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .language-support-card {
+    padding: 18px;
+  }
+
+  .language-support-badge {
+    min-height: 36px;
+    font-size: 0.66rem;
+    letter-spacing: 0.04em;
   }
 
   .contact-actions {

@@ -753,6 +753,157 @@ PROOF_SECTION = {
 }
 
 
+LANGUAGE_SUPPORT_SECTION = {
+    "tr": {
+        "eyebrow": "Dil Desteği",
+        "title": "Çok dilli müşteri deneyimi ile daha anlaşılır akış",
+        "lead": "SnapVend, farklı ülkelerden gelen müşteriler için web sitesi, müşteri galerisi ve desteklenen akışlarda daha anlaşılır bir dil deneyimi sunar.",
+        "cards": [
+            {"title": "Web sitesi ve ilk yönlendirme", "body": "Ziyaretçi desteklenen dillerden biriyle geldiğinde içeriği daha rahat takip edebilir ve doğru sayfaya daha hızlı ulaşır."},
+            {"title": "Galeri ve müşteri seçimi", "body": "Müşteri tarafındaki galeri deneyimi ve seçim süreci, dil bariyerini azaltacak şekilde daha anlaşılır ilerler."},
+            {"title": "Onay ve teslim akışı", "body": "Ödeme, onay ve teslim adımları desteklenen dillerde daha net anlatılarak sahadaki iletişimi kolaylaştırır."},
+        ],
+        "supported_label": "Desteklenen Diller",
+    },
+    "en": {
+        "eyebrow": "Language Support",
+        "title": "A clearer client flow with multilingual support",
+        "lead": "SnapVend gives international clients a clearer experience across the website, customer gallery and supported delivery flow screens.",
+        "cards": [
+            {"title": "Website and first touchpoint", "body": "Visitors can follow the website more comfortably and land on the right page faster when their language is supported."},
+            {"title": "Gallery and client selection", "body": "The browser gallery and selection flow become easier to understand for clients coming from different countries."},
+            {"title": "Approval and delivery flow", "body": "Payment, approval and delivery steps stay easier to explain when supported languages are available inside the flow."},
+        ],
+        "supported_label": "Supported Languages",
+    },
+    "es": {
+        "eyebrow": "Idiomas",
+        "title": "Un flujo de cliente mas claro con soporte multilingue",
+        "lead": "SnapVend ofrece una experiencia mas comprensible para clientes internacionales en el sitio web, la galeria del cliente y los flujos compatibles.",
+        "cards": [
+            {"title": "Sitio web y primer acceso", "body": "Cuando el idioma esta soportado, el visitante entiende mejor el sitio y llega antes a la pagina correcta."},
+            {"title": "Galeria y seleccion del cliente", "body": "La experiencia de galeria y el proceso de seleccion resultan mas claros para clientes de distintos paises."},
+            {"title": "Aprobacion y entrega", "body": "Los pasos de pago, aprobacion y entrega se explican de forma mas clara cuando el flujo incluye idiomas compatibles."},
+        ],
+        "supported_label": "Idiomas Compatibles",
+    },
+    "fr": {
+        "eyebrow": "Langues",
+        "title": "Un parcours client plus clair grace au support multilingue",
+        "lead": "SnapVend propose une experience plus facile a comprendre pour les clients internationaux sur le site, la galerie client et les flux compatibles.",
+        "cards": [
+            {"title": "Site web et premiere entree", "body": "Quand la langue est prise en charge, le visiteur comprend plus vite le site et atteint plus facilement la bonne page."},
+            {"title": "Galerie et selection client", "body": "La galerie navigateur et le processus de selection deviennent plus simples a suivre pour des clients de differents pays."},
+            {"title": "Validation et livraison", "body": "Les etapes de paiement, validation et livraison sont plus claires quand le flux est disponible dans des langues prises en charge."},
+        ],
+        "supported_label": "Langues Prises En Charge",
+    },
+    "de": {
+        "eyebrow": "Sprachen",
+        "title": "Ein klarerer Kundenablauf mit mehrsprachiger Unterstuetzung",
+        "lead": "SnapVend bietet internationalen Kunden ein verstaendlicheres Erlebnis ueber Website, Kundengalerie und unterstuetzte Ablaufschritte hinweg.",
+        "cards": [
+            {"title": "Website und erster Einstieg", "body": "Wenn die Sprache unterstuetzt wird, finden Besucher sich schneller zurecht und kommen einfacher auf die richtige Seite."},
+            {"title": "Galerie und Kundenauswahl", "body": "Browser-Galerie und Auswahlablauf werden fuer Kunden aus unterschiedlichen Laendern leichter verstaendlich."},
+            {"title": "Freigabe und Lieferung", "body": "Zahlung, Freigabe und Lieferung lassen sich klarer erklaeren, wenn diese Schritte in unterstuetzten Sprachen verfuegbar sind."},
+        ],
+        "supported_label": "Unterstuetzte Sprachen",
+    },
+    "it": {
+        "eyebrow": "Lingue",
+        "title": "Un flusso cliente piu chiaro grazie al supporto multilingue",
+        "lead": "SnapVend offre ai clienti internazionali un'esperienza piu comprensibile tra sito web, galleria cliente e schermate dei flussi supportati.",
+        "cards": [
+            {"title": "Sito web e primo accesso", "body": "Quando la lingua e supportata, il visitatore segue il sito con piu facilita e arriva piu velocemente alla pagina corretta."},
+            {"title": "Galleria e selezione del cliente", "body": "La galleria nel browser e il processo di selezione risultano piu chiari per clienti che arrivano da paesi diversi."},
+            {"title": "Conferma e consegna", "body": "Pagamento, conferma e consegna sono piu facili da spiegare quando i passaggi supportati sono disponibili in piu lingue."},
+        ],
+        "supported_label": "Lingue Supportate",
+    },
+    "pt": {
+        "eyebrow": "Idiomas",
+        "title": "Um fluxo mais claro para o cliente com suporte multilíngue",
+        "lead": "SnapVend oferece uma experiencia mais facil de entender para clientes internacionais no site, na galeria do cliente e nos fluxos compativeis.",
+        "cards": [
+            {"title": "Site e primeiro acesso", "body": "Quando o idioma e suportado, o visitante entende melhor o site e chega mais rapido a pagina certa."},
+            {"title": "Galeria e selecao do cliente", "body": "A galeria no navegador e o processo de selecao ficam mais claros para clientes de diferentes paises."},
+            {"title": "Aprovacao e entrega", "body": "Pagamento, aprovacao e entrega ficam mais faceis de explicar quando o fluxo esta disponivel em idiomas suportados."},
+        ],
+        "supported_label": "Idiomas Suportados",
+    },
+    "ru": {
+        "eyebrow": "Языки",
+        "title": "Более понятный клиентский путь благодаря поддержке языков",
+        "lead": "SnapVend делает сайт, клиентскую галерею и поддерживаемые шаги выдачи более понятными для международных клиентов.",
+        "cards": [
+            {"title": "Сайт и первый вход", "body": "Если язык поддерживается, посетителю проще понять сайт и быстрее попасть на нужную страницу."},
+            {"title": "Галерея и выбор клиента", "body": "Галерея в браузере и процесс выбора становятся понятнее для клиентов из разных стран."},
+            {"title": "Подтверждение и выдача", "body": "Шаги оплаты, подтверждения и выдачи легче объяснять, когда поддерживаемые экраны доступны на нужном языке."},
+        ],
+        "supported_label": "Поддерживаемые Языки",
+    },
+    "ar": {
+        "eyebrow": "دعم اللغة",
+        "title": "تجربة عميل اوضح مع دعم متعدد اللغات",
+        "lead": "يوفر SnapVend تجربة اكثر وضوحا للعملاء الدوليين عبر الموقع ومعرض العميل وشاشات التدفق المدعومة.",
+        "cards": [
+            {"title": "الموقع ونقطة الدخول الاولى", "body": "عندما تكون اللغة مدعومة يصبح تتبع الموقع اسهل ويصل الزائر الى الصفحة الصحيحة بشكل اسرع."},
+            {"title": "المعرض واختيار العميل", "body": "تصبح تجربة المعرض في المتصفح وخطوات الاختيار اوضح للعملاء القادمين من بلدان مختلفة."},
+            {"title": "الاعتماد والتسليم", "body": "تصبح خطوات الدفع والاعتماد والتسليم اسهل شرحا عندما تكون الشاشات المدعومة متاحة باكثر من لغة."},
+        ],
+        "supported_label": "اللغات المدعومة",
+    },
+    "hi": {
+        "eyebrow": "भाषा समर्थन",
+        "title": "मल्टीलैंग्वेज सपोर्ट के साथ ज्यादा साफ ग्राहक अनुभव",
+        "lead": "SnapVend अंतरराष्ट्रीय ग्राहकों के लिए वेबसाइट, ग्राहक गैलरी और supported flow screens पर ज्यादा समझ में आने वाला अनुभव देता है.",
+        "cards": [
+            {"title": "वेबसाइट और पहला प्रवेश", "body": "जब भाषा supported होती है, विज़िटर साइट को बेहतर समझता है और सही पेज तक जल्दी पहुंचता है."},
+            {"title": "गैलरी और ग्राहक चयन", "body": "ब्राउज़र गैलरी और selection flow अलग-अलग देशों के ग्राहकों के लिए ज्यादा clear हो जाता है."},
+            {"title": "अनुमोदन और डिलीवरी", "body": "Payment, approval aur delivery steps ko samjhana aasaan hota hai jab supported screens unki language me milti hain."},
+        ],
+        "supported_label": "Supported Languages",
+    },
+    "ja": {
+        "eyebrow": "言語サポート",
+        "title": "多言語対応でより分かりやすい顧客フロー",
+        "lead": "SnapVend は、Web サイト、顧客ギャラリー、対応フロー画面を通して、海外顧客にも分かりやすい体験を提供します。",
+        "cards": [
+            {"title": "Web サイトと最初の導線", "body": "対応言語で表示されることで、訪問者はサイトを理解しやすくなり、目的のページへ素早く進めます。"},
+            {"title": "ギャラリーと顧客の選択", "body": "ブラウザギャラリーと選択フローが、異なる国の顧客にもより分かりやすくなります。"},
+            {"title": "承認と納品", "body": "対応言語で表示されることで、支払い、承認、納品の流れを現場でより説明しやすくなります。"},
+        ],
+        "supported_label": "対応言語",
+    },
+    "zh": {
+        "eyebrow": "语言支持",
+        "title": "通过多语言支持带来更清晰的客户流程",
+        "lead": "SnapVend 让国际客户在网站、客户画廊和支持的流程界面中获得更容易理解的体验。",
+        "cards": [
+            {"title": "网站与首次进入", "body": "当语言受支持时，访问者能更容易理解网站，并更快到达正确页面。"},
+            {"title": "画廊与客户选片", "body": "浏览器画廊和选片流程会对来自不同国家的客户更加清晰。"},
+            {"title": "确认与交付", "body": "当支持的界面提供多语言时，支付、确认和交付步骤会更容易解释。"},
+        ],
+        "supported_label": "支持的语言",
+    },
+}
+
+LANGUAGE_SUPPORT_FAQ = {
+    "tr": {"q": "Hangi dilleri destekliyor?", "a_intro": "Web sitesi, müşteri galerisi ve desteklenen akışlarda şu diller sunulabilir:"},
+    "en": {"q": "Which languages are supported?", "a_intro": "The website, customer gallery and supported flow screens can be presented in these languages:"},
+    "es": {"q": "¿Qué idiomas son compatibles?", "a_intro": "El sitio web, la galeria del cliente y los flujos compatibles pueden mostrarse en estos idiomas:"},
+    "fr": {"q": "Quelles langues sont prises en charge ?", "a_intro": "Le site web, la galerie client et les flux compatibles peuvent etre proposes dans ces langues :"},
+    "de": {"q": "Welche Sprachen werden unterstuetzt?", "a_intro": "Website, Kundengalerie und unterstuetzte Ablaufschritte koennen in diesen Sprachen bereitgestellt werden:"},
+    "it": {"q": "Quali lingue sono supportate?", "a_intro": "Il sito web, la galleria cliente e i flussi supportati possono essere presentati in queste lingue:"},
+    "pt": {"q": "Quais idiomas sao suportados?", "a_intro": "O site, a galeria do cliente e os fluxos compativeis podem ser apresentados nestes idiomas:"},
+    "ru": {"q": "Какие языки поддерживаются?", "a_intro": "Сайт, клиентская галерея и поддерживаемые шаги потока могут быть доступны на этих языках:"},
+    "ar": {"q": "ما اللغات المدعومة؟", "a_intro": "يمكن تقديم الموقع ومعرض العميل وشاشات التدفق المدعومة بهذه اللغات:"},
+    "hi": {"q": "कौन-कौन सी भाषाएं supported हैं?", "a_intro": "Website, customer gallery aur supported flow screens इन भाषाओं में दिखाई जा सकती हैं:"},
+    "ja": {"q": "どの言語に対応していますか？", "a_intro": "Web サイト、顧客ギャラリー、対応フロー画面では次の言語を利用できます:"},
+    "zh": {"q": "支持哪些语言？", "a_intro": "网站、客户画廊和支持的流程界面可提供以下语言:"},
+}
+
+
 CONTACT_SECTION = {
     "tr": {
         "eyebrow": "İletişim",
@@ -2463,6 +2614,17 @@ for locale_code, overrides in PRINT_QUEUE_OVERRIDES.items():
     PROOF_SECTION[locale_code]["references"].insert(0, overrides["reference"])
     FAQ_SECTION[locale_code]["items"].insert(-1, overrides["faq"])
 
+SUPPORTED_LANGUAGE_NAMES = ", ".join(LOCALE_META[code]["native"] for code in LOCALE_ORDER)
+
+for locale_code, values in LANGUAGE_SUPPORT_FAQ.items():
+    FAQ_SECTION[locale_code]["items"].insert(
+        -1,
+        {
+            "q": values["q"],
+            "a": f'{values["a_intro"]} {SUPPORTED_LANGUAGE_NAMES}',
+        },
+    )
+
 BRAND_MOTTO_BY_LOCALE = {
     "tr": "Çek - Göster - Sat",
     "en": "Shoot - Show - Sell",
@@ -2608,6 +2770,25 @@ def build_audience_cards(copy: dict) -> str:
     return "\n".join(cards)
 
 
+def build_language_support_cards(section: dict) -> str:
+    cards = []
+    for card in section["cards"]:
+        cards.append(
+            f"""              <article class="language-support-card reveal">
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_language_support_badges() -> str:
+    badges = []
+    for locale_code in LOCALE_ORDER:
+        badges.append(f'                <span class="language-support-badge">{e(LOCALE_META[locale_code]["native"])}</span>')
+    return "\n".join(badges)
+
+
 def build_proof_cards(items: list[dict]) -> str:
     cards = []
     for card in items:
@@ -2676,7 +2857,7 @@ def unique_strings(items: list[str]) -> list[str]:
     return ordered
 
 
-def build_keyword_string(copy: dict, proof: dict, contact: dict) -> str:
+def build_keyword_string(copy: dict, proof: dict, contact: dict, language_support: dict) -> str:
     values = [
         "SnapVend",
         copy["brand_motto"],
@@ -2685,8 +2866,10 @@ def build_keyword_string(copy: dict, proof: dict, contact: dict) -> str:
         copy["audience_title"],
         proof["title"],
         contact["title"],
+        language_support["title"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in copy["audience_cards"]],
+        *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in proof["use_cases"]],
         *[card["title"] for card in proof["references"]],
         *copy["monthly_features"],
@@ -2962,17 +3145,20 @@ def render_page(locale_code: str) -> str:
     demo_copy = DEMO_SECTION[locale_code]
     faq_copy = FAQ_SECTION[locale_code]
     proof_copy = PROOF_SECTION[locale_code]
+    language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
     workflow_cards = build_workflow_cards(copy)
     audience_cards = build_audience_cards(copy)
+    language_support_cards = build_language_support_cards(language_support_copy)
+    language_support_badges = build_language_support_badges()
     proof_use_cases = build_proof_cards(proof_copy["use_cases"])
     proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(copy, proof_copy, contact_copy)
+    keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy)
     schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, keyword_string)
     active_flag = flag_emoji(meta["app_store_country"])
     popular_label = POPULAR_LABELS[locale_code]
@@ -3087,6 +3273,29 @@ def render_page(locale_code: str) -> str:
               <span>SnapVend</span>
               <p class="visual-chip-motto">{e(copy["brand_motto"])}</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section language-support deferred-section" id="language-support">
+        <div class="container">
+          <div class="language-support-shell">
+            <div class="section-head reveal">
+              <p class="eyebrow">{e(language_support_copy["eyebrow"])}</p>
+              <h2>{e(language_support_copy["title"])}</h2>
+              <p>{e(language_support_copy["lead"])}</p>
+            </div>
+
+            <div class="language-support-grid">
+{language_support_cards}
+            </div>
+
+            <div class="language-support-footer reveal">
+              <span class="proof-label">{e(language_support_copy["supported_label"])}</span>
+              <div class="language-support-badges">
+{language_support_badges}
+              </div>
+            </div>
           </div>
         </div>
       </section>
