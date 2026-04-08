@@ -224,13 +224,12 @@ const setupStoreLinks = () => {
 };
 
 const toggleSetupNotes = () => {
-  const missingAppStoreUrl = !hasValue(marketingConfig.appStoreUrl);
   const missingPricing =
     !hasValue(getConfiguredValue("monthlyPrice")) ||
     !hasValue(getConfiguredValue("yearlyPrice"));
 
   document.querySelectorAll("[data-setup-note]").forEach((node) => {
-    node.hidden = !(missingAppStoreUrl || missingPricing);
+    node.hidden = true;
   });
 
   document.querySelectorAll("[data-config-warning]").forEach((node) => {
