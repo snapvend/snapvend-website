@@ -713,6 +713,7 @@ h1 {
 }
 
 .metric-grid,
+.why-snapvend-grid,
 .audience-grid,
 .pricing-grid,
 .proof-grid,
@@ -730,6 +731,7 @@ h1 {
 
 .metric-card,
 .language-support-card,
+.why-snapvend-card,
 .workflow-card,
 .audience-card,
 .proof-card,
@@ -739,6 +741,7 @@ h1 {
 .faq-item,
 .contact-point,
 .contact-panel,
+.why-snapvend-panel,
 .shot-card,
 .visual-frame,
 .visual-chip {
@@ -901,6 +904,135 @@ h1 {
 
 .language-support-badge-name {
   line-height: 1.1;
+}
+
+.why-snapvend-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.92fr);
+  gap: 22px;
+  margin-top: 34px;
+  align-items: start;
+}
+
+.why-snapvend-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.why-snapvend-card {
+  padding: 22px;
+  border-color: rgba(123, 220, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(8, 23, 52, 0.58);
+  box-shadow: none;
+}
+
+.why-snapvend-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.why-snapvend-icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 220, 255, 0.14);
+  background: rgba(123, 220, 255, 0.08);
+  color: #7ddcff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.why-snapvend-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.why-snapvend-card h3,
+.why-snapvend-panel h3 {
+  font-family: var(--menu-font);
+  font-size: 1.08rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.24;
+}
+
+.why-snapvend-card p {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+}
+
+.why-snapvend-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  border-color: rgba(123, 220, 255, 0.16);
+}
+
+.why-snapvend-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(123, 220, 255, 0.2), rgba(123, 220, 255, 0.92), rgba(23, 196, 176, 0.2));
+  opacity: 0.9;
+}
+
+.why-snapvend-panel h3 {
+  position: relative;
+  z-index: 1;
+  margin: 16px 0 0;
+}
+
+.why-snapvend-points {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.why-snapvend-points li {
+  position: relative;
+  min-height: 54px;
+  padding: 14px 16px 14px 48px;
+  border-radius: 18px;
+  border: 1px solid rgba(123, 220, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(8, 23, 52, 0.58);
+  color: var(--text-secondary);
+}
+
+.why-snapvend-points li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  box-shadow: 0 8px 18px rgba(6, 19, 45, 0.2);
+}
+
+.why-snapvend-points li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid #062a47;
+  border-bottom: 2px solid #062a47;
+  transform: translateY(-60%) rotate(45deg);
 }
 
 .demo-stage {
@@ -1839,6 +1971,7 @@ html[lang="ru"] .language-switcher summary {
   .hero-grid,
   .demo-grid,
   .workflow-grid,
+  .why-snapvend-layout,
   .cta-panel {
     grid-template-columns: 1fr;
   }
@@ -1849,6 +1982,7 @@ html[lang="ru"] .language-switcher summary {
 
   .audience-grid,
   .language-support-grid,
+  .why-snapvend-grid,
   .proof-grid,
   .pricing-grid,
   .faq-grid {
@@ -1964,6 +2098,7 @@ html[lang="ru"] .language-switcher summary {
   }
 
   .language-support-grid,
+  .why-snapvend-grid,
   .proof-grid,
   .contact-field-grid,
   .contact-points {
@@ -1998,6 +2133,7 @@ html[lang="ru"] .language-switcher summary {
   .metric-grid,
   .audience-grid,
   .language-support-grid,
+  .why-snapvend-grid,
   .pricing-grid,
   .faq-grid {
     grid-template-columns: 1fr;
@@ -2091,6 +2227,10 @@ html[lang="ru"] .language-switcher summary {
     padding: 20px;
   }
 
+  .why-snapvend-panel {
+    padding: 22px;
+  }
+
   .language-support-shell {
     padding: 20px;
     border-radius: 24px;
@@ -2122,8 +2262,18 @@ html[lang="ru"] .language-switcher summary {
     padding: 18px;
   }
 
+  .why-snapvend-card {
+    padding: 18px;
+  }
+
   .language-support-card-head {
     align-items: flex-start;
+  }
+
+  .why-snapvend-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
   }
 
   .language-support-icon {

@@ -904,6 +904,226 @@ LANGUAGE_SUPPORT_FAQ = {
 }
 
 
+WHY_SNAPVEND_SECTION = {
+    "tr": {
+        "eyebrow": "Neden SnapVend?",
+        "title": "Klasik galeri paylaşımından daha kontrollü saha akışı",
+        "lead": "SnapVend yalnızca fotoğraf göstermek için değil; seçim, ödeme, baskı listesi ve teslimi aynı operasyon içinde toplamak için tasarlandı.",
+        "cards": [
+            {"title": "Müşteriye uygulama indirtmez", "body": "Müşteri aynı ağda QR ile tarayıcı galerisine girer; ekstra kurulum istemeden akış daha hızlı başlar."},
+            {"title": "Session bazlı düzen kurar", "body": "Her müşteri, çekim veya grup ayrı kalır; seçim, ödeme ve teslim kayıtları birbirine karışmaz."},
+            {"title": "Satış ve teslim tek cihazda kalır", "body": "Yerel ödeme yöntemleri, PAC onayı ve ZIP teslim aynı cihaz üzerinde tamamlanır."},
+            {"title": "Canlı çekim için operasyonel kontrol", "body": "FTP kamera aktarımı, baskı listesi, raporlar ve marka ayarları yoğun saha işlerinde daha temiz bir süreç sunar."},
+        ],
+        "panel_label": "SnapVend farkı",
+        "panel_title": "Fotoğrafçının gününü sadeleştirir",
+        "panel_points": [
+            "QR erişim, session, ödeme ve teslim tek akışta ilerler.",
+            "Düğün, etkinlik, stüdyo ve mobil portre satışına uyum sağlar.",
+            "Yerel ağ mantığı sayesinde hızlı, kontrollü ve internete daha az bağımlı çalışır.",
+        ],
+    },
+    "en": {
+        "eyebrow": "Why SnapVend",
+        "title": "A more controlled field workflow than a classic gallery handoff",
+        "lead": "SnapVend is built not only to show photos, but to combine selection, payment, print prep and delivery in one operational flow.",
+        "cards": [
+            {"title": "No extra app for the client", "body": "Clients enter the browser gallery through QR on the same network, so the flow starts faster without another app install."},
+            {"title": "Session-based structure", "body": "Each client, shoot or group stays separate, so selection, payment and delivery records do not get mixed."},
+            {"title": "Sales and delivery stay on one device", "body": "Local payment methods, PAC approval and ZIP delivery are completed on the same device."},
+            {"title": "Operational control for live shoots", "body": "FTP camera intake, print list, reports and branding controls keep busy field work more organized."},
+        ],
+        "panel_label": "The SnapVend difference",
+        "panel_title": "It simplifies the photographer's day",
+        "panel_points": [
+            "QR access, sessions, payment and delivery move through one connected flow.",
+            "It fits weddings, events, studio reviews and mobile portrait sales.",
+            "The local-network model stays fast, controlled and less dependent on internet coverage.",
+        ],
+    },
+    "es": {
+        "eyebrow": "Por que SnapVend",
+        "title": "Un flujo en campo mas controlado que una entrega clasica por galeria",
+        "lead": "SnapVend no esta pensado solo para mostrar fotos, sino para reunir seleccion, cobro, lista de impresion y entrega en un mismo flujo operativo.",
+        "cards": [
+            {"title": "No obliga al cliente a instalar otra app", "body": "El cliente entra a la galeria del navegador con QR en la misma red y el flujo empieza mas rapido sin otra instalacion."},
+            {"title": "Orden por sesiones separadas", "body": "Cada cliente, sesion o grupo queda separado, para que seleccion, pago y entrega no se mezclen."},
+            {"title": "Venta y entrega en un solo dispositivo", "body": "Los metodos de pago locales, la aprobacion PAC y la entrega ZIP se completan desde el mismo dispositivo."},
+            {"title": "Control operativo para trabajo en vivo", "body": "La entrada FTP desde camara, la lista de impresion, los reportes y la marca ayudan a ordenar jornadas intensas."},
+        ],
+        "panel_label": "Diferencia SnapVend",
+        "panel_title": "Simplifica el dia del fotografo",
+        "panel_points": [
+            "QR, sesiones, pago y entrega avanzan en un mismo flujo conectado.",
+            "Funciona bien para bodas, eventos, estudio y ventas de retrato en movilidad.",
+            "El modelo de red local mantiene el trabajo rapido, controlado y menos dependiente de internet.",
+        ],
+    },
+    "fr": {
+        "eyebrow": "Pourquoi SnapVend",
+        "title": "Un flux terrain plus maitrise qu'un simple partage de galerie",
+        "lead": "SnapVend n'est pas concu uniquement pour montrer des photos, mais pour reunir selection, paiement, liste d'impression et livraison dans un seul flux operationnel.",
+        "cards": [
+            {"title": "Aucune application supplementaire pour le client", "body": "Le client entre dans la galerie navigateur via QR sur le meme reseau, sans installation supplementaire."},
+            {"title": "Une organisation par session", "body": "Chaque client, prise de vue ou groupe reste separe afin que selection, paiement et livraison ne se melangent pas."},
+            {"title": "Vente et livraison depuis un seul appareil", "body": "Paiement local, validation PAC et livraison ZIP se terminent sur le meme appareil."},
+            {"title": "Plus de controle pendant les prises en direct", "body": "Le transfert FTP depuis l'appareil photo, la liste d'impression, les rapports et le branding gardent le terrain mieux organise."},
+        ],
+        "panel_label": "L'avantage SnapVend",
+        "panel_title": "Il simplifie la journee du photographe",
+        "panel_points": [
+            "Acces QR, sessions, paiement et livraison avancent dans un seul flux relie.",
+            "Adapte aux mariages, evenements, studios et ventes de portraits mobiles.",
+            "Le modele reseau local reste rapide, maitrise et moins dependant d'une connexion internet stable.",
+        ],
+    },
+    "de": {
+        "eyebrow": "Warum SnapVend",
+        "title": "Ein kontrollierterer Vor-Ort-Ablauf als eine klassische Galerie-Freigabe",
+        "lead": "SnapVend wurde nicht nur zum Zeigen von Fotos entwickelt, sondern um Auswahl, Zahlung, Druckliste und Lieferung in einem Ablauf zu vereinen.",
+        "cards": [
+            {"title": "Keine zusaetzliche App fuer den Kunden", "body": "Kunden oeffnen die Browser-Galerie per QR im selben Netzwerk, sodass der Ablauf ohne weitere Installation schneller startet."},
+            {"title": "Klare Ordnung durch Sessions", "body": "Jeder Kunde, jedes Shooting und jede Gruppe bleibt getrennt, damit Auswahl, Zahlung und Lieferung nicht vermischt werden."},
+            {"title": "Verkauf und Lieferung auf einem Geraet", "body": "Lokale Zahlungsmethoden, PAC-Freigabe und ZIP-Lieferung werden auf demselben Geraet abgeschlossen."},
+            {"title": "Mehr operative Kontrolle bei Live-Shootings", "body": "FTP-Kameraimport, Druckliste, Reports und Branding halten intensive Einsaetze besser organisiert."},
+        ],
+        "panel_label": "Der SnapVend Unterschied",
+        "panel_title": "Es vereinfacht den Tag des Fotografen",
+        "panel_points": [
+            "QR-Zugang, Sessions, Zahlung und Lieferung laufen in einem verbundenen Ablauf.",
+            "Geeignet fuer Hochzeiten, Events, Studios und mobilen Portraitverkauf.",
+            "Das lokale Netzwerkmodell bleibt schnell, kontrolliert und weniger von Internetabdeckung abhaengig.",
+        ],
+    },
+    "it": {
+        "eyebrow": "Perche SnapVend",
+        "title": "Un flusso sul campo piu controllato di una classica consegna via galleria",
+        "lead": "SnapVend non e pensato solo per mostrare foto, ma per unire selezione, pagamento, lista di stampa e consegna in un unico flusso operativo.",
+        "cards": [
+            {"title": "Nessuna app extra per il cliente", "body": "Il cliente entra nella galleria browser via QR sulla stessa rete, cosi il flusso parte piu velocemente senza un'altra installazione."},
+            {"title": "Ordine basato su sessioni", "body": "Ogni cliente, servizio o gruppo resta separato, quindi selezione, pagamento e consegna non si confondono."},
+            {"title": "Vendita e consegna su un solo dispositivo", "body": "Metodi di pagamento locali, approvazione PAC e consegna ZIP si completano sullo stesso dispositivo."},
+            {"title": "Controllo operativo per servizi live", "body": "Ingresso FTP dalla fotocamera, lista di stampa, report e branding aiutano a gestire giornate intense in modo piu pulito."},
+        ],
+        "panel_label": "Differenza SnapVend",
+        "panel_title": "Semplifica la giornata del fotografo",
+        "panel_points": [
+            "Accesso QR, sessioni, pagamento e consegna avanzano in un unico flusso collegato.",
+            "Si adatta a matrimoni, eventi, studi fotografici e vendite ritratto in mobilita.",
+            "Il modello in rete locale resta rapido, controllato e meno dipendente da internet.",
+        ],
+    },
+    "pt": {
+        "eyebrow": "Por que SnapVend",
+        "title": "Um fluxo em campo mais controlado do que uma entrega classica por galeria",
+        "lead": "O SnapVend nao foi criado apenas para mostrar fotos, mas para reunir selecao, pagamento, lista de impressao e entrega em um unico fluxo operacional.",
+        "cards": [
+            {"title": "Sem exigir outro app do cliente", "body": "O cliente entra na galeria do navegador via QR na mesma rede, entao o fluxo comeca mais rapido sem outra instalacao."},
+            {"title": "Organizacao por sessoes", "body": "Cada cliente, ensaio ou grupo fica separado para que selecao, pagamento e entrega nao se misturem."},
+            {"title": "Venda e entrega em um unico dispositivo", "body": "Metodos de pagamento locais, aprovacao PAC e entrega ZIP sao concluídos no mesmo dispositivo."},
+            {"title": "Controle operacional para captacao ao vivo", "body": "Entrada FTP da camera, lista de impressao, relatorios e branding deixam rotinas intensas mais organizadas."},
+        ],
+        "panel_label": "Diferenca SnapVend",
+        "panel_title": "Ele simplifica o dia do fotografo",
+        "panel_points": [
+            "Acesso por QR, sessoes, pagamento e entrega avancam em um unico fluxo conectado.",
+            "Combina com casamentos, eventos, estudio e vendas de retrato em mobilidade.",
+            "O modelo de rede local continua rapido, controlado e menos dependente de internet.",
+        ],
+    },
+    "ru": {
+        "eyebrow": "Почему SnapVend",
+        "title": "Более управляемый выездной процесс, чем обычная передача галереи",
+        "lead": "SnapVend создан не только для показа фотографий, но и для того, чтобы объединить выбор, оплату, список на печать и выдачу в одном рабочем процессе.",
+        "cards": [
+            {"title": "Клиенту не нужна отдельная app", "body": "Клиент открывает браузерную галерею по QR в той же сети, поэтому работа начинается быстрее без дополнительной установки."},
+            {"title": "Порядок через отдельные сессии", "body": "Каждый клиент, съемка или группа остаются отдельно, поэтому выбор, оплата и выдача не смешиваются."},
+            {"title": "Продажа и выдача на одном устройстве", "body": "Локальные способы оплаты, подтверждение PAC и ZIP-выдача завершаются на одном и том же устройстве."},
+            {"title": "Операционный контроль на живой съемке", "body": "FTP-импорт с камеры, список печати, отчеты и брендирование помогают лучше держать загруженную площадку под контролем."},
+        ],
+        "panel_label": "Преимущество SnapVend",
+        "panel_title": "Он упрощает день фотографа",
+        "panel_points": [
+            "QR-доступ, сессии, оплата и выдача идут в одном связанном потоке.",
+            "Подходит для свадеб, мероприятий, студий и мобильных портретных продаж.",
+            "Локальная сетевая модель остается быстрой, контролируемой и менее зависимой от интернета.",
+        ],
+    },
+    "ar": {
+        "eyebrow": "لماذا SnapVend",
+        "title": "تدفق ميداني اكثر تحكما من مشاركة معرض تقليدية",
+        "lead": "لم يتم تصميم SnapVend فقط لعرض الصور، بل لجمع الاختيار والدفع وقائمة الطباعة والتسليم داخل تدفق تشغيلي واحد.",
+        "cards": [
+            {"title": "لا يطلب من العميل تثبيت تطبيق اضافي", "body": "يدخل العميل الى معرض المتصفح عبر QR على نفس الشبكة، لذلك يبدأ التدفق بسرعة اكبر من دون تثبيت اخر."},
+            {"title": "تنظيم قائم على الجلسات", "body": "يبقى كل عميل او جلسة او مجموعة منفصلة، لذلك لا تختلط الاختيارات والمدفوعات وعمليات التسليم."},
+            {"title": "البيع والتسليم من نفس الجهاز", "body": "تكتمل وسائل الدفع المحلية وموافقة PAC وتسليم ZIP على نفس الجهاز."},
+            {"title": "تحكم تشغيلي للتصوير الحي", "body": "استيراد FTP من الكاميرا وقائمة الطباعة والتقارير والعلامة التجارية تجعل العمل الميداني المكثف اكثر تنظيما."},
+        ],
+        "panel_label": "فرق SnapVend",
+        "panel_title": "يبسط يوم المصور",
+        "panel_points": [
+            "الوصول عبر QR والجلسات والدفع والتسليم تتحرك داخل تدفق واحد مترابط.",
+            "مناسب لحفلات الزفاف والفعاليات والاستوديو وبيع البورتريه المتنقل.",
+            "يعتمد على شبكة محلية سريعة ومضبوطة واقل اعتمادا على تغطية الانترنت.",
+        ],
+    },
+    "hi": {
+        "eyebrow": "क्यों SnapVend",
+        "title": "सामान्य गैलरी शेयरिंग से ज्यादा नियंत्रित फील्ड फ्लो",
+        "lead": "SnapVend सिर्फ फोटो दिखाने के लिए नहीं, बल्कि चयन, भुगतान, प्रिंट सूची और डिलीवरी को एक ही संचालन प्रवाह में जोड़ने के लिए बनाया गया है।",
+        "cards": [
+            {"title": "ग्राहक को अलग app नहीं चाहिए", "body": "ग्राहक उसी नेटवर्क पर QR से ब्राउज़र गैलरी में जाता है, इसलिए बिना किसी अतिरिक्त इंस्टॉल के फ्लो जल्दी शुरू हो जाता है।"},
+            {"title": "session आधारित व्यवस्थित ढांचा", "body": "हर ग्राहक, शूट या समूह अलग रहता है, इसलिए चयन, भुगतान और डिलीवरी रिकॉर्ड आपस में नहीं मिलते।"},
+            {"title": "बिक्री और डिलीवरी एक ही डिवाइस पर", "body": "स्थानीय भुगतान तरीके, PAC अनुमोदन और ZIP डिलीवरी एक ही डिवाइस पर पूरी हो जाती है।"},
+            {"title": "लाइव शूट के लिए बेहतर संचालन नियंत्रण", "body": "FTP कैमरा इंपोर्ट, प्रिंट सूची, रिपोर्ट और ब्रांडिंग नियंत्रण व्यस्त फील्ड कार्य को ज्यादा व्यवस्थित बनाते हैं।"},
+        ],
+        "panel_label": "SnapVend का फर्क",
+        "panel_title": "यह फोटोग्राफर का दिन आसान बनाता है",
+        "panel_points": [
+            "QR एक्सेस, session, भुगतान और डिलीवरी एक जुड़े हुए फ्लो में चलते हैं।",
+            "यह शादी, इवेंट, स्टूडियो और मोबाइल पोर्ट्रेट बिक्री के लिए अच्छी तरह काम करता है।",
+            "लोकल नेटवर्क मॉडल तेज, नियंत्रित और इंटरनेट पर कम निर्भर रहता है।",
+        ],
+    },
+    "ja": {
+        "eyebrow": "なぜ SnapVend",
+        "title": "従来のギャラリー共有よりも管理しやすい現場フロー",
+        "lead": "SnapVend は写真を見せるだけでなく、選択、支払い、プリント準備、納品までを一つの運用フローにまとめるために作られています。",
+        "cards": [
+            {"title": "顧客に別アプリを入れさせない", "body": "顧客は同じネットワーク上で QR からブラウザギャラリーへ入れるため、追加インストールなしで流れが始まります。"},
+            {"title": "セッション単位で整理できる", "body": "顧客、撮影、グループごとに分けて管理できるので、選択、支払い、納品が混ざりません。"},
+            {"title": "販売と納品を一台で完了", "body": "ローカル決済、PAC 承認、ZIP 納品までを同じ端末で完了できます。"},
+            {"title": "ライブ撮影向けの運用コントロール", "body": "FTP カメラ取り込み、プリントリスト、レポート、ブランド設定が忙しい現場をより整理しやすくします。"},
+        ],
+        "panel_label": "SnapVend の違い",
+        "panel_title": "フォトグラファーの一日をシンプルにする",
+        "panel_points": [
+            "QR アクセス、セッション、支払い、納品が一つの流れでつながります。",
+            "結婚式、イベント、スタジオ、モバイルポートレート販売に合います。",
+            "ローカルネットワーク中心なので、速く、管理しやすく、インターネット依存も抑えられます。",
+        ],
+    },
+    "zh": {
+        "eyebrow": "为什么选择 SnapVend",
+        "title": "比传统画廊分享更可控的现场流程",
+        "lead": "SnapVend 不只是用来展示照片，而是为了把选片、收款、打印准备和交付整合进同一套工作流程。",
+        "cards": [
+            {"title": "不要求客户额外安装 app", "body": "客户在同一网络内通过 QR 进入浏览器画廊，无需额外安装，流程启动更快。"},
+            {"title": "基于 session 的清晰管理", "body": "每位客户、每场拍摄或每个群组都能保持独立，因此选片、付款和交付不会混在一起。"},
+            {"title": "销售与交付留在同一设备", "body": "本地支付方式、PAC 确认和 ZIP 交付都可以在同一设备上完成。"},
+            {"title": "适合现场拍摄的运营控制", "body": "FTP 相机导入、打印列表、报表和品牌设置，让高强度现场工作更有秩序。"},
+        ],
+        "panel_label": "SnapVend 的不同点",
+        "panel_title": "让摄影师的一天更简单",
+        "panel_points": [
+            "QR 进入、session、支付和交付连接在同一个流程里。",
+            "适合婚礼、活动、影楼和移动人像销售场景。",
+            "本地网络模式更快、更可控，也更少依赖互联网覆盖。",
+        ],
+    },
+}
+
+
 CONTACT_SECTION = {
     "tr": {
         "eyebrow": "İletişim",
@@ -2804,6 +3024,31 @@ def build_language_support_badges() -> str:
     return "\n".join(badges)
 
 
+def build_why_snapvend_cards(section: dict) -> str:
+    icons = [
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.25a8.75 8.75 0 0 0-8.75 8.75c0 4.83 3.92 8.75 8.75 8.75s8.75-3.92 8.75-8.75S16.83 3.25 12 3.25Zm0 1.5c3.28 0 6 2.4 6.52 5.53h-3.02A17.9 17.9 0 0 0 13 5.01c-.32-.09-.66-.17-1-.26Zm-1.99.48c.35.08.69.16 1.02.27A16.32 16.32 0 0 1 8.54 10.28H5.48a7.27 7.27 0 0 1 4.53-5.05Zm-4.53 6.55h2.75c-.03.4-.05.8-.05 1.22 0 .56.03 1.1.09 1.63H5.63A7.18 7.18 0 0 1 5.48 11.78Zm.76 4.35h2.27c.39 1.45.98 2.77 1.74 3.88a7.28 7.28 0 0 1-4.01-3.88Zm5.76 3.07c-.77-.94-1.41-2.18-1.84-3.57h3.68c-.43 1.39-1.07 2.63-1.84 3.57Zm2.24.81a10.71 10.71 0 0 0 1.74-3.88h2.27a7.28 7.28 0 0 1-4.01 3.88Zm2.11-5.38c.06-.53.09-1.07.09-1.63 0-.42-.02-.82-.05-1.22h2.75a7.18 7.18 0 0 1-.15 3.85h-2.64Z" fill="currentColor"/></svg>""",
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 4.75A2.75 2.75 0 0 0 4 7.5v7.25a2.75 2.75 0 0 0 2.75 2.75H9v2.05c0 .66.78 1.02 1.29.59L13.56 17.5h3.69A2.75 2.75 0 0 0 20 14.75V7.5a2.75 2.75 0 0 0-2.75-2.75H6.75Zm0 1.5h10.5c.69 0 1.25.56 1.25 1.25v7.25c0 .69-.56 1.25-1.25 1.25h-3.95a.75.75 0 0 0-.48.17L10.5 18.1v-1.35a.75.75 0 0 0-.75-.75H6.75c-.69 0-1.25-.56-1.25-1.25V7.5c0-.69.56-1.25 1.25-1.25Zm1.5 2.5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 1 0 0-1.5h-7.5Zm0 3a.75.75 0 0 0 0 1.5h4.25a.75.75 0 1 0 0-1.5H8.25Z" fill="currentColor"/></svg>""",
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.25a4.25 4.25 0 0 0-4.25 4.25v1H6.5A2.5 2.5 0 0 0 4 11v6.5A2.5 2.5 0 0 0 6.5 20h11a2.5 2.5 0 0 0 2.5-2.5V11a2.5 2.5 0 0 0-2.5-2.5h-1.25v-1A4.25 4.25 0 0 0 12 3.25Zm-2.75 5.25v-1a2.75 2.75 0 1 1 5.5 0v1h-5.5Zm-2.75 1.5h11c.55 0 1 .45 1 1v6.5c0 .55-.45 1-1 1h-11c-.55 0-1-.45-1-1V11c0-.55.45-1 1-1Zm5.5 1.75A2.25 2.25 0 0 0 9.75 14c0 .84.46 1.57 1.15 1.96v1.04a1.1 1.1 0 1 0 2.2 0v-1.04A2.25 2.25 0 0 0 14.25 14 2.25 2.25 0 0 0 12 11.75Z" fill="currentColor"/></svg>""",
+        """<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 3.75A2.75 2.75 0 0 0 4 6.5v11A2.75 2.75 0 0 0 6.75 20.25h10.5A2.75 2.75 0 0 0 20 17.5v-11a2.75 2.75 0 0 0-2.75-2.75H6.75Zm0 1.5h10.5c.69 0 1.25.56 1.25 1.25v11c0 .69-.56 1.25-1.25 1.25H6.75c-.69 0-1.25-.56-1.25-1.25v-11c0-.69.56-1.25 1.25-1.25Zm6.73 3.03a.75.75 0 0 0-1.06 0L10 10.69l-.94-.94A.75.75 0 1 0 8 10.81l1.47 1.47a.75.75 0 0 0 1.06 0l2.95-2.94a.75.75 0 0 0 0-1.06Zm-4.73 5.22a.75.75 0 0 0 0 1.5h6.5a.75.75 0 1 0 0-1.5h-6.5Z" fill="currentColor"/></svg>""",
+    ]
+    cards = []
+    for index, card in enumerate(section["cards"]):
+        cards.append(
+            f"""              <article class="why-snapvend-card reveal">
+                <div class="why-snapvend-card-head">
+                  <span class="why-snapvend-icon" aria-hidden="true">{icons[index % len(icons)]}</span>
+                  <h3>{e(card["title"])}</h3>
+                </div>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_why_snapvend_points(section: dict) -> str:
+    return "\n".join(f"                <li>{e(point)}</li>" for point in section["panel_points"])
+
+
 def build_proof_cards(items: list[dict]) -> str:
     cards = []
     for card in items:
@@ -2872,23 +3117,26 @@ def unique_strings(items: list[str]) -> list[str]:
     return ordered
 
 
-def build_keyword_string(copy: dict, proof: dict, contact: dict, language_support: dict) -> str:
+def build_keyword_string(copy: dict, proof: dict, contact: dict, language_support: dict, why_snapvend: dict) -> str:
     values = [
         "SnapVend",
         copy["brand_motto"],
         copy["hero_eyebrow"],
         copy["workflow_title"],
+        why_snapvend["title"],
         copy["audience_title"],
         proof["title"],
         contact["title"],
         language_support["title"],
         *[card["title"] for card in copy["workflow_cards"]],
+        *[card["title"] for card in why_snapvend["cards"]],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in proof["use_cases"]],
         *[card["title"] for card in proof["references"]],
         *copy["monthly_features"],
         *copy["yearly_features"],
+        *why_snapvend["panel_points"],
         *contact["topics"],
     ]
     return ", ".join(unique_strings(values))
@@ -2960,7 +3208,16 @@ def store_badges(locale_code: str, copy: dict) -> str:
             </div>"""
 
 
-def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: dict, language_support: dict, keywords: str) -> str:
+def build_schema(
+    locale_code: str,
+    copy: dict,
+    faq: dict,
+    proof: dict,
+    contact: dict,
+    language_support: dict,
+    why_snapvend: dict,
+    keywords: str,
+) -> str:
     pricing = SCHEMA_PRICING[locale_code]
     page_url = canonical_url(locale_code)
     logo_url = f"{SITE_URL}{BRAND_MARK_ASSET}"
@@ -2977,9 +3234,11 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
     ]
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
+    why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
     contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
+    why_snapvend_points = build_defined_term_set_schema(page_url, "why-snapvend-points", why_snapvend["panel_title"], why_snapvend["panel_points"])
     supported_language_set = build_defined_term_set_schema(
         page_url,
         "supported-languages",
@@ -3037,11 +3296,13 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         "hasPart": [
             {"@id": audience_list["@id"]},
             {"@id": language_support_list["@id"]},
+            {"@id": why_snapvend_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
             {"@id": f"{page_url}#faq"},
             {"@id": f"{page_url}#contact-page"},
             {"@id": contact_topic_set["@id"]},
+            {"@id": why_snapvend_points["@id"]},
             {"@id": supported_language_set["@id"]},
         ],
     }
@@ -3069,6 +3330,7 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
         "isAccessibleForFree": True,
         "featureList": unique_strings(
             [card["title"] for card in copy["workflow_cards"]]
+            + [card["title"] for card in why_snapvend["cards"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
             + [card["title"] for card in language_support["cards"]]
@@ -3084,6 +3346,11 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
                 "@type": "PropertyValue",
                 "name": "Localized client flow coverage",
                 "value": language_support["title"],
+            },
+            {
+                "@type": "PropertyValue",
+                "name": why_snapvend["panel_label"],
+                "value": " | ".join(why_snapvend["panel_points"]),
             },
         ],
         "audience": [
@@ -3162,9 +3429,11 @@ def build_schema(locale_code: str, copy: dict, faq: dict, proof: dict, contact: 
             software,
             audience_list,
             language_support_list,
+            why_snapvend_list,
             use_case_list,
             reference_profile_list,
             contact_topic_set,
+            why_snapvend_points,
             supported_language_set,
             contact_page,
             faq_page,
@@ -3185,6 +3454,7 @@ def render_page(locale_code: str) -> str:
     faq_copy = FAQ_SECTION[locale_code]
     proof_copy = PROOF_SECTION[locale_code]
     language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
+    why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
@@ -3192,13 +3462,15 @@ def render_page(locale_code: str) -> str:
     audience_cards = build_audience_cards(copy)
     language_support_cards = build_language_support_cards(language_support_copy)
     language_support_badges = build_language_support_badges()
+    why_snapvend_cards = build_why_snapvend_cards(why_snapvend_copy)
+    why_snapvend_points = build_why_snapvend_points(why_snapvend_copy)
     proof_use_cases = build_proof_cards(proof_copy["use_cases"])
     proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy)
-    schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, language_support_copy, keyword_string)
+    keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy)
+    schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, keyword_string)
     active_flag = flag_emoji(meta["app_store_country"])
     popular_label = POPULAR_LABELS[locale_code]
     mobile_menu_label = MOBILE_MENU_LABELS[locale_code]
@@ -3411,6 +3683,30 @@ def render_page(locale_code: str) -> str:
                 <img src="{prefix}/{marketing_asset('workflow_payment', locale_code)}" alt="SnapVend payment approval and delivery options screen" width="324" height="720" loading="lazy" decoding="async">
               </article>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why-snapvend deferred-section" id="why-snapvend">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(why_snapvend_copy["eyebrow"])}</p>
+            <h2>{e(why_snapvend_copy["title"])}</h2>
+            <p>{e(why_snapvend_copy["lead"])}</p>
+          </div>
+
+          <div class="why-snapvend-layout">
+            <div class="why-snapvend-grid">
+{why_snapvend_cards}
+            </div>
+
+            <aside class="why-snapvend-panel reveal">
+              <span class="proof-label">{e(why_snapvend_copy["panel_label"])}</span>
+              <h3>{e(why_snapvend_copy["panel_title"])}</h3>
+              <ul class="why-snapvend-points">
+{why_snapvend_points}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
