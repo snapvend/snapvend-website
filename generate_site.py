@@ -161,18 +161,18 @@ POPULAR_LABELS = {
 }
 
 NAV_EXTRA = {
-    "tr": {"demo": "Demo", "faq": "SSS"},
-    "en": {"demo": "Demo", "faq": "FAQ"},
-    "es": {"demo": "Demo", "faq": "FAQ"},
-    "fr": {"demo": "Demo", "faq": "FAQ"},
-    "de": {"demo": "Demo", "faq": "FAQ"},
-    "it": {"demo": "Demo", "faq": "FAQ"},
-    "pt": {"demo": "Demo", "faq": "FAQ"},
-    "ru": {"demo": "Демо", "faq": "FAQ"},
-    "ar": {"demo": "عرض", "faq": "الاسئلة"},
-    "hi": {"demo": "डेमो", "faq": "सवाल"},
-    "ja": {"demo": "デモ", "faq": "FAQ"},
-    "zh": {"demo": "演示", "faq": "常见问题"},
+    "tr": {"demo": "Demo", "why": "Farkı", "faq": "SSS"},
+    "en": {"demo": "Demo", "why": "Why", "faq": "FAQ"},
+    "es": {"demo": "Demo", "why": "Ventajas", "faq": "FAQ"},
+    "fr": {"demo": "Demo", "why": "Pourquoi", "faq": "FAQ"},
+    "de": {"demo": "Demo", "why": "Warum", "faq": "FAQ"},
+    "it": {"demo": "Demo", "why": "Perché", "faq": "FAQ"},
+    "pt": {"demo": "Demo", "why": "Vantagens", "faq": "FAQ"},
+    "ru": {"demo": "Демо", "why": "Почему", "faq": "FAQ"},
+    "ar": {"demo": "عرض", "why": "لماذا", "faq": "الاسئلة"},
+    "hi": {"demo": "डेमो", "why": "क्यों", "faq": "सवाल"},
+    "ja": {"demo": "デモ", "why": "特徴", "faq": "FAQ"},
+    "zh": {"demo": "演示", "why": "优势", "faq": "常见问题"},
 }
 
 MOBILE_MENU_LABELS = {
@@ -3541,6 +3541,7 @@ def render_page(locale_code: str) -> str:
           <nav class="topnav" aria-label="Sections">
             <a href="#demo">{e(extra_nav["demo"])}</a>
             <a href="#how-it-works">{e(copy["nav_how"])}</a>
+            <a href="#why-snapvend">{e(extra_nav["why"])}</a>
             <a href="#audience">{e(copy["nav_audience"])}</a>
             <a href="#pricing">{e(copy["nav_pricing"])}</a>
             <a href="#faq">{e(extra_nav["faq"])}</a>
