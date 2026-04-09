@@ -161,17 +161,17 @@ POPULAR_LABELS = {
 }
 
 NAV_EXTRA = {
-    "tr": {"demo": "Demo", "why": "Farkı", "faq": "SSS"},
-    "en": {"demo": "Demo", "why": "Why", "faq": "FAQ"},
+    "tr": {"demo": "Demo", "why": "Avantajlar", "faq": "SSS"},
+    "en": {"demo": "Demo", "why": "Benefits", "faq": "FAQ"},
     "es": {"demo": "Demo", "why": "Ventajas", "faq": "FAQ"},
-    "fr": {"demo": "Demo", "why": "Pourquoi", "faq": "FAQ"},
-    "de": {"demo": "Demo", "why": "Warum", "faq": "FAQ"},
-    "it": {"demo": "Demo", "why": "Perché", "faq": "FAQ"},
+    "fr": {"demo": "Demo", "why": "Avantages", "faq": "FAQ"},
+    "de": {"demo": "Demo", "why": "Vorteile", "faq": "FAQ"},
+    "it": {"demo": "Demo", "why": "Vantaggi", "faq": "FAQ"},
     "pt": {"demo": "Demo", "why": "Vantagens", "faq": "FAQ"},
-    "ru": {"demo": "Демо", "why": "Почему", "faq": "FAQ"},
-    "ar": {"demo": "عرض", "why": "لماذا", "faq": "الاسئلة"},
-    "hi": {"demo": "डेमो", "why": "क्यों", "faq": "सवाल"},
-    "ja": {"demo": "デモ", "why": "特徴", "faq": "FAQ"},
+    "ru": {"demo": "Демо", "why": "Преимущества", "faq": "FAQ"},
+    "ar": {"demo": "عرض", "why": "المزايا", "faq": "الاسئلة"},
+    "hi": {"demo": "डेमो", "why": "फायदे", "faq": "सवाल"},
+    "ja": {"demo": "デモ", "why": "メリット", "faq": "FAQ"},
     "zh": {"demo": "演示", "why": "优势", "faq": "常见问题"},
 }
 
