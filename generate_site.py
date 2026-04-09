@@ -3812,7 +3812,7 @@ def render_page(locale_code: str) -> str:
               <div class="demo-stage-screen">
                 <div class="demo-device-frame" data-demo-frame>
                   <span class="demo-device-notch" aria-hidden="true"></span>
-                  <video class="demo-video" data-demo-video playsinline autoplay muted loop controls hidden></video>
+                  <video class="demo-video" data-demo-video playsinline autoplay muted loop controls preload="metadata" hidden></video>
                   <div class="demo-placeholder" data-demo-fallback>
                     <span class="demo-placeholder-play" aria-hidden="true"></span>
                     <strong>SnapVend</strong>

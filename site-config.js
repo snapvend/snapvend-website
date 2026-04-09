@@ -3,7 +3,7 @@ window.snapVendMarketingConfig = {
   appStoreUrl: "",
   monthlyPrice: "399 TL",
   yearlyPrice: "2499 TL",
-  demoVideoUrl: "/assets/marketing/demo/snapvend-demo.webm",
+  demoVideoUrl: "/assets/marketing/demo/snapvend-demo.mp4",
   clarityProjectId: "",
   pricesByLocale: {
     tr: {
