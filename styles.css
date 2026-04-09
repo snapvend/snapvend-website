@@ -143,11 +143,11 @@ code {
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-columns: minmax(220px, 290px) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(200px, 272px) minmax(0, 1fr) auto;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   min-height: 82px;
-  padding: 12px 16px;
+  padding: 11px 14px;
   border-radius: 24px;
   border: 1px solid rgba(123, 220, 255, 0.14);
   background:
@@ -198,18 +198,18 @@ code {
 
 .brand-copy strong {
   font-family: var(--menu-font);
-  font-size: 1.16rem;
+  font-size: 1.1rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .brand-kicker {
   font-family: var(--menu-font);
-  font-size: 0.66rem;
+  font-size: 0.61rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--text-muted);
   text-transform: uppercase;
 }
@@ -222,7 +222,7 @@ code {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   min-width: 0;
   grid-column: 2 / 4;
 }
@@ -233,9 +233,9 @@ code {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  gap: clamp(4px, 0.8vw, 14px);
+  gap: clamp(2px, 0.45vw, 10px);
   margin: 0;
-  padding: 6px 8px;
+  padding: 5px 6px;
   min-height: 56px;
   border-radius: 20px;
   color: var(--text-secondary);
@@ -258,13 +258,13 @@ code {
   align-items: center;
   justify-content: center;
   min-height: 40px;
-  padding: 0 clamp(12px, 1vw, 16px);
+  padding: 0 clamp(10px, 0.75vw, 13px);
   border-radius: 14px;
   border: 1px solid transparent;
   font-family: var(--menu-font);
-  font-size: clamp(0.64rem, 0.7vw, 0.75rem);
+  font-size: clamp(0.6rem, 0.62vw, 0.72rem);
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   white-space: nowrap;
   text-transform: uppercase;
   color: var(--text-secondary);
@@ -307,7 +307,7 @@ code {
 .topbar-actions {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   position: relative;
   z-index: 1;
 }
@@ -372,14 +372,14 @@ code {
   justify-content: center;
   border: none;
   min-height: 46px;
-  padding: 0 18px;
+  padding: 0 16px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
   color: #062744;
   font-family: var(--menu-font);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.1em;
   white-space: nowrap;
   text-transform: uppercase;
   box-shadow: 0 12px 24px rgba(20, 131, 175, 0.22);
@@ -409,15 +409,15 @@ code {
   align-items: center;
   justify-content: center;
   min-height: 46px;
-  padding: 0 16px;
+  padding: 0 14px;
   border-radius: 999px;
   color: var(--text-primary);
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(123, 220, 255, 0.12);
   font-family: var(--menu-font);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   cursor: pointer;
@@ -427,7 +427,7 @@ code {
 .language-summary {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .language-switcher summary::-webkit-details-marker {
@@ -1949,6 +1949,87 @@ html[lang="ru"] .language-switcher summary {
 [dir="rtl"] .language-menu {
   right: auto;
   left: 0;
+}
+
+@media (max-width: 1500px) {
+  .topbar-inner {
+    grid-template-columns: minmax(0, 248px) minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .brand-copy strong {
+    font-size: 1.03rem;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-kicker {
+    font-size: 0.57rem;
+    letter-spacing: 0.11em;
+  }
+
+  .topbar-menu-panel {
+    gap: 10px;
+  }
+
+  .topnav {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 6px;
+    padding: 5px;
+  }
+
+  .topnav a {
+    min-width: 0;
+    min-height: 44px;
+    padding: 6px 6px;
+    font-size: 0.6rem;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .topnav a::after {
+    inset-inline: 10px;
+    bottom: 6px;
+  }
+
+  .topbar-actions {
+    gap: 8px;
+  }
+
+  .pill-link,
+  .language-switcher summary {
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 1320px) {
+  .topbar-inner {
+    grid-template-columns: minmax(0, 222px) minmax(0, 1fr) auto;
+  }
+
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+  }
+
+  .topnav a {
+    font-size: 0.56rem;
+    padding: 5px;
+  }
+
+  .pill-link,
+  .language-switcher summary {
+    padding: 0 12px;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media (max-width: 1080px) {
