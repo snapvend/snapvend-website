@@ -195,7 +195,8 @@ DEMO_SECTION = {
         "eyebrow": "Canlı Demo",
         "title": "WiFi / erişim noktası bağlantısından oturum galerisine kadar akışı göster.",
         "lead": "SnapVend müşteriyi önce WiFi veya erişim noktası QR bağlantısıyla aynı ağa alır, sonra doğru oturum galerisine yönlendirir ve teslime kadar akışı tek deneyimde toplar.",
-        "screen_label": "Örnek ürün akışı",
+        "screen_label": "Canlı ürün demosu",
+        "screen_tag": "Saha deneyimi",
         "screen_note": "Video linki eklersen bu alan otomatik olarak canlı ürün demosuna dönüşür.",
         "cta": "Demodan sonra indir",
         "steps": [
@@ -209,7 +210,8 @@ DEMO_SECTION = {
         "eyebrow": "Live Demo",
         "title": "Show the flow from WiFi / hotspot access to the session gallery.",
         "lead": "SnapVend first brings the client onto the same network through a WiFi or hotspot QR connection, then moves them into the right session gallery and through delivery in one product journey.",
-        "screen_label": "Sample product flow",
+        "screen_label": "Live product demo",
+        "screen_tag": "Field experience",
         "screen_note": "If you add a video URL, this area automatically turns into a live product demo.",
         "cta": "Download after demo",
         "steps": [
@@ -223,7 +225,8 @@ DEMO_SECTION = {
         "eyebrow": "Demo",
         "title": "Muestre QR, sesiones y entrega en una sola pantalla.",
         "lead": "SnapVend reúne la transferencia FTP desde cámara profesional, la gestión por sesión, el acceso por QR y la entrega final en una experiencia clara y profesional.",
-        "screen_label": "Flujo de producto",
+        "screen_label": "Demo del producto",
+        "screen_tag": "Experiencia en campo",
         "screen_note": "Si agrega un enlace de video, esta zona se convierte automáticamente en un demo en vivo.",
         "cta": "Descargar después del demo",
         "steps": [
@@ -237,7 +240,8 @@ DEMO_SECTION = {
         "eyebrow": "Démo",
         "title": "Montrez QR, sessions et livraison sur un seul écran.",
         "lead": "SnapVend réunit le transfert FTP depuis un appareil photo pro, la gestion par session, l'accès QR et la livraison finale dans une expérience claire et professionnelle.",
-        "screen_label": "Flux produit",
+        "screen_label": "Démo produit",
+        "screen_tag": "Expérience terrain",
         "screen_note": "Si vous ajoutez une URL vidéo, cette zone devient automatiquement une démo produit.",
         "cta": "Télécharger après la démo",
         "steps": [
@@ -251,7 +255,8 @@ DEMO_SECTION = {
         "eyebrow": "Demo",
         "title": "Zeigen Sie QR, Sessions und Auslieferung auf einem klaren Bildschirm.",
         "lead": "SnapVend verbindet FTP-Transfer aus professionellen Kameras, Session-Verwaltung, QR-Zugang und Auslieferung in einem professionellen Ablauf.",
-        "screen_label": "Produktablauf",
+        "screen_label": "Live Produktdemo",
+        "screen_tag": "Praxisablauf",
         "screen_note": "Wenn Sie eine Video URL hinterlegen, wird dieser Bereich automatisch zur Live Demo.",
         "cta": "Nach der Demo herunterladen",
         "steps": [
@@ -265,7 +270,8 @@ DEMO_SECTION = {
         "eyebrow": "Demo",
         "title": "Mostra QR, sessioni e consegna in un flusso chiaro.",
         "lead": "SnapVend unisce il trasferimento FTP da fotocamere professionali, la gestione per sessione, l'accesso con QR e la consegna finale in un'esperienza professionale e ordinata.",
-        "screen_label": "Flusso del prodotto",
+        "screen_label": "Demo del prodotto",
+        "screen_tag": "Esperienza sul campo",
         "screen_note": "Se aggiungi un link video, quest'area si trasforma automaticamente in una demo dal vivo del prodotto.",
         "cta": "Scarica dopo la demo",
         "steps": [
@@ -279,7 +285,8 @@ DEMO_SECTION = {
         "eyebrow": "Demo",
         "title": "Mostre QR, sessoes e entrega em uma unica tela.",
         "lead": "SnapVend une transferencia FTP de camera profissional, gestao por sessao, acesso por QR e entrega final em um fluxo claro e profissional.",
-        "screen_label": "Fluxo do produto",
+        "screen_label": "Demo do produto",
+        "screen_tag": "Experiencia em campo",
         "screen_note": "Se voce adicionar um link de video, esta area vira automaticamente um demo ao vivo.",
         "cta": "Baixar depois do demo",
         "steps": [
@@ -293,7 +300,8 @@ DEMO_SECTION = {
         "eyebrow": "Демо",
         "title": "Покажите QR, сессии и выдачу на одном экране.",
         "lead": "SnapVend объединяет FTP-передачу с профессиональной камеры, управление сессиями, QR-доступ и финальную выдачу в одном понятном сценарии.",
-        "screen_label": "Сценарий продукта",
+        "screen_label": "Живое демо",
+        "screen_tag": "Полевой сценарий",
         "screen_note": "Если добавить ссылку на видео, этот блок автоматически станет живой демо зоной.",
         "cta": "Скачать после демо",
         "steps": [
@@ -307,7 +315,8 @@ DEMO_SECTION = {
         "eyebrow": "عرض حي",
         "title": "اعرض QR والجلسات والتسليم على شاشة واحدة واضحة.",
         "lead": "يجمع SnapVend بين النقل عبر FTP من الكاميرات الاحترافية وادارة الجلسات ودخول QR والتسليم النهائي في تجربة احترافية واحدة.",
-        "screen_label": "تدفق المنتج",
+        "screen_label": "عرض المنتج",
+        "screen_tag": "تجربة ميدانية",
         "screen_note": "عند اضافة رابط فيديو سيتحول هذا القسم تلقائيا الى عرض حي للمنتج.",
         "cta": "نزّل بعد العرض",
         "steps": [
@@ -321,7 +330,8 @@ DEMO_SECTION = {
         "eyebrow": "लाइव डेमो",
         "title": "QR, सेशन और डिलीवरी फ्लो को एक साफ स्क्रीन पर दिखाएँ।",
         "lead": "SnapVend प्रोफेशनल कैमरे से FTP ट्रांसफर, सेशन प्रबंधन, QR एक्सेस और डिलीवरी को एक ही पेशेवर अनुभव में जोड़ता है।",
-        "screen_label": "प्रोडक्ट फ्लो",
+        "screen_label": "लाइव प्रोडक्ट डेमो",
+        "screen_tag": "फील्ड अनुभव",
         "screen_note": "अगर आप वीडियो URL जोड़ते हैं, तो यह हिस्सा अपने-आप लाइव डेमो में बदल जाएगा।",
         "cta": "डेमो के बाद डाउनलोड करें",
         "steps": [
@@ -335,7 +345,8 @@ DEMO_SECTION = {
         "eyebrow": "ライブデモ",
         "title": "QR、セッション、納品の流れを1画面で見せる。",
         "lead": "SnapVend はプロ向けカメラからの FTP 転送、セッション管理、QR アクセス、納品までをひとつの分かりやすい体験にまとめます。",
-        "screen_label": "製品フロー",
+        "screen_label": "ライブデモ",
+        "screen_tag": "現場フロー",
         "screen_note": "動画 URL を追加すると、この領域は自動で製品デモに変わります。",
         "cta": "デモのあとにダウンロード",
         "steps": [
@@ -349,7 +360,8 @@ DEMO_SECTION = {
         "eyebrow": "实时演示",
         "title": "把二维码、会话与交付流程清晰地展示在同一界面。",
         "lead": "SnapVend 将专业相机 FTP 传输、会话管理、二维码进入和最终交付整合成一套更专业的体验。",
-        "screen_label": "产品流程",
+        "screen_label": "产品演示",
+        "screen_tag": "现场流程",
         "screen_note": "如果添加视频链接，这个区域会自动切换为产品演示。",
         "cta": "看完演示后下载",
         "steps": [
@@ -3807,7 +3819,7 @@ def render_page(locale_code: str) -> str:
             <article class="demo-stage reveal">
               <div class="demo-stage-head">
                 <span>{e(demo_copy["screen_label"])}</span>
-                <strong>SnapVend</strong>
+                <strong>{e(demo_copy["screen_tag"])}</strong>
               </div>
               <div class="demo-stage-screen">
                 <div class="demo-device-frame" data-demo-frame>
@@ -3815,7 +3827,7 @@ def render_page(locale_code: str) -> str:
                   <video class="demo-video" data-demo-video playsinline autoplay muted loop controls preload="metadata" hidden></video>
                   <div class="demo-placeholder" data-demo-fallback>
                     <span class="demo-placeholder-play" aria-hidden="true"></span>
-                    <strong>SnapVend</strong>
+                    <strong>{e(demo_copy["screen_tag"])}</strong>
                     <p>{e(demo_copy["screen_label"])}</p>
                   </div>
                 </div>
