@@ -3810,14 +3810,17 @@ def render_page(locale_code: str) -> str:
                 <strong>SnapVend</strong>
               </div>
               <div class="demo-stage-screen">
-                <video class="demo-video" data-demo-video playsinline autoplay muted loop controls hidden></video>
-                <div class="demo-placeholder" data-demo-fallback>
-                  <span class="demo-placeholder-play" aria-hidden="true"></span>
-                  <strong>SnapVend</strong>
-                  <p>{e(demo_copy["screen_label"])}</p>
+                <div class="demo-device-frame" data-demo-frame>
+                  <span class="demo-device-notch" aria-hidden="true"></span>
+                  <video class="demo-video" data-demo-video playsinline autoplay muted loop controls hidden></video>
+                  <div class="demo-placeholder" data-demo-fallback>
+                    <span class="demo-placeholder-play" aria-hidden="true"></span>
+                    <strong>SnapVend</strong>
+                    <p>{e(demo_copy["screen_label"])}</p>
+                  </div>
                 </div>
               </div>
-              <p class="demo-stage-note">{e(demo_copy["screen_note"])}</p>
+              <p class="demo-stage-note" data-demo-note>{e(demo_copy["screen_note"])}</p>
             </article>
 
             <div class="demo-steps">

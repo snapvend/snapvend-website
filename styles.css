@@ -1059,15 +1059,64 @@ h1 {
 
 .demo-stage-screen {
   position: relative;
-  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 660px;
+  padding: 28px 20px;
   border-radius: 24px;
-  aspect-ratio: 16 / 10;
   border: 1px solid rgba(123, 220, 255, 0.14);
-  background: rgba(10, 26, 58, 0.62);
+  background:
+    radial-gradient(circle at top, rgba(123, 220, 255, 0.12), transparent 50%),
+    rgba(10, 26, 58, 0.62);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
+.demo-device-frame {
+  position: relative;
+  width: min(100%, 340px);
+  aspect-ratio: 9 / 19.5;
+  overflow: hidden;
+  border-radius: 38px;
+  border: 1px solid rgba(123, 220, 255, 0.18);
+  background:
+    linear-gradient(180deg, rgba(6, 15, 33, 0.94), rgba(1, 7, 20, 0.96)),
+    #050b16;
+  box-shadow:
+    0 24px 60px rgba(0, 9, 24, 0.38),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.demo-device-frame.is-landscape {
+  width: min(100%, 680px);
+  aspect-ratio: 16 / 9;
+  border-radius: 28px;
+}
+
+.demo-device-frame.is-landscape .demo-device-notch {
+  display: none;
+}
+
+.demo-device-notch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: 3;
+  width: 38%;
+  max-width: 136px;
+  height: 24px;
+  transform: translateX(-50%);
+  border-radius: 0 0 18px 18px;
+  background:
+    linear-gradient(180deg, rgba(17, 35, 71, 0.96), rgba(8, 20, 44, 0.98)),
+    rgba(8, 20, 44, 0.98);
+  box-shadow:
+    0 8px 20px rgba(0, 8, 23, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
 .demo-placeholder {
+  position: absolute;
+  inset: 0;
   display: grid;
   place-items: center;
   gap: 14px;
@@ -1119,9 +1168,12 @@ h1 {
 
 .demo-stage-screen img,
 .demo-stage-screen video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #030914;
 }
 
 .demo-stage-note {
@@ -2061,6 +2113,10 @@ html[lang="ru"] .language-switcher summary {
     min-height: 620px;
   }
 
+  .demo-stage-screen {
+    min-height: 600px;
+  }
+
   .audience-grid,
   .language-support-grid,
   .why-snapvend-grid,
@@ -2211,6 +2267,21 @@ html[lang="ru"] .language-switcher summary {
     backdrop-filter: none;
   }
 
+  .demo-stage-screen {
+    min-height: auto;
+    padding: 20px 12px;
+  }
+
+  .demo-device-frame {
+    width: min(100%, 320px);
+    border-radius: 30px;
+  }
+
+  .demo-device-frame.is-landscape {
+    width: 100%;
+    border-radius: 22px;
+  }
+
   .metric-grid,
   .audience-grid,
   .language-support-grid,
@@ -2302,6 +2373,15 @@ html[lang="ru"] .language-switcher summary {
   .topnav {
     gap: 6px;
     padding: 4px;
+  }
+
+  .demo-stage-screen {
+    padding: 16px 8px;
+  }
+
+  .demo-device-frame {
+    width: min(100%, 288px);
+    border-radius: 26px;
   }
 
   .contact-panel {

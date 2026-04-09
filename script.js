@@ -161,19 +161,43 @@ const setupDemoMedia = () => {
 
   document.querySelectorAll("[data-demo-video]").forEach((video) => {
     const fallback = video.parentElement?.querySelector("[data-demo-fallback]");
+    const frame = video.closest("[data-demo-frame]");
+    const note = video.closest(".demo-stage")?.querySelector("[data-demo-note]");
+
+    const applyOrientation = () => {
+      if (!frame) {
+        return;
+      }
+
+      const isLandscape = video.videoWidth > video.videoHeight;
+      frame.classList.toggle("is-landscape", isLandscape);
+      frame.classList.toggle("is-portrait", !isLandscape);
+    };
 
     if (!hasValue(demoVideoUrl)) {
       video.hidden = true;
+      if (note) {
+        note.hidden = false;
+      }
       return;
     }
 
     video.src = demoVideoUrl;
     video.hidden = false;
     video.load();
+    video.addEventListener("loadedmetadata", applyOrientation, { once: true });
 
     if (fallback) {
       fallback.hidden = true;
       video.poster = fallback.currentSrc || fallback.src || "";
+    }
+
+    if (note) {
+      note.hidden = true;
+    }
+
+    if (video.readyState >= 1) {
+      applyOrientation();
     }
   });
 };
