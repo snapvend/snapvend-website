@@ -347,15 +347,15 @@ DEMO_SECTION = {
     },
     "zh": {
         "eyebrow": "实时演示",
-        "title": "把 QR、session 与交付流程放在一个清晰界面里展示。",
-        "lead": "SnapVend 将专业相机 FTP 传输、session 管理、QR 进入和最终交付整合成一个更专业的体验。",
+        "title": "把二维码、会话与交付流程清晰地展示在同一界面。",
+        "lead": "SnapVend 将专业相机 FTP 传输、会话管理、二维码进入和最终交付整合成一套更专业的体验。",
         "screen_label": "产品流程",
         "screen_note": "如果添加视频链接，这个区域会自动切换为产品演示。",
         "cta": "看完演示后下载",
         "steps": [
             {"title": "导入照片", "body": "可从本地相册选择，也可通过支持 FTP 的专业相机直接传入应用。"},
-            {"title": "创建 session", "body": "为每位客户、每次拍摄或每场活动建立独立 session，避免流程混淆。"},
-            {"title": "通过 QR 打开画廊", "body": "客户在同一网络下扫描 QR，几秒内进入自己的 session 画廊。"},
+            {"title": "创建会话", "body": "为每位客户、每次拍摄或每场活动建立独立会话，避免流程混淆。"},
+            {"title": "通过二维码打开画廊", "body": "客户在同一网络下扫描二维码，几秒内进入自己的会话画廊。"},
             {"title": "确认并交付", "body": "确认付款，完成 PAC 检查，并以 ZIP 方式交付已批准文件。"},
         ],
     },
@@ -745,8 +745,8 @@ PROOF_SECTION = {
         ],
         "references": [
             {"title": "快速交付团队", "body": "适合希望在同一天内完成拍摄、选片和交付的团队。"},
-            {"title": "重视品牌的影楼", "body": "适合需要自定义品牌名、logo 和更整洁客户流程的团队。"},
-            {"title": "本地网络运营团队", "body": "为希望通过 hotspot 或本地网络工作而不是依赖互联网的团队设计。"},
+            {"title": "重视品牌的影楼", "body": "适合需要自定义品牌名、标识和更整洁客户流程的团队。"},
+            {"title": "本地网络运营团队", "body": "为希望通过热点或本地网络工作而不是依赖互联网的团队设计。"},
             {"title": "多场次执行团队", "body": "帮助团队在不混淆客户或群组的情况下管理多场次交付。"},
         ],
     },
@@ -1108,15 +1108,15 @@ WHY_SNAPVEND_SECTION = {
         "title": "比传统画廊分享更可控的现场流程",
         "lead": "SnapVend 不只是用来展示照片，而是为了把选片、收款、打印准备和交付整合进同一套工作流程。",
         "cards": [
-            {"title": "不要求客户额外安装 app", "body": "客户在同一网络内通过 QR 进入浏览器画廊，无需额外安装，流程启动更快。"},
-            {"title": "基于 session 的清晰管理", "body": "每位客户、每场拍摄或每个群组都能保持独立，因此选片、付款和交付不会混在一起。"},
+            {"title": "不要求客户额外安装应用", "body": "客户在同一网络内通过二维码进入浏览器画廊，无需额外安装，流程启动更快。"},
+            {"title": "基于会话的清晰管理", "body": "每位客户、每场拍摄或每个群组都能保持独立，因此选片、付款和交付不会混在一起。"},
             {"title": "销售与交付留在同一设备", "body": "本地支付方式、PAC 确认和 ZIP 交付都可以在同一设备上完成。"},
             {"title": "适合现场拍摄的运营控制", "body": "FTP 相机导入、打印列表、报表和品牌设置，让高强度现场工作更有秩序。"},
         ],
         "panel_label": "SnapVend 的不同点",
         "panel_title": "让摄影师的一天更简单",
         "panel_points": [
-            "QR 进入、session、支付和交付连接在同一个流程里。",
+            "二维码进入、会话、支付和交付连接在同一个流程里。",
             "适合婚礼、活动、影楼和移动人像销售场景。",
             "本地网络模式更快、更可控，也更少依赖互联网覆盖。",
         ],
@@ -2274,11 +2274,11 @@ COPY = {
             {"title": "影棚与人像拍摄", "body": "适合希望与客户一起完成选片和交付的工作室。"},
             {"title": "学校、体育与企业拍摄", "body": "适合管理多个会话而不混淆客户与交付的团队。"},
             {"title": "街拍、旅游区域与移动人像拍摄", "body": "适合希望在现场快速拍摄、即时展示所选照片，并按单张或套餐完成销售的摄影师。"},
-            {"title": "移动交付团队", "body": "适合通过本地网络或热点运行且不依赖互联网的流程。"},
+            {"title": "移动交付团队", "body": "适合通过本地网络或热点运行且不依赖互联网的团队。"},
         ],
         "pricing_eyebrow": "方案",
-        "pricing_title": "先免费开始，再用 Pro 扩展",
-        "pricing_lead": "免费方案适合熟悉流程。Pro 去掉交付限制并开放品牌自定义能力。",
+        "pricing_title": "先免费开始，再用专业版扩展",
+        "pricing_lead": "免费方案适合先熟悉流程。专业版会移除交付限制，并开放品牌自定义能力。",
         "config_warning": "此仓库中没有最终订阅价格。价格和 App Store 直链可在 site-config.js 中更新。",
         "free_badge": "免费",
         "free_title": "适合先熟悉流程",
@@ -2508,20 +2508,20 @@ COPY_FLOW_OVERRIDES = {
         ],
     },
     "zh": {
-        "hero_lead": "可从本地相册导入照片，也可通过支持 FTP 的专业相机直接传入应用；为每次拍摄建立独立 session，让客户通过 QR 进入，并从同一设备交付已批准的 ZIP 文件。",
+        "hero_lead": "可从本地相册导入照片，也可通过支持 FTP 的专业相机直接传入应用；为每次拍摄建立独立会话，让客户通过二维码进入，并从同一设备交付已批准的 ZIP 文件。",
         "metrics": [
             {"value": "1 台设备", "label": "拍摄、展示、交付"},
-            {"value": "QR 进入", "label": "客户几秒内进入"},
-            {"value": "多 session", "label": "每次拍摄独立管理"},
+            {"value": "二维码进入", "label": "客户几秒内进入"},
+            {"value": "多会话", "label": "每次拍摄独立管理"},
         ],
-        "workflow_title": "QR、session 与交付在同一流程中",
-        "workflow_lead": "SnapVend 将专业相机的直接 FTP 导入、session 管理、QR 进入和交付整合为一个现场工作流程。",
+        "workflow_title": "二维码、会话与交付在同一流程中",
+        "workflow_lead": "SnapVend 将专业相机的直接 FTP 导入、会话管理、二维码进入和交付整合为一个现场工作流程。",
         "workflow_cards": [
             {"title": "从专业相机导入", "body": "可从本地相册选择，也可通过支持 FTP 的专业相机把照片直接传入 SnapVend。"},
-            {"title": "创建独立 session", "body": "为每位客户、每次拍摄或每场活动建立独立 session，让文件、选片和交付互不混淆。"},
-            {"title": "通过 QR 打开 session 画廊", "body": "客户在同一网络下扫描 QR，几秒内进入自己的 session 画廊。"},
+            {"title": "创建独立会话", "body": "为每位客户、每次拍摄或每场活动建立独立会话，让文件、选片和交付互不混淆。"},
+            {"title": "通过二维码打开会话画廊", "body": "客户在同一网络下扫描二维码，几秒内进入自己的会话画廊。"},
             {"title": "显示本地支付并确认 PAC", "body": "根据商家所在国家显示本地支付方式，检查所选照片并完成 PAC 验证。"},
-            {"title": "交付 ZIP 并追踪 session", "body": "以 ZIP 方式交付已批准文件，并在应用内追踪按 session 区分的交付与收入。"},
+            {"title": "交付 ZIP 并追踪会话", "body": "以 ZIP 方式交付已批准文件，并在应用内追踪按会话区分的交付与收入。"},
         ],
     },
 }
@@ -2629,13 +2629,13 @@ FAQ_FLOW_OVERRIDES = {
         {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Pro と年額 Pro の両方で日次納品制限が解除されます。"},
     ],
     "zh": [
-        {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。"},
-        {"q": "可以直接从专业相机传入吗？", "a": "可以。支持 FTP 的专业相机可通过同一网络或 hotspot 直接把照片传入 SnapVend。"},
-        {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描 QR 后，就能在浏览器里打开自己的 session 画廊并完成选片。"},
-        {"q": "session 结构有什么作用？", "a": "每位客户、每次拍摄或每场活动都可以放在独立 session 中，这样文件、选片、付款和交付记录不会混在一起。"},
-        {"q": "我可以使用自己的品牌名和 logo 吗？", "a": "可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。"},
+        {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或热点上运行，不依赖云端。"},
+        {"q": "可以直接从专业相机传入吗？", "a": "可以。支持 FTP 的专业相机可通过同一网络或热点直接把照片传入 SnapVend。"},
+        {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描二维码后，就能在浏览器里打开自己的会话画廊并完成选片。"},
+        {"q": "会话结构有什么作用？", "a": "每位客户、每次拍摄或每场活动都可以放在独立会话中，这样文件、选片、付款和交付记录不会混在一起。"},
+        {"q": "我可以使用自己的品牌名和标识吗？", "a": "可以。专业版计划会开放自定义品牌名、标识和品牌化交付。"},
         {"q": "可以向客户显示按国家配置的支付方式吗？", "a": "可以。选择商家所在国家后，已完成设置的本地支付方式会显示在支付弹窗中。目前已为土耳其、西班牙、印度、中国和日本准备了现成方式。"},
-        {"q": "哪个计划会移除交付限制？", "a": "月度 Pro 和年度 Pro 都会移除每日交付限制。"},
+        {"q": "哪个计划会移除交付限制？", "a": "月度专业版和年度专业版都会移除每日交付限制。"},
     ],
 }
 
@@ -2862,6 +2862,36 @@ BRAND_MOTTO_BY_LOCALE = {
 
 BRAND_KICKER_BY_LOCALE = {
     "hi": "प्रोफेशनल फोटो डिलीवरी",
+    "zh": "专业照片交付",
+}
+
+APPLICATION_SUBCATEGORY_BY_LOCALE = {
+    "zh": "照片流程、打印管理与交付",
+}
+
+LOCALIZED_FLOW_COVERAGE_LABEL_BY_LOCALE = {
+    "zh": "本地化客户流程覆盖",
+}
+
+IMAGE_ALT_BY_LOCALE = {
+    "default": {
+        "hero_main": "SnapVend home dashboard with live gallery and session overview",
+        "hero_secondary": "SnapVend WiFi and hotspot QR connection screen",
+        "workflow_ftp": "SnapVend FTP server settings for professional cameras",
+        "workflow_dashboard": "SnapVend gallery home dashboard",
+        "workflow_qr": "SnapVend QR codes and session access screen",
+        "workflow_http_gallery": "SnapVend HTTP gallery with selected photos",
+        "workflow_payment": "SnapVend payment approval and delivery options screen",
+    },
+    "zh": {
+        "hero_main": "SnapVend 首页仪表盘与会话总览",
+        "hero_secondary": "SnapVend WiFi 与热点二维码连接界面",
+        "workflow_ftp": "SnapVend 专业相机 FTP 服务器设置",
+        "workflow_dashboard": "SnapVend 应用画廊首页",
+        "workflow_qr": "SnapVend 二维码与会话访问界面",
+        "workflow_http_gallery": "SnapVend 客户已选照片画廊",
+        "workflow_payment": "SnapVend 支付确认与交付选项界面",
+    },
 }
 
 MARKETING_ASSETS = {
@@ -2895,6 +2925,11 @@ def marketing_asset(slot: str, locale_code: str | None = None) -> str:
         if slot in locale_overrides:
             return locale_overrides[slot]
     return MARKETING_ASSETS[slot]
+
+
+def image_alt(locale_code: str, slot: str) -> str:
+    locale_map = IMAGE_ALT_BY_LOCALE.get(locale_code, {})
+    return locale_map.get(slot, IMAGE_ALT_BY_LOCALE["default"][slot])
 
 
 def page_path(locale_code: str) -> str:
@@ -3228,7 +3263,7 @@ def build_schema(
         f"{SITE_URL}/{marketing_asset('workflow_ftp')}",
         f"{SITE_URL}/{marketing_asset('workflow_dashboard')}",
         f"{SITE_URL}/{marketing_asset('workflow_qr')}",
-        f"{SITE_URL}/{marketing_asset('workflow_http_gallery', 'en')}",
+        f"{SITE_URL}/{marketing_asset('workflow_http_gallery', locale_code)}",
         f"{SITE_URL}/{marketing_asset('workflow_payment')}",
         f"{SITE_URL}/{marketing_asset('schema_report')}",
     ]
@@ -3313,7 +3348,7 @@ def build_schema(
         "name": "SnapVend",
         "description": copy["meta_description"],
         "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "Photo workflow, print management and delivery",
+        "applicationSubCategory": APPLICATION_SUBCATEGORY_BY_LOCALE.get(locale_code, "Photo workflow, print management and delivery"),
         "operatingSystem": "ANDROID, IOS",
         "inLanguage": locale_code,
         "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
@@ -3344,7 +3379,7 @@ def build_schema(
             },
             {
                 "@type": "PropertyValue",
-                "name": "Localized client flow coverage",
+                "name": LOCALIZED_FLOW_COVERAGE_LABEL_BY_LOCALE.get(locale_code, "Localized client flow coverage"),
                 "value": language_support["title"],
             },
             {
@@ -3578,10 +3613,10 @@ def render_page(locale_code: str) -> str:
 
           <div class="hero-visual reveal">
             <article class="visual-frame visual-frame-main">
-              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="SnapVend home dashboard with live gallery and session overview" width="288" height="640" loading="eager" decoding="async" fetchpriority="high">
+              <img src="{prefix}/{marketing_asset('hero_main', locale_code)}" alt="{e(image_alt(locale_code, 'hero_main'))}" width="288" height="640" loading="eager" decoding="async" fetchpriority="high">
             </article>
             <article class="visual-frame visual-frame-secondary">
-              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="SnapVend WiFi and hotspot QR connection screen" width="189" height="420" loading="eager" decoding="async">
+              <img src="{prefix}/{marketing_asset('hero_secondary', locale_code)}" alt="{e(image_alt(locale_code, 'hero_secondary'))}" width="189" height="420" loading="eager" decoding="async">
             </article>
             <article class="visual-chip">
               <span>SnapVend</span>
@@ -3669,19 +3704,19 @@ def render_page(locale_code: str) -> str:
 
             <div class="shot-stack reveal">
               <article class="shot-card shot-card-ftp">
-                <img src="{prefix}/{marketing_asset('workflow_ftp', locale_code)}" alt="SnapVend FTP server settings for professional cameras" width="324" height="720" loading="lazy" decoding="async">
+                <img src="{prefix}/{marketing_asset('workflow_ftp', locale_code)}" alt="{e(image_alt(locale_code, 'workflow_ftp'))}" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-dashboard">
-                <img src="{prefix}/{marketing_asset('workflow_dashboard', locale_code)}" alt="SnapVend gallery home dashboard" width="324" height="720" loading="lazy" decoding="async">
+                <img src="{prefix}/{marketing_asset('workflow_dashboard', locale_code)}" alt="{e(image_alt(locale_code, 'workflow_dashboard'))}" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-qr">
-                <img src="{prefix}/{marketing_asset('workflow_qr', locale_code)}" alt="SnapVend QR codes and session access screen" width="324" height="720" loading="lazy" decoding="async">
+                <img src="{prefix}/{marketing_asset('workflow_qr', locale_code)}" alt="{e(image_alt(locale_code, 'workflow_qr'))}" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-http">
-                <img src="{prefix}/{marketing_asset('workflow_http_gallery', locale_code)}" alt="SnapVend HTTP gallery with selected photos" width="324" height="720" loading="lazy" decoding="async">
+                <img src="{prefix}/{marketing_asset('workflow_http_gallery', locale_code)}" alt="{e(image_alt(locale_code, 'workflow_http_gallery'))}" width="324" height="720" loading="lazy" decoding="async">
               </article>
               <article class="shot-card shot-card-payment">
-                <img src="{prefix}/{marketing_asset('workflow_payment', locale_code)}" alt="SnapVend payment approval and delivery options screen" width="324" height="720" loading="lazy" decoding="async">
+                <img src="{prefix}/{marketing_asset('workflow_payment', locale_code)}" alt="{e(image_alt(locale_code, 'workflow_payment'))}" width="324" height="720" loading="lazy" decoding="async">
               </article>
             </div>
           </div>
