@@ -1149,6 +1149,11 @@ h1 {
     linear-gradient(180deg, rgba(16, 44, 92, 0.96), rgba(8, 27, 68, 0.98));
 }
 
+.demo-placeholder[hidden],
+.demo-stage-note[hidden] {
+  display: none !important;
+}
+
 .demo-placeholder-play {
   position: relative;
   width: 72px;
@@ -1194,6 +1199,7 @@ h1 {
   height: 100%;
   object-fit: contain;
   background: #030914;
+  z-index: 1;
 }
 
 .demo-stage-note {

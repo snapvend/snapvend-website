@@ -174,8 +174,28 @@ const setupDemoMedia = () => {
       frame.classList.toggle("is-portrait", !isLandscape);
     };
 
+    const revealVideo = () => {
+      applyOrientation();
+
+      if (fallback) {
+        fallback.hidden = true;
+      }
+
+      if (note) {
+        note.hidden = true;
+      }
+
+      const playAttempt = video.play();
+      if (playAttempt && typeof playAttempt.catch === "function") {
+        playAttempt.catch(() => {});
+      }
+    };
+
     if (!hasValue(demoVideoUrl)) {
       video.hidden = true;
+      if (fallback) {
+        fallback.hidden = false;
+      }
       if (note) {
         note.hidden = false;
       }
@@ -184,21 +204,24 @@ const setupDemoMedia = () => {
 
     video.src = demoVideoUrl;
     video.hidden = false;
-    video.load();
-    video.addEventListener("loadedmetadata", applyOrientation, { once: true });
-
     if (fallback) {
-      fallback.hidden = true;
-      video.poster = fallback.currentSrc || fallback.src || "";
+      fallback.hidden = false;
     }
-
     if (note) {
-      note.hidden = true;
+      note.hidden = false;
     }
 
-    if (video.readyState >= 1) {
-      applyOrientation();
-    }
+    video.addEventListener("loadeddata", revealVideo, { once: true });
+    video.addEventListener("error", () => {
+      if (fallback) {
+        fallback.hidden = false;
+      }
+      if (note) {
+        note.hidden = false;
+      }
+    }, { once: true });
+
+    video.load();
   });
 };
 
