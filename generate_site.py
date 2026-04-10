@@ -197,7 +197,7 @@ DEMO_SECTION = {
         "lead": "SnapVend müşteriyi önce WiFi veya erişim noktası QR bağlantısıyla aynı ağa alır, sonra doğru oturum galerisine yönlendirir ve teslime kadar akışı tek deneyimde toplar.",
         "screen_label": "Canlı ürün demosu",
         "screen_tag": "Saha deneyimi",
-        "screen_note": "Video linki eklersen bu alan otomatik olarak canlı ürün demosuna dönüşür.",
+        "screen_note": "Demo video Android sürümü üzerinden hazırlanmıştır. SnapVend’in temel galeri, QR erişim, seçim ve teslim akışı iPhone ve iPad tarafında da aynı ürün deneyimiyle sunulur.",
         "cta": "Demodan sonra indir",
         "steps": [
             {"title": "Fotoğrafları içe al", "body": "Yerel galeriden seç ya da FTP destekli profesyonel fotoğraf makinesinden doğrudan uygulamaya aktar."},
@@ -212,7 +212,7 @@ DEMO_SECTION = {
         "lead": "SnapVend first brings the client onto the same network through a WiFi or hotspot QR connection, then moves them into the right session gallery and through delivery in one product journey.",
         "screen_label": "Live product demo",
         "screen_tag": "Field experience",
-        "screen_note": "If you add a video URL, this area automatically turns into a live product demo.",
+        "screen_note": "This demo video was prepared from the Android version. SnapVend’s core gallery, QR access, selection and delivery flow is also presented with the same product experience on iPhone and iPad.",
         "cta": "Download after demo",
         "steps": [
             {"title": "Bring photos in", "body": "Select them from local media or transfer them directly into the app from an FTP-capable professional camera."},
@@ -227,7 +227,7 @@ DEMO_SECTION = {
         "lead": "SnapVend reúne la transferencia FTP desde cámara profesional, la gestión por sesión, el acceso por QR y la entrega final en una experiencia clara y profesional.",
         "screen_label": "Demo del producto",
         "screen_tag": "Experiencia en campo",
-        "screen_note": "Si agrega un enlace de video, esta zona se convierte automáticamente en un demo en vivo.",
+        "screen_note": "Este video de demostración fue preparado con la versión Android. El flujo principal de galería, acceso por QR, selección y entrega de SnapVend también se ofrece con la misma experiencia en iPhone y iPad.",
         "cta": "Descargar después del demo",
         "steps": [
             {"title": "Importe las fotos", "body": "Use la galería local o transfiéralas directamente a la aplicación desde una cámara profesional con FTP."},
@@ -242,7 +242,7 @@ DEMO_SECTION = {
         "lead": "SnapVend réunit le transfert FTP depuis un appareil photo pro, la gestion par session, l'accès QR et la livraison finale dans une expérience claire et professionnelle.",
         "screen_label": "Démo produit",
         "screen_tag": "Expérience terrain",
-        "screen_note": "Si vous ajoutez une URL vidéo, cette zone devient automatiquement une démo produit.",
+        "screen_note": "Cette vidéo de démonstration a été préparée à partir de la version Android. Le flux principal de galerie, d'accès QR, de sélection et de livraison de SnapVend est également proposé avec la même expérience sur iPhone et iPad.",
         "cta": "Télécharger après la démo",
         "steps": [
             {"title": "Importer les photos", "body": "Prenez-les depuis la galerie locale ou transférez-les directement dans l'application depuis un appareil photo pro compatible FTP."},
@@ -257,7 +257,7 @@ DEMO_SECTION = {
         "lead": "SnapVend verbindet FTP-Transfer aus professionellen Kameras, Session-Verwaltung, QR-Zugang und Auslieferung in einem professionellen Ablauf.",
         "screen_label": "Live Produktdemo",
         "screen_tag": "Praxisablauf",
-        "screen_note": "Wenn Sie eine Video URL hinterlegen, wird dieser Bereich automatisch zur Live Demo.",
+        "screen_note": "Dieses Demo-Video wurde mit der Android-Version erstellt. Der zentrale Galerie-, QR-Zugangs-, Auswahl- und Auslieferungsablauf von SnapVend wird auch auf iPhone und iPad mit derselben Produkterfahrung angeboten.",
         "cta": "Nach der Demo herunterladen",
         "steps": [
             {"title": "Fotos importieren", "body": "Waehlen Sie sie aus lokaler Galerie oder uebertragen Sie sie direkt aus einer FTP-faehigen Profikamera in die App."},
@@ -272,7 +272,7 @@ DEMO_SECTION = {
         "lead": "SnapVend unisce il trasferimento FTP da fotocamere professionali, la gestione per sessione, l'accesso con QR e la consegna finale in un'esperienza professionale e ordinata.",
         "screen_label": "Demo del prodotto",
         "screen_tag": "Esperienza sul campo",
-        "screen_note": "Se aggiungi un link video, quest'area si trasforma automaticamente in una demo dal vivo del prodotto.",
+        "screen_note": "Questo video dimostrativo è stato realizzato con la versione Android. Il flusso principale di galleria, accesso QR, selezione e consegna di SnapVend è disponibile con la stessa esperienza di prodotto anche su iPhone e iPad.",
         "cta": "Scarica dopo la demo",
         "steps": [
             {"title": "Importa le foto", "body": "Selezionale dalla galleria locale oppure trasferiscile direttamente nell'applicazione da una fotocamera professionale con supporto FTP."},
@@ -287,7 +287,7 @@ DEMO_SECTION = {
         "lead": "SnapVend une transferencia FTP de camera profissional, gestao por sessao, acesso por QR e entrega final em um fluxo claro e profissional.",
         "screen_label": "Demo do produto",
         "screen_tag": "Experiencia em campo",
-        "screen_note": "Se voce adicionar um link de video, esta area vira automaticamente um demo ao vivo.",
+        "screen_note": "Este vídeo de demonstração foi preparado com a versão Android. O fluxo principal de galeria, acesso por QR, seleção e entrega do SnapVend também é oferecido com a mesma experiência no iPhone e no iPad.",
         "cta": "Baixar depois do demo",
         "steps": [
             {"title": "Importe as fotos", "body": "Use a galeria local ou transfira direto para o aplicativo a partir de uma camera profissional com FTP."},
@@ -302,7 +302,7 @@ DEMO_SECTION = {
         "lead": "SnapVend объединяет FTP-передачу с профессиональной камеры, управление сессиями, QR-доступ и финальную выдачу в одном понятном сценарии.",
         "screen_label": "Живое демо",
         "screen_tag": "Полевой сценарий",
-        "screen_note": "Если добавить ссылку на видео, этот блок автоматически станет живой демо зоной.",
+        "screen_note": "Это демонстрационное видео подготовлено на Android-версии. Основной сценарий галереи, QR-доступа, выбора и выдачи в SnapVend также доступен на iPhone и iPad с тем же продуктовым опытом.",
         "cta": "Скачать после демо",
         "steps": [
             {"title": "Импорт фото", "body": "Загрузите из локальной галереи или передайте прямо в приложение с профессиональной камеры по FTP."},
@@ -317,7 +317,7 @@ DEMO_SECTION = {
         "lead": "يجمع SnapVend بين النقل عبر FTP من الكاميرات الاحترافية وادارة الجلسات ودخول QR والتسليم النهائي في تجربة احترافية واحدة.",
         "screen_label": "عرض المنتج",
         "screen_tag": "تجربة ميدانية",
-        "screen_note": "عند اضافة رابط فيديو سيتحول هذا القسم تلقائيا الى عرض حي للمنتج.",
+        "screen_note": "تم إعداد فيديو العرض هذا باستخدام إصدار Android. كما يتم تقديم تجربة SnapVend الأساسية للمعرض والوصول عبر QR والاختيار والتسليم بنفس منطق المنتج على iPhone و iPad.",
         "cta": "نزّل بعد العرض",
         "steps": [
             {"title": "استيراد الصور", "body": "اخترها من المعرض المحلي او انقلها مباشرة الى التطبيق من كاميرا احترافية تدعم FTP."},
@@ -332,7 +332,7 @@ DEMO_SECTION = {
         "lead": "SnapVend प्रोफेशनल कैमरे से FTP ट्रांसफर, सेशन प्रबंधन, QR एक्सेस और डिलीवरी को एक ही पेशेवर अनुभव में जोड़ता है।",
         "screen_label": "लाइव प्रोडक्ट डेमो",
         "screen_tag": "फील्ड अनुभव",
-        "screen_note": "अगर आप वीडियो URL जोड़ते हैं, तो यह हिस्सा अपने-आप लाइव डेमो में बदल जाएगा।",
+        "screen_note": "यह डेमो वीडियो Android संस्करण पर तैयार किया गया है। SnapVend का मुख्य गैलरी, QR एक्सेस, चयन और डिलीवरी अनुभव iPhone और iPad पर भी उसी प्रोडक्ट अनुभव के साथ उपलब्ध है।",
         "cta": "डेमो के बाद डाउनलोड करें",
         "steps": [
             {"title": "फोटो इम्पोर्ट करें", "body": "लोकल गैलरी से चुनें या FTP-सक्षम प्रोफेशनल कैमरे से सीधे ऐप में ट्रांसफर करें।"},
@@ -347,7 +347,7 @@ DEMO_SECTION = {
         "lead": "SnapVend はプロ向けカメラからの FTP 転送、セッション管理、QR アクセス、納品までをひとつの分かりやすい体験にまとめます。",
         "screen_label": "ライブデモ",
         "screen_tag": "現場フロー",
-        "screen_note": "動画 URL を追加すると、この領域は自動で製品デモに変わります。",
+        "screen_note": "このデモ動画は Android 版をもとに作成されています。SnapVend の基本となるギャラリー、QR アクセス、選択、納品の流れは iPhone と iPad でも同じ製品体験として提供されます。",
         "cta": "デモのあとにダウンロード",
         "steps": [
             {"title": "写真を取り込む", "body": "ローカルメディアから選ぶか、FTP 対応のプロ向けカメラからアプリへ直接取り込みます。"},
@@ -362,7 +362,7 @@ DEMO_SECTION = {
         "lead": "SnapVend 将专业相机 FTP 传输、会话管理、二维码进入和最终交付整合成一套更专业的体验。",
         "screen_label": "产品演示",
         "screen_tag": "现场流程",
-        "screen_note": "如果添加视频链接，这个区域会自动切换为产品演示。",
+        "screen_note": "该演示视频基于 Android 版本制作。SnapVend 的核心画廊、二维码进入、选择与交付流程在 iPhone 和 iPad 上也以相同的产品体验提供。",
         "cta": "看完演示后下载",
         "steps": [
             {"title": "导入照片", "body": "可从本地相册选择，也可通过支持 FTP 的专业相机直接传入应用。"},
