@@ -178,19 +178,11 @@ const setupDemoMedia = () => {
       if (fallback) {
         fallback.hidden = true;
       }
-
-      if (note) {
-        note.hidden = true;
-      }
     };
 
-    const showFallback = (showNote = false) => {
+    const showFallback = () => {
       if (fallback) {
         fallback.hidden = false;
-      }
-
-      if (note) {
-        note.hidden = !showNote;
       }
     };
 
@@ -219,22 +211,22 @@ const setupDemoMedia = () => {
 
     if (!hasValue(demoVideoUrl)) {
       video.hidden = true;
-      showFallback(true);
+      showFallback();
       return;
     }
 
     video.src = demoVideoUrl;
     video.hidden = false;
     video.controls = false;
-    showFallback(false);
+    showFallback();
 
     video.addEventListener("loadeddata", revealVideo, { once: true });
     video.addEventListener("play", hideFallback);
     video.addEventListener("pause", () => {
-      showFallback(false);
+      showFallback();
     });
     video.addEventListener("error", () => {
-      showFallback(true);
+      showFallback();
     }, { once: true });
 
     fallback?.addEventListener("click", startPlayback);
