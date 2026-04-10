@@ -198,6 +198,15 @@ const setupDemoMedia = () => {
       applyOrientation();
     };
 
+    const togglePlayback = () => {
+      if (video.paused) {
+        startPlayback();
+        return;
+      }
+
+      video.pause();
+    };
+
     const startPlayback = () => {
       hideFallback();
       const playAttempt = video.play();
@@ -216,15 +225,20 @@ const setupDemoMedia = () => {
 
     video.src = demoVideoUrl;
     video.hidden = false;
+    video.controls = false;
     showFallback(false);
 
     video.addEventListener("loadeddata", revealVideo, { once: true });
     video.addEventListener("play", hideFallback);
+    video.addEventListener("pause", () => {
+      showFallback(false);
+    });
     video.addEventListener("error", () => {
       showFallback(true);
     }, { once: true });
 
     fallback?.addEventListener("click", startPlayback);
+    video.addEventListener("click", togglePlayback);
     video.load();
   });
 };

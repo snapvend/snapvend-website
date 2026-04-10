@@ -1141,17 +1141,12 @@ h1 {
 .demo-placeholder {
   position: absolute;
   inset: var(--demo-screen-top) var(--demo-screen-right) var(--demo-screen-bottom) var(--demo-screen-left);
-  display: grid;
-  place-items: center;
-  gap: 14px;
-  padding: 28px;
-  text-align: center;
+  display: block;
+  padding: 0;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  background:
-    radial-gradient(circle at top, rgba(123, 220, 255, 0.18), transparent 48%),
-    linear-gradient(180deg, rgba(16, 44, 92, 0.96), rgba(8, 27, 68, 0.98));
+  background: rgba(6, 17, 40, 0.24);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
@@ -1173,10 +1168,13 @@ h1 {
 }
 
 .demo-placeholder-play {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 72px;
   height: 72px;
   border-radius: 999px;
+  transform: translate(-50%, -50%);
   background: linear-gradient(135deg, rgba(30, 168, 217, 0.94), rgba(23, 196, 176, 0.94));
   box-shadow: 0 18px 38px rgba(4, 18, 48, 0.28);
 }
@@ -1195,18 +1193,11 @@ h1 {
 }
 
 .demo-placeholder strong {
-  font-family: var(--menu-font);
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-primary);
+  display: none;
 }
 
 .demo-placeholder p {
-  max-width: 30ch;
-  margin: 0;
-  color: var(--text-secondary);
+  display: none;
 }
 
 .demo-stage-screen img,
@@ -1220,6 +1211,7 @@ h1 {
   object-fit: contain;
   border-radius: 30px;
   background: #030914;
+  cursor: pointer;
   z-index: 1;
 }
 

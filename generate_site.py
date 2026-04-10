@@ -3824,7 +3824,7 @@ def render_page(locale_code: str) -> str:
               <div class="demo-stage-screen">
                 <div class="demo-device-frame" data-demo-frame>
                   <span class="demo-device-notch" aria-hidden="true"></span>
-                  <video class="demo-video" data-demo-video playsinline muted loop controls preload="metadata" hidden></video>
+                  <video class="demo-video" data-demo-video playsinline muted loop preload="metadata" hidden></video>
                   <button class="demo-placeholder" type="button" data-demo-fallback aria-label="{e(demo_copy['screen_label'])}">
                     <span class="demo-placeholder-play" aria-hidden="true"></span>
                     <strong>{e(demo_copy["screen_tag"])}</strong>
