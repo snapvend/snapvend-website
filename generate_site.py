@@ -3824,12 +3824,12 @@ def render_page(locale_code: str) -> str:
               <div class="demo-stage-screen">
                 <div class="demo-device-frame" data-demo-frame>
                   <span class="demo-device-notch" aria-hidden="true"></span>
-                  <video class="demo-video" data-demo-video playsinline autoplay muted loop controls preload="metadata" hidden></video>
-                  <div class="demo-placeholder" data-demo-fallback>
+                  <video class="demo-video" data-demo-video playsinline muted loop controls preload="metadata" hidden></video>
+                  <button class="demo-placeholder" type="button" data-demo-fallback aria-label="{e(demo_copy['screen_label'])}">
                     <span class="demo-placeholder-play" aria-hidden="true"></span>
                     <strong>{e(demo_copy["screen_tag"])}</strong>
                     <p>{e(demo_copy["screen_label"])}</p>
-                  </div>
+                  </button>
                 </div>
               </div>
               <p class="demo-stage-note" data-demo-note>{e(demo_copy["screen_note"])}</p>

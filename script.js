@@ -174,9 +174,7 @@ const setupDemoMedia = () => {
       frame.classList.toggle("is-portrait", !isLandscape);
     };
 
-    const revealVideo = () => {
-      applyOrientation();
-
+    const hideFallback = () => {
       if (fallback) {
         fallback.hidden = true;
       }
@@ -184,43 +182,49 @@ const setupDemoMedia = () => {
       if (note) {
         note.hidden = true;
       }
+    };
 
+    const showFallback = (showNote = false) => {
+      if (fallback) {
+        fallback.hidden = false;
+      }
+
+      if (note) {
+        note.hidden = !showNote;
+      }
+    };
+
+    const revealVideo = () => {
+      applyOrientation();
+    };
+
+    const startPlayback = () => {
+      hideFallback();
       const playAttempt = video.play();
       if (playAttempt && typeof playAttempt.catch === "function") {
-        playAttempt.catch(() => {});
+        playAttempt.catch(() => {
+          showFallback(false);
+        });
       }
     };
 
     if (!hasValue(demoVideoUrl)) {
       video.hidden = true;
-      if (fallback) {
-        fallback.hidden = false;
-      }
-      if (note) {
-        note.hidden = false;
-      }
+      showFallback(true);
       return;
     }
 
     video.src = demoVideoUrl;
     video.hidden = false;
-    if (fallback) {
-      fallback.hidden = false;
-    }
-    if (note) {
-      note.hidden = false;
-    }
+    showFallback(false);
 
     video.addEventListener("loadeddata", revealVideo, { once: true });
+    video.addEventListener("play", hideFallback);
     video.addEventListener("error", () => {
-      if (fallback) {
-        fallback.hidden = false;
-      }
-      if (note) {
-        note.hidden = false;
-      }
+      showFallback(true);
     }, { once: true });
 
+    fallback?.addEventListener("click", startPlayback);
     video.load();
   });
 };
