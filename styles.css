@@ -1082,6 +1082,10 @@ h1 {
 }
 
 .demo-device-frame {
+  --demo-screen-top: 22px;
+  --demo-screen-right: 16px;
+  --demo-screen-bottom: 18px;
+  --demo-screen-left: 24px;
   position: relative;
   width: min(100%, 340px);
   aspect-ratio: 9 / 19.5;
@@ -1136,7 +1140,7 @@ h1 {
 
 .demo-placeholder {
   position: absolute;
-  inset: 16px 14px 18px;
+  inset: var(--demo-screen-top) var(--demo-screen-right) var(--demo-screen-bottom) var(--demo-screen-left);
   display: grid;
   place-items: center;
   gap: 14px;
@@ -1193,11 +1197,11 @@ h1 {
 .demo-stage-screen img,
 .demo-stage-screen video {
   position: absolute;
-  inset: 16px 14px 18px;
+  inset: var(--demo-screen-top) var(--demo-screen-right) var(--demo-screen-bottom) var(--demo-screen-left);
   width: auto;
   height: auto;
-  max-width: calc(100% - 28px);
-  max-height: calc(100% - 34px);
+  max-width: calc(100% - (var(--demo-screen-left) + var(--demo-screen-right)));
+  max-height: calc(100% - (var(--demo-screen-top) + var(--demo-screen-bottom)));
   object-fit: contain;
   border-radius: 30px;
   background: #030914;
@@ -2310,6 +2314,10 @@ html[lang="ru"] .language-switcher summary {
   }
 
   .demo-device-frame {
+    --demo-screen-top: 20px;
+    --demo-screen-right: 14px;
+    --demo-screen-bottom: 16px;
+    --demo-screen-left: 20px;
     width: min(100%, 320px);
     border-radius: 30px;
   }
@@ -2417,6 +2425,10 @@ html[lang="ru"] .language-switcher summary {
   }
 
   .demo-device-frame {
+    --demo-screen-top: 18px;
+    --demo-screen-right: 12px;
+    --demo-screen-bottom: 14px;
+    --demo-screen-left: 18px;
     width: min(100%, 288px);
     border-radius: 26px;
   }
