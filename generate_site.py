@@ -2862,18 +2862,18 @@ for locale_code, overrides in PRINT_QUEUE_OVERRIDES.items():
     FAQ_SECTION[locale_code]["items"].insert(-1, overrides["faq"])
 
 YEARLY_PROMO_FEATURE_BY_LOCALE = {
-    "tr": "12 ay paket, 2 ay ücretsiz (4.799,88 TL yerine 3.999,99 TL)",
-    "en": "12-month package with 2 months free",
-    "es": "Paquete de 12 meses con 2 meses gratis",
-    "fr": "Pack 12 mois avec 2 mois offerts",
-    "de": "12-Monats-Paket mit 2 Monaten gratis",
-    "it": "Pacchetto 12 mesi con 2 mesi gratuiti",
-    "pt": "Pacote de 12 meses com 2 meses gratis",
-    "ru": "Пакет на 12 месяцев с 2 месяцами бесплатно",
-    "ar": "باقة 12 شهرا مع شهرين مجانا",
-    "hi": "12 महीने का पैकेज, 2 महीने मुफ्त",
-    "ja": "12か月パッケージ（2か月無料）",
-    "zh": "12个月套餐，赠送2个月",
+    "tr": "Yıllık Pro plan, 12 aylık kullanımda toplam maliyeti daha verimli yönetmenizi sağlar.",
+    "en": "Annual Pro plan helps you optimize total cost across a full 12-month operating cycle.",
+    "es": "El plan Pro anual te permite optimizar el costo total durante un ciclo operativo completo de 12 meses.",
+    "fr": "Le plan Pro annuel vous permet d'optimiser le coût total sur un cycle opérationnel complet de 12 mois.",
+    "de": "Der jährliche Pro-Plan hilft dabei, die Gesamtkosten über einen vollständigen 12-Monats-Betriebszyklus zu optimieren.",
+    "it": "Il piano Pro annuale consente di ottimizzare il costo totale lungo un ciclo operativo completo di 12 mesi.",
+    "pt": "O plano Pro anual ajuda a otimizar o custo total em um ciclo operacional completo de 12 meses.",
+    "ru": "Годовой тариф Pro помогает оптимизировать совокупные затраты на полном 12-месячном операционном цикле.",
+    "ar": "تساعدك باقة Pro السنوية على تحسين التكلفة الإجمالية عبر دورة تشغيل كاملة لمدة 12 شهرا.",
+    "hi": "वार्षिक Pro प्लान 12 महीने के पूर्ण संचालन चक्र में कुल लागत को अधिक कुशल तरीके से प्रबंधित करने में मदद करता है।",
+    "ja": "年間Proプランは、12か月の運用サイクル全体で総コストの最適化を支援します。",
+    "zh": "年度 Pro 方案可帮助你在完整 12 个月运营周期内优化总体成本。",
 }
 
 for locale_code, promo_text in YEARLY_PROMO_FEATURE_BY_LOCALE.items():

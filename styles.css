@@ -1882,11 +1882,11 @@ h1 {
 .price-line {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, auto) auto;
-  align-items: end;
+  display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 14px;
+  gap: 12px 14px;
+  flex-wrap: wrap;
   margin: 24px 0 22px;
   padding: 18px 20px;
   border-radius: 22px;
@@ -1898,22 +1898,27 @@ h1 {
 }
 
 .price-value {
+  flex: 1 1 auto;
+  min-width: 0;
   max-width: none;
   font-family: var(--menu-font);
-  font-size: clamp(1.72rem, 3.2vw, 2.6rem);
+  font-size: clamp(1.6rem, 2.8vw, 2.28rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
   color: #f4f8ff;
   white-space: nowrap;
 }
 
 .price-period {
+  flex: 0 0 auto;
+  margin-inline-start: auto;
+  padding-bottom: 2px;
   color: #9fb9dd;
   font-family: var(--ui-font);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
 }
