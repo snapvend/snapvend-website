@@ -131,18 +131,18 @@ LOCALE_META = {
 LOCALE_ORDER = ["tr", "en", "es", "fr", "de", "it", "pt", "ru", "ar", "hi", "ja", "zh"]
 
 SCHEMA_PRICING = {
-    "tr": {"currency": "TRY", "monthly": 399.00, "yearly": 2499.00},
-    "en": {"currency": "USD", "monthly": 9.04, "yearly": 56.59},
-    "es": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
-    "fr": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
-    "de": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
-    "it": {"currency": "EUR", "monthly": 7.93, "yearly": 49.69},
-    "pt": {"currency": "BRL", "monthly": 47.00, "yearly": 294.37},
-    "ru": {"currency": "RUB", "monthly": 751.00, "yearly": 4704.00},
-    "ar": {"currency": "SAR", "monthly": 33.88, "yearly": 212.21},
-    "hi": {"currency": "INR", "monthly": 835.00, "yearly": 5232.00},
-    "ja": {"currency": "JPY", "monthly": 1438.00, "yearly": 9004.00},
-    "zh": {"currency": "CNY", "monthly": 61.99, "yearly": 388.26},
+    "tr": {"currency": "TRY", "monthly": 399.99, "yearly": 3999.99},
+    "en": {"currency": "USD", "monthly": 8.95, "yearly": 89.54},
+    "es": {"currency": "EUR", "monthly": 7.65, "yearly": 76.46},
+    "fr": {"currency": "EUR", "monthly": 7.65, "yearly": 76.46},
+    "de": {"currency": "EUR", "monthly": 7.65, "yearly": 76.46},
+    "it": {"currency": "EUR", "monthly": 7.65, "yearly": 76.46},
+    "pt": {"currency": "BRL", "monthly": 45.26, "yearly": 452.58},
+    "ru": {"currency": "RUB", "monthly": 697.00, "yearly": 6970.00},
+    "ar": {"currency": "SAR", "monthly": 33.58, "yearly": 335.78},
+    "hi": {"currency": "INR", "monthly": 832.00, "yearly": 8317.00},
+    "ja": {"currency": "JPY", "monthly": 1425.00, "yearly": 14254.00},
+    "zh": {"currency": "CNY", "monthly": 61.14, "yearly": 611.43},
 }
 
 POPULAR_LABELS = {
@@ -2860,6 +2860,24 @@ for locale_code, overrides in PRINT_QUEUE_OVERRIDES.items():
     PROOF_SECTION[locale_code]["use_cases"].insert(1, overrides["use_case"])
     PROOF_SECTION[locale_code]["references"].insert(0, overrides["reference"])
     FAQ_SECTION[locale_code]["items"].insert(-1, overrides["faq"])
+
+YEARLY_PROMO_FEATURE_BY_LOCALE = {
+    "tr": "12 ay paket, 2 ay ücretsiz (4.799,88 TL yerine 3.999,99 TL)",
+    "en": "12-month package with 2 months free",
+    "es": "Paquete de 12 meses con 2 meses gratis",
+    "fr": "Pack 12 mois avec 2 mois offerts",
+    "de": "12-Monats-Paket mit 2 Monaten gratis",
+    "it": "Pacchetto 12 mesi con 2 mesi gratuiti",
+    "pt": "Pacote de 12 meses com 2 meses gratis",
+    "ru": "Пакет на 12 месяцев с 2 месяцами бесплатно",
+    "ar": "باقة 12 شهرا مع شهرين مجانا",
+    "hi": "12 महीने का पैकेज, 2 महीने मुफ्त",
+    "ja": "12か月パッケージ（2か月無料）",
+    "zh": "12个月套餐，赠送2个月",
+}
+
+for locale_code, promo_text in YEARLY_PROMO_FEATURE_BY_LOCALE.items():
+    COPY[locale_code]["yearly_features"].insert(0, promo_text)
 
 def localized_language_name(display_locale: str, language_code: str) -> str:
     locale_names = LOCALIZED_LANGUAGE_NAMES.get(display_locale, {})
