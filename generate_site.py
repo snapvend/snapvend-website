@@ -2878,6 +2878,146 @@ for locale_code, values in LANGUAGE_SUPPORT_FAQ.items():
         },
     )
 
+LICENSE_CONTENT_OVERRIDES = {
+    "tr": {
+        "pricing_note": "Lisanslar plan ve dönem bazlıdır. Pro özellikleri aboneliğiniz aktif kaldığı sürece çalışır; ek cihaz veya ekip lisansı için bizimle iletişime geçebilirsiniz.",
+        "why_card": {
+            "title": "Lisans görünürlüğü saha akışını korur",
+            "body": "Plan seviyesi ve erişim hakları uygulama içinde net görünür. Böylece çekim sırasında hangi özelliklerin açık olduğu ekip tarafından karışmadan yönetilir.",
+        },
+        "faq": {
+            "q": "Lisans yapısı nasıl çalışır?",
+            "a": "SnapVend lisansları plan bazlıdır. Ücretsiz plan temel akışı sunar; Pro planlar abonelik süresi boyunca gelişmiş teslim, marka ve operasyon özelliklerini açar. Ek cihaz veya ekip lisansı için bize yazabilirsiniz.",
+        },
+    },
+    "en": {
+        "pricing_note": "Licensing is plan and term based. Pro capabilities stay active while your subscription is active; contact us for additional device or team licensing.",
+        "why_card": {
+            "title": "Visible licensing keeps field work predictable",
+            "body": "Your plan tier and access rights stay clear inside the app, so teams can see exactly which features are active during live shoots.",
+        },
+        "faq": {
+            "q": "How does licensing work?",
+            "a": "SnapVend licensing is plan based. The free plan covers the core workflow, while Pro plans unlock advanced delivery, branding and operational controls during the active subscription period. Contact us for extra device or team licensing.",
+        },
+    },
+    "es": {
+        "pricing_note": "La licencia se gestiona por plan y periodo. Las funciones Pro permanecen activas mientras la suscripcion este activa; para mas dispositivos o licencias de equipo, contactenos.",
+        "why_card": {
+            "title": "La licencia visible evita sorpresas en campo",
+            "body": "El nivel del plan y los permisos se ven claramente dentro de la aplicacion, para que el equipo sepa que funciones estan activas durante la sesion.",
+        },
+        "faq": {
+            "q": "¿Como funciona la licencia?",
+            "a": "La licencia de SnapVend es por plan. El plan gratuito cubre el flujo basico y los planes profesionales abren entrega avanzada, marca y controles operativos durante la suscripcion activa. Escribanos para licencias de equipo o dispositivos adicionales.",
+        },
+    },
+    "fr": {
+        "pricing_note": "La licence est geree par plan et par periode. Les fonctions Pro restent actives tant que l abonnement est actif. Contactez nous pour des licences equipe ou appareils supplementaires.",
+        "why_card": {
+            "title": "Une licence visible evite les surprises terrain",
+            "body": "Le niveau de plan et les droits d acces restent visibles dans l application pour que l equipe sache clairement quelles fonctions sont actives pendant la prestation.",
+        },
+        "faq": {
+            "q": "Comment fonctionne la licence ?",
+            "a": "La licence SnapVend fonctionne par plan. Le plan gratuit couvre le flux principal, et les plans professionnels ouvrent les fonctions avancees de livraison, branding et pilotage pendant la periode d abonnement active. Contactez nous pour des licences equipe ou appareils supplementaires.",
+        },
+    },
+    "de": {
+        "pricing_note": "Die Lizenzierung ist plan- und laufzeitbasiert. Pro-Funktionen bleiben aktiv, solange das Abonnement aktiv ist. Fuer zusaetzliche Geraete- oder Teamlizenzen kontaktieren Sie uns.",
+        "why_card": {
+            "title": "Sichtbare Lizenzen halten den Einsatz planbar",
+            "body": "Planstufe und Zugriffsrechte sind in der App klar sichtbar, sodass Teams bei Live-Shootings sofort sehen, welche Funktionen aktiv sind.",
+        },
+        "faq": {
+            "q": "Wie funktioniert die Lizenzierung?",
+            "a": "Die SnapVend-Lizenzierung ist planbasiert. Der Gratisplan deckt den Kernablauf ab, und die Profi-Plaene schalten erweiterte Lieferung, Branding und operative Steuerung fuer die aktive Abolaufzeit frei. Fuer Team- oder Zusatzgeraete-Lizenzen koennen Sie uns direkt schreiben.",
+        },
+    },
+    "it": {
+        "pricing_note": "La licenza e basata su piano e periodo. Le funzioni professionali restano attive finche l'abbonamento e attivo; per licenze team o dispositivi aggiuntivi contattaci.",
+        "why_card": {
+            "title": "Licenza visibile, flusso sul campo piu chiaro",
+            "body": "Livello del piano e diritti di accesso restano visibili nell'app, cosi il team sa sempre quali funzioni sono attive durante il servizio.",
+        },
+        "faq": {
+            "q": "Come funziona la licenza?",
+            "a": "La licenza SnapVend e basata sul piano. Il piano gratuito copre il flusso principale, mentre i piani professionali sbloccano consegna avanzata, branding e controlli operativi per tutta la durata dell'abbonamento attivo. Scrivici per licenze team o dispositivi aggiuntivi.",
+        },
+    },
+    "pt": {
+        "pricing_note": "O licenciamento e baseado em plano e periodo. Os recursos profissionais ficam ativos enquanto a assinatura estiver ativa; para licencas de equipe ou dispositivos extras, fale conosco.",
+        "why_card": {
+            "title": "Licenca visivel traz previsibilidade no campo",
+            "body": "O nivel do plano e as permissoes aparecem com clareza no app, para que a equipe saiba quais recursos estao ativos durante o trabalho ao vivo.",
+        },
+        "faq": {
+            "q": "Como funciona o licenciamento?",
+            "a": "O licenciamento do SnapVend e baseado em plano. O plano gratuito cobre o fluxo principal e os planos profissionais liberam entrega avancada, branding e controles operacionais durante a assinatura ativa. Fale conosco para licencas de equipe ou dispositivos extras.",
+        },
+    },
+    "ru": {
+        "pricing_note": "Лицензирование зависит от плана и периода. Функции Pro активны, пока активна подписка. Для дополнительных устройств или командной лицензии свяжитесь с нами.",
+        "why_card": {
+            "title": "Видимая лицензия делает работу предсказуемой",
+            "body": "Уровень плана и права доступа остаются понятными внутри приложения, поэтому команда видит, какие функции активны прямо во время съемки.",
+        },
+        "faq": {
+            "q": "Как работает лицензирование?",
+            "a": "Лицензирование SnapVend построено по планам. Бесплатный план покрывает базовый процесс, а профессиональные планы открывают расширенную выдачу, брендинг и операционные инструменты на время активной подписки. Для дополнительных устройств или командной лицензии напишите нам.",
+        },
+    },
+    "ar": {
+        "pricing_note": "الترخيص مبني على الخطة والفترة. تبقى ميزات Pro فعالة ما دامت الاشتراك نشطا. للتراخيص الاضافية للاجهزة او للفرق تواصل معنا.",
+        "why_card": {
+            "title": "وضوح الترخيص يحافظ على استقرار العمل الميداني",
+            "body": "مستوى الخطة وصلاحيات الوصول تبقى واضحة داخل التطبيق، لذلك يعرف الفريق الميزات الفعالة اثناء التصوير المباشر.",
+        },
+        "faq": {
+            "q": "كيف يعمل الترخيص؟",
+            "a": "ترخيص SnapVend يعتمد على الخطة. الخطة المجانية تغطي التدفق الاساسي، والخطط الاحترافية تفتح التسليم المتقدم والهوية التجارية والتحكم التشغيلي طوال فترة الاشتراك النشط. ولتراخيص الفريق او الاجهزة الاضافية يمكنكم مراسلتنا.",
+        },
+    },
+    "hi": {
+        "pricing_note": "लाइसेंस प्लान और अवधि के आधार पर काम करता है। प्रो सुविधाएं आपकी सदस्यता सक्रिय रहने तक उपलब्ध रहती हैं; अतिरिक्त डिवाइस या टीम लाइसेंस के लिए हमसे संपर्क करें।",
+        "why_card": {
+            "title": "दिखने वाला लाइसेंस फील्ड फ्लो को स्थिर रखता है",
+            "body": "प्लान स्तर और एक्सेस अधिकार ऐप के अंदर साफ दिखाई देते हैं, ताकि लाइव शूट के दौरान टीम तुरंत समझ सके कि कौन-सी सुविधाएं सक्रिय हैं।",
+        },
+        "faq": {
+            "q": "लाइसेंसिंग कैसे काम करती है?",
+            "a": "SnapVend लाइसेंसिंग प्लान आधारित है। मुफ्त प्लान मुख्य वर्कफ्लो देता है, जबकि प्रो प्लान सक्रिय सदस्यता अवधि में उन्नत डिलीवरी, ब्रांडिंग और संचालन नियंत्रण खोलते हैं। अतिरिक्त डिवाइस या टीम लाइसेंस के लिए हमें लिखें।",
+        },
+    },
+    "ja": {
+        "pricing_note": "ライセンスはプランと期間に基づいて管理されます。Pro 機能はサブスクリプションが有効な間は利用できます。追加端末やチームライセンスはお問い合わせください。",
+        "why_card": {
+            "title": "ライセンス可視化で現場運用が安定",
+            "body": "プランレベルと権限がアプリ内で明確に見えるため、ライブ撮影中でもチームが有効機能を把握しやすくなります。",
+        },
+        "faq": {
+            "q": "ライセンスはどのように機能しますか？",
+            "a": "SnapVend のライセンスはプランベースです。無料プランは基本フローを提供し、Pro プランは契約期間中に高度な納品・ブランディング・運用機能を開放します。追加端末やチームライセンスはお問い合わせください。",
+        },
+    },
+    "zh": {
+        "pricing_note": "授权按方案与周期管理。专业版功能会在订阅有效期内保持可用；如需额外设备或团队授权，请联系我们。",
+        "why_card": {
+            "title": "授权状态可见，现场流程更稳",
+            "body": "方案等级与访问权限在应用内清晰可见，团队在拍摄现场也能快速确认当前可用功能。",
+        },
+        "faq": {
+            "q": "授权机制如何工作？",
+            "a": "SnapVend 采用按方案授权。免费方案覆盖核心流程，专业版方案会在订阅有效期内开启高级交付、品牌与运营能力。若需额外设备或团队授权，可直接联系我们。",
+        },
+    },
+}
+
+for locale_code, values in LICENSE_CONTENT_OVERRIDES.items():
+    COPY[locale_code]["pricing_license_note"] = values["pricing_note"]
+    WHY_SNAPVEND_SECTION[locale_code]["cards"].append(values["why_card"])
+    FAQ_SECTION[locale_code]["items"].insert(-1, values["faq"])
+
 BRAND_MOTTO_BY_LOCALE = {
     "tr": "Çek - Göster - Sat",
     "en": "Shoot - Show - Sell",
@@ -3996,6 +4136,7 @@ def render_page(locale_code: str) -> str:
               <a class="action-link" href="#download">{e(copy["yearly_cta"])}</a>
             </article>
           </div>
+          <p class="pricing-license-note reveal">{e(copy["pricing_license_note"])}</p>
         </div>
       </section>
 

@@ -1744,6 +1744,21 @@ h1 {
   gap: 22px;
 }
 
+.pricing-license-note {
+  margin: 18px auto 0;
+  max-width: 980px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(123, 220, 255, 0.2);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(8, 23, 52, 0.48);
+  color: #b9cee9;
+  font-size: 0.82rem;
+  line-height: 1.58;
+  text-align: center;
+}
+
 .pricing-card {
   position: relative;
   display: grid;
