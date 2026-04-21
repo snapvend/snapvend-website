@@ -14,6 +14,9 @@ BUILD_VERSION = datetime.now().strftime("%Y%m%d%H%M%S")
 BRAND_MARK_ASSET = "/assets/branding/snapvend_logo_square.png"
 BRAND_MARK_SITE_ASSET = "/assets/branding/snapvend_logo_square_web.png"
 APP_ICON_ASSET = "/assets/branding/app_icon_store_512.png"
+PRODUCT_NAME = "SnapVend Gallery"
+PRODUCT_SHORT_NAME = "SnapVend"
+GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.snapvend.gallery"
 
 
 LOCALE_META = {
@@ -2906,6 +2909,110 @@ for locale_code, overrides in COPY_FLOW_OVERRIDES.items():
 for locale_code, items in FAQ_FLOW_OVERRIDES.items():
     FAQ_SECTION[locale_code]["items"] = items
 
+BRAND_SEARCH_SIGNAL_BY_LOCALE = {
+    "tr": {
+        "meta_title": "SnapVend Gallery | Fotoğrafçılar İçin QR Galeri ve Yerel Teslim",
+        "meta_description": "SnapVend Gallery, fotoğrafçıların QR galeri paylaşımı, FTP kamera aktarımı, müşteri seçimi ve ZIP teslim akışını tek telefon veya tablette yönetmesine yardımcı olur.",
+        "faq": {
+            "q": "SnapVend Gallery nedir?",
+            "a": "SnapVend Gallery, fotoğrafçılar için geliştirilen QR galeri, FTP kamera aktarımı, müşteri seçimi, yerel ödeme onayı ve ZIP teslim akışını tek cihazda birleştiren mobil uygulamadır.",
+        },
+    },
+    "en": {
+        "meta_title": "SnapVend Gallery | QR Gallery and Local Photo Delivery for Photographers",
+        "meta_description": "SnapVend Gallery helps photographers manage QR gallery sharing, FTP camera transfer, client selection and ZIP delivery from one phone or tablet.",
+        "faq": {
+            "q": "What is SnapVend Gallery?",
+            "a": "SnapVend Gallery is a mobile app for photographers that combines QR galleries, FTP camera transfer, client selection, local payment approval and ZIP delivery on one device.",
+        },
+    },
+    "es": {
+        "meta_title": "SnapVend Gallery | Galería QR y entrega local para fotógrafos",
+        "meta_description": "SnapVend Gallery ayuda a fotógrafos a gestionar galería QR, transferencia FTP desde cámara, selección del cliente y entrega ZIP desde un solo teléfono o tablet.",
+        "faq": {
+            "q": "¿Qué es SnapVend Gallery?",
+            "a": "SnapVend Gallery es una aplicación móvil para fotógrafos que une galería QR, transferencia FTP desde cámara, selección del cliente, aprobación de pago local y entrega ZIP en un solo dispositivo.",
+        },
+    },
+    "fr": {
+        "meta_title": "SnapVend Gallery | Galerie QR et livraison locale pour photographes",
+        "meta_description": "SnapVend Gallery aide les photographes a gerer galerie QR, transfert FTP depuis l appareil photo, selection client et livraison ZIP depuis un seul telephone ou tablette.",
+        "faq": {
+            "q": "Qu'est-ce que SnapVend Gallery ?",
+            "a": "SnapVend Gallery est une application mobile pour photographes qui regroupe galerie QR, transfert FTP depuis l appareil photo, selection client, validation de paiement local et livraison ZIP sur un seul appareil.",
+        },
+    },
+    "de": {
+        "meta_title": "SnapVend Gallery | QR-Galerie und lokale Fotoauslieferung",
+        "meta_description": "SnapVend Gallery hilft Fotografen, QR-Galerie, FTP-Kameraimport, Kundenauswahl und ZIP-Auslieferung auf einem Telefon oder Tablet zu verwalten.",
+        "faq": {
+            "q": "Was ist SnapVend Gallery?",
+            "a": "SnapVend Gallery ist eine mobile App fuer Fotografen, die QR-Galerien, FTP-Kameraimport, Kundenauswahl, lokale Zahlungsfreigabe und ZIP-Auslieferung auf einem Geraet verbindet.",
+        },
+    },
+    "it": {
+        "meta_title": "SnapVend Gallery | Galleria QR e consegna locale per fotografi",
+        "meta_description": "SnapVend Gallery aiuta i fotografi a gestire galleria QR, trasferimento FTP dalla fotocamera, selezione cliente e consegna ZIP da un solo telefono o tablet.",
+        "faq": {
+            "q": "Che cos'è SnapVend Gallery?",
+            "a": "SnapVend Gallery è un'app mobile per fotografi che unisce gallerie QR, trasferimento FTP dalla fotocamera, selezione cliente, approvazione pagamento locale e consegna ZIP su un solo dispositivo.",
+        },
+    },
+    "pt": {
+        "meta_title": "SnapVend Gallery | Galeria QR e entrega local para fotografos",
+        "meta_description": "SnapVend Gallery ajuda fotografos a gerenciar galeria QR, transferencia FTP da camera, selecao do cliente e entrega ZIP em um unico telefone ou tablet.",
+        "faq": {
+            "q": "O que é o SnapVend Gallery?",
+            "a": "SnapVend Gallery é um app movel para fotografos que combina galerias QR, transferencia FTP da camera, selecao do cliente, aprovacao de pagamento local e entrega ZIP em um unico dispositivo.",
+        },
+    },
+    "ru": {
+        "meta_title": "SnapVend Gallery | QR-галерея и локальная выдача для фотографов",
+        "meta_description": "SnapVend Gallery помогает фотографам управлять QR-галереей, FTP-передачей с камеры, выбором клиента и ZIP-выдачей с одного телефона или планшета.",
+        "faq": {
+            "q": "Что такое SnapVend Gallery?",
+            "a": "SnapVend Gallery — мобильное приложение для фотографов, которое объединяет QR-галереи, FTP-передачу с камеры, выбор клиента, локальное подтверждение оплаты и ZIP-выдачу на одном устройстве.",
+        },
+    },
+    "ar": {
+        "meta_title": "SnapVend Gallery | معرض QR وتسليم محلي للمصورين",
+        "meta_description": "يساعد SnapVend Gallery المصورين على ادارة معرض QR ونقل FTP من الكاميرا واختيار العميل وتسليم ZIP من هاتف او جهاز لوحي واحد.",
+        "faq": {
+            "q": "ما هو SnapVend Gallery؟",
+            "a": "SnapVend Gallery هو تطبيق جوال للمصورين يجمع معرض QR ونقل FTP من الكاميرا واختيار العميل واعتماد الدفع المحلي وتسليم ZIP على جهاز واحد.",
+        },
+    },
+    "hi": {
+        "meta_title": "SnapVend Gallery | फोटोग्राफरों के लिए QR गैलरी और लोकल डिलीवरी",
+        "meta_description": "SnapVend Gallery फोटोग्राफरों को एक ही फोन या टैबलेट से QR गैलरी, FTP कैमरा ट्रांसफर, ग्राहक चयन और ZIP डिलीवरी प्रबंधित करने में मदद करता है।",
+        "faq": {
+            "q": "SnapVend Gallery क्या है?",
+            "a": "SnapVend Gallery फोटोग्राफरों के लिए मोबाइल ऐप है, जो QR गैलरी, FTP कैमरा ट्रांसफर, ग्राहक चयन, लोकल भुगतान स्वीकृति और ZIP डिलीवरी को एक ही डिवाइस में जोड़ता है।",
+        },
+    },
+    "ja": {
+        "meta_title": "SnapVend Gallery | 写真家向けQRギャラリーとローカル納品",
+        "meta_description": "SnapVend Gallery は、QR ギャラリー、FTP カメラ転送、顧客の選択、ZIP 納品を1台のスマホやタブレットで管理できる写真家向けアプリです。",
+        "faq": {
+            "q": "SnapVend Gallery とは何ですか？",
+            "a": "SnapVend Gallery は、QR ギャラリー、FTP カメラ転送、顧客選択、ローカル決済確認、ZIP 納品を1台の端末でまとめる写真家向けモバイルアプリです。",
+        },
+    },
+    "zh": {
+        "meta_title": "SnapVend Gallery | 面向摄影团队的 QR 画廊与本地交付",
+        "meta_description": "SnapVend Gallery 帮助摄影团队在一台手机或平板上管理 QR 画廊、相机 FTP 传输、客户选片与 ZIP 交付。",
+        "faq": {
+            "q": "SnapVend Gallery 是什么？",
+            "a": "SnapVend Gallery 是一款面向摄影师的移动应用，把 QR 画廊、相机 FTP 传输、客户选片、本地支付确认和 ZIP 交付整合到一台设备中。",
+        },
+    },
+}
+
+for locale_code, values in BRAND_SEARCH_SIGNAL_BY_LOCALE.items():
+    COPY[locale_code]["meta_title"] = values["meta_title"]
+    COPY[locale_code]["meta_description"] = values["meta_description"]
+    FAQ_SECTION[locale_code]["items"].insert(0, values["faq"])
+
 for locale_code, overrides in PRINT_QUEUE_OVERRIDES.items():
     COPY[locale_code]["audience_cards"][0]["body"] = overrides["audience_body"]
     PROOF_SECTION[locale_code]["use_cases"].insert(1, overrides["use_case"])
@@ -3524,7 +3631,12 @@ def unique_strings(items: list[str]) -> list[str]:
 
 def build_keyword_string(copy: dict, proof: dict, contact: dict, language_support: dict, why_snapvend: dict) -> str:
     values = [
-        "SnapVend",
+        PRODUCT_NAME,
+        PRODUCT_SHORT_NAME,
+        "SnapVend Gallery app",
+        "snapvendgallery.com",
+        "QR photo gallery app",
+        "photographer delivery app",
         copy["brand_motto"],
         copy["hero_eyebrow"],
         copy["workflow_title"],
@@ -3583,7 +3695,7 @@ def store_badges(locale_code: str, copy: dict) -> str:
     app_store_status = APP_STORE_STATUS[locale_code]
     return f"""
             <div class="store-badges">
-              <a class="store-badge store-badge-play" data-store-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.snapvend.gallery" target="_blank" rel="noreferrer">
+              <a class="store-badge store-badge-play" data-store-link="googlePlay" href="{GOOGLE_PLAY_URL}" target="_blank" rel="noreferrer">
                 <span class="store-logo" aria-hidden="true">
                   <svg viewBox="0 0 48 48" role="img">
                     <path fill="#00d26a" d="M8 6.8 29.2 24 8 41.2z"></path>
@@ -3663,7 +3775,14 @@ def build_schema(
     organization = {
         "@type": "Organization",
         "@id": f"{SITE_URL}/#organization",
-        "name": "SnapVend",
+        "name": PRODUCT_NAME,
+        "alternateName": [
+            PRODUCT_SHORT_NAME,
+            "SnapVend QR Gallery",
+            "SnapVend Photo Delivery",
+        ],
+        "description": copy["meta_description"],
+        "disambiguatingDescription": "SnapVend Gallery is the photographer QR gallery and local photo delivery app published at snapvendgallery.com.",
         "slogan": copy["brand_motto"],
         "url": f"{SITE_URL}/",
         "logo": {
@@ -3671,6 +3790,10 @@ def build_schema(
             "url": logo_url,
         },
         "image": logo_url,
+        "sameAs": [
+            f"{SITE_URL}/",
+            GOOGLE_PLAY_URL,
+        ],
         "contactPoint": [{"@id": contact_point_id}],
     }
 
@@ -3678,7 +3801,8 @@ def build_schema(
         "@type": "WebSite",
         "@id": f"{SITE_URL}/#website",
         "url": f"{SITE_URL}/",
-        "name": "SnapVend",
+        "name": PRODUCT_NAME,
+        "alternateName": PRODUCT_SHORT_NAME,
         "inLanguage": locale_code,
         "publisher": {"@id": organization["@id"]},
     }
@@ -3715,10 +3839,18 @@ def build_schema(
     software = {
         "@type": "SoftwareApplication",
         "@id": f"{page_url}#app",
-        "name": "SnapVend",
+        "name": PRODUCT_NAME,
+        "alternateName": [
+            PRODUCT_SHORT_NAME,
+            "SnapVend QR Gallery",
+            "SnapVend Photographer Gallery",
+        ],
         "description": copy["meta_description"],
+        "disambiguatingDescription": "SnapVend Gallery is a mobile QR gallery, FTP camera transfer and local ZIP delivery app for photographers.",
         "applicationCategory": "BusinessApplication",
         "applicationSubCategory": APPLICATION_SUBCATEGORY_BY_LOCALE.get(locale_code, "Photo workflow, print management and delivery"),
+        "applicationSuite": PRODUCT_NAME,
+        "identifier": "com.snapvend.gallery",
         "operatingSystem": "ANDROID, IOS",
         "inLanguage": locale_code,
         "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
@@ -3729,7 +3861,8 @@ def build_schema(
         "keywords": keywords,
         "brand": {
             "@type": "Brand",
-            "name": "SnapVend",
+            "name": PRODUCT_NAME,
+            "alternateName": PRODUCT_SHORT_NAME,
         },
         "publisher": {"@id": organization["@id"]},
         "isAccessibleForFree": True,
@@ -3786,7 +3919,8 @@ def build_schema(
                 "url": f"{page_url}#pricing",
             },
         ],
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.snapvend.gallery",
+        "downloadUrl": GOOGLE_PLAY_URL,
+        "installUrl": GOOGLE_PLAY_URL,
         "dateModified": BUILD_DATE,
     }
 
@@ -3894,8 +4028,8 @@ def render_page(locale_code: str) -> str:
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <meta name="theme-color" content="#071b45">
     <meta http-equiv="content-language" content="{locale_code}">
-    <meta name="application-name" content="SnapVend">
-    <meta property="og:site_name" content="SnapVend">
+    <meta name="application-name" content="{PRODUCT_NAME}">
+    <meta property="og:site_name" content="{PRODUCT_NAME}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{e(copy["meta_title"])}">
     <meta property="og:description" content="{e(copy["meta_description"])}">
@@ -4333,7 +4467,7 @@ def write_page(locale_code: str) -> None:
 
 def write_manifest() -> None:
     manifest = {
-        "name": "SnapVend",
+        "name": PRODUCT_NAME,
         "short_name": "SnapVend",
         "lang": "tr",
         "start_url": "/",
