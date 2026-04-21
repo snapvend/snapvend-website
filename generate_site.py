@@ -3826,6 +3826,7 @@ def render_page(locale_code: str) -> str:
     keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy)
     schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, keyword_string)
     active_flag = flag_markup(meta["app_store_country"], prefix)
+    active_language_code = locale_code.upper()
     popular_label = POPULAR_LABELS[locale_code]
     mobile_menu_label = MOBILE_MENU_LABELS[locale_code]
     language_count = f"{len(LOCALE_ORDER)}+"
@@ -3904,7 +3905,7 @@ def render_page(locale_code: str) -> str:
           <div class="topbar-actions">
             <a class="pill-link" href="#download">{e(copy["nav_download"])}</a>
             <details class="language-switcher">
-              <summary><span class="language-summary">{active_flag}<span>{e(copy["language_label"])}</span></span></summary>
+              <summary><span class="language-summary">{active_flag}<span>{active_language_code}</span></span></summary>
               <div class="language-menu">
 {language_menu}
               </div>
