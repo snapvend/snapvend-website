@@ -267,15 +267,20 @@ const setupStoreLinks = () => {
     }
 
     if (kind === "appStore") {
-      const fallbackSearch = link.dataset.appStoreSearch || "#";
-      link.href = hasValue(marketingConfig.appStoreUrl)
-        ? marketingConfig.appStoreUrl
-        : fallbackSearch;
+      if (!hasValue(marketingConfig.appStoreUrl)) {
+        link.href = "#download";
+        link.removeAttribute("target");
+        link.removeAttribute("rel");
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.alert(link.dataset.appStoreAlert || "SnapVend is currently in testing and will be available for download soon.");
+        });
+        return;
+      }
+
+      link.href = marketingConfig.appStoreUrl;
       link.target = "_blank";
       link.rel = "noreferrer";
-      if (!hasValue(marketingConfig.appStoreUrl)) {
-        link.classList.add("is-search-fallback");
-      }
     }
   });
 };
