@@ -682,6 +682,21 @@ h1 {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
+.store-badge-disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  border-color: rgba(247, 180, 55, 0.24);
+  background:
+    linear-gradient(135deg, rgba(247, 180, 55, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(10, 26, 58, 0.76);
+  box-shadow: none;
+}
+
+.store-badge-disabled:hover,
+.store-badge-disabled:focus-visible {
+  transform: none;
+}
+
 .store-badge.is-search-fallback {
   box-shadow: none;
 }
@@ -714,6 +729,16 @@ h1 {
 .store-copy strong {
   font-size: 1.14rem;
   color: var(--text-primary);
+}
+
+.store-status {
+  max-width: 24ch;
+  color: #f3c86b;
+  font-family: var(--ui-font);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .setup-note,

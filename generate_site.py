@@ -190,6 +190,57 @@ MOBILE_MENU_LABELS = {
     "zh": "菜单",
 }
 
+APP_STORE_STATUS = {
+    "tr": {
+        "small": "iPhone ve iPad için yakında",
+        "note": "Şu an test aşamasında olduğu için en kısa zamanda indirmeye açılacaktır.",
+    },
+    "en": {
+        "small": "Coming soon for iPhone and iPad",
+        "note": "SnapVend is currently in testing and will be available for download soon.",
+    },
+    "es": {
+        "small": "Próximamente para iPhone y iPad",
+        "note": "SnapVend está actualmente en fase de pruebas y estará disponible para descarga muy pronto.",
+    },
+    "fr": {
+        "small": "Bientôt pour iPhone et iPad",
+        "note": "SnapVend est actuellement en phase de test et sera bientôt disponible au téléchargement.",
+    },
+    "de": {
+        "small": "Bald für iPhone und iPad",
+        "note": "SnapVend befindet sich derzeit in der Testphase und wird in Kürze zum Download verfügbar sein.",
+    },
+    "it": {
+        "small": "Presto per iPhone e iPad",
+        "note": "SnapVend è attualmente in fase di test e sarà disponibile per il download a breve.",
+    },
+    "pt": {
+        "small": "Em breve para iPhone e iPad",
+        "note": "O SnapVend está em fase de testes e estará disponível para download em breve.",
+    },
+    "ru": {
+        "small": "Скоро для iPhone и iPad",
+        "note": "SnapVend сейчас находится на этапе тестирования и скоро будет доступен для загрузки.",
+    },
+    "ar": {
+        "small": "قريبا لاجهزة iPhone و iPad",
+        "note": "SnapVend حاليا في مرحلة الاختبار وسيكون متاحا للتنزيل قريبا.",
+    },
+    "hi": {
+        "small": "iPhone और iPad के लिए जल्द",
+        "note": "SnapVend अभी परीक्षण चरण में है और जल्द ही डाउनलोड के लिए उपलब्ध होगा।",
+    },
+    "ja": {
+        "small": "iPhone / iPad 版は近日公開",
+        "note": "SnapVend は現在テスト段階にあり、近日中にダウンロード可能になります。",
+    },
+    "zh": {
+        "small": "iPhone / iPad 版即将开放",
+        "note": "SnapVend 目前处于测试阶段，将很快开放下载。",
+    },
+}
+
 DEMO_SECTION = {
     "tr": {
         "eyebrow": "Canlı Demo",
@@ -3529,8 +3580,7 @@ def build_defined_term_set_schema(page_url: str, fragment: str, name: str, terms
 
 
 def store_badges(locale_code: str, copy: dict) -> str:
-    country = LOCALE_META[locale_code]["app_store_country"]
-    fallback_search = f"https://apps.apple.com/{country}/search?term=SnapVend"
+    app_store_status = APP_STORE_STATUS[locale_code]
     return f"""
             <div class="store-badges">
               <a class="store-badge store-badge-play" data-store-link="googlePlay" href="https://play.google.com/store/apps/details?id=com.snapvend.gallery" target="_blank" rel="noreferrer">
@@ -3548,17 +3598,18 @@ def store_badges(locale_code: str, copy: dict) -> str:
                 </span>
               </a>
 
-              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-search="{fallback_search}" href="{fallback_search}" target="_blank" rel="noreferrer">
+              <div class="store-badge store-badge-apple store-badge-disabled" role="note" aria-label="{e(app_store_status["note"])}">
                 <span class="store-logo" aria-hidden="true">
                   <svg viewBox="0 0 48 48" role="img">
                     <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
                   </svg>
                 </span>
                 <span class="store-copy">
-                  <small>{e(copy["apple_small"])}</small>
+                  <small>{e(app_store_status["small"])}</small>
                   <strong>App Store</strong>
+                  <em class="store-status">{e(app_store_status["note"])}</em>
                 </span>
-              </a>
+              </div>
             </div>"""
 
 
