@@ -2215,7 +2215,8 @@ html[lang="ru"] .language-switcher summary {
   }
 
   .topbar {
-    position: static;
+    position: relative;
+    z-index: 80;
     padding-top: 10px;
   }
 
@@ -2336,9 +2337,35 @@ html[lang="ru"] .language-switcher summary {
   }
 
   .store-badge,
-  .language-menu,
   .visual-chip {
     backdrop-filter: none;
+  }
+
+  .language-switcher {
+    z-index: 120;
+  }
+
+  .language-switcher[open] {
+    z-index: 140;
+  }
+
+  .language-menu {
+    z-index: 160;
+    width: min(280px, calc(100vw - 48px));
+    max-height: min(360px, 54svh);
+    background:
+      linear-gradient(180deg, #102652, #081735),
+      #081735;
+    border-color: rgba(123, 220, 255, 0.34);
+    box-shadow:
+      0 24px 48px rgba(2, 13, 37, 0.62),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    backdrop-filter: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .language-option {
+    background: rgba(255, 255, 255, 0.035);
   }
 
   .demo-stage-screen {
