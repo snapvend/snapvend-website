@@ -3271,10 +3271,17 @@ def relative_page_href(current_code: str, target_code: str) -> str:
     return f"../{target_path}/index.html"
 
 
-def flag_emoji(country_code: str) -> str:
+def flag_asset(country_code: str, prefix: str) -> str:
     if len(country_code) != 2:
         return ""
-    return "".join(chr(127397 + ord(char.upper())) for char in country_code)
+    return f'{prefix}/assets/flags/{country_code.lower()}.svg'
+
+
+def flag_markup(country_code: str, prefix: str, class_name: str = "language-flag") -> str:
+    src = flag_asset(country_code, prefix)
+    if not src:
+        return ""
+    return f'<span class="{class_name}" aria-hidden="true"><img src="{src}" alt="" loading="lazy" decoding="async"></span>'
 
 
 def build_alternates(current_code: str) -> str:
@@ -3292,12 +3299,13 @@ def build_alternates(current_code: str) -> str:
 
 def build_language_menu(current_code: str) -> str:
     items = []
+    prefix = asset_prefix(current_code)
     for locale_code in LOCALE_ORDER:
         meta = LOCALE_META[locale_code]
         active = " language-option-active" if locale_code == current_code else ""
-        flag = flag_emoji(meta["app_store_country"])
+        flag = flag_markup(meta["app_store_country"], prefix)
         items.append(
-            f'              <a class="language-option{active}" href="{relative_page_href(current_code, locale_code)}" lang="{locale_code}" hreflang="{meta["hreflang"][0]}"><span class="language-flag" aria-hidden="true">{flag}</span><span class="language-name">{e(meta["native"])}</span></a>'
+            f'              <a class="language-option{active}" href="{relative_page_href(current_code, locale_code)}" lang="{locale_code}" hreflang="{meta["hreflang"][0]}">{flag}<span class="language-name">{e(meta["native"])}</span></a>'
         )
     return "\n".join(items)
 
@@ -3361,10 +3369,11 @@ def build_language_support_cards(section: dict) -> str:
 
 def build_language_support_badges(display_locale: str) -> str:
     badges = []
+    prefix = asset_prefix(display_locale)
     for locale_code in LOCALE_ORDER:
-        flag = flag_emoji(LOCALE_META[locale_code]["app_store_country"])
+        flag = flag_markup(LOCALE_META[locale_code]["app_store_country"], prefix, "language-support-badge-flag")
         badges.append(
-            f'                <span class="language-support-badge"><span class="language-support-badge-flag" aria-hidden="true">{flag}</span><span class="language-support-badge-name">{e(localized_language_name(display_locale, locale_code))}</span></span>'
+            f'                <span class="language-support-badge">{flag}<span class="language-support-badge-name">{e(localized_language_name(display_locale, locale_code))}</span></span>'
         )
     return "\n".join(badges)
 
@@ -3816,7 +3825,7 @@ def render_page(locale_code: str) -> str:
     contact_topics = build_contact_topics(contact_copy)
     keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy)
     schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, keyword_string)
-    active_flag = flag_emoji(meta["app_store_country"])
+    active_flag = flag_markup(meta["app_store_country"], prefix)
     popular_label = POPULAR_LABELS[locale_code]
     mobile_menu_label = MOBILE_MENU_LABELS[locale_code]
     language_count = f"{len(LOCALE_ORDER)}+"
@@ -3895,7 +3904,7 @@ def render_page(locale_code: str) -> str:
           <div class="topbar-actions">
             <a class="pill-link" href="#download">{e(copy["nav_download"])}</a>
             <details class="language-switcher">
-              <summary><span class="language-summary"><span class="language-flag" aria-hidden="true">{active_flag}</span><span>{e(copy["language_label"])}</span></span></summary>
+              <summary><span class="language-summary">{active_flag}<span>{e(copy["language_label"])}</span></span></summary>
               <div class="language-menu">
 {language_menu}
               </div>
