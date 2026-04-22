@@ -3908,6 +3908,8 @@ def store_badges(locale_code: str, copy: dict) -> str:
     qr_copy = DOWNLOAD_QR_COPY[locale_code]
     prefix = asset_prefix(locale_code)
     localized_download_url = f"{DOWNLOAD_URL}?lang={locale_code}"
+    app_store_label = f'{copy["apple_small"]} App Store. {app_store_status["note"]}'
+    qr_label = f'{qr_copy["title"]}. {qr_copy["body"]} {qr_copy["hint"]}'
     return f"""
             <div class="download-options">
             <div class="store-badges">
@@ -3926,7 +3928,7 @@ def store_badges(locale_code: str, copy: dict) -> str:
                 </span>
               </a>
 
-              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-alert="{e(app_store_status["note"])}" href="#" aria-label="{e(app_store_status["note"])}">
+              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-alert="{e(app_store_status["note"])}" href="#" aria-label="{e(app_store_label)}">
                 <span class="store-logo" aria-hidden="true">
                   <svg viewBox="0 0 48 48" role="img">
                     <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
@@ -3939,7 +3941,7 @@ def store_badges(locale_code: str, copy: dict) -> str:
               </a>
             </div>
 
-              <a class="download-qr-card" href="{localized_download_url}" aria-label="{e(qr_copy["body"])}">
+              <a class="download-qr-card" href="{localized_download_url}" aria-label="{e(qr_label)}">
                 <span class="download-qr-art" aria-hidden="true">
                   <img class="download-qr-code" src="{prefix}{DOWNLOAD_QR_ASSET}" alt="" width="184" height="184" loading="lazy" decoding="async">
                   <span class="download-qr-logo">
@@ -4407,7 +4409,7 @@ def render_page(locale_code: str) -> str:
               <div class="demo-stage-screen">
                 <div class="demo-device-frame" data-demo-frame>
                   <span class="demo-device-notch" aria-hidden="true"></span>
-                  <video class="demo-video" data-demo-video playsinline muted loop preload="metadata" hidden></video>
+                  <video class="demo-video" data-demo-video playsinline muted loop preload="none" hidden></video>
                   <button class="demo-placeholder" type="button" data-demo-fallback aria-label="{e(demo_copy['screen_label'])}">
                     <span class="demo-placeholder-play" aria-hidden="true"></span>
                     <strong>{e(demo_copy["screen_tag"])}</strong>

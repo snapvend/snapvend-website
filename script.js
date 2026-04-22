@@ -163,6 +163,7 @@ const setupDemoMedia = () => {
     const fallback = video.parentElement?.querySelector("[data-demo-fallback]");
     const frame = video.closest("[data-demo-frame]");
     const note = video.closest(".demo-stage")?.querySelector("[data-demo-note]");
+    let hasLoadedVideo = false;
 
     const applyOrientation = () => {
       if (!frame) {
@@ -190,6 +191,16 @@ const setupDemoMedia = () => {
       applyOrientation();
     };
 
+    const loadVideo = () => {
+      if (hasLoadedVideo) {
+        return;
+      }
+
+      video.src = demoVideoUrl;
+      video.load();
+      hasLoadedVideo = true;
+    };
+
     const togglePlayback = () => {
       if (video.paused) {
         startPlayback();
@@ -200,11 +211,12 @@ const setupDemoMedia = () => {
     };
 
     const startPlayback = () => {
+      loadVideo();
       hideFallback();
       const playAttempt = video.play();
       if (playAttempt && typeof playAttempt.catch === "function") {
         playAttempt.catch(() => {
-          showFallback(false);
+          showFallback();
         });
       }
     };
@@ -215,9 +227,9 @@ const setupDemoMedia = () => {
       return;
     }
 
-    video.src = demoVideoUrl;
     video.hidden = false;
     video.controls = false;
+    video.preload = "none";
     showFallback();
 
     video.addEventListener("loadeddata", revealVideo, { once: true });
@@ -231,7 +243,6 @@ const setupDemoMedia = () => {
 
     fallback?.addEventListener("click", startPlayback);
     video.addEventListener("click", togglePlayback);
-    video.load();
   });
 };
 
