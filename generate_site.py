@@ -17,6 +17,8 @@ APP_ICON_ASSET = "/assets/branding/app_icon_store_512.png"
 PRODUCT_NAME = "SnapVend Gallery"
 PRODUCT_SHORT_NAME = "SnapVend"
 GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.snapvend.gallery"
+DOWNLOAD_URL = f"{SITE_URL}/download/"
+DOWNLOAD_QR_ASSET = "/assets/marketing/download-qr.svg"
 
 
 LOCALE_META = {
@@ -241,6 +243,132 @@ APP_STORE_STATUS = {
     "zh": {
         "small": "iPhone / iPad 版即将开放",
         "note": "SnapVend 目前处于测试阶段，将很快开放下载。",
+    },
+}
+
+DOWNLOAD_QR_COPY = {
+    "tr": {
+        "title": "Telefondan indir",
+        "body": "Kameranla QR kodu okut, SnapVend Gallery indirme yönlendirmesini telefonunda aç.",
+        "hint": "Masaüstü ve notebook için hızlı indirme akışı",
+        "alt": "SnapVend Gallery indirme QR kodu",
+    },
+    "en": {
+        "title": "Download on phone",
+        "body": "Scan the QR code with your camera and open the SnapVend Gallery download flow on your phone.",
+        "hint": "A faster install path for desktop and notebook visitors",
+        "alt": "SnapVend Gallery download QR code",
+    },
+    "es": {
+        "title": "Descargar en el teléfono",
+        "body": "Escanea el código QR con la cámara y abre el flujo de descarga de SnapVend Gallery en tu teléfono.",
+        "hint": "Acceso rápido para visitantes desde escritorio o portátil",
+        "alt": "Código QR de descarga de SnapVend Gallery",
+    },
+    "fr": {
+        "title": "Télécharger sur mobile",
+        "body": "Scannez le QR code avec l appareil photo et ouvrez le parcours de téléchargement SnapVend Gallery sur votre mobile.",
+        "hint": "Un accès plus rapide depuis ordinateur ou portable",
+        "alt": "QR code de téléchargement SnapVend Gallery",
+    },
+    "de": {
+        "title": "Auf dem Handy laden",
+        "body": "Scanne den QR-Code mit der Kamera und öffne den SnapVend Gallery Download auf deinem Handy.",
+        "hint": "Der schnellere Installationsweg für Desktop und Notebook",
+        "alt": "SnapVend Gallery Download-QR-Code",
+    },
+    "it": {
+        "title": "Scarica sul telefono",
+        "body": "Scansiona il codice QR con la fotocamera e apri il percorso di download di SnapVend Gallery sul telefono.",
+        "hint": "Percorso rapido per chi visita da desktop o notebook",
+        "alt": "Codice QR per scaricare SnapVend Gallery",
+    },
+    "pt": {
+        "title": "Baixar no telefone",
+        "body": "Leia o QR code com a câmera e abra o fluxo de download do SnapVend Gallery no telefone.",
+        "hint": "Instalação mais rápida para quem acessa pelo desktop ou notebook",
+        "alt": "QR code de download do SnapVend Gallery",
+    },
+    "ru": {
+        "title": "Скачать на телефон",
+        "body": "Отсканируйте QR-код камерой и откройте загрузку SnapVend Gallery на телефоне.",
+        "hint": "Быстрый путь установки для посетителей с компьютера или ноутбука",
+        "alt": "QR-код для загрузки SnapVend Gallery",
+    },
+    "ar": {
+        "title": "التنزيل على الهاتف",
+        "body": "امسح رمز QR بالكاميرا وافتح مسار تنزيل SnapVend Gallery على هاتفك.",
+        "hint": "مسار اسرع للتثبيت عند زيارة الموقع من الكمبيوتر",
+        "alt": "رمز QR لتنزيل SnapVend Gallery",
+    },
+    "hi": {
+        "title": "फोन पर डाउनलोड करें",
+        "body": "कैमरा से QR कोड स्कैन करें और फोन पर SnapVend Gallery डाउनलोड प्रक्रिया खोलें।",
+        "hint": "डेस्कटॉप और लैपटॉप उपयोगकर्ताओं के लिए तेज इंस्टॉल मार्ग",
+        "alt": "SnapVend Gallery डाउनलोड QR कोड",
+    },
+    "ja": {
+        "title": "スマホでダウンロード",
+        "body": "カメラで QR コードを読み取り、スマホで SnapVend Gallery のダウンロード導線を開けます。",
+        "hint": "デスクトップやノートPCからの訪問者向けの素早い導線",
+        "alt": "SnapVend Gallery ダウンロード QR コード",
+    },
+    "zh": {
+        "title": "在手机上下载",
+        "body": "用相机扫描 QR 码，在手机上打开 SnapVend Gallery 下载入口。",
+        "hint": "适合桌面电脑和笔记本访客的快速安装路径",
+        "alt": "SnapVend Gallery 下载 QR 码",
+    },
+}
+
+DOWNLOAD_PAGE_COPY = {
+    "tr": {
+        "manual": "Cihazın otomatik yönlendirilmezse mağaza seçeneğini kullan.",
+        "back": "Siteye geri dön",
+    },
+    "en": {
+        "manual": "If your device is not redirected automatically, use the store option below.",
+        "back": "Back to website",
+    },
+    "es": {
+        "manual": "Si tu dispositivo no redirige automáticamente, usa la opción de tienda.",
+        "back": "Volver al sitio",
+    },
+    "fr": {
+        "manual": "Si votre appareil n est pas redirige automatiquement, utilisez l option de boutique.",
+        "back": "Retour au site",
+    },
+    "de": {
+        "manual": "Wenn dein Gerät nicht automatisch weiterleitet, nutze die Store-Option.",
+        "back": "Zur Website zurück",
+    },
+    "it": {
+        "manual": "Se il dispositivo non viene reindirizzato automaticamente, usa l opzione dello store.",
+        "back": "Torna al sito",
+    },
+    "pt": {
+        "manual": "Se o dispositivo não redirecionar automaticamente, use a opção da loja.",
+        "back": "Voltar ao site",
+    },
+    "ru": {
+        "manual": "Если устройство не перенаправилось автоматически, выберите магазин ниже.",
+        "back": "Вернуться на сайт",
+    },
+    "ar": {
+        "manual": "اذا لم يتم توجيه جهازك تلقائيا، استخدم خيار المتجر ادناه.",
+        "back": "العودة الى الموقع",
+    },
+    "hi": {
+        "manual": "यदि आपका डिवाइस अपने आप रीडायरेक्ट नहीं होता, तो नीचे स्टोर विकल्प चुनें।",
+        "back": "वेबसाइट पर वापस जाएं",
+    },
+    "ja": {
+        "manual": "自動で移動しない場合は、下のストア項目を使用してください。",
+        "back": "サイトへ戻る",
+    },
+    "zh": {
+        "manual": "如果设备没有自动跳转，请使用下方的商店选项。",
+        "back": "返回网站",
     },
 }
 
@@ -3693,7 +3821,10 @@ def build_defined_term_set_schema(page_url: str, fragment: str, name: str, terms
 
 def store_badges(locale_code: str, copy: dict) -> str:
     app_store_status = APP_STORE_STATUS[locale_code]
+    qr_copy = DOWNLOAD_QR_COPY[locale_code]
+    prefix = asset_prefix(locale_code)
     return f"""
+            <div class="download-options">
             <div class="store-badges">
               <a class="store-badge store-badge-play" data-store-link="googlePlay" href="{GOOGLE_PLAY_URL}" target="_blank" rel="noreferrer">
                 <span class="store-logo" aria-hidden="true">
@@ -3719,6 +3850,21 @@ def store_badges(locale_code: str, copy: dict) -> str:
                 <span class="store-copy">
                   <small>{e(copy["apple_small"])}</small>
                   <strong>App Store</strong>
+                </span>
+              </a>
+            </div>
+
+              <a class="download-qr-card" href="{DOWNLOAD_URL}" aria-label="{e(qr_copy["body"])}">
+                <span class="download-qr-art" aria-hidden="true">
+                  <img class="download-qr-code" src="{prefix}{DOWNLOAD_QR_ASSET}" alt="" width="184" height="184" loading="lazy" decoding="async">
+                  <span class="download-qr-logo">
+                    <img src="{prefix}{BRAND_MARK_ASSET}" alt="" width="52" height="52" loading="lazy" decoding="async">
+                  </span>
+                </span>
+                <span class="download-qr-copy">
+                  <strong>{e(qr_copy["title"])}</strong>
+                  <span>{e(qr_copy["body"])}</span>
+                  <em>{e(qr_copy["hint"])}</em>
                 </span>
               </a>
             </div>"""
@@ -4457,11 +4603,210 @@ def render_page(locale_code: str) -> str:
 """
 
 
+def render_download_page() -> str:
+    download_copy = {}
+    for locale_code in LOCALE_ORDER:
+        download_copy[locale_code] = {
+            "title": DOWNLOAD_QR_COPY[locale_code]["title"],
+            "lead": DOWNLOAD_QR_COPY[locale_code]["body"],
+            "manual": DOWNLOAD_PAGE_COPY[locale_code]["manual"],
+            "back": DOWNLOAD_PAGE_COPY[locale_code]["back"],
+            "googleSmall": COPY[locale_code]["google_small"],
+            "appleSmall": COPY[locale_code]["apple_small"],
+            "appStoreNote": APP_STORE_STATUS[locale_code]["note"],
+        }
+    copy_json = json.dumps(download_copy, ensure_ascii=False)
+    locale_alias_json = json.dumps(
+        {
+            "tr": "tr",
+            "tr-tr": "tr",
+            "en": "en",
+            "en-us": "en",
+            "en-gb": "en",
+            "en-ca": "en",
+            "en-au": "en",
+            "es": "es",
+            "es-es": "es",
+            "es-mx": "es",
+            "es-ar": "es",
+            "es-co": "es",
+            "fr": "fr",
+            "fr-fr": "fr",
+            "fr-ca": "fr",
+            "fr-be": "fr",
+            "fr-ch": "fr",
+            "de": "de",
+            "de-de": "de",
+            "de-at": "de",
+            "de-ch": "de",
+            "it": "it",
+            "it-it": "it",
+            "it-ch": "it",
+            "pt": "pt",
+            "pt-br": "pt",
+            "pt-pt": "pt",
+            "ru": "ru",
+            "ru-ru": "ru",
+            "ru-kz": "ru",
+            "ar": "ar",
+            "ar-sa": "ar",
+            "ar-ae": "ar",
+            "ar-eg": "ar",
+            "hi": "hi",
+            "hi-in": "hi",
+            "ja": "ja",
+            "ja-jp": "ja",
+            "zh": "zh",
+            "zh-cn": "zh",
+            "zh-sg": "zh",
+            "zh-hans": "zh",
+        },
+        ensure_ascii=False,
+    )
+
+    return f"""<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnapVend Gallery | İndirme Yönlendirmesi</title>
+    <meta name="description" content="SnapVend Gallery uygulamasını telefon veya tablet üzerinden indirmek için yönlendirme sayfası.">
+    <meta name="robots" content="noindex,follow">
+    <meta name="theme-color" content="#071b45">
+    <link rel="canonical" href="{DOWNLOAD_URL}">
+    <link rel="icon" href="../assets/branding/app_icon_store_512.png" sizes="512x512">
+    <link rel="apple-touch-icon" href="../assets/branding/app_icon_store_512.png">
+    <link rel="preload" href="../assets/fonts/JosefinSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="../styles.css?v={BUILD_VERSION}">
+    <script src="../site-config.js?v={BUILD_VERSION}"></script>
+  </head>
+  <body class="download-redirect-page">
+    <main class="download-redirect-shell">
+      <article class="download-redirect-card">
+        <a class="download-redirect-brand" href="../" aria-label="SnapVend Gallery">
+          <img src="../assets/branding/snapvend_logo_square_web.png" alt="" width="64" height="64">
+          <span>
+            <small>Professional Photo Delivery</small>
+            <strong>SnapVend Gallery</strong>
+          </span>
+        </a>
+        <p class="eyebrow">SnapVend Gallery</p>
+        <h1 data-download-title>{e(download_copy["tr"]["title"])}</h1>
+        <p data-download-lead>{e(download_copy["tr"]["lead"])}</p>
+        <p class="download-redirect-note" data-download-manual>{e(download_copy["tr"]["manual"])}</p>
+        <div class="download-redirect-actions">
+          <a class="store-badge store-badge-play" data-download-google href="{GOOGLE_PLAY_URL}" target="_blank" rel="noreferrer">
+            <span class="store-logo" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="img">
+                <path fill="#00d26a" d="M8 6.8 29.2 24 8 41.2z"></path>
+                <path fill="#00a3ff" d="m29.2 24 5.6-4.8c2.4 1.7 2.4 7 0 8.7z"></path>
+                <path fill="#ffd400" d="M8 6.8 20.1 18l9.1 6-9.1 6L8 41.2 14.5 24z"></path>
+                <path fill="#ff5a5f" d="M8 6.8 20.1 18l14.7 1.2z"></path>
+              </svg>
+            </span>
+            <span class="store-copy">
+              <small data-google-small>{e(download_copy["tr"]["googleSmall"])}</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+
+          <a class="store-badge store-badge-apple" data-download-app-store href="#download">
+            <span class="store-logo" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="img">
+                <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
+              </svg>
+            </span>
+            <span class="store-copy">
+              <small data-apple-small>{e(download_copy["tr"]["appleSmall"])}</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+        </div>
+        <p class="download-redirect-note download-redirect-ios-note" data-download-ios-note hidden>{e(download_copy["tr"]["appStoreNote"])}</p>
+        <a class="action-link action-link-secondary" data-download-back href="../">{e(download_copy["tr"]["back"])}</a>
+      </article>
+    </main>
+    <script>
+      (() => {{
+        const copyByLocale = {copy_json};
+        const localeAliases = {locale_alias_json};
+        const defaultConfig = {{
+          googlePlayUrl: "{GOOGLE_PLAY_URL}",
+          appStoreUrl: "",
+        }};
+        const config = {{
+          ...defaultConfig,
+          ...(window.snapVendMarketingConfig || {{}}),
+        }};
+        const normalizeLocale = (value) => String(value || "").trim().toLowerCase().replace(/_/g, "-");
+        const resolveLocale = (value) => {{
+          const normalized = normalizeLocale(value);
+          return localeAliases[normalized] || localeAliases[normalized.split("-")[0]] || "tr";
+        }};
+        const locale = resolveLocale(navigator.language || "tr");
+        const copy = copyByLocale[locale] || copyByLocale.tr;
+        const appStoreUrl = String(config.appStoreUrl || "").trim();
+        const googlePlayUrl = String(config.googlePlayUrl || "{GOOGLE_PLAY_URL}").trim();
+        const userAgent = navigator.userAgent || "";
+        const isAndroid = /Android/i.test(userAgent);
+        const isIOS = /iPhone|iPad|iPod/i.test(userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+        document.documentElement.lang = locale;
+        document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+        document.querySelector("[data-download-title]").textContent = copy.title;
+        document.querySelector("[data-download-lead]").textContent = copy.lead;
+        document.querySelector("[data-download-manual]").textContent = copy.manual;
+        document.querySelector("[data-google-small]").textContent = copy.googleSmall;
+        document.querySelector("[data-apple-small]").textContent = copy.appleSmall;
+        document.querySelector("[data-download-back]").textContent = copy.back;
+
+        const googleLink = document.querySelector("[data-download-google]");
+        const appleLink = document.querySelector("[data-download-app-store]");
+        const iosNote = document.querySelector("[data-download-ios-note]");
+        googleLink.href = googlePlayUrl;
+
+        if (isAndroid && googlePlayUrl) {{
+          window.location.replace(googlePlayUrl);
+          return;
+        }}
+
+        if (isIOS && appStoreUrl) {{
+          window.location.replace(appStoreUrl);
+          return;
+        }}
+
+        if (appStoreUrl) {{
+          appleLink.href = appStoreUrl;
+          appleLink.target = "_blank";
+          appleLink.rel = "noreferrer";
+        }} else {{
+          appleLink.addEventListener("click", (event) => {{
+            event.preventDefault();
+            window.alert(copy.appStoreNote);
+          }});
+          if (isIOS) {{
+            iosNote.hidden = false;
+            iosNote.textContent = copy.appStoreNote;
+          }}
+        }}
+      }})();
+    </script>
+  </body>
+</html>
+"""
+
+
 def write_page(locale_code: str) -> None:
     meta = LOCALE_META[locale_code]
     output_dir = ROOT if meta["path"] == "" else ROOT / meta["path"]
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "index.html").write_text(render_page(locale_code), encoding="utf-8")
+
+
+def write_download_page() -> None:
+    output_dir = ROOT / "download"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    (output_dir / "index.html").write_text(render_download_page(), encoding="utf-8")
 
 
 def write_manifest() -> None:
@@ -4526,6 +4871,7 @@ def write_sitemap() -> None:
 def main() -> None:
     for locale_code in LOCALE_ORDER:
         write_page(locale_code)
+    write_download_page()
     write_manifest()
     write_robots()
     write_sitemap()

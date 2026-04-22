@@ -659,6 +659,18 @@ h1 {
   margin-top: 24px;
 }
 
+.download-options {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.download-options .store-badges {
+  margin-top: 0;
+}
+
 .store-badge {
   display: inline-flex;
   align-items: center;
@@ -701,6 +713,119 @@ h1 {
   box-shadow: none;
 }
 
+.download-qr-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  max-width: 430px;
+  min-height: 146px;
+  padding: 14px 18px 14px 14px;
+  border: 1px solid rgba(126, 222, 255, 0.22);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(43, 207, 214, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
+    rgba(10, 26, 58, 0.82);
+  box-shadow:
+    0 22px 52px rgba(2, 13, 37, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(22px);
+  overflow: hidden;
+}
+
+.download-qr-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 18px auto;
+  width: 78px;
+  height: 78px;
+  border-radius: 999px;
+  background: rgba(43, 207, 214, 0.14);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.download-qr-card:hover,
+.download-qr-card:focus-visible {
+  border-color: rgba(92, 225, 204, 0.48);
+  transform: translateY(-2px);
+}
+
+.download-qr-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 110px;
+  height: 110px;
+  padding: 7px;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(216, 246, 255, 0.94));
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.18),
+    inset 0 0 0 1px rgba(7, 27, 69, 0.08);
+}
+
+.download-qr-code {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.download-qr-logo {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow:
+    0 8px 18px rgba(7, 27, 69, 0.26),
+    inset 0 0 0 1px rgba(7, 27, 69, 0.08);
+  transform: translate(-50%, -50%);
+}
+
+.download-qr-logo img {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+}
+
+.download-qr-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 8px;
+}
+
+.download-qr-copy strong {
+  color: var(--text);
+  font-family: var(--menu-font);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.download-qr-copy span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.download-qr-copy em {
+  color: var(--cyan);
+  font-family: var(--menu-font);
+  font-size: 0.68rem;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .store-logo {
   display: inline-flex;
   align-items: center;
@@ -739,6 +864,98 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 1.35;
+}
+
+.download-redirect-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 12%, rgba(43, 207, 214, 0.18), transparent 34%),
+    radial-gradient(circle at 86% 18%, rgba(92, 225, 204, 0.14), transparent 30%),
+    var(--bg);
+}
+
+.download-redirect-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 32px 18px;
+}
+
+.download-redirect-card {
+  width: min(100%, 760px);
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(126, 222, 255, 0.2);
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
+    rgba(9, 25, 58, 0.88);
+  box-shadow: var(--shadow-strong);
+  backdrop-filter: blur(24px);
+}
+
+.download-redirect-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.download-redirect-brand img {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  box-shadow: 0 14px 32px rgba(2, 13, 37, 0.28);
+}
+
+.download-redirect-brand span {
+  display: grid;
+  gap: 4px;
+}
+
+.download-redirect-brand small {
+  color: var(--muted);
+  font-family: var(--menu-font);
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.download-redirect-brand strong {
+  color: var(--text);
+  font-family: var(--menu-font);
+  font-size: 1.16rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.download-redirect-card h1 {
+  max-width: 10ch;
+  margin-bottom: 18px;
+  font-size: clamp(3rem, 9vw, 5.5rem);
+}
+
+.download-redirect-card > p {
+  max-width: 54ch;
+}
+
+.download-redirect-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 28px 0 18px;
+}
+
+.download-redirect-note {
+  color: var(--muted);
+}
+
+.download-redirect-ios-note {
+  padding: 14px 16px;
+  border: 1px solid rgba(247, 180, 55, 0.24);
+  border-radius: 18px;
+  background: rgba(247, 180, 55, 0.1);
+  color: #f3c86b;
+  font-weight: 700;
 }
 
 .setup-note,
@@ -2213,6 +2430,10 @@ html[lang="ru"] .language-switcher summary {
     font-size: 0.68rem;
   }
 
+  .download-qr-card {
+    max-width: 100%;
+  }
+
   .contact-grid,
   .hero-grid,
   .demo-grid,
@@ -2382,6 +2603,15 @@ html[lang="ru"] .language-switcher summary {
   .store-badge,
   .visual-chip {
     backdrop-filter: none;
+  }
+
+  .download-options,
+  .download-options .store-badges {
+    width: 100%;
+  }
+
+  .download-qr-card {
+    display: none;
   }
 
   .language-switcher {
@@ -2681,6 +2911,33 @@ html[lang="ru"] .language-switcher summary {
 
   .step-index {
     left: 18px;
+  }
+
+  .download-redirect-shell {
+    padding: 18px 10px;
+  }
+
+  .download-redirect-card {
+    padding: 24px 18px;
+    border-radius: 26px;
+  }
+
+  .download-redirect-brand {
+    align-items: flex-start;
+  }
+
+  .download-redirect-brand img {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+  }
+
+  .download-redirect-card h1 {
+    font-size: clamp(2.5rem, 13vw, 3.5rem);
+  }
+
+  .download-redirect-actions {
+    flex-direction: column;
   }
 
   .store-badge {
