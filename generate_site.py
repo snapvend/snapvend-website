@@ -321,57 +321,6 @@ DOWNLOAD_QR_COPY = {
     },
 }
 
-DOWNLOAD_PAGE_COPY = {
-    "tr": {
-        "manual": "Cihazın otomatik yönlendirilmezse mağaza seçeneğini kullan.",
-        "back": "Siteye geri dön",
-    },
-    "en": {
-        "manual": "If your device is not redirected automatically, use the store option below.",
-        "back": "Back to website",
-    },
-    "es": {
-        "manual": "Si tu dispositivo no redirige automáticamente, usa la opción de tienda.",
-        "back": "Volver al sitio",
-    },
-    "fr": {
-        "manual": "Si votre appareil n est pas redirige automatiquement, utilisez l option de boutique.",
-        "back": "Retour au site",
-    },
-    "de": {
-        "manual": "Wenn dein Gerät nicht automatisch weiterleitet, nutze die Store-Option.",
-        "back": "Zur Website zurück",
-    },
-    "it": {
-        "manual": "Se il dispositivo non viene reindirizzato automaticamente, usa l opzione dello store.",
-        "back": "Torna al sito",
-    },
-    "pt": {
-        "manual": "Se o dispositivo não redirecionar automaticamente, use a opção da loja.",
-        "back": "Voltar ao site",
-    },
-    "ru": {
-        "manual": "Если устройство не перенаправилось автоматически, выберите магазин ниже.",
-        "back": "Вернуться на сайт",
-    },
-    "ar": {
-        "manual": "اذا لم يتم توجيه جهازك تلقائيا، استخدم خيار المتجر ادناه.",
-        "back": "العودة الى الموقع",
-    },
-    "hi": {
-        "manual": "यदि आपका डिवाइस अपने आप रीडायरेक्ट नहीं होता, तो नीचे स्टोर विकल्प चुनें।",
-        "back": "वेबसाइट पर वापस जाएं",
-    },
-    "ja": {
-        "manual": "自動で移動しない場合は、下のストア項目を使用してください。",
-        "back": "サイトへ戻る",
-    },
-    "zh": {
-        "manual": "如果设备没有自动跳转，请使用下方的商店选项。",
-        "back": "返回网站",
-    },
-}
-
 DEMO_SECTION = {
     "tr": {
         "eyebrow": "Canlı Demo",
@@ -4604,81 +4553,50 @@ def render_page(locale_code: str) -> str:
 
 
 def render_download_page() -> str:
-    download_copy = {}
-    for locale_code in LOCALE_ORDER:
-        download_copy[locale_code] = {
-            "title": DOWNLOAD_QR_COPY[locale_code]["title"],
-            "lead": DOWNLOAD_QR_COPY[locale_code]["body"],
-            "manual": DOWNLOAD_PAGE_COPY[locale_code]["manual"],
-            "back": DOWNLOAD_PAGE_COPY[locale_code]["back"],
-            "googleSmall": COPY[locale_code]["google_small"],
-            "appleSmall": COPY[locale_code]["apple_small"],
-            "appStoreNote": APP_STORE_STATUS[locale_code]["note"],
-        }
-    copy_json = json.dumps(download_copy, ensure_ascii=False)
-    locale_alias_json = json.dumps(
-        {
-            "tr": "tr",
-            "tr-tr": "tr",
-            "en": "en",
-            "en-us": "en",
-            "en-gb": "en",
-            "en-ca": "en",
-            "en-au": "en",
-            "es": "es",
-            "es-es": "es",
-            "es-mx": "es",
-            "es-ar": "es",
-            "es-co": "es",
-            "fr": "fr",
-            "fr-fr": "fr",
-            "fr-ca": "fr",
-            "fr-be": "fr",
-            "fr-ch": "fr",
-            "de": "de",
-            "de-de": "de",
-            "de-at": "de",
-            "de-ch": "de",
-            "it": "it",
-            "it-it": "it",
-            "it-ch": "it",
-            "pt": "pt",
-            "pt-br": "pt",
-            "pt-pt": "pt",
-            "ru": "ru",
-            "ru-ru": "ru",
-            "ru-kz": "ru",
-            "ar": "ar",
-            "ar-sa": "ar",
-            "ar-ae": "ar",
-            "ar-eg": "ar",
-            "hi": "hi",
-            "hi-in": "hi",
-            "ja": "ja",
-            "ja-jp": "ja",
-            "zh": "zh",
-            "zh-cn": "zh",
-            "zh-sg": "zh",
-            "zh-hans": "zh",
-        },
-        ensure_ascii=False,
-    )
-
     return f"""<!doctype html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SnapVend Gallery | İndirme Yönlendirmesi</title>
-    <meta name="description" content="SnapVend Gallery uygulamasını telefon veya tablet üzerinden indirmek için yönlendirme sayfası.">
+    <title>SnapVend Gallery | App Store Redirect</title>
+    <meta name="description" content="Automatic SnapVend Gallery download redirect for Android and iOS devices.">
     <meta name="robots" content="noindex,follow">
     <meta name="theme-color" content="#071b45">
     <link rel="canonical" href="{DOWNLOAD_URL}">
     <link rel="icon" href="../assets/branding/app_icon_store_512.png" sizes="512x512">
     <link rel="apple-touch-icon" href="../assets/branding/app_icon_store_512.png">
     <link rel="preload" href="../assets/fonts/JosefinSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="../styles.css?v={BUILD_VERSION}">
     <script src="../site-config.js?v={BUILD_VERSION}"></script>
+    <script>
+      (() => {{
+        const defaultConfig = {{
+          googlePlayUrl: "{GOOGLE_PLAY_URL}",
+          appStoreUrl: "",
+          appStoreFallbackUrl: "https://apps.apple.com/search?term=SnapVend%20Gallery",
+        }};
+        const config = {{
+          ...defaultConfig,
+          ...(window.snapVendMarketingConfig || {{}}),
+        }};
+        const userAgent = navigator.userAgent || "";
+        const isAndroid = /Android/i.test(userAgent);
+        const isIOS = /iPhone|iPad|iPod/i.test(userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+        const googlePlayUrl = String(config.googlePlayUrl || "").trim();
+        const appStoreUrl = String(config.appStoreUrl || config.appStoreFallbackUrl || "").trim();
+
+        window.snapVendDownloadConfig = {{ googlePlayUrl, appStoreUrl }};
+
+        if (isAndroid && googlePlayUrl) {{
+          window.location.replace(googlePlayUrl);
+          return;
+        }}
+
+        if (isIOS && appStoreUrl) {{
+          window.location.replace(appStoreUrl);
+        }}
+      }})();
+    </script>
+    <link rel="stylesheet" href="../styles.css?v={BUILD_VERSION}">
   </head>
   <body class="download-redirect-page">
     <main class="download-redirect-shell">
@@ -4691,9 +4609,9 @@ def render_download_page() -> str:
           </span>
         </a>
         <p class="eyebrow">SnapVend Gallery</p>
-        <h1 data-download-title>{e(download_copy["tr"]["title"])}</h1>
-        <p data-download-lead>{e(download_copy["tr"]["lead"])}</p>
-        <p class="download-redirect-note" data-download-manual>{e(download_copy["tr"]["manual"])}</p>
+        <h1>Open on your device</h1>
+        <p>We are detecting your device and sending you to the correct store automatically.</p>
+        <p class="download-redirect-note">If you are on a desktop or notebook, choose a store below.</p>
         <div class="download-redirect-actions">
           <a class="store-badge store-badge-play" data-download-google href="{GOOGLE_PLAY_URL}" target="_blank" rel="noreferrer">
             <span class="store-logo" aria-hidden="true">
@@ -4705,7 +4623,7 @@ def render_download_page() -> str:
               </svg>
             </span>
             <span class="store-copy">
-              <small data-google-small>{e(download_copy["tr"]["googleSmall"])}</small>
+              <small>Download for Android</small>
               <strong>Google Play</strong>
             </span>
           </a>
@@ -4717,78 +4635,26 @@ def render_download_page() -> str:
               </svg>
             </span>
             <span class="store-copy">
-              <small data-apple-small>{e(download_copy["tr"]["appleSmall"])}</small>
+              <small>Download for iPhone and iPad</small>
               <strong>App Store</strong>
             </span>
           </a>
         </div>
-        <p class="download-redirect-note download-redirect-ios-note" data-download-ios-note hidden>{e(download_copy["tr"]["appStoreNote"])}</p>
-        <a class="action-link action-link-secondary" data-download-back href="../">{e(download_copy["tr"]["back"])}</a>
+        <a class="action-link action-link-secondary" href="../">Back to website</a>
       </article>
     </main>
     <script>
       (() => {{
-        const copyByLocale = {copy_json};
-        const localeAliases = {locale_alias_json};
-        const defaultConfig = {{
-          googlePlayUrl: "{GOOGLE_PLAY_URL}",
-          appStoreUrl: "",
-        }};
-        const config = {{
-          ...defaultConfig,
-          ...(window.snapVendMarketingConfig || {{}}),
-        }};
-        const normalizeLocale = (value) => String(value || "").trim().toLowerCase().replace(/_/g, "-");
-        const resolveLocale = (value) => {{
-          const normalized = normalizeLocale(value);
-          return localeAliases[normalized] || localeAliases[normalized.split("-")[0]] || "tr";
-        }};
-        const locale = resolveLocale(navigator.language || "tr");
-        const copy = copyByLocale[locale] || copyByLocale.tr;
-        const appStoreUrl = String(config.appStoreUrl || "").trim();
-        const googlePlayUrl = String(config.googlePlayUrl || "{GOOGLE_PLAY_URL}").trim();
-        const userAgent = navigator.userAgent || "";
-        const isAndroid = /Android/i.test(userAgent);
-        const isIOS = /iPhone|iPad|iPod/i.test(userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-
-        document.documentElement.lang = locale;
-        document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
-        document.querySelector("[data-download-title]").textContent = copy.title;
-        document.querySelector("[data-download-lead]").textContent = copy.lead;
-        document.querySelector("[data-download-manual]").textContent = copy.manual;
-        document.querySelector("[data-google-small]").textContent = copy.googleSmall;
-        document.querySelector("[data-apple-small]").textContent = copy.appleSmall;
-        document.querySelector("[data-download-back]").textContent = copy.back;
-
+        const config = window.snapVendDownloadConfig || {{}};
         const googleLink = document.querySelector("[data-download-google]");
         const appleLink = document.querySelector("[data-download-app-store]");
-        const iosNote = document.querySelector("[data-download-ios-note]");
+        const googlePlayUrl = String(config.googlePlayUrl || "{GOOGLE_PLAY_URL}").trim();
+        const appStoreUrl = String(config.appStoreUrl || "https://apps.apple.com/search?term=SnapVend%20Gallery").trim();
+
         googleLink.href = googlePlayUrl;
-
-        if (isAndroid && googlePlayUrl) {{
-          window.location.replace(googlePlayUrl);
-          return;
-        }}
-
-        if (isIOS && appStoreUrl) {{
-          window.location.replace(appStoreUrl);
-          return;
-        }}
-
-        if (appStoreUrl) {{
-          appleLink.href = appStoreUrl;
-          appleLink.target = "_blank";
-          appleLink.rel = "noreferrer";
-        }} else {{
-          appleLink.addEventListener("click", (event) => {{
-            event.preventDefault();
-            window.alert(copy.appStoreNote);
-          }});
-          if (isIOS) {{
-            iosNote.hidden = false;
-            iosNote.textContent = copy.appStoreNote;
-          }}
-        }}
+        appleLink.href = appStoreUrl;
+        appleLink.target = "_blank";
+        appleLink.rel = "noreferrer";
       }})();
     </script>
   </body>
