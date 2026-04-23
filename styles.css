@@ -548,7 +548,7 @@ code {
 }
 
 .cta-panel {
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(360px, 0.88fr) minmax(0, 1.12fr);
   padding: 30px;
   border-radius: var(--radius-xl);
   background:
@@ -556,6 +556,11 @@ code {
     rgba(8, 27, 68, 0.74);
   border: 1px solid var(--stroke);
   box-shadow: var(--shadow-main);
+}
+
+.cta-panel > div:first-child {
+  min-width: 0;
+  max-width: 560px;
 }
 
 .eyebrow {
@@ -630,6 +635,11 @@ h1 {
   line-height: 0.96;
 }
 
+.cta-panel h2 {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .hero-lead,
 .section-head p,
 .workflow-card p,
@@ -667,8 +677,26 @@ h1 {
   margin-top: 24px;
 }
 
+.cta-panel .download-options {
+  justify-self: end;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 640px;
+  margin-top: 0;
+}
+
 .download-options .store-badges {
   margin-top: 0;
+}
+
+.cta-panel .store-badges {
+  flex: 1 1 100%;
+  justify-content: flex-end;
+}
+
+.cta-panel .store-badge {
+  flex: 1 1 230px;
+  min-width: 220px;
 }
 
 .store-badge {
@@ -733,6 +761,11 @@ h1 {
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(22px);
   overflow: hidden;
+}
+
+.cta-panel .download-qr-card {
+  flex: 1 1 100%;
+  max-width: 640px;
 }
 
 .download-qr-card::after {
@@ -2441,6 +2474,17 @@ html[lang="ru"] .language-switcher summary {
   .why-snapvend-layout,
   .cta-panel {
     grid-template-columns: 1fr;
+  }
+
+  .cta-panel > div:first-child,
+  .cta-panel .download-options,
+  .cta-panel .download-qr-card {
+    max-width: none;
+  }
+
+  .cta-panel .download-options,
+  .cta-panel .store-badges {
+    justify-content: flex-start;
   }
 
   .hero-visual {
