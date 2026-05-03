@@ -647,9 +647,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "SnapVend internetsiz çalışır mı?", "a": "Evet. Ana akış yerel ağ veya hotspot üzerinde çalışabilir. Bulut zorunlu değildir."},
             {"q": "Müşteri fotoğrafları nasıl görür?", "a": "Müşteri aynı ağda QR kodu okutarak tarayıcıdan galeriye girer ve seçim yapar."},
-            {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Pro planlarda özel işletme adı, logo ve teslim markalaması açılır."},
+            {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Premium planlarda özel işletme adı, logo ve teslim markalaması açılır."},
             {"q": "Müşteriye ülkeye göre ödeme yöntemi gösterebilir miyim?", "a": "Evet. İşletme ülkesi seçildiğinde kurulumu tamamlanan yerel yöntemler ödeme popup ekranında görünür. Türkiye, İspanya, Hindistan, Çin ve Japonya için hazır yöntem setleri vardır."},
-            {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Pro planlar günlük teslim limitini kaldırır."},
+            {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Premium planlar günlük teslim limitini kaldırır."},
         ],
     },
     "en": {
@@ -659,9 +659,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "Does SnapVend work without internet?", "a": "Yes. The main workflow can run over local network or hotspot. Cloud access is not required."},
             {"q": "How do clients view the photos?", "a": "Clients scan a QR code on the same network, open the browser gallery and make their selections there."},
-            {"q": "Can I use my own business name and logo?", "a": "Yes. Pro plans unlock custom business branding, logo usage and branded delivery."},
+            {"q": "Can I use my own business name and logo?", "a": "Yes. Premium plans unlock custom business branding, logo usage and branded delivery."},
             {"q": "Can I show country-specific payment methods to clients?", "a": "Yes. Once the business country is selected, completed local methods appear in the payment popup. Ready local method sets are available for Turkey, Spain, India, China and Japan."},
-            {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Pro plans remove the daily delivery limit."},
+            {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Premium plans remove the daily delivery limit."},
         ],
     },
     "es": {
@@ -671,9 +671,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "¿SnapVend funciona sin internet?", "a": "Si. El flujo principal puede funcionar con red local o hotspot sin depender de la nube."},
             {"q": "¿Como ve el cliente las fotos?", "a": "El cliente escanea un QR en la misma red y abre la galeria en el navegador."},
-            {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes Pro desbloquean nombre comercial, logo y entrega con marca propia."},
+            {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes Premium desbloquean nombre comercial, logo y entrega con marca propia."},
             {"q": "¿Puedo mostrar metodos de pago segun el pais?", "a": "Si. Al elegir el pais del negocio, los metodos locales configurados aparecen en el popup de pago. Hay metodos listos para Turquia, Espana, India, China y Japon."},
-            {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes Pro mensual y anual eliminan el limite diario."},
+            {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes Premium mensual y anual eliminan el limite diario."},
         ],
     },
     "fr": {
@@ -683,9 +683,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "SnapVend fonctionne t il sans internet ?", "a": "Oui. Le flux principal peut tourner sur reseau local ou hotspot sans cloud obligatoire."},
             {"q": "Comment le client voit il les photos ?", "a": "Le client scanne un QR sur le meme reseau et ouvre la galerie dans le navigateur."},
-            {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans Pro ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
+            {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans Premium ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
             {"q": "Puis je afficher des methodes de paiement selon le pays ?", "a": "Oui. Une fois le pays de l entreprise choisi, les methodes locales configurees apparaissent dans la fenetre de paiement. Des ensembles prets existent pour la Turquie, l Espagne, l Inde, la Chine et le Japon."},
-            {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans Pro mensuel et annuel retirent la limite quotidienne."},
+            {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans Premium mensuel et annuel retirent la limite quotidienne."},
         ],
     },
     "de": {
@@ -695,9 +695,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "Funktioniert SnapVend ohne Internet?", "a": "Ja. Der Hauptablauf kann uber lokales Netzwerk oder Hotspot ohne Cloud laufen."},
             {"q": "Wie sehen Kunden die Fotos?", "a": "Kunden scannen im gleichen Netzwerk den QR Code und offnen die Galerie im Browser."},
-            {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Pro schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
+            {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Premium schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
             {"q": "Kann ich landerspezifische Zahlungsarten zeigen?", "a": "Ja. Sobald das Geschaeftsland gewahlt ist, erscheinen fertig eingerichtete lokale Methoden im Zahlungsfenster. Vorbereitete Sets gibt es fur die Turkei, Spanien, Indien, China und Japan."},
-            {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Pro Plan entfernen das Tageslimit."},
+            {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Premium Plan entfernen das Tageslimit."},
         ],
     },
     "it": {
@@ -707,9 +707,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "SnapVend funziona senza internet?", "a": "Sì. Il flusso principale può funzionare su rete locale o hotspot senza dipendere dal cloud."},
             {"q": "Come vedono le foto i clienti?", "a": "Il cliente scansiona un QR sulla stessa rete e apre la galleria nel browser."},
-            {"q": "Posso usare il mio nome e il mio logo?", "a": "Sì. I piani Pro sbloccano nome attività, logo e consegna brandizzata."},
+            {"q": "Posso usare il mio nome e il mio logo?", "a": "Sì. I piani Premium sbloccano nome attività, logo e consegna brandizzata."},
             {"q": "Posso mostrare metodi di pagamento in base al paese?", "a": "Sì. Quando selezioni il paese dell'attività, i metodi locali configurati compaiono nel popup di pagamento. Esistono set pronti per Turchia, Spagna, India, Cina e Giappone."},
-            {"q": "Quale piano rimuove il limite di consegna?", "a": "Sia il piano Pro mensile sia quello annuale rimuovono il limite giornaliero."},
+            {"q": "Quale piano rimuove il limite di consegna?", "a": "Sia il piano Premium mensile sia quello annuale rimuovono il limite giornaliero."},
         ],
     },
     "pt": {
@@ -719,9 +719,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "O SnapVend funciona sem internet?", "a": "Sim. O fluxo principal pode rodar em rede local ou hotspot sem depender da nuvem."},
             {"q": "Como o cliente ve as fotos?", "a": "O cliente escaneia um QR na mesma rede e abre a galeria no navegador."},
-            {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos Pro liberam branding, logo e entrega personalizada."},
+            {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos Premium liberam branding, logo e entrega personalizada."},
             {"q": "Posso mostrar metodos de pagamento por pais?", "a": "Sim. Ao escolher o pais do negocio, os metodos locais configurados aparecem no popup de pagamento. Ha conjuntos prontos para Turquia, Espanha, India, China e Japao."},
-            {"q": "Qual plano remove o limite de entrega?", "a": "Os planos Pro mensal e anual removem o limite diario."},
+            {"q": "Qual plano remove o limite de entrega?", "a": "Os planos Premium mensal e anual removem o limite diario."},
         ],
     },
     "ru": {
@@ -731,9 +731,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "Работает ли SnapVend без интернета?", "a": "Да. Основной сценарий может работать через локальную сеть или точку доступа без облака."},
             {"q": "Как клиент смотрит фотографии?", "a": "Клиент сканирует QR код в той же сети и открывает галерею в браузере."},
-            {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Pro открывает фирменное имя, логотип и брендированную выдачу."},
+            {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Premium открывает фирменное имя, логотип и брендированную выдачу."},
             {"q": "Можно ли показать клиенту способы оплаты по стране?", "a": "Да. После выбора страны бизнеса настроенные локальные методы появляются во всплывающем окне оплаты. Готовые наборы есть для Турции, Испании, Индии, Китая и Японии."},
-            {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой Pro снимают ежедневный лимит выдачи."},
+            {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой Premium снимают ежедневный лимит выдачи."},
         ],
     },
     "ar": {
@@ -743,9 +743,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "هل يعمل SnapVend بدون انترنت؟", "a": "نعم. يمكن تشغيل التدفق الرئيسي عبر شبكة محلية او hotspot بدون اعتماد على السحابة."},
             {"q": "كيف يشاهد العميل الصور؟", "a": "يقوم العميل بمسح QR على نفس الشبكة ويفتح المعرض من المتصفح."},
-            {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. خطط Pro تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
+            {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. خطط Premium تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
             {"q": "هل يمكنني عرض طرق دفع حسب البلد للعميل؟", "a": "نعم. عند اختيار بلد النشاط تظهر الطرق المحلية المكتملة في نافذة الدفع. توجد مجموعات جاهزة لتركيا واسبانيا والهند والصين واليابان."},
-            {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية Pro يزيلان حد التسليم اليومي."},
+            {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية Premium يزيلان حد التسليم اليومي."},
         ],
     },
     "hi": {
@@ -755,9 +755,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "क्या SnapVend बिना इंटरनेट के काम करता है?", "a": "हाँ। मुख्य फ्लो लोकल नेटवर्क या हॉटस्पॉट पर चल सकता है, क्लाउड जरूरी नहीं है।"},
             {"q": "ग्राहक फोटो कैसे देखता है?", "a": "ग्राहक उसी नेटवर्क पर QR स्कैन करके ब्राउज़र गैलरी खोलता है।"},
-            {"q": "क्या मैं अपना नाम और लोगो इस्तेमाल कर सकता हूँ?", "a": "हाँ। Pro प्लान कस्टम ब्रांडिंग, लोगो और ब्रांडेड डिलीवरी खोलते हैं।"},
+            {"q": "क्या मैं अपना नाम और लोगो इस्तेमाल कर सकता हूँ?", "a": "हाँ। Premium प्लान कस्टम ब्रांडिंग, लोगो और ब्रांडेड डिलीवरी खोलते हैं।"},
             {"q": "क्या मैं ग्राहक को देश के हिसाब से भुगतान तरीके दिखा सकता हूँ?", "a": "हाँ। बिज़नेस देश चुनने के बाद कॉन्फ़िगर किए गए लोकल तरीके भुगतान विंडो में दिखते हैं। Turkey, Spain, India, China और Japan के लिए तैयार method sets मौजूद हैं।"},
-            {"q": "कौन सा प्लान डिलीवरी सीमा हटाता है?", "a": "मासिक और वार्षिक दोनों Pro प्लान दैनिक डिलीवरी सीमा हटा देते हैं।"},
+            {"q": "कौन सा प्लान डिलीवरी सीमा हटाता है?", "a": "मासिक और वार्षिक दोनों Premium प्लान दैनिक डिलीवरी सीमा हटा देते हैं।"},
         ],
     },
     "ja": {
@@ -767,9 +767,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "SnapVend はインターネットなしで使えますか？", "a": "はい。主なフローはローカルネットワークや hotspot 上で動作でき、クラウドは必須ではありません。"},
             {"q": "クライアントはどうやって写真を見ますか？", "a": "同じネットワーク上で QR を読み取り、ブラウザギャラリーを開いて確認します。"},
-            {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。Pro プランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
+            {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。Premium プランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
             {"q": "国ごとの決済方法をクライアントに表示できますか？", "a": "はい。事業国を選ぶと、設定済みのローカル決済方法が支払いポップアップに表示されます。トルコ、スペイン、インド、中国、日本向けの方法セットが用意されています。"},
-            {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Pro と年額 Pro の両方で日次納品制限が解除されます。"},
+            {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Premium と年額 Premium の両方で日次納品制限が解除されます。"},
         ],
     },
     "zh": {
@@ -779,9 +779,9 @@ FAQ_SECTION = {
         "items": [
             {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或 hotspot 上运行，不依赖云端。"},
             {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描 QR 后，就能在浏览器里打开画廊。"},
-            {"q": "我可以使用自己的品牌名和 logo 吗？", "a": "可以。Pro 计划会开放自定义品牌名、logo 和品牌化交付。"},
+            {"q": "我可以使用自己的品牌名和 logo 吗？", "a": "可以。Premium 计划会开放自定义品牌名、logo 和品牌化交付。"},
             {"q": "可以向客户显示按国家配置的支付方式吗？", "a": "可以。选择商家所在国家后，已完成设置的本地支付方式会显示在支付弹窗中。目前已为土耳其、西班牙、印度、中国和日本准备了现成方式。"},
-            {"q": "哪个计划会移除交付限制？", "a": "月度 Pro 和年度 Pro 都会移除每日交付限制。"},
+            {"q": "哪个计划会移除交付限制？", "a": "月度 Premium 和年度 Premium 都会移除每日交付限制。"},
         ],
     },
 }
@@ -1989,8 +1989,8 @@ COPY = {
             {"title": "Mobil teslim ekipleri", "body": "İnternete bağlı kalmadan yerel ağ ve hotspot ile çalışan operasyonlar."},
         ],
         "pricing_eyebrow": "Planlar",
-        "pricing_title": "Ücretsiz başlayın, Pro ile büyütün",
-        "pricing_lead": "Ücretsiz plan akışı öğrenmek için hazırdır. Pro planlar teslim limitini kaldırır ve işletme markalamasını açar.",
+        "pricing_title": "Free ile başlayın, Premium ile büyütün",
+        "pricing_lead": "Free plan temel akışı denemek içindir. Premium teslim, canlı sunum ve baskı limitlerini kaldırır; marka ve cihaz ayrıcalıklarını açar.",
         "config_warning": "Bu repoda kesin aylık/yıllık fiyat yok. Fiyatlar ve doğrudan App Store linki site-config.js dosyasından güncellenir.",
         "free_badge": "Ücretsiz",
         "free_title": "Akışı öğrenmek için ideal",
@@ -2002,7 +2002,7 @@ COPY = {
             "Canlı kullanım öncesi sistemi denemek için uygundur",
         ],
         "free_cta": "Ücretsiz başla",
-        "monthly_badge": "Pro Aylık",
+        "monthly_badge": "Premium (Aylık)",
         "monthly_title": "Esnek aylık kullanım",
         "monthly_placeholder": "Fiyatı güncelle",
         "monthly_period": "/ ay",
@@ -2013,7 +2013,7 @@ COPY = {
             "Sınırsız düğün baskı listesi",
         ],
         "monthly_cta": "Uygulamayı indir",
-        "yearly_badge": "Pro Yıllık",
+        "yearly_badge": "Premium (Yıllık)",
         "yearly_title": "Düzenli kullanım için avantajlı",
         "yearly_placeholder": "Fiyatı güncelle",
         "yearly_period": "/ yıl",
@@ -2069,8 +2069,8 @@ COPY = {
             {"title": "Mobile delivery teams", "body": "Operations that work over local network or hotspot without internet dependency."},
         ],
         "pricing_eyebrow": "Plans",
-        "pricing_title": "Start free and grow with Pro",
-        "pricing_lead": "The free plan is ready for learning the flow. Pro removes delivery limits and unlocks business branding.",
+        "pricing_title": "Start free and grow with Premium",
+        "pricing_lead": "Free lets teams test the core workflow. Premium removes delivery, live presentation and print limits while unlocking branding and device privileges.",
         "config_warning": "This repository does not include final monthly or yearly prices. Pricing and the direct App Store URL are controlled from site-config.js.",
         "free_badge": "Free",
         "free_title": "Ideal for learning the flow",
@@ -2082,7 +2082,7 @@ COPY = {
             "Good for testing before live use",
         ],
         "free_cta": "Start Free",
-        "monthly_badge": "Pro Monthly",
+        "monthly_badge": "Premium (Monthly)",
         "monthly_title": "Flexible monthly use",
         "monthly_placeholder": "Update price",
         "monthly_period": "/ month",
@@ -2093,7 +2093,7 @@ COPY = {
             "Unlimited wedding print list",
         ],
         "monthly_cta": "Download the app",
-        "yearly_badge": "Pro Yearly",
+        "yearly_badge": "Premium (Yearly)",
         "yearly_title": "Better for regular use",
         "yearly_placeholder": "Update price",
         "yearly_period": "/ year",
@@ -2149,8 +2149,8 @@ COPY = {
             {"title": "Equipos móviles de entrega", "body": "Operaciones que trabajan por red local o punto de acceso sin depender de internet."},
         ],
         "pricing_eyebrow": "Planes",
-        "pricing_title": "Empiece gratis y escale con el plan profesional",
-        "pricing_lead": "El plan gratuito sirve para aprender el flujo. El plan profesional elimina límites y abre la marca del negocio.",
+        "pricing_title": "Empiece con Free y crezca con Premium",
+        "pricing_lead": "Free permite probar el flujo principal. Premium elimina limites de entrega, presentacion e impresion, y activa marca y privilegios de dispositivo.",
         "config_warning": "Este repositorio no incluye precios finales. Los precios y el enlace directo de App Store se actualizan desde site-config.js.",
         "free_badge": "Gratis",
         "free_title": "Ideal para aprender el flujo",
@@ -2162,7 +2162,7 @@ COPY = {
             "Útil para probar antes del uso real",
         ],
         "free_cta": "Empezar Gratis",
-        "monthly_badge": "Profesional mensual",
+        "monthly_badge": "Premium (mensual)",
         "monthly_title": "Uso mensual flexible",
         "monthly_placeholder": "Actualizar precio",
         "monthly_period": "/ mes",
@@ -2173,7 +2173,7 @@ COPY = {
             "Lista de impresion de bodas ilimitada",
         ],
         "monthly_cta": "Descargar la app",
-        "yearly_badge": "Profesional anual",
+        "yearly_badge": "Premium (anual)",
         "yearly_title": "Mejor para uso frecuente",
         "yearly_placeholder": "Actualizar precio",
         "yearly_period": "/ año",
@@ -2229,8 +2229,8 @@ COPY = {
             {"title": "Equipes mobiles", "body": "Des operations qui travaillent en reseau local ou point d'acces sans dependance internet."},
         ],
         "pricing_eyebrow": "Forfaits",
-        "pricing_title": "Commencez gratuitement puis passez au plan professionnel",
-        "pricing_lead": "Le plan gratuit sert a apprendre le flux. Le plan professionnel supprime les limites et debloque l'image de marque.",
+        "pricing_title": "Commencez avec Free puis evoluez avec Premium",
+        "pricing_lead": "Free permet de tester le flux principal. Premium supprime les limites de livraison, presentation et impression, tout en ouvrant la marque et les droits d'appareil.",
         "config_warning": "Ce depot ne contient pas les prix definitifs. Les prix et le lien App Store direct se reglent dans site-config.js.",
         "free_badge": "Gratuit",
         "free_title": "Ideal pour apprendre le flux",
@@ -2242,7 +2242,7 @@ COPY = {
             "Pratique pour tester avant un usage reel",
         ],
         "free_cta": "Commencer Gratuitement",
-        "monthly_badge": "Professionnel mensuel",
+        "monthly_badge": "Premium (mensuel)",
         "monthly_title": "Usage mensuel flexible",
         "monthly_placeholder": "Mettre a jour le prix",
         "monthly_period": "/ mois",
@@ -2253,7 +2253,7 @@ COPY = {
             "Liste d'impression mariage illimitee",
         ],
         "monthly_cta": "Telecharger l'application",
-        "yearly_badge": "Professionnel annuel",
+        "yearly_badge": "Premium (annuel)",
         "yearly_title": "Mieux pour un usage regulier",
         "yearly_placeholder": "Mettre a jour le prix",
         "yearly_period": "/ an",
@@ -2309,8 +2309,8 @@ COPY = {
             {"title": "Mobile Lieferteams", "body": "Ablaufe, die per lokalem Netzwerk oder mobilem Zugangspunkt ohne Internetabhaengigkeit arbeiten."},
         ],
         "pricing_eyebrow": "Plaene",
-        "pricing_title": "Kostenlos starten und mit dem Profi-Plan wachsen",
-        "pricing_lead": "Der Gratisplan hilft beim Einstieg. Der Profi-Plan entfernt Limits und oeffnet den Markenauftritt des Unternehmens.",
+        "pricing_title": "Kostenlos starten und mit Premium wachsen",
+        "pricing_lead": "Free dient zum Testen des Kernablaufs. Premium entfernt Liefer-, Live-Praesentations- und Drucklimits und oeffnet Branding sowie Geraeterechte.",
         "config_warning": "Dieses Repository enthaelt keine finalen Preise. Preise und direkter App-Store-Link werden ueber site-config.js gepflegt.",
         "free_badge": "Kostenlos",
         "free_title": "Ideal zum Kennenlernen",
@@ -2322,7 +2322,7 @@ COPY = {
             "Gut zum Testen vor dem Live-Einsatz",
         ],
         "free_cta": "Kostenlos Starten",
-        "monthly_badge": "Profi Monatlich",
+        "monthly_badge": "Premium (monatlich)",
         "monthly_title": "Flexible Monatsnutzung",
         "monthly_placeholder": "Preis aktualisieren",
         "monthly_period": "/ Monat",
@@ -2333,7 +2333,7 @@ COPY = {
             "Unbegrenzte Hochzeitsdruckliste",
         ],
         "monthly_cta": "App herunterladen",
-        "yearly_badge": "Profi Jaehrlich",
+        "yearly_badge": "Premium (jahrlich)",
         "yearly_title": "Besser fuer regelmaessige Nutzung",
         "yearly_placeholder": "Preis aktualisieren",
         "yearly_period": "/ Jahr",
@@ -2389,8 +2389,8 @@ COPY = {
             {"title": "Team di consegna mobile", "body": "Operazioni che lavorano su rete locale o punto di accesso senza dipendere da internet."},
         ],
         "pricing_eyebrow": "Piani",
-        "pricing_title": "Inizia gratis e cresci con il piano professionale",
-        "pricing_lead": "Il piano gratuito è pronto per imparare il flusso. Il piano professionale rimuove i limiti di consegna e sblocca il branding aziendale.",
+        "pricing_title": "Inizia con Free e cresci con Premium",
+        "pricing_lead": "Free permette di provare il flusso principale. Premium rimuove i limiti di consegna, presentazione e stampa, sbloccando branding e privilegi dispositivo.",
         "config_warning": "Questo repository non include prezzi mensili o annuali definitivi. Prezzi e link diretto App Store sono gestiti da site-config.js.",
         "free_badge": "Gratis",
         "free_title": "Ideale per imparare il flusso",
@@ -2402,7 +2402,7 @@ COPY = {
             "Utile per testare prima dell'uso reale",
         ],
         "free_cta": "Inizia Gratis",
-        "monthly_badge": "Professionale mensile",
+        "monthly_badge": "Premium (mensile)",
         "monthly_title": "Uso mensile flessibile",
         "monthly_placeholder": "Aggiorna il prezzo",
         "monthly_period": "/ mese",
@@ -2413,7 +2413,7 @@ COPY = {
             "Lista di stampa matrimoni illimitata",
         ],
         "monthly_cta": "Scarica l'applicazione",
-        "yearly_badge": "Professionale annuale",
+        "yearly_badge": "Premium (annuale)",
         "yearly_title": "Più vantaggioso per un uso regolare",
         "yearly_placeholder": "Aggiorna il prezzo",
         "yearly_period": "/ anno",
@@ -2469,8 +2469,8 @@ COPY = {
             {"title": "Operacoes moveis", "body": "Fluxos que funcionam em rede local ou ponto de acesso sem depender da internet."},
         ],
         "pricing_eyebrow": "Planos",
-        "pricing_title": "Comece gratis e cresca com o plano profissional",
-        "pricing_lead": "O plano gratuito serve para aprender o fluxo. O plano profissional remove limites e libera a marca do negocio.",
+        "pricing_title": "Comece com Free e cresca com Premium",
+        "pricing_lead": "Free permite testar o fluxo principal. Premium remove limites de entrega, apresentacao e impressao, liberando marca e privilegios de dispositivo.",
         "config_warning": "Este repositorio nao inclui os precos finais. Os precos e o link direto da App Store sao controlados em site-config.js.",
         "free_badge": "Gratis",
         "free_title": "Ideal para aprender o fluxo",
@@ -2482,7 +2482,7 @@ COPY = {
             "Bom para testar antes do uso real",
         ],
         "free_cta": "Comecar Gratis",
-        "monthly_badge": "Profissional mensal",
+        "monthly_badge": "Premium (mensal)",
         "monthly_title": "Uso mensal flexivel",
         "monthly_placeholder": "Atualizar preco",
         "monthly_period": "/ mes",
@@ -2493,7 +2493,7 @@ COPY = {
             "Lista de impressao de casamento ilimitada",
         ],
         "monthly_cta": "Baixar o aplicativo",
-        "yearly_badge": "Profissional anual",
+        "yearly_badge": "Premium (anual)",
         "yearly_title": "Melhor para uso frequente",
         "yearly_placeholder": "Atualizar preco",
         "yearly_period": "/ ano",
@@ -2549,8 +2549,8 @@ COPY = {
             {"title": "Мобильные команды", "body": "Операции на локальной сети или через точку доступа без зависимости от интернета."},
         ],
         "pricing_eyebrow": "Планы",
-        "pricing_title": "Начните бесплатно и переходите на профессиональный план",
-        "pricing_lead": "Бесплатный план подходит для знакомства с процессом. Профессиональный план снимает лимиты и открывает брендинг.",
+        "pricing_title": "Начните с Free и развивайтесь с Premium",
+        "pricing_lead": "Free помогает проверить основной процесс. Premium снимает лимиты выдачи, живой презентации и печати, а также открывает брендинг и права устройств.",
         "config_warning": "В этом репозитории нет финальных цен. Цены и прямая ссылка App Store настраиваются через site-config.js.",
         "free_badge": "Бесплатно",
         "free_title": "Подходит для знакомства с потоком",
@@ -2562,7 +2562,7 @@ COPY = {
             "Удобно для теста перед реальной работой",
         ],
         "free_cta": "Начать Бесплатно",
-        "monthly_badge": "Профи ежемесячно",
+        "monthly_badge": "Premium (месяц)",
         "monthly_title": "Гибкое помесячное использование",
         "monthly_placeholder": "Обновить цену",
         "monthly_period": "/ месяц",
@@ -2573,7 +2573,7 @@ COPY = {
             "Неограниченный список свадебной печати",
         ],
         "monthly_cta": "Скачать приложение",
-        "yearly_badge": "Профи годовой",
+        "yearly_badge": "Premium (год)",
         "yearly_title": "Лучше для постоянной работы",
         "yearly_placeholder": "Обновить цену",
         "yearly_period": "/ год",
@@ -2629,8 +2629,8 @@ COPY = {
             {"title": "فرق التسليم المتنقلة", "body": "عمليات تعمل عبر الشبكة المحلية او نقطة الاتصال بدون اعتماد على الانترنت."},
         ],
         "pricing_eyebrow": "الخطط",
-        "pricing_title": "ابدأ مجانا ثم توسع مع الخطة الاحترافية",
-        "pricing_lead": "الخطة المجانية مناسبة لتعلم التدفق. الخطة الاحترافية تزيل الحدود وتفتح التحكم بالهوية التجارية.",
+        "pricing_title": "ابدأ مع Free وتوسع مع Premium",
+        "pricing_lead": "Free يتيح تجربة التدفق الاساسي. Premium يزيل حدود التسليم والعرض والطباعة ويفتح امتيازات العلامة والاجهزة.",
         "config_warning": "هذا المستودع لا يحتوي على الاسعار النهائية. يتم تحديث الاسعار والرابط المباشر لـ App Store من خلال site-config.js.",
         "free_badge": "مجاني",
         "free_title": "مثالي لتعلم التدفق",
@@ -2642,7 +2642,7 @@ COPY = {
             "مناسب للتجربة قبل الاستخدام الفعلي",
         ],
         "free_cta": "ابدأ مجانا",
-        "monthly_badge": "احترافية شهرية",
+        "monthly_badge": "Premium (شهري)",
         "monthly_title": "استخدام شهري مرن",
         "monthly_placeholder": "حدث السعر",
         "monthly_period": "/ شهر",
@@ -2653,7 +2653,7 @@ COPY = {
             "قائمة طباعة الاعراس بدون حدود",
         ],
         "monthly_cta": "نزّل التطبيق",
-        "yearly_badge": "احترافية سنوية",
+        "yearly_badge": "Premium (سنوي)",
         "yearly_title": "افضل للاستخدام المنتظم",
         "yearly_placeholder": "حدث السعر",
         "yearly_period": "/ سنة",
@@ -2709,8 +2709,8 @@ COPY = {
             {"title": "मोबाइल डिलीवरी टीमें", "body": "ऐसे ऑपरेशन जो लोकल नेटवर्क या हॉटस्पॉट पर इंटरनेट के बिना चलते हैं।"},
         ],
         "pricing_eyebrow": "प्लान",
-        "pricing_title": "मुफ़्त से शुरू करें और प्रो के साथ बढ़ें",
-        "pricing_lead": "मुफ़्त प्लान फ्लो सीखने के लिए तैयार है। प्रो सीमा हटाता है और बिज़नेस ब्रांडिंग खोलता है।",
+        "pricing_title": "Free से शुरू करें और Premium के साथ बढ़ें",
+        "pricing_lead": "Free मुख्य प्रवाह को आज़माने के लिए है। Premium डिलीवरी, लाइव प्रस्तुति और प्रिंट सीमाएँ हटाता है तथा ब्रांडिंग और डिवाइस अधिकार खोलता है।",
         "config_warning": "इस रिपॉजिटरी में अंतिम कीमतें नहीं हैं। कीमतें और सीधा App Store लिंक site-config.js से नियंत्रित होते हैं।",
         "free_badge": "मुफ़्त",
         "free_title": "फ्लो सीखने के लिए सही",
@@ -2722,7 +2722,7 @@ COPY = {
             "लाइव उपयोग से पहले टेस्ट करने के लिए अच्छा",
         ],
         "free_cta": "मुफ़्त शुरू करें",
-        "monthly_badge": "प्रो मासिक",
+        "monthly_badge": "Premium (मासिक)",
         "monthly_title": "लचीला मासिक उपयोग",
         "monthly_placeholder": "कीमत अपडेट करें",
         "monthly_period": "/ महीना",
@@ -2733,7 +2733,7 @@ COPY = {
             "असीमित वेडिंग प्रिंट सूची",
         ],
         "monthly_cta": "ऐप डाउनलोड करें",
-        "yearly_badge": "प्रो वार्षिक",
+        "yearly_badge": "Premium (वार्षिक)",
         "yearly_title": "नियमित उपयोग के लिए बेहतर",
         "yearly_placeholder": "कीमत अपडेट करें",
         "yearly_period": "/ वर्ष",
@@ -2789,8 +2789,8 @@ COPY = {
             {"title": "モバイル納品チーム", "body": "インターネット不要でローカルネットワークやホットスポットを使う運用向け。"},
         ],
         "pricing_eyebrow": "プラン",
-        "pricing_title": "無料で始めて、プロで拡張",
-        "pricing_lead": "無料プランで流れを学べます。プロは納品制限を外し、業務用ブランディングを解放します。",
+        "pricing_title": "Free で始めて Premium へ拡張",
+        "pricing_lead": "Free は基本フローの確認に使えます。Premium は納品、ライブ表示、プリント制限を解除し、ブランドとデバイス権限を開放します。",
         "config_warning": "このリポジトリには最終価格が入っていません。価格と App Store 直リンクは site-config.js から更新できます。",
         "free_badge": "無料",
         "free_title": "まず流れを学ぶために最適",
@@ -2802,7 +2802,7 @@ COPY = {
             "本番前のテストに向いている",
         ],
         "free_cta": "無料で始める",
-        "monthly_badge": "プロ 月額",
+        "monthly_badge": "Premium（月額）",
         "monthly_title": "柔軟な月額利用",
         "monthly_placeholder": "価格を更新",
         "monthly_period": "/ 月",
@@ -2813,7 +2813,7 @@ COPY = {
             "ウェディングプリントリスト無制限",
         ],
         "monthly_cta": "アプリを入手",
-        "yearly_badge": "プロ 年額",
+        "yearly_badge": "Premium（年額）",
         "yearly_title": "継続利用に最適",
         "yearly_placeholder": "価格を更新",
         "yearly_period": "/ 年",
@@ -2869,8 +2869,8 @@ COPY = {
             {"title": "移动交付团队", "body": "适合通过本地网络或热点运行且不依赖互联网的团队。"},
         ],
         "pricing_eyebrow": "方案",
-        "pricing_title": "先免费开始，再用专业版扩展",
-        "pricing_lead": "免费方案适合先熟悉流程。专业版会移除交付限制，并开放品牌自定义能力。",
+        "pricing_title": "从 Free 开始，用 Premium 扩展",
+        "pricing_lead": "Free 适合体验核心流程。Premium 解除交付、现场展示与打印限制，并开启品牌和设备权益。",
         "config_warning": "此仓库中没有最终订阅价格。价格和 App Store 直链可在 site-config.js 中更新。",
         "free_badge": "免费",
         "free_title": "适合先熟悉流程",
@@ -2882,7 +2882,7 @@ COPY = {
             "适合正式上线前测试",
         ],
         "free_cta": "免费开始",
-        "monthly_badge": "专业版（月）",
+        "monthly_badge": "Premium（月）",
         "monthly_title": "灵活的月度使用",
         "monthly_placeholder": "更新价格",
         "monthly_period": "/ 月",
@@ -2893,7 +2893,7 @@ COPY = {
             "无限婚礼打印列表",
         ],
         "monthly_cta": "下载应用",
-        "yearly_badge": "专业版（年）",
+        "yearly_badge": "Premium（年）",
         "yearly_title": "更适合长期使用",
         "yearly_placeholder": "更新价格",
         "yearly_period": "/ 年",
@@ -3125,9 +3125,9 @@ FAQ_FLOW_OVERRIDES = {
         {"q": "Müşteri fotoğrafları nasıl görür?", "a": "Müşteri önce WiFi ya da erişim noktası QR bağlantısıyla aynı ağa alınır, ardından oturum QR kodunu okutup yalnızca kendisine ait galeriyi tarayıcıdan açar."},
         {"q": "Oturum yapısı ne işe yarar?", "a": "Her müşteri, çekim veya etkinlik ayrı bir oturum olarak tutulur. Böylece fotoğraflar, seçimler, ödeme akışı ve teslim kayıtları karışmaz; ayrıca her oturumun sonucu daha kontrollü izlenir."},
         {"q": "Raporlar bölümünde neyi takip edebilirim?", "a": "Rapor ekranı üzerinden satış adedi, gelir, indirme hareketleri, dönüşüm ve ortalama sepet gibi temel performans göstergelerini sahadaki operasyonu kapatmadan izleyebilirsiniz."},
-        {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Pro planlarda özel işletme adı, logo ve teslim markalaması açılır."},
+        {"q": "Kendi işletme adımı ve logomu kullanabilir miyim?", "a": "Evet. Premium planlarda özel işletme adı, logo ve teslim markalaması açılır."},
         {"q": "Müşteriye ülkeye göre ödeme yöntemi gösterebilir miyim?", "a": "Evet. İşletme ülkesi seçildiğinde kurulumu tamamlanan yerel yöntemler ödeme popup ekranında görünür. Türkiye, İspanya, Hindistan, Çin ve Japonya için hazır yöntem setleri vardır."},
-        {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Pro planlar günlük teslim limitini kaldırır."},
+        {"q": "Teslim limiti hangi planda kalkıyor?", "a": "Aylık ve yıllık Premium planlar günlük teslim limitini kaldırır."},
     ],
     "en": [
         {"q": "Does SnapVend work without internet?", "a": "Yes. The main workflow can run over local network or hotspot. Cloud access is not required."},
@@ -3135,99 +3135,99 @@ FAQ_FLOW_OVERRIDES = {
         {"q": "How do clients view the photos?", "a": "Clients first join through a WiFi or hotspot QR connection, then scan the session QR code to open only the gallery created for them in the browser."},
         {"q": "What does the session structure do?", "a": "Each client, shoot or event can stay in its own session so files, selections, payment flow and delivery records never get mixed, while each outcome stays easier to track."},
         {"q": "What can I track in the reports section?", "a": "The reports view helps you monitor sales count, revenue, download activity, conversion and average basket without breaking the live field workflow."},
-        {"q": "Can I use my own business name and logo?", "a": "Yes. Pro plans unlock custom business branding, logo usage and branded delivery."},
+        {"q": "Can I use my own business name and logo?", "a": "Yes. Premium plans unlock custom business branding, logo usage and branded delivery."},
         {"q": "Can I show country-specific payment methods to clients?", "a": "Yes. Once the business country is selected, completed local methods appear in the payment popup. Ready local method sets are available for Turkey, Spain, India, China and Japan."},
-        {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Pro plans remove the daily delivery limit."},
+        {"q": "Which plan removes delivery limits?", "a": "Both monthly and yearly Premium plans remove the daily delivery limit."},
     ],
     "es": [
         {"q": "¿SnapVend funciona sin internet?", "a": "Si. El flujo principal puede funcionar con red local o punto de acceso sin depender de la nube."},
         {"q": "¿Puedo transferir directo desde una camara profesional?", "a": "Si. Puede enviar fotos directamente a SnapVend desde una camara profesional con FTP usando la misma red o punto de acceso."},
         {"q": "¿Como ve el cliente las fotos?", "a": "El cliente escanea un QR en la misma red, entra a su galeria de sesion en el navegador y hace alli la seleccion."},
         {"q": "¿Para que sirve la estructura de sesion?", "a": "Cada cliente, toma o evento puede mantenerse en su propia sesion para que archivos, selecciones, pago y entrega no se mezclen."},
-        {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes profesionales desbloquean nombre comercial, logo y entrega con marca propia."},
+        {"q": "¿Puedo usar mi propio logo y nombre?", "a": "Si. Los planes Premium desbloquean nombre comercial, logo y entrega con marca propia."},
         {"q": "¿Puedo mostrar metodos de pago segun el pais?", "a": "Si. Al elegir el pais del negocio, los metodos locales configurados aparecen en el popup de pago. Hay metodos listos para Turquia, Espana, India, China y Japon."},
-        {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes profesional mensual y profesional anual eliminan el limite diario."},
+        {"q": "¿Que plan elimina el limite de entrega?", "a": "Los planes Premium mensual y anual eliminan el limite diario."},
     ],
     "fr": [
         {"q": "SnapVend fonctionne t il sans internet ?", "a": "Oui. Le flux principal peut tourner sur reseau local ou point d'acces sans cloud obligatoire."},
         {"q": "Puis je transferer directement depuis un appareil photo pro ?", "a": "Oui. Vous pouvez envoyer les photos directement dans SnapVend depuis un appareil photo pro compatible FTP sur le meme reseau ou point d'acces."},
         {"q": "Comment le client voit il les photos ?", "a": "Le client scanne un QR sur le meme reseau, ouvre sa galerie de session dans le navigateur et fait ses choix."},
         {"q": "A quoi sert la structure de session ?", "a": "Chaque client, prise de vue ou evenement peut rester dans sa propre session pour que fichiers, choix, paiement et livraison ne se melangent pas."},
-        {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans professionnels ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
+        {"q": "Puis je utiliser mon propre logo ?", "a": "Oui. Les plans Premium ouvrent le nom d entreprise, le logo et la livraison personnalisee."},
         {"q": "Puis je afficher des methodes de paiement selon le pays ?", "a": "Oui. Une fois le pays de l entreprise choisi, les methodes locales configurees apparaissent dans la fenetre de paiement. Des ensembles prets existent pour la Turquie, l Espagne, l Inde, la Chine et le Japon."},
-        {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans professionnel mensuel et professionnel annuel retirent la limite quotidienne."},
+        {"q": "Quel plan retire la limite de livraison ?", "a": "Les plans Premium mensuel et annuel retirent la limite quotidienne."},
     ],
     "de": [
         {"q": "Funktioniert SnapVend ohne Internet?", "a": "Ja. Der Hauptablauf kann uber lokales Netzwerk oder einen mobilen Zugangspunkt ohne Cloud laufen."},
         {"q": "Kann ich direkt aus einer Profikamera uebertragen?", "a": "Ja. Fotos koennen ueber dieselbe Netzwerkverbindung oder einen mobilen Zugangspunkt direkt aus einer FTP-faehigen Profikamera in SnapVend gehen."},
         {"q": "Wie sehen Kunden die Fotos?", "a": "Kunden scannen im gleichen Netzwerk den QR Code, oeffnen ihre Session-Galerie im Browser und treffen dort die Auswahl."},
         {"q": "Wozu dient die Session-Struktur?", "a": "Jeder Kunde, jedes Shooting oder Event bleibt in einer eigenen Session, damit Dateien, Auswahl, Zahlung und Lieferung nicht vermischt werden."},
-        {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Der Profi-Plan schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
+        {"q": "Kann ich eigenes Branding nutzen?", "a": "Ja. Premium schaltet Firmenname, Logo und gebrandete Auslieferung frei."},
         {"q": "Kann ich landerspezifische Zahlungsarten zeigen?", "a": "Ja. Sobald das Geschaeftsland gewahlt ist, erscheinen fertig eingerichtete lokale Methoden im Zahlungsfenster. Vorbereitete Sets gibt es fur die Turkei, Spanien, Indien, China und Japan."},
-        {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Profi-Plan entfernen das Tageslimit."},
+        {"q": "Welcher Plan entfernt das Lieferlimit?", "a": "Sowohl der monatliche als auch der jahrliche Premium Plan entfernen das Tageslimit."},
     ],
     "it": [
         {"q": "SnapVend funziona senza internet?", "a": "Sì. Il flusso principale può funzionare su rete locale o punto di accesso senza dipendere dal cloud."},
         {"q": "Posso trasferire direttamente da una fotocamera professionale?", "a": "Sì. Le foto possono entrare direttamente in SnapVend da una fotocamera professionale compatibile con FTP sulla stessa rete o punto di accesso."},
         {"q": "Come vedono le foto i clienti?", "a": "Il cliente scansiona un QR sulla stessa rete, apre la propria galleria di sessione nel browser e seleziona le foto lì."},
         {"q": "A cosa serve la struttura a sessioni?", "a": "Ogni cliente, servizio o evento può restare in una sessione separata, così file, selezioni, pagamenti e consegne non si mescolano."},
-        {"q": "Posso usare il mio nome e il mio logo?", "a": "Sì. I piani professionali sbloccano branding personalizzato, logo e consegna brandizzata."},
+        {"q": "Posso usare il mio nome e il mio logo?", "a": "Sì. I piani Premium sbloccano branding personalizzato, logo e consegna brandizzata."},
         {"q": "Posso mostrare metodi di pagamento in base al paese?", "a": "Sì. Dopo aver scelto il paese dell'attività, i metodi locali configurati compaiono nel popup di pagamento. Esistono set pronti per Turchia, Spagna, India, Cina e Giappone."},
-        {"q": "Quale piano rimuove il limite di consegna?", "a": "Sia il piano professionale mensile sia quello annuale rimuovono il limite giornaliero."},
+        {"q": "Quale piano rimuove il limite di consegna?", "a": "Sia il piano Premium mensile sia quello annuale rimuovono il limite giornaliero."},
     ],
     "pt": [
         {"q": "O SnapVend funciona sem internet?", "a": "Sim. O fluxo principal pode rodar em rede local ou ponto de acesso sem depender da nuvem."},
         {"q": "Posso transferir direto de uma camera profissional?", "a": "Sim. As fotos podem entrar direto no SnapVend a partir de uma camera profissional com FTP usando a mesma rede ou ponto de acesso."},
         {"q": "Como o cliente ve as fotos?", "a": "O cliente escaneia um QR na mesma rede, abre sua galeria de sessao no navegador e faz a selecao ali."},
         {"q": "Para que serve a estrutura de sessao?", "a": "Cada cliente, ensaio ou evento pode ficar em sua propria sessao para que arquivos, escolhas, pagamento e entrega nao se misturem."},
-        {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos profissionais liberam branding, logo e entrega personalizada."},
+        {"q": "Posso usar meu proprio nome e logo?", "a": "Sim. Os planos Premium liberam branding, logo e entrega personalizada."},
         {"q": "Posso mostrar metodos de pagamento por pais?", "a": "Sim. Ao escolher o pais do negocio, os metodos locais configurados aparecem no popup de pagamento. Ha conjuntos prontos para Turquia, Espanha, India, China e Japao."},
-        {"q": "Qual plano remove o limite de entrega?", "a": "Os planos profissional mensal e profissional anual removem o limite diario."},
+        {"q": "Qual plano remove o limite de entrega?", "a": "Os planos Premium mensal e Premium anual removem o limite diario."},
     ],
     "ru": [
         {"q": "Работает ли SnapVend без интернета?", "a": "Да. Основной сценарий может работать через локальную сеть или точку доступа без облака."},
         {"q": "Можно ли передавать напрямую с профессиональной камеры?", "a": "Да. Фото можно отправлять прямо в SnapVend с профессиональной камеры по FTP через ту же сеть или точку доступа."},
         {"q": "Как клиент смотрит фотографии?", "a": "Клиент сканирует QR-код в той же сети, открывает свою галерею сессии в браузере и выбирает фотографии там."},
         {"q": "Для чего нужна структура сессий?", "a": "Каждый клиент, съемка или событие могут идти в отдельной сессии, чтобы файлы, выбор, оплата и выдача не смешивались."},
-        {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Профессиональный план открывает фирменное имя, логотип и брендированную выдачу."},
+        {"q": "Можно ли использовать свой логотип и бренд?", "a": "Да. Premium открывает фирменное имя, логотип и брендированную выдачу."},
         {"q": "Можно ли показать клиенту способы оплаты по стране?", "a": "Да. После выбора страны бизнеса настроенные локальные методы появляются во всплывающем окне оплаты. Готовые наборы есть для Турции, Испании, Индии, Китая и Японии."},
-        {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой профессиональный план снимают ежедневный лимит выдачи."},
+        {"q": "Какой тариф снимает лимит выдачи?", "a": "И месячный, и годовой Premium снимают ежедневный лимит выдачи."},
     ],
     "ar": [
         {"q": "هل يعمل SnapVend بدون انترنت؟", "a": "نعم. يمكن تشغيل التدفق الرئيسي عبر شبكة محلية او نقطة اتصال بدون اعتماد على السحابة."},
         {"q": "هل يمكن النقل مباشرة من كاميرا احترافية؟", "a": "نعم. يمكن نقل الصور مباشرة الى SnapVend من كاميرا احترافية تدعم FTP عبر الشبكة نفسها او نقطة الاتصال."},
         {"q": "كيف يشاهد العميل الصور؟", "a": "يمسح العميل QR على نفس الشبكة ويدخل الى معرض الجلسة الخاص به من المتصفح ويختار الصور هناك."},
         {"q": "ما فائدة بنية الجلسات؟", "a": "يمكن حفظ كل عميل او جلسة تصوير او فعالية داخل جلسة مستقلة حتى لا تختلط الملفات والاختيارات والدفع والتسليم."},
-        {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. الخطط الاحترافية تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
+        {"q": "هل يمكنني استخدام اسمي التجاري وشعاري؟", "a": "نعم. خطط Premium تفتح اسم النشاط والشعار والتسليم بعلامتك الخاصة."},
         {"q": "هل يمكنني عرض طرق دفع حسب البلد للعميل؟", "a": "نعم. عند اختيار بلد النشاط تظهر الطرق المحلية المكتملة في نافذة الدفع. توجد مجموعات جاهزة لتركيا واسبانيا والهند والصين واليابان."},
-        {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية الاحترافية يزيلان حد التسليم اليومي."},
+        {"q": "اي خطة تزيل حد التسليم اليومي؟", "a": "كل من الخطة الشهرية والسنوية Premium يزيلان حد التسليم اليومي."},
     ],
     "hi": [
         {"q": "क्या SnapVend बिना इंटरनेट के काम करता है?", "a": "हाँ। मुख्य फ्लो लोकल नेटवर्क या हॉटस्पॉट पर चल सकता है, क्लाउड जरूरी नहीं है।"},
         {"q": "क्या मैं प्रोफेशनल कैमरे से सीधा ट्रांसफर कर सकता हूँ?", "a": "हाँ। FTP-सक्षम प्रोफेशनल कैमरे से फोटो उसी नेटवर्क या हॉटस्पॉट पर सीधे SnapVend में लाई जा सकती हैं।"},
         {"q": "ग्राहक फोटो कैसे देखता है?", "a": "ग्राहक उसी नेटवर्क पर QR स्कैन करके ब्राउज़र में अपनी सेशन गैलरी खोलता है और वहीं चयन करता है।"},
         {"q": "सेशन संरचना किस काम आती है?", "a": "हर ग्राहक, शूट या इवेंट को अलग सेशन में रखा जा सकता है ताकि फाइलें, चयन, भुगतान और डिलीवरी आपस में न मिलें।"},
-        {"q": "क्या मैं अपना नाम और लोगो इस्तेमाल कर सकता हूँ?", "a": "हाँ। प्रो प्लान कस्टम ब्रांडिंग, लोगो और ब्रांडेड डिलीवरी खोलते हैं।"},
+        {"q": "क्या मैं अपना नाम और लोगो इस्तेमाल कर सकता हूँ?", "a": "हाँ। Premium प्लान कस्टम ब्रांडिंग, लोगो और ब्रांडेड डिलीवरी खोलते हैं।"},
         {"q": "क्या मैं ग्राहक को देश के हिसाब से भुगतान तरीके दिखा सकता हूँ?", "a": "हाँ। बिज़नेस देश चुनने के बाद कॉन्फ़िगर किए गए लोकल तरीके भुगतान विंडो में दिखते हैं। तुर्की, स्पेन, भारत, चीन और जापान के लिए तैयार भुगतान सेट मौजूद हैं।"},
-        {"q": "कौन सा प्लान डिलीवरी सीमा हटाता है?", "a": "मासिक और वार्षिक दोनों प्रो प्लान दैनिक डिलीवरी सीमा हटा देते हैं।"},
+        {"q": "कौन सा प्लान डिलीवरी सीमा हटाता है?", "a": "मासिक और वार्षिक दोनों Premium प्लान दैनिक डिलीवरी सीमा हटा देते हैं।"},
     ],
     "ja": [
         {"q": "SnapVend はインターネットなしで使えますか？", "a": "はい。主なフローはローカルネットワークやホットスポット上で動作でき、クラウドは必須ではありません。"},
         {"q": "プロ向けカメラから直接取り込めますか？", "a": "はい。FTP 対応のプロ向けカメラから、同じネットワークやホットスポットを通じて SnapVend へ直接取り込めます。"},
         {"q": "クライアントはどうやって写真を見ますか？", "a": "同じネットワーク上で QR を読み取り、自分のセッションギャラリーをブラウザで開いて選択します。"},
         {"q": "セッション構造は何のためにありますか？", "a": "顧客、撮影、イベントごとに個別のセッションで管理できるため、ファイル、選択、支払い、納品が混ざりません。"},
-        {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。プロプランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
+        {"q": "自分のブランド名やロゴを使えますか？", "a": "はい。Premium プランで独自ブランド名、ロゴ、ブランド納品が使えます。"},
         {"q": "国ごとの決済方法をクライアントに表示できますか？", "a": "はい。事業国を選ぶと、設定済みのローカル決済方法が支払いポップアップに表示されます。トルコ、スペイン、インド、中国、日本向けの方法セットが用意されています。"},
-        {"q": "どのプランで納品制限がなくなりますか？", "a": "月額プロと年額プロの両方で日次納品制限が解除されます。"},
+        {"q": "どのプランで納品制限がなくなりますか？", "a": "月額 Premium と年額 Premium の両方で日次納品制限が解除されます。"},
     ],
     "zh": [
         {"q": "SnapVend 可以在没有互联网时使用吗？", "a": "可以。主要流程可在本地网络或热点上运行，不依赖云端。"},
         {"q": "可以直接从专业相机传入吗？", "a": "可以。支持 FTP 的专业相机可通过同一网络或热点直接把照片传入 SnapVend。"},
         {"q": "客户如何查看照片？", "a": "客户在同一网络中扫描二维码后，就能在浏览器里打开自己的会话画廊并完成选片。"},
         {"q": "会话结构有什么作用？", "a": "每位客户、每次拍摄或每场活动都可以放在独立会话中，这样文件、选片、付款和交付记录不会混在一起。"},
-        {"q": "我可以使用自己的品牌名和标识吗？", "a": "可以。专业版计划会开放自定义品牌名、标识和品牌化交付。"},
+        {"q": "我可以使用自己的品牌名和标识吗？", "a": "可以。Premium 计划会开放自定义品牌名、标识和品牌化交付。"},
         {"q": "可以向客户显示按国家配置的支付方式吗？", "a": "可以。选择商家所在国家后，已完成设置的本地支付方式会显示在支付弹窗中。目前已为土耳其、西班牙、印度、中国和日本准备了现成方式。"},
-        {"q": "哪个计划会移除交付限制？", "a": "月度专业版和年度专业版都会移除每日交付限制。"},
+        {"q": "哪个计划会移除交付限制？", "a": "月度 Premium 和年度 Premium 都会移除每日交付限制。"},
     ],
 }
 
@@ -3705,6 +3705,357 @@ for locale_code, values in LICENSE_CONTENT_OVERRIDES.items():
     WHY_SNAPVEND_SECTION[locale_code]["cards"].append(values["why_card"])
     FAQ_SECTION[locale_code]["items"].insert(-1, values["faq"])
 
+PLAN_LICENSE_RULE_OVERRIDES = {
+    "tr": {
+        "badges": ("Free", "Premium (Aylık)", "Premium (Yıllık)"),
+        "titles": ("Temel akışı denemek için", "Esnek Premium kullanım", "Düzenli saha kullanımı için avantajlı"),
+        "free": [
+            "Günlük 10 fotoğraf teslim hakkı",
+            "Günlük 10 baskı siparişi hakkı",
+            "Günlük 10 canlı sunum hakkı",
+            "SnapVend markası görünür kalır",
+        ],
+        "monthly": [
+            "Sınırsız günlük teslim",
+            "Sınırsız canlı sunum ve baskı sipariş listesi",
+            "1 telefon + 1 tablet aktivasyonu",
+            "Özel işletme adı, logo ve ZIP dosya adı",
+            "Satın alma geri yükleme ve abonelik yönetimi",
+        ],
+        "yearly": [
+            "Aylık Premium’daki tüm lisans hakları",
+            "12 aylık kullanımda daha avantajlı toplam maliyet",
+            "Doğrulanmış lisansla 14 gün offline erişim penceresi",
+            "Yoğun düğün ve saha ekipleri için sürdürülebilir kullanım",
+            "Marka ve teslim akışı üzerinde tam kontrol",
+        ],
+        "note": "Free plan günlük 10 teslim, 10 baskı siparişi ve 10 canlı sunum limitiyle temel akışı denetir. Premium lisans 1 telefon + 1 tablet için etkinleşir; teslim, canlı sunum ve baskı limitlerini kaldırır. Doğrulanmış Premium lisans 14 güne kadar offline erişim penceresini korur; satın alma geri yükleme ve abonelik yönetimi desteklenir.",
+        "why_card": {"title": "Lisans ve cihaz kuralları net görünür", "body": "Free ve Premium durumu, aktif cihaz hakkı, son doğrulama zamanı ve offline erişim bilgisi uygulama içinde net görünür; ekip sahada hangi hakların açık olduğunu karıştırmaz."},
+        "faq": {"q": "Free ve Premium lisans kuralları nasıl çalışır?", "a": "Free plan günlük 10 teslim, 10 baskı siparişi ve 10 canlı sunum hakkı verir. Premium plan bu limitleri kaldırır, 1 telefon + 1 tablet aktivasyonu sunar, doğrulanmış lisans için 14 güne kadar offline erişim penceresini korur ve satın alma geri yükleme ile abonelik yönetimini destekler."},
+    },
+    "en": {
+        "badges": ("Free", "Premium (Monthly)", "Premium (Yearly)"),
+        "titles": ("Start with the core workflow", "Flexible Premium access", "Best value for regular field work"),
+        "free": [
+            "10 photo deliveries per day",
+            "10 print orders per day",
+            "10 live presentations per day",
+            "SnapVend branding remains visible",
+        ],
+        "monthly": [
+            "Unlimited daily deliveries",
+            "Unlimited live presentations and print order list",
+            "1 phone + 1 tablet activation",
+            "Custom business name, logo and ZIP filename",
+            "Purchase restore and subscription management",
+        ],
+        "yearly": [
+            "All monthly Premium license rights",
+            "Better total cost across 12 months",
+            "14-day offline access window for verified licenses",
+            "Sustainable use for busy wedding and field teams",
+            "Full control over branding and delivery flow",
+        ],
+        "note": "Free includes daily limits of 10 deliveries, 10 print orders and 10 live presentations. Premium activates for 1 phone + 1 tablet, removes delivery, live presentation and print limits, keeps verified access for up to 14 days offline, and supports purchase restore plus subscription management.",
+        "why_card": {"title": "Clear license and device rules", "body": "Free and Premium status, active device rights, last validation time and offline access details are visible inside the app, so teams know which rights are active in the field."},
+        "faq": {"q": "How do Free and Premium license rules work?", "a": "Free includes 10 deliveries, 10 print orders and 10 live presentations per day. Premium removes those limits, activates for 1 phone + 1 tablet, keeps a verified license available for up to 14 days offline, and supports purchase restore plus subscription management."},
+    },
+    "es": {
+        "badges": ("Free", "Premium (mensual)", "Premium (anual)"),
+        "titles": ("Empieza con el flujo principal", "Acceso Premium flexible", "Mejor valor para uso frecuente"),
+        "free": [
+            "10 entregas de fotos al dia",
+            "10 pedidos de impresion al dia",
+            "10 presentaciones en vivo al dia",
+            "La marca SnapVend permanece visible",
+        ],
+        "monthly": [
+            "Entregas diarias ilimitadas",
+            "Presentaciones en vivo y lista de impresion ilimitadas",
+            "Activacion de 1 telefono + 1 tablet",
+            "Nombre comercial, logo y nombre ZIP personalizados",
+            "Restauracion de compra y gestion de suscripcion",
+        ],
+        "yearly": [
+            "Todos los derechos de Premium mensual",
+            "Mejor coste total en 12 meses",
+            "Ventana offline de 14 dias para licencias verificadas",
+            "Uso sostenible para bodas y equipos de campo intensivos",
+            "Control total de marca y flujo de entrega",
+        ],
+        "note": "Free permite probar el flujo con limites diarios de 10 entregas, 10 pedidos de impresion y 10 presentaciones en vivo. Premium se activa para 1 telefono + 1 tablet, elimina esos limites, conserva hasta 14 dias de acceso offline para licencias verificadas y admite restaurar compra y gestionar suscripcion.",
+        "why_card": {"title": "Reglas claras de licencia y dispositivo", "body": "El estado Free o Premium, los derechos del dispositivo activo, la ultima validacion y el acceso offline se muestran en la aplicacion para que el equipo sepa que permisos estan activos."},
+        "faq": {"q": "¿Como funcionan las reglas Free y Premium?", "a": "Free incluye 10 entregas, 10 pedidos de impresion y 10 presentaciones en vivo al dia. Premium elimina esos limites, se activa para 1 telefono + 1 tablet, mantiene hasta 14 dias de acceso offline con licencia verificada y permite restaurar compra y gestionar suscripcion."},
+    },
+    "fr": {
+        "badges": ("Free", "Premium (mensuel)", "Premium (annuel)"),
+        "titles": ("Commencer avec le flux principal", "Acces Premium flexible", "Meilleure valeur pour un usage regulier"),
+        "free": [
+            "10 livraisons photo par jour",
+            "10 commandes d'impression par jour",
+            "10 presentations en direct par jour",
+            "La marque SnapVend reste visible",
+        ],
+        "monthly": [
+            "Livraisons quotidiennes illimitees",
+            "Presentations en direct et liste d'impression illimitees",
+            "Activation de 1 telephone + 1 tablette",
+            "Nom d'entreprise, logo et nom ZIP personnalises",
+            "Restauration d'achat et gestion d'abonnement",
+        ],
+        "yearly": [
+            "Tous les droits Premium mensuels",
+            "Meilleur cout total sur 12 mois",
+            "Fenetre offline de 14 jours pour licence verifiee",
+            "Usage durable pour mariages et equipes terrain intenses",
+            "Controle complet de la marque et du flux de livraison",
+        ],
+        "note": "Free permet de tester le flux avec 10 livraisons, 10 commandes d'impression et 10 presentations en direct par jour. Premium s'active pour 1 telephone + 1 tablette, supprime ces limites, conserve jusqu'a 14 jours d'acces offline pour les licences verifiees et prend en charge la restauration d'achat et la gestion d'abonnement.",
+        "why_card": {"title": "Regles de licence et d'appareil claires", "body": "Le statut Free ou Premium, les droits de l'appareil actif, la derniere validation et l'acces offline sont visibles dans l'application afin que l'equipe sache quels droits sont actifs."},
+        "faq": {"q": "Comment fonctionnent les regles Free et Premium ?", "a": "Free inclut 10 livraisons, 10 commandes d'impression et 10 presentations en direct par jour. Premium supprime ces limites, s'active pour 1 telephone + 1 tablette, garde jusqu'a 14 jours d'acces offline avec licence verifiee et prend en charge restauration d'achat et gestion d'abonnement."},
+    },
+    "de": {
+        "badges": ("Free", "Premium (monatlich)", "Premium (jahrlich)"),
+        "titles": ("Mit dem Kernablauf starten", "Flexibler Premium-Zugang", "Bester Wert fur regelmaessige Einsaetze"),
+        "free": [
+            "10 Fotoauslieferungen pro Tag",
+            "10 Druckauftraege pro Tag",
+            "10 Live-Praesentationen pro Tag",
+            "SnapVend Branding bleibt sichtbar",
+        ],
+        "monthly": [
+            "Unbegrenzte taegliche Auslieferungen",
+            "Unbegrenzte Live-Praesentationen und Druckliste",
+            "Aktivierung fur 1 Telefon + 1 Tablet",
+            "Eigener Firmenname, Logo und ZIP-Dateiname",
+            "Kaufwiederherstellung und Abo-Verwaltung",
+        ],
+        "yearly": [
+            "Alle Rechte von Premium monatlich",
+            "Bessere Gesamtkosten uber 12 Monate",
+            "14 Tage Offline-Fenster fur verifizierte Lizenzen",
+            "Dauerhafte Nutzung fur intensive Hochzeits- und Einsatzteams",
+            "Volle Kontrolle uber Branding und Lieferablauf",
+        ],
+        "note": "Free testet den Ablauf mit 10 Auslieferungen, 10 Druckauftraegen und 10 Live-Praesentationen pro Tag. Premium wird fur 1 Telefon + 1 Tablet aktiviert, entfernt diese Limits, behaelt bei verifizierter Lizenz bis zu 14 Tage Offline-Zugriff und unterstuetzt Kaufwiederherstellung sowie Abo-Verwaltung.",
+        "why_card": {"title": "Klare Lizenz- und Geraeteregeln", "body": "Free- oder Premium-Status, aktive Geraeterechte, letzte Pruefung und Offline-Zugriff sind in der App sichtbar, damit Teams im Einsatz wissen, welche Rechte aktiv sind."},
+        "faq": {"q": "Wie funktionieren Free- und Premium-Regeln?", "a": "Free umfasst 10 Auslieferungen, 10 Druckauftraege und 10 Live-Praesentationen pro Tag. Premium entfernt diese Limits, aktiviert 1 Telefon + 1 Tablet, haelt bis zu 14 Tage Offline-Zugriff fur verifizierte Lizenzen und unterstuetzt Kaufwiederherstellung und Abo-Verwaltung."},
+    },
+    "it": {
+        "badges": ("Free", "Premium (mensile)", "Premium (annuale)"),
+        "titles": ("Inizia con il flusso principale", "Accesso Premium flessibile", "Valore migliore per uso regolare"),
+        "free": [
+            "10 consegne foto al giorno",
+            "10 ordini di stampa al giorno",
+            "10 presentazioni live al giorno",
+            "Il marchio SnapVend resta visibile",
+        ],
+        "monthly": [
+            "Consegne giornaliere illimitate",
+            "Presentazioni live e lista stampa illimitate",
+            "Attivazione di 1 telefono + 1 tablet",
+            "Nome azienda, logo e nome ZIP personalizzati",
+            "Ripristino acquisto e gestione abbonamento",
+        ],
+        "yearly": [
+            "Tutti i diritti del Premium mensile",
+            "Costo totale migliore su 12 mesi",
+            "Finestra offline di 14 giorni per licenze verificate",
+            "Uso sostenibile per matrimoni e team sul campo intensivi",
+            "Pieno controllo di branding e consegna",
+        ],
+        "note": "Free permette di provare il flusso con 10 consegne, 10 ordini di stampa e 10 presentazioni live al giorno. Premium si attiva per 1 telefono + 1 tablet, rimuove questi limiti, mantiene fino a 14 giorni di accesso offline per licenze verificate e supporta ripristino acquisto e gestione abbonamento.",
+        "why_card": {"title": "Regole chiare per licenza e dispositivi", "body": "Stato Free o Premium, diritti del dispositivo attivo, ultima verifica e accesso offline sono visibili nell'app, cosi il team sa quali diritti sono attivi sul campo."},
+        "faq": {"q": "Come funzionano le regole Free e Premium?", "a": "Free include 10 consegne, 10 ordini di stampa e 10 presentazioni live al giorno. Premium rimuove questi limiti, si attiva per 1 telefono + 1 tablet, mantiene fino a 14 giorni di accesso offline con licenza verificata e supporta ripristino acquisto e gestione abbonamento."},
+    },
+    "pt": {
+        "badges": ("Free", "Premium (mensal)", "Premium (anual)"),
+        "titles": ("Comece com o fluxo principal", "Acesso Premium flexivel", "Melhor valor para uso frequente"),
+        "free": [
+            "10 entregas de fotos por dia",
+            "10 pedidos de impressao por dia",
+            "10 apresentacoes ao vivo por dia",
+            "A marca SnapVend permanece visivel",
+        ],
+        "monthly": [
+            "Entregas diarias ilimitadas",
+            "Apresentacoes ao vivo e lista de impressao ilimitadas",
+            "Ativacao de 1 telefone + 1 tablet",
+            "Nome comercial, logo e nome ZIP personalizados",
+            "Restauracao de compra e gestao de assinatura",
+        ],
+        "yearly": [
+            "Todos os direitos do Premium mensal",
+            "Melhor custo total em 12 meses",
+            "Janela offline de 14 dias para licencas verificadas",
+            "Uso sustentavel para casamentos e equipes de campo intensas",
+            "Controle total de marca e fluxo de entrega",
+        ],
+        "note": "Free permite testar o fluxo com limites diarios de 10 entregas, 10 pedidos de impressao e 10 apresentacoes ao vivo. Premium ativa 1 telefone + 1 tablet, remove esses limites, preserva ate 14 dias de acesso offline para licencas verificadas e suporta restauracao de compra e gestao de assinatura.",
+        "why_card": {"title": "Regras claras de licenca e dispositivo", "body": "Status Free ou Premium, direitos do dispositivo ativo, ultima validacao e acesso offline aparecem no app para que a equipe saiba quais direitos estao ativos em campo."},
+        "faq": {"q": "Como funcionam as regras Free e Premium?", "a": "Free inclui 10 entregas, 10 pedidos de impressao e 10 apresentacoes ao vivo por dia. Premium remove esses limites, ativa 1 telefone + 1 tablet, mantem ate 14 dias de acesso offline com licenca verificada e suporta restauracao de compra e gestao de assinatura."},
+    },
+    "ru": {
+        "badges": ("Free", "Premium (месяц)", "Premium (год)"),
+        "titles": ("Начать с основного процесса", "Гибкий доступ Premium", "Выгоднее для постоянной работы"),
+        "free": [
+            "10 выдач фотографий в день",
+            "10 заказов печати в день",
+            "10 живых презентаций в день",
+            "Бренд SnapVend остается видимым",
+        ],
+        "monthly": [
+            "Неограниченные ежедневные выдачи",
+            "Неограниченные живые презентации и список печати",
+            "Активация 1 телефона + 1 планшета",
+            "Свой бренд, логотип и имя ZIP файла",
+            "Восстановление покупки и управление подпиской",
+        ],
+        "yearly": [
+            "Все права месячного Premium",
+            "Более выгодная стоимость за 12 месяцев",
+            "14-дневное offline-окно для проверенной лицензии",
+            "Устойчивое решение для свадеб и интенсивной выездной работы",
+            "Полный контроль бренда и процесса выдачи",
+        ],
+        "note": "Free позволяет протестировать процесс с лимитами 10 выдач, 10 заказов печати и 10 живых презентаций в день. Premium активируется для 1 телефона + 1 планшета, снимает эти лимиты, сохраняет до 14 дней offline-доступа для проверенной лицензии и поддерживает восстановление покупки и управление подпиской.",
+        "why_card": {"title": "Понятные правила лицензии и устройств", "body": "Статус Free или Premium, активные права устройства, последняя проверка и offline-доступ видны в приложении, чтобы команда понимала, какие права активны в поле."},
+        "faq": {"q": "Как работают правила Free и Premium?", "a": "Free включает 10 выдач, 10 заказов печати и 10 живых презентаций в день. Premium снимает эти лимиты, активируется для 1 телефона + 1 планшета, сохраняет до 14 дней offline-доступа с проверенной лицензией и поддерживает восстановление покупки и управление подпиской."},
+    },
+    "ar": {
+        "badges": ("Free", "Premium (شهري)", "Premium (سنوي)"),
+        "titles": ("ابدأ بالتدفق الاساسي", "وصول Premium مرن", "افضل قيمة للاستخدام المنتظم"),
+        "free": [
+            "10 عمليات تسليم صور يوميا",
+            "10 طلبات طباعة يوميا",
+            "10 عروض مباشرة يوميا",
+            "تبقى علامة SnapVend ظاهرة",
+        ],
+        "monthly": [
+            "تسليم يومي غير محدود",
+            "عروض مباشرة وقائمة طباعة غير محدودة",
+            "تفعيل هاتف واحد + جهاز لوحي واحد",
+            "اسم تجاري وشعار واسم ملف ZIP مخصص",
+            "استعادة الشراء وادارة الاشتراك",
+        ],
+        "yearly": [
+            "كل حقوق Premium الشهري",
+            "تكلفة اجمالية افضل خلال 12 شهرا",
+            "نافذة offline لمدة 14 يوما للترخيص الموثق",
+            "استخدام مستدام لفرق الاعراس والعمل الميداني المكثف",
+            "تحكم كامل بالعلامة وتدفق التسليم",
+        ],
+        "note": "Free يتيح تجربة التدفق مع حدود يومية: 10 عمليات تسليم، 10 طلبات طباعة و10 عروض مباشرة. Premium يتفعل لهاتف واحد + جهاز لوحي واحد، يزيل هذه الحدود، يحافظ على وصول offline حتى 14 يوما للترخيص الموثق ويدعم استعادة الشراء وادارة الاشتراك.",
+        "why_card": {"title": "قواعد ترخيص وجهاز واضحة", "body": "حالة Free او Premium وحقوق الجهاز النشط ووقت اخر تحقق ومعلومات الوصول offline تظهر داخل التطبيق حتى يعرف الفريق الحقوق المتاحة في الميدان."},
+        "faq": {"q": "كيف تعمل قواعد Free و Premium؟", "a": "Free يشمل 10 عمليات تسليم و10 طلبات طباعة و10 عروض مباشرة يوميا. Premium يزيل هذه الحدود، يتفعل لهاتف واحد + جهاز لوحي واحد، يحافظ على وصول offline حتى 14 يوما للترخيص الموثق ويدعم استعادة الشراء وادارة الاشتراك."},
+    },
+    "hi": {
+        "badges": ("Free", "Premium (मासिक)", "Premium (वार्षिक)"),
+        "titles": ("मुख्य प्रवाह से शुरुआत करें", "लचीला Premium उपयोग", "नियमित मैदानी काम के लिए बेहतर मूल्य"),
+        "free": [
+            "प्रतिदिन 10 फोटो डिलीवरी",
+            "प्रतिदिन 10 प्रिंट ऑर्डर",
+            "प्रतिदिन 10 लाइव प्रस्तुति",
+            "SnapVend ब्रांडिंग दिखाई देती रहती है",
+        ],
+        "monthly": [
+            "असीमित दैनिक डिलीवरी",
+            "असीमित लाइव प्रस्तुति और प्रिंट ऑर्डर सूची",
+            "1 फोन + 1 टैबलेट सक्रियण",
+            "कस्टम व्यवसाय नाम, लोगो और ZIP फ़ाइल नाम",
+            "खरीदारी पुनर्स्थापना और सदस्यता प्रबंधन",
+        ],
+        "yearly": [
+            "मासिक Premium के सभी लाइसेंस अधिकार",
+            "12 महीने में बेहतर कुल लागत",
+            "सत्यापित लाइसेंस के लिए 14 दिन की ऑफलाइन प्रवेश अवधि",
+            "व्यस्त शादी और मैदानी टीमों के लिए टिकाऊ उपयोग",
+            "ब्रांड और डिलीवरी प्रवाह पर पूरा नियंत्रण",
+        ],
+        "note": "Free योजना प्रतिदिन 10 डिलीवरी, 10 प्रिंट ऑर्डर और 10 लाइव प्रस्तुति सीमा के साथ मुख्य प्रवाह आज़माने देती है। Premium लाइसेंस 1 फोन + 1 टैबलेट के लिए सक्रिय होता है, ये सीमाएँ हटाता है, सत्यापित लाइसेंस के लिए 14 दिन तक ऑफलाइन प्रवेश अवधि रखता है और खरीदारी पुनर्स्थापना व सदस्यता प्रबंधन का समर्थन करता है।",
+        "why_card": {"title": "लाइसेंस और डिवाइस नियम साफ दिखते हैं", "body": "Free या Premium स्थिति, सक्रिय डिवाइस अधिकार, अंतिम सत्यापन समय और ऑफलाइन प्रवेश जानकारी ऐप में साफ दिखती है, ताकि टीम मैदानी काम में उपलब्ध अधिकारों को न मिलाए।"},
+        "faq": {"q": "Free और Premium लाइसेंस नियम कैसे काम करते हैं?", "a": "Free में प्रतिदिन 10 डिलीवरी, 10 प्रिंट ऑर्डर और 10 लाइव प्रस्तुति शामिल हैं। Premium ये सीमाएँ हटाता है, 1 फोन + 1 टैबलेट सक्रिय करता है, सत्यापित लाइसेंस के लिए 14 दिन तक ऑफलाइन प्रवेश रखता है और खरीदारी पुनर्स्थापना व सदस्यता प्रबंधन का समर्थन करता है।"},
+    },
+    "ja": {
+        "badges": ("Free", "Premium（月額）", "Premium（年額）"),
+        "titles": ("基本フローから開始", "柔軟な Premium 利用", "継続的な現場運用に最適"),
+        "free": [
+            "1日10件の写真納品",
+            "1日10件のプリント注文",
+            "1日10件のライブ表示",
+            "SnapVend ブランドが表示されます",
+        ],
+        "monthly": [
+            "日次納品が無制限",
+            "ライブ表示とプリント注文リストが無制限",
+            "1台のスマートフォン + 1台のタブレットを有効化",
+            "独自の事業名、ロゴ、ZIP ファイル名",
+            "購入の復元とサブスクリプション管理",
+        ],
+        "yearly": [
+            "月額 Premium のすべてのライセンス権限",
+            "12か月利用で総コストを最適化",
+            "確認済みライセンスは14日間のオフラインアクセス枠を保持",
+            "忙しいウェディング・現場チーム向けの安定利用",
+            "ブランドと納品フローを完全に管理",
+        ],
+        "note": "Free は、1日10件の納品、10件のプリント注文、10件のライブ表示の範囲で基本フローを試せます。Premium は 1台のスマートフォン + 1台のタブレットで有効化され、これらの制限を解除し、確認済みライセンスでは最大14日間のオフラインアクセス枠を保持し、購入の復元とサブスクリプション管理に対応します。",
+        "why_card": {"title": "ライセンスとデバイスルールが明確", "body": "Free または Premium の状態、有効なデバイス権限、最終確認時刻、オフラインアクセス情報がアプリ内で見えるため、現場チームが利用可能な権限を把握できます。"},
+        "faq": {"q": "Free と Premium のライセンスルールは？", "a": "Free は1日10件の納品、10件のプリント注文、10件のライブ表示を含みます。Premium はこれらの制限を解除し、1台のスマートフォン + 1台のタブレットを有効化し、確認済みライセンスでは最大14日間のオフラインアクセスを保持し、購入の復元とサブスクリプション管理に対応します。"},
+    },
+    "zh": {
+        "badges": ("Free", "Premium（月）", "Premium（年）"),
+        "titles": ("从核心流程开始", "灵活的 Premium 使用", "更适合长期现场使用"),
+        "free": [
+            "每日 10 次照片交付",
+            "每日 10 个打印订单",
+            "每日 10 次现场展示",
+            "SnapVend 品牌保持可见",
+        ],
+        "monthly": [
+            "无限每日交付",
+            "无限现场展示与打印订单列表",
+            "激活 1 部手机 + 1 台平板",
+            "自定义商家名称、logo 和 ZIP 文件名",
+            "购买恢复与订阅管理",
+        ],
+        "yearly": [
+            "包含月度 Premium 的全部授权权益",
+            "12 个月使用成本更优",
+            "已验证授权保留 14 天离线访问窗口",
+            "适合高频婚礼与现场团队长期使用",
+            "完整控制品牌与交付流程",
+        ],
+        "note": "Free 方案可在每日 10 次交付、10 个打印订单和 10 次现场展示限制内体验核心流程。Premium 授权适用于 1 部手机 + 1 台平板，解除这些限制，为已验证授权保留最多 14 天离线访问窗口，并支持购买恢复与订阅管理。",
+        "why_card": {"title": "授权与设备规则清晰可见", "body": "Free 或 Premium 状态、当前设备权益、最后验证时间与离线访问状态会显示在应用内，团队在现场可清楚知道哪些权益可用。"},
+        "faq": {"q": "Free 与 Premium 授权规则如何工作？", "a": "Free 包含每日 10 次交付、10 个打印订单和 10 次现场展示。Premium 解除这些限制，激活 1 部手机 + 1 台平板，为已验证授权保留最多 14 天离线访问，并支持购买恢复与订阅管理。"},
+    },
+}
+
+for locale_code, values in PLAN_LICENSE_RULE_OVERRIDES.items():
+    free_badge, monthly_badge, yearly_badge = values["badges"]
+    free_title, monthly_title, yearly_title = values["titles"]
+    COPY[locale_code].update(
+        {
+            "free_badge": free_badge,
+            "monthly_badge": monthly_badge,
+            "yearly_badge": yearly_badge,
+            "free_title": free_title,
+            "monthly_title": monthly_title,
+            "yearly_title": yearly_title,
+            "free_features": values["free"],
+            "monthly_features": values["monthly"],
+            "yearly_features": values["yearly"],
+            "pricing_license_note": values["note"],
+        }
+    )
+    WHY_SNAPVEND_SECTION[locale_code]["cards"][-1] = values["why_card"]
+    previous_license_question = LICENSE_CONTENT_OVERRIDES[locale_code]["faq"]["q"]
+    for faq_item in FAQ_SECTION[locale_code]["items"]:
+        if faq_item["q"] == previous_license_question:
+            faq_item.update(values["faq"])
+            break
+
 BRAND_MOTTO_BY_LOCALE = {
     "tr": "Çek - Göster - Sat",
     "en": "Shoot - Show - Sell",
@@ -4141,25 +4492,6 @@ def unique_strings(items: list[str]) -> list[str]:
     return ordered
 
 
-def build_field_operation_cards(section: dict) -> str:
-    cards = []
-    for index, card in enumerate(section["cards"], start=1):
-        cards.append(
-            f"""              <article class="field-operation-card reveal">
-                <span class="field-operation-index">{index:02d}</span>
-                <div>
-                  <h3>{e(card["title"])}</h3>
-                  <p>{e(card["body"])}</p>
-                </div>
-              </article>"""
-        )
-    return "\n".join(cards)
-
-
-def build_field_operation_points(section: dict) -> str:
-    return "\n".join(f"                <li>{e(point)}</li>" for point in section["license_points"])
-
-
 def build_keyword_string(
     locale_code: str,
     copy: dict,
@@ -4167,7 +4499,6 @@ def build_keyword_string(
     contact: dict,
     language_support: dict,
     why_snapvend: dict,
-    field_operations: dict,
 ) -> str:
     values = [
         PRODUCT_NAME,
@@ -4182,11 +4513,8 @@ def build_keyword_string(
         proof["title"],
         contact["title"],
         language_support["title"],
-        field_operations["title"],
-        field_operations["license_title"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in why_snapvend["cards"]],
-        *[card["title"] for card in field_operations["cards"]],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in proof["use_cases"]],
@@ -4194,7 +4522,6 @@ def build_keyword_string(
         *copy["monthly_features"],
         *copy["yearly_features"],
         *why_snapvend["panel_points"],
-        *field_operations["license_points"],
         *contact["topics"],
     ]
     return ", ".join(unique_strings(values))
@@ -4294,7 +4621,6 @@ def build_schema(
     contact: dict,
     language_support: dict,
     why_snapvend: dict,
-    field_operations: dict,
     keywords: str,
 ) -> str:
     pricing = SCHEMA_PRICING[locale_code]
@@ -4316,12 +4642,10 @@ def build_schema(
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
-    field_operations_list = build_item_list_schema(page_url, "field-operations", field_operations["title"], field_operations["cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
     contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
     why_snapvend_points = build_defined_term_set_schema(page_url, "why-snapvend-points", why_snapvend["panel_title"], why_snapvend["panel_points"])
-    field_license_points = build_defined_term_set_schema(page_url, "field-license-points", field_operations["license_title"], field_operations["license_points"])
     supported_language_set = build_defined_term_set_schema(
         page_url,
         "supported-languages",
@@ -4392,14 +4716,12 @@ def build_schema(
             {"@id": audience_list["@id"]},
             {"@id": language_support_list["@id"]},
             {"@id": why_snapvend_list["@id"]},
-            {"@id": field_operations_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
             {"@id": f"{page_url}#faq"},
             {"@id": f"{page_url}#contact-page"},
             {"@id": contact_topic_set["@id"]},
             {"@id": why_snapvend_points["@id"]},
-            {"@id": field_license_points["@id"]},
             {"@id": supported_language_set["@id"]},
         ],
     }
@@ -4437,7 +4759,6 @@ def build_schema(
         "featureList": unique_strings(
             [card["title"] for card in copy["workflow_cards"]]
             + [card["title"] for card in why_snapvend["cards"]]
-            + [card["title"] for card in field_operations["cards"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
             + [card["title"] for card in language_support["cards"]]
@@ -4461,8 +4782,8 @@ def build_schema(
             },
             {
                 "@type": "PropertyValue",
-                "name": field_operations["license_label"],
-                "value": f'{field_operations["license_title"]}: ' + " | ".join(field_operations["license_points"]),
+                "name": copy["monthly_badge"],
+                "value": copy["pricing_license_note"],
             },
         ],
         "audience": [
@@ -4543,12 +4864,10 @@ def build_schema(
             audience_list,
             language_support_list,
             why_snapvend_list,
-            field_operations_list,
             use_case_list,
             reference_profile_list,
             contact_topic_set,
             why_snapvend_points,
-            field_license_points,
             supported_language_set,
             contact_page,
             faq_page,
@@ -4570,7 +4889,6 @@ def render_page(locale_code: str) -> str:
     proof_copy = PROOF_SECTION[locale_code]
     language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
     why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
-    field_operations_copy = FIELD_OPERATIONS_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
@@ -4580,14 +4898,12 @@ def render_page(locale_code: str) -> str:
     language_support_badges = build_language_support_badges(locale_code)
     why_snapvend_cards = build_why_snapvend_cards(why_snapvend_copy)
     why_snapvend_points = build_why_snapvend_points(why_snapvend_copy)
-    field_operation_cards = build_field_operation_cards(field_operations_copy)
-    field_operation_points = build_field_operation_points(field_operations_copy)
     proof_use_cases = build_proof_cards(proof_copy["use_cases"])
     proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, field_operations_copy)
+    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy)
     schema_json = build_schema(
         locale_code,
         copy,
@@ -4596,7 +4912,6 @@ def render_page(locale_code: str) -> str:
         contact_copy,
         language_support_copy,
         why_snapvend_copy,
-        field_operations_copy,
         keyword_string,
     )
     active_flag = flag_markup(meta["app_store_country"], prefix)
@@ -4837,31 +5152,6 @@ def render_page(locale_code: str) -> str:
               <h3>{e(why_snapvend_copy["panel_title"])}</h3>
               <ul class="why-snapvend-points">
 {why_snapvend_points}
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section class="section field-operations deferred-section" id="field-operations">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">{e(field_operations_copy["eyebrow"])}</p>
-            <h2>{e(field_operations_copy["title"])}</h2>
-            <p>{e(field_operations_copy["lead"])}</p>
-          </div>
-
-          <div class="field-operations-layout">
-            <div class="field-operations-grid">
-{field_operation_cards}
-            </div>
-
-            <aside class="field-license-panel reveal">
-              <span class="proof-label">{e(field_operations_copy["license_label"])}</span>
-              <h3>{e(field_operations_copy["license_title"])}</h3>
-              <p>{e(field_operations_copy["license_body"])}</p>
-              <ul class="field-license-points">
-{field_operation_points}
               </ul>
             </aside>
           </div>

@@ -1328,129 +1328,6 @@ h1 {
   transform: translateY(-60%) rotate(45deg);
 }
 
-.field-operations-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.34fr) minmax(320px, 0.82fr);
-  gap: 22px;
-  margin-top: 34px;
-  align-items: stretch;
-}
-
-.field-operations-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.field-operation-card,
-.field-license-panel {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(123, 220, 255, 0.14);
-  border-radius: 28px;
-  background:
-    linear-gradient(145deg, rgba(22, 50, 102, 0.76), rgba(7, 20, 48, 0.88)),
-    rgba(8, 23, 52, 0.7);
-  box-shadow:
-    0 20px 48px rgba(2, 13, 37, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-}
-
-.field-operation-card::before,
-.field-license-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 4px;
-  background: linear-gradient(90deg, rgba(123, 220, 255, 0.16), rgba(47, 211, 190, 0.92), rgba(123, 220, 255, 0.1));
-  opacity: 0.78;
-}
-
-.field-operation-card {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 16px;
-  min-width: 0;
-  padding: 24px;
-}
-
-.field-operation-index {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(123, 220, 255, 0.92), rgba(47, 211, 190, 0.88));
-  color: #062a47;
-  font-family: var(--menu-font);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  box-shadow: 0 14px 28px rgba(6, 19, 45, 0.18);
-}
-
-.field-operation-card h3,
-.field-license-panel h3 {
-  margin: 0;
-  font-family: var(--menu-font);
-  font-size: 1.08rem;
-  font-weight: 850;
-  line-height: 1.22;
-  letter-spacing: 0.01em;
-  overflow-wrap: anywhere;
-}
-
-.field-operation-card p,
-.field-license-panel p {
-  margin: 10px 0 0;
-  color: var(--text-secondary);
-}
-
-.field-license-panel {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  padding: 28px;
-}
-
-.field-license-panel h3 {
-  margin-top: 16px;
-}
-
-.field-license-points {
-  display: grid;
-  gap: 12px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.field-license-points li {
-  position: relative;
-  min-height: 48px;
-  padding: 13px 15px 13px 44px;
-  border-radius: 16px;
-  border: 1px solid rgba(123, 220, 255, 0.13);
-  background: rgba(255, 255, 255, 0.035);
-  color: var(--text-secondary);
-}
-
-.field-license-points li::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  transform: translateY(-50%);
-  background:
-    radial-gradient(circle at 50% 50%, #062a47 0 26%, transparent 28%),
-    linear-gradient(135deg, var(--accent-start), var(--accent-end));
-  box-shadow: 0 8px 18px rgba(6, 19, 45, 0.2);
-}
-
 .demo-stage {
   padding: 18px;
 }
@@ -2595,7 +2472,6 @@ html[lang="ru"] .language-switcher summary {
   .demo-grid,
   .workflow-grid,
   .why-snapvend-layout,
-  .field-operations-layout,
   .cta-panel {
     grid-template-columns: 1fr;
   }
@@ -2622,7 +2498,6 @@ html[lang="ru"] .language-switcher summary {
   .audience-grid,
   .language-support-grid,
   .why-snapvend-grid,
-  .field-operations-grid,
   .proof-grid,
   .pricing-grid,
   .faq-grid {
@@ -2744,7 +2619,6 @@ html[lang="ru"] .language-switcher summary {
 
   .language-support-grid,
   .why-snapvend-grid,
-  .field-operations-grid,
   .proof-grid,
   .contact-field-grid,
   .contact-points {
@@ -2977,27 +2851,6 @@ html[lang="ru"] .language-switcher summary {
 
   .why-snapvend-card {
     padding: 18px;
-  }
-
-  .field-operation-card,
-  .field-license-panel {
-    border-radius: 22px;
-  }
-
-  .field-operation-card {
-    gap: 12px;
-    padding: 18px;
-  }
-
-  .field-operation-index {
-    width: 40px;
-    height: 40px;
-    border-radius: 14px;
-    font-size: 0.66rem;
-  }
-
-  .field-license-panel {
-    padding: 22px;
   }
 
   .language-support-card-head {
