@@ -1197,6 +1197,238 @@ LOCALIZED_LANGUAGE_NAMES = {
 }
 
 
+FIELD_OPERATIONS_SECTION = {
+    "tr": {
+        "eyebrow": "Yeni Saha Gücü",
+        "title": "Satış, baskı ve lisans aynı profesyonel akışta",
+        "lead": "SnapVend artık yalnızca QR galeri paylaşımı değil; canlı sunum, çalışan onayı, gerçek baskı hazırlığı ve cihaz bazlı Premium lisans yönetimini aynı saha operasyonunda toplar.",
+        "cards": [
+            {"title": "Canlı satış sunumu", "body": "Fotoğrafları notebook, tablet veya TV tarayıcısında premium bir vitrin gibi gösterin; müşteri QR ile kendi galerisine geçsin."},
+            {"title": "Çalışan onayı ve PAC kontrolü", "body": "Müşteri seçimi satış talebine dönüşür. Ekip onaylar, reddeder veya PAC kodu ile teslimi güvenli şekilde doğrular."},
+            {"title": "Düğün baskı hazırlığı", "body": "Seçilen kareleri baskı sipariş listesine alın; iOS tarafında 10x15 cm PDF hazırlayıp AirPrint akışına gönderin."},
+            {"title": "Rapor ve dışa aktarma", "body": "Galeri satışı, canlı sunum ve baskı gelirlerini ayrı izleyin; etkinlik sonunda PDF ve Excel çıktısı alın."},
+        ],
+        "license_label": "Premium lisans",
+        "license_title": "1 telefon + 1 tablet ile kontrollü Premium kullanım",
+        "license_body": "Premium plan; teslim, canlı sunum ve baskı sipariş listesi limitlerini kaldırır. Doğrulanmış lisans, tanımlı offline pencerede sahada çalışmaya devam eder.",
+        "license_points": [
+            "Google Play ve App Store abonelik altyapısına hazır",
+            "Cihaz aktivasyonu ve cihaz değiştirme akışı",
+            "Özel işletme adı, logo ve ZIP dosya adı",
+        ],
+    },
+    "en": {
+        "eyebrow": "New Field Power",
+        "title": "Sales, printing and licensing in one professional flow",
+        "lead": "SnapVend is no longer only a QR gallery handoff; it brings live presentation, staff approval, real print preparation and device-based Premium licensing into the same field operation.",
+        "cards": [
+            {"title": "Live sales presentation", "body": "Show photos on a notebook, tablet or TV browser like a premium viewing wall; clients enter their own gallery through QR."},
+            {"title": "Staff approval and PAC control", "body": "Client selections become sales requests. Your team can approve, reject or validate delivery securely with a PAC code."},
+            {"title": "Wedding print preparation", "body": "Move selected frames into the print order list; on iOS, prepare 10x15 cm PDFs and send them into the AirPrint flow."},
+            {"title": "Reports and export", "body": "Track gallery sales, live presentation sales and print revenue separately; export PDF and Excel summaries after the event."},
+        ],
+        "license_label": "Premium license",
+        "license_title": "Controlled Premium use with 1 phone + 1 tablet",
+        "license_body": "Premium removes delivery, live presentation and print order list limits. A verified license can keep field work running through the defined offline access window.",
+        "license_points": [
+            "Ready for Google Play and App Store subscriptions",
+            "Device activation and device replacement flow",
+            "Custom business name, logo and ZIP filename",
+        ],
+    },
+    "es": {
+        "eyebrow": "Nueva Potencia En Campo",
+        "title": "Venta, impresion y licencia en un flujo profesional",
+        "lead": "SnapVend ya no es solo una galeria QR; reune presentacion en vivo, aprobacion del equipo, preparacion real de impresion y licencia Premium por dispositivo en una misma operacion.",
+        "cards": [
+            {"title": "Presentacion de venta en vivo", "body": "Muestre fotos en navegador de notebook, tablet o TV como una vitrina premium; el cliente entra a su galeria con QR."},
+            {"title": "Aprobacion del equipo y control PAC", "body": "La seleccion del cliente se convierte en solicitud de venta. El equipo aprueba, rechaza o valida la entrega con codigo PAC."},
+            {"title": "Preparacion de impresion para bodas", "body": "Pase las fotos elegidas a la lista de pedidos de impresion; en iOS genere PDF 10x15 cm y envie al flujo AirPrint."},
+            {"title": "Reportes y exportacion", "body": "Separe ventas de galeria, presentacion en vivo e ingresos de impresion; exporte resumen PDF y Excel al terminar el evento."},
+        ],
+        "license_label": "Licencia Premium",
+        "license_title": "Uso Premium controlado con 1 telefono + 1 tablet",
+        "license_body": "Premium elimina limites de entrega, presentacion en vivo y lista de pedidos de impresion. La licencia verificada puede seguir funcionando durante la ventana offline definida.",
+        "license_points": [
+            "Preparado para suscripciones de Google Play y App Store",
+            "Activacion de dispositivo y flujo de reemplazo",
+            "Nombre comercial, logo y nombre ZIP personalizados",
+        ],
+    },
+    "fr": {
+        "eyebrow": "Nouvelle Puissance Terrain",
+        "title": "Vente, impression et licence dans un flux professionnel",
+        "lead": "SnapVend n'est plus seulement un partage de galerie QR; il regroupe presentation en direct, validation equipe, preparation d'impression et licence Premium par appareil dans une meme operation.",
+        "cards": [
+            {"title": "Presentation de vente en direct", "body": "Affichez les photos sur notebook, tablette ou TV comme une vitrine premium; le client accede a sa galerie via QR."},
+            {"title": "Validation equipe et controle PAC", "body": "La selection client devient une demande de vente. L'equipe approuve, refuse ou valide la livraison avec un code PAC."},
+            {"title": "Preparation d'impression mariage", "body": "Ajoutez les images choisies a la liste de commandes d'impression; sur iOS, preparez des PDF 10x15 cm et envoyez vers AirPrint."},
+            {"title": "Rapports et export", "body": "Suivez separement ventes galerie, presentation en direct et revenus d'impression; exportez PDF et Excel apres l'evenement."},
+        ],
+        "license_label": "Licence Premium",
+        "license_title": "Usage Premium controle avec 1 telephone + 1 tablette",
+        "license_body": "Premium supprime les limites de livraison, presentation en direct et liste de commandes d'impression. Une licence verifiee continue de fonctionner pendant la fenetre offline definie.",
+        "license_points": [
+            "Pret pour les abonnements Google Play et App Store",
+            "Activation d'appareil et parcours de remplacement",
+            "Nom d'entreprise, logo et nom de fichier ZIP personnalises",
+        ],
+    },
+    "de": {
+        "eyebrow": "Neue Einsatzkraft",
+        "title": "Verkauf, Druck und Lizenz in einem professionellen Ablauf",
+        "lead": "SnapVend ist nicht mehr nur eine QR Galerie; Live-Prasentation, Teamfreigabe, echte Druckvorbereitung und geratebasierte Premium-Lizenz laufen in einer Vor-Ort-Operation zusammen.",
+        "cards": [
+            {"title": "Live Verkaufsprasentation", "body": "Zeigen Sie Fotos im Notebook-, Tablet- oder TV-Browser wie eine Premium-Auslage; Kunden wechseln per QR in ihre eigene Galerie."},
+            {"title": "Teamfreigabe und PAC Kontrolle", "body": "Kundenauswahlen werden zu Verkaufsanfragen. Das Team kann freigeben, ablehnen oder die Lieferung per PAC-Code absichern."},
+            {"title": "Druckvorbereitung fur Hochzeiten", "body": "Legen Sie ausgewahlte Bilder in die Druckbestellliste; auf iOS werden 10x15 cm PDFs vorbereitet und an AirPrint ubergeben."},
+            {"title": "Reports und Export", "body": "Verfolgen Sie Galerieverkauf, Live-Prasentation und Druckumsatz getrennt; exportieren Sie PDF- und Excel-Zusammenfassungen nach dem Event."},
+        ],
+        "license_label": "Premium Lizenz",
+        "license_title": "Kontrollierte Premium Nutzung mit 1 Telefon + 1 Tablet",
+        "license_body": "Premium entfernt Limits fur Lieferung, Live-Prasentation und Druckbestellliste. Eine verifizierte Lizenz kann innerhalb des definierten Offline-Fensters weiterarbeiten.",
+        "license_points": [
+            "Bereit fur Google Play und App Store Abonnements",
+            "Gerateaktivierung und Geratewechsel-Ablauf",
+            "Eigener Firmenname, Logo und ZIP-Dateiname",
+        ],
+    },
+    "it": {
+        "eyebrow": "Nuova Forza Sul Campo",
+        "title": "Vendita, stampa e licenza in un flusso professionale",
+        "lead": "SnapVend non e piu solo una galleria QR; unisce presentazione live, approvazione dello staff, preparazione reale alla stampa e licenza Premium per dispositivo nella stessa operazione.",
+        "cards": [
+            {"title": "Presentazione vendita live", "body": "Mostra le foto su notebook, tablet o TV come una vetrina premium; il cliente entra nella propria galleria tramite QR."},
+            {"title": "Approvazione staff e controllo PAC", "body": "La selezione del cliente diventa una richiesta di vendita. Il team approva, rifiuta o valida la consegna con codice PAC."},
+            {"title": "Preparazione stampa matrimonio", "body": "Porta gli scatti scelti nella lista ordini di stampa; su iOS prepara PDF 10x15 cm e inviali al flusso AirPrint."},
+            {"title": "Report ed esportazione", "body": "Monitora vendite galleria, presentazione live e ricavi stampa separatamente; esporta riepiloghi PDF ed Excel dopo l'evento."},
+        ],
+        "license_label": "Licenza Premium",
+        "license_title": "Uso Premium controllato con 1 telefono + 1 tablet",
+        "license_body": "Premium rimuove i limiti di consegna, presentazione live e lista ordini di stampa. Una licenza verificata continua a lavorare nella finestra offline definita.",
+        "license_points": [
+            "Pronta per abbonamenti Google Play e App Store",
+            "Attivazione dispositivo e flusso di sostituzione",
+            "Nome azienda, logo e nome file ZIP personalizzati",
+        ],
+    },
+    "pt": {
+        "eyebrow": "Nova Forca Em Campo",
+        "title": "Venda, impressao e licenca em um fluxo profissional",
+        "lead": "SnapVend nao e apenas uma galeria QR; ele reune apresentacao ao vivo, aprovacao da equipe, preparacao real de impressao e licenca Premium por dispositivo na mesma operacao.",
+        "cards": [
+            {"title": "Apresentacao de venda ao vivo", "body": "Mostre fotos no navegador de notebook, tablet ou TV como uma vitrine premium; o cliente entra na propria galeria por QR."},
+            {"title": "Aprovacao da equipe e controle PAC", "body": "A selecao do cliente vira uma solicitacao de venda. A equipe aprova, rejeita ou valida a entrega com codigo PAC."},
+            {"title": "Preparacao de impressao para casamentos", "body": "Envie as fotos escolhidas para a lista de pedidos de impressao; no iOS gere PDFs 10x15 cm e envie ao fluxo AirPrint."},
+            {"title": "Relatorios e exportacao", "body": "Acompanhe vendas de galeria, apresentacao ao vivo e receita de impressao separadamente; exporte PDF e Excel apos o evento."},
+        ],
+        "license_label": "Licenca Premium",
+        "license_title": "Uso Premium controlado com 1 telefone + 1 tablet",
+        "license_body": "Premium remove limites de entrega, apresentacao ao vivo e lista de pedidos de impressao. Uma licenca verificada continua funcionando durante a janela offline definida.",
+        "license_points": [
+            "Pronto para assinaturas Google Play e App Store",
+            "Ativacao de dispositivo e fluxo de substituicao",
+            "Nome comercial, logo e nome ZIP personalizados",
+        ],
+    },
+    "ru": {
+        "eyebrow": "Новая Сила В Поле",
+        "title": "Продажи, печать и лицензия в одном профессиональном потоке",
+        "lead": "SnapVend теперь не просто QR галерея: живая презентация, подтверждение сотрудником, подготовка печати и Premium лицензия по устройствам объединены в одной полевой операции.",
+        "cards": [
+            {"title": "Живая презентация продаж", "body": "Показывайте фото в браузере ноутбука, планшета или TV как премиальную витрину; клиент переходит в свою галерею по QR."},
+            {"title": "Подтверждение команды и PAC", "body": "Выбор клиента становится заявкой на продажу. Команда подтверждает, отклоняет или проверяет выдачу через PAC код."},
+            {"title": "Подготовка свадебной печати", "body": "Добавляйте выбранные кадры в список заказов печати; на iOS готовьте PDF 10x15 см и отправляйте в AirPrint."},
+            {"title": "Отчеты и экспорт", "body": "Отдельно отслеживайте продажи галереи, живой презентации и печати; после события экспортируйте PDF и Excel."},
+        ],
+        "license_label": "Premium лицензия",
+        "license_title": "Контролируемое Premium использование: 1 телефон + 1 планшет",
+        "license_body": "Premium снимает лимиты выдачи, живой презентации и списка заказов печати. Проверенная лицензия продолжает работу в заданном offline окне.",
+        "license_points": [
+            "Готово к подпискам Google Play и App Store",
+            "Активация устройства и сценарий замены",
+            "Свой бренд, логотип и имя ZIP файла",
+        ],
+    },
+    "ar": {
+        "eyebrow": "قوة ميدانية جديدة",
+        "title": "المبيعات والطباعة والترخيص في مسار احترافي واحد",
+        "lead": "لم يعد SnapVend مجرد معرض QR؛ بل يجمع العرض المباشر واعتماد الفريق وتجهيز الطباعة الحقيقي وترخيص Premium حسب الجهاز داخل عملية ميدانية واحدة.",
+        "cards": [
+            {"title": "عرض مبيعات مباشر", "body": "اعرض الصور على متصفح حاسوب او جهاز لوحي او شاشة TV كواجهة عرض احترافية، ثم يدخل العميل الى معرضه عبر QR."},
+            {"title": "اعتماد الفريق وتحكم PAC", "body": "تتحول اختيارات العميل الى طلب بيع. يمكن للفريق الاعتماد او الرفض او تأكيد التسليم بأمان عبر رمز PAC."},
+            {"title": "تجهيز طباعة حفلات الزفاف", "body": "انقل الصور المختارة الى قائمة طلبات الطباعة؛ وعلى iOS يتم تجهيز PDF بقياس 10x15 سم وارساله الى AirPrint."},
+            {"title": "تقارير وتصدير", "body": "تابع مبيعات المعرض والعرض المباشر ودخل الطباعة بشكل منفصل، ثم صدّر ملخصات PDF و Excel بعد الحدث."},
+        ],
+        "license_label": "ترخيص Premium",
+        "license_title": "استخدام Premium مضبوط عبر هاتف واحد + جهاز لوحي واحد",
+        "license_body": "يزيل Premium حدود التسليم والعرض المباشر وقائمة طلبات الطباعة. ويمكن للترخيص الموثق متابعة العمل خلال نافذة offline المحددة.",
+        "license_points": [
+            "جاهز لاشتراكات Google Play و App Store",
+            "تفعيل الجهاز ومسار استبدال الجهاز",
+            "اسم تجاري وشعار واسم ملف ZIP مخصص",
+        ],
+    },
+    "hi": {
+        "eyebrow": "नई फील्ड पावर",
+        "title": "सेल्स, प्रिंट और लाइसेंस एक प्रोफेशनल फ्लो में",
+        "lead": "SnapVend अब सिर्फ QR गैलरी शेयरिंग नहीं है; यह लाइव प्रेजेंटेशन, स्टाफ अप्रूवल, वास्तविक प्रिंट तैयारी और डिवाइस आधारित Premium लाइसेंस को एक ही फील्ड ऑपरेशन में जोड़ता है।",
+        "cards": [
+            {"title": "लाइव सेल्स प्रेजेंटेशन", "body": "फोटो को notebook, tablet या TV browser पर premium display की तरह दिखाइए; ग्राहक QR से अपनी gallery में प्रवेश करे।"},
+            {"title": "स्टाफ अप्रूवल और PAC कंट्रोल", "body": "ग्राहक चयन sales request बनता है। टीम approve, reject या PAC code से delivery को सुरक्षित रूप से validate कर सकती है।"},
+            {"title": "Wedding print तैयारी", "body": "चुनी हुई photos को print order list में भेजें; iOS पर 10x15 cm PDF तैयार करके AirPrint flow में भेजें।"},
+            {"title": "Reports और export", "body": "Gallery sales, live presentation और print revenue को अलग-अलग track करें; event के बाद PDF और Excel summary export करें।"},
+        ],
+        "license_label": "Premium लाइसेंस",
+        "license_title": "1 phone + 1 tablet के साथ controlled Premium उपयोग",
+        "license_body": "Premium delivery, live presentation और print order list limits हटाता है। Verified license निर्धारित offline window में field work जारी रख सकता है।",
+        "license_points": [
+            "Google Play और App Store subscriptions के लिए तैयार",
+            "Device activation और device replacement flow",
+            "Custom business name, logo और ZIP filename",
+        ],
+    },
+    "ja": {
+        "eyebrow": "新しい現場力",
+        "title": "販売、プリント、ライセンスを一つのプロ向けフローに",
+        "lead": "SnapVend は QR ギャラリー共有だけでなく、ライブ表示、スタッフ承認、実プリント準備、デバイス単位の Premium ライセンス管理を同じ現場オペレーションに統合します。",
+        "cards": [
+            {"title": "ライブ販売プレゼンテーション", "body": "ノートPC、タブレット、TV ブラウザで写真をプレミアムな展示のように表示し、顧客は QR から自分のギャラリーへ入れます。"},
+            {"title": "スタッフ承認と PAC 管理", "body": "顧客の選択は販売リクエストになります。チームは承認、却下、または PAC コードで納品を安全に確認できます。"},
+            {"title": "ウェディングプリント準備", "body": "選択された写真をプリント注文リストへ送り、iOS では 10x15 cm PDF を作成して AirPrint フローへ渡せます。"},
+            {"title": "レポートとエクスポート", "body": "ギャラリー販売、ライブ表示、プリント売上を分けて追跡し、イベント後に PDF と Excel で出力できます。"},
+        ],
+        "license_label": "Premium ライセンス",
+        "license_title": "1 台のスマートフォン + 1 台のタブレットで管理された Premium 利用",
+        "license_body": "Premium は納品、ライブ表示、プリント注文リストの制限を解除します。確認済みライセンスは定義されたオフライン期間でも現場作業を継続できます。",
+        "license_points": [
+            "Google Play と App Store のサブスクリプションに対応準備",
+            "デバイス有効化とデバイス交換フロー",
+            "独自の事業名、ロゴ、ZIP ファイル名",
+        ],
+    },
+    "zh": {
+        "eyebrow": "全新现场能力",
+        "title": "销售、打印与授权进入同一个专业流程",
+        "lead": "SnapVend 不再只是 QR 画廊分享；它把现场展示、员工确认、真实打印准备和基于设备的 Premium 授权管理放进同一个现场工作流。",
+        "cards": [
+            {"title": "现场销售展示", "body": "在笔记本、平板或 TV 浏览器中以高级展示墙方式播放照片；客户通过 QR 进入自己的画廊。"},
+            {"title": "员工确认与 PAC 控制", "body": "客户选片会变成销售请求。团队可以批准、拒绝，或通过 PAC 代码安全确认交付。"},
+            {"title": "婚礼打印准备", "body": "将选中的照片加入打印订单列表；在 iOS 上生成 10x15 cm PDF，并发送到 AirPrint 流程。"},
+            {"title": "报表与导出", "body": "分别追踪画廊销售、现场展示销售和打印收入；活动结束后导出 PDF 与 Excel 汇总。"},
+        ],
+        "license_label": "Premium 授权",
+        "license_title": "1 部手机 + 1 台平板的受控 Premium 使用",
+        "license_body": "Premium 会解除交付、现场展示和打印订单列表限制。已验证授权可在定义的离线窗口内继续支持现场工作。",
+        "license_points": [
+            "已准备支持 Google Play 与 App Store 订阅",
+            "设备激活与设备更换流程",
+            "自定义商家名称、logo 和 ZIP 文件名",
+        ],
+    },
+}
+
+
 WHY_SNAPVEND_SECTION = {
     "tr": {
         "eyebrow": "Neden SnapVend?",
@@ -3841,7 +4073,33 @@ def unique_strings(items: list[str]) -> list[str]:
     return ordered
 
 
-def build_keyword_string(copy: dict, proof: dict, contact: dict, language_support: dict, why_snapvend: dict) -> str:
+def build_field_operation_cards(section: dict) -> str:
+    cards = []
+    for index, card in enumerate(section["cards"], start=1):
+        cards.append(
+            f"""              <article class="field-operation-card reveal">
+                <span class="field-operation-index">{index:02d}</span>
+                <div>
+                  <h3>{e(card["title"])}</h3>
+                  <p>{e(card["body"])}</p>
+                </div>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_field_operation_points(section: dict) -> str:
+    return "\n".join(f"                <li>{e(point)}</li>" for point in section["license_points"])
+
+
+def build_keyword_string(
+    copy: dict,
+    proof: dict,
+    contact: dict,
+    language_support: dict,
+    why_snapvend: dict,
+    field_operations: dict,
+) -> str:
     values = [
         PRODUCT_NAME,
         PRODUCT_SHORT_NAME,
@@ -3857,8 +4115,11 @@ def build_keyword_string(copy: dict, proof: dict, contact: dict, language_suppor
         proof["title"],
         contact["title"],
         language_support["title"],
+        field_operations["title"],
+        field_operations["license_title"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in why_snapvend["cards"]],
+        *[card["title"] for card in field_operations["cards"]],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in proof["use_cases"]],
@@ -3866,6 +4127,7 @@ def build_keyword_string(copy: dict, proof: dict, contact: dict, language_suppor
         *copy["monthly_features"],
         *copy["yearly_features"],
         *why_snapvend["panel_points"],
+        *field_operations["license_points"],
         *contact["topics"],
     ]
     return ", ".join(unique_strings(values))
@@ -3965,6 +4227,7 @@ def build_schema(
     contact: dict,
     language_support: dict,
     why_snapvend: dict,
+    field_operations: dict,
     keywords: str,
 ) -> str:
     pricing = SCHEMA_PRICING[locale_code]
@@ -3984,10 +4247,12 @@ def build_schema(
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
+    field_operations_list = build_item_list_schema(page_url, "field-operations", field_operations["title"], field_operations["cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
     contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
     why_snapvend_points = build_defined_term_set_schema(page_url, "why-snapvend-points", why_snapvend["panel_title"], why_snapvend["panel_points"])
+    field_license_points = build_defined_term_set_schema(page_url, "field-license-points", field_operations["license_title"], field_operations["license_points"])
     supported_language_set = build_defined_term_set_schema(
         page_url,
         "supported-languages",
@@ -4058,12 +4323,14 @@ def build_schema(
             {"@id": audience_list["@id"]},
             {"@id": language_support_list["@id"]},
             {"@id": why_snapvend_list["@id"]},
+            {"@id": field_operations_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
             {"@id": f"{page_url}#faq"},
             {"@id": f"{page_url}#contact-page"},
             {"@id": contact_topic_set["@id"]},
             {"@id": why_snapvend_points["@id"]},
+            {"@id": field_license_points["@id"]},
             {"@id": supported_language_set["@id"]},
         ],
     }
@@ -4101,6 +4368,7 @@ def build_schema(
         "featureList": unique_strings(
             [card["title"] for card in copy["workflow_cards"]]
             + [card["title"] for card in why_snapvend["cards"]]
+            + [card["title"] for card in field_operations["cards"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
             + [card["title"] for card in language_support["cards"]]
@@ -4121,6 +4389,11 @@ def build_schema(
                 "@type": "PropertyValue",
                 "name": why_snapvend["panel_label"],
                 "value": " | ".join(why_snapvend["panel_points"]),
+            },
+            {
+                "@type": "PropertyValue",
+                "name": field_operations["license_label"],
+                "value": f'{field_operations["license_title"]}: ' + " | ".join(field_operations["license_points"]),
             },
         ],
         "audience": [
@@ -4201,10 +4474,12 @@ def build_schema(
             audience_list,
             language_support_list,
             why_snapvend_list,
+            field_operations_list,
             use_case_list,
             reference_profile_list,
             contact_topic_set,
             why_snapvend_points,
+            field_license_points,
             supported_language_set,
             contact_page,
             faq_page,
@@ -4226,6 +4501,7 @@ def render_page(locale_code: str) -> str:
     proof_copy = PROOF_SECTION[locale_code]
     language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
     why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
+    field_operations_copy = FIELD_OPERATIONS_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
@@ -4235,13 +4511,25 @@ def render_page(locale_code: str) -> str:
     language_support_badges = build_language_support_badges(locale_code)
     why_snapvend_cards = build_why_snapvend_cards(why_snapvend_copy)
     why_snapvend_points = build_why_snapvend_points(why_snapvend_copy)
+    field_operation_cards = build_field_operation_cards(field_operations_copy)
+    field_operation_points = build_field_operation_points(field_operations_copy)
     proof_use_cases = build_proof_cards(proof_copy["use_cases"])
     proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy)
-    schema_json = build_schema(locale_code, copy, faq_copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, keyword_string)
+    keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, field_operations_copy)
+    schema_json = build_schema(
+        locale_code,
+        copy,
+        faq_copy,
+        proof_copy,
+        contact_copy,
+        language_support_copy,
+        why_snapvend_copy,
+        field_operations_copy,
+        keyword_string,
+    )
     active_flag = flag_markup(meta["app_store_country"], prefix)
     active_language_code = locale_code.upper()
     popular_label = POPULAR_LABELS[locale_code]
@@ -4480,6 +4768,31 @@ def render_page(locale_code: str) -> str:
               <h3>{e(why_snapvend_copy["panel_title"])}</h3>
               <ul class="why-snapvend-points">
 {why_snapvend_points}
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section field-operations deferred-section" id="field-operations">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">{e(field_operations_copy["eyebrow"])}</p>
+            <h2>{e(field_operations_copy["title"])}</h2>
+            <p>{e(field_operations_copy["lead"])}</p>
+          </div>
+
+          <div class="field-operations-layout">
+            <div class="field-operations-grid">
+{field_operation_cards}
+            </div>
+
+            <aside class="field-license-panel reveal">
+              <span class="proof-label">{e(field_operations_copy["license_label"])}</span>
+              <h3>{e(field_operations_copy["license_title"])}</h3>
+              <p>{e(field_operations_copy["license_body"])}</p>
+              <ul class="field-license-points">
+{field_operation_points}
               </ul>
             </aside>
           </div>
