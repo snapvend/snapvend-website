@@ -1197,6 +1197,73 @@ LOCALIZED_LANGUAGE_NAMES = {
 }
 
 
+SEO_KEYWORD_SEEDS_BY_LOCALE = {
+    "tr": ["SnapVend Gallery uygulaması", "fotoğrafçılar için QR galeri uygulaması", "fotoğraf teslim uygulaması"],
+    "en": ["SnapVend Gallery app", "QR photo gallery app", "photographer delivery app"],
+    "es": ["aplicación SnapVend Gallery", "aplicación de galería QR para fotógrafos", "aplicación de entrega fotográfica"],
+    "fr": ["application SnapVend Gallery", "application de galerie QR pour photographes", "application de livraison photo"],
+    "de": ["SnapVend Gallery App", "QR-Galerie-App für Fotografen", "Fotoauslieferungs-App"],
+    "it": ["app SnapVend Gallery", "app galleria QR per fotografi", "app per consegna foto"],
+    "pt": ["app SnapVend Gallery", "app de galeria QR para fotografos", "app de entrega de fotos"],
+    "ru": ["приложение SnapVend Gallery", "QR-галерея для фотографов", "приложение для выдачи фотографий"],
+    "ar": ["تطبيق SnapVend Gallery", "تطبيق معرض QR للمصورين", "تطبيق تسليم الصور"],
+    "hi": ["SnapVend Gallery ऐप", "फोटोग्राफरों के लिए QR गैलरी ऐप", "फोटो डिलीवरी ऐप"],
+    "ja": ["SnapVend Gallery アプリ", "フォトグラファー向け QR ギャラリーアプリ", "写真納品アプリ"],
+    "zh": ["SnapVend Gallery 应用", "摄影师二维码画廊应用", "照片交付应用"],
+}
+
+SCHEMA_DISAMBIGUATION_BY_LOCALE = {
+    "tr": {
+        "organization": "SnapVend Gallery, snapvendgallery.com üzerinde yayınlanan fotoğrafçılar için QR galeri ve yerel fotoğraf teslim uygulamasıdır.",
+        "software": "SnapVend Gallery, fotoğrafçılar için mobil QR galeri, FTP kamera aktarımı ve yerel ZIP teslim uygulamasıdır.",
+    },
+    "en": {
+        "organization": "SnapVend Gallery is the photographer QR gallery and local photo delivery app published at snapvendgallery.com.",
+        "software": "SnapVend Gallery is a mobile QR gallery, FTP camera transfer and local ZIP delivery app for photographers.",
+    },
+    "es": {
+        "organization": "SnapVend Gallery es la aplicación de galería QR y entrega local para fotógrafos publicada en snapvendgallery.com.",
+        "software": "SnapVend Gallery es una aplicación móvil de galería QR, transferencia FTP desde cámara y entrega ZIP local para fotógrafos.",
+    },
+    "fr": {
+        "organization": "SnapVend Gallery est l'application de galerie QR et de livraison photo locale pour photographes publiée sur snapvendgallery.com.",
+        "software": "SnapVend Gallery est une application mobile de galerie QR, transfert FTP depuis l'appareil photo et livraison ZIP locale pour photographes.",
+    },
+    "de": {
+        "organization": "SnapVend Gallery ist die auf snapvendgallery.com veröffentlichte QR-Galerie- und lokale Fotoauslieferungs-App für Fotografen.",
+        "software": "SnapVend Gallery ist eine mobile QR-Galerie-App mit FTP-Kameraimport und lokaler ZIP-Auslieferung für Fotografen.",
+    },
+    "it": {
+        "organization": "SnapVend Gallery è l'app di galleria QR e consegna fotografica locale per fotografi pubblicata su snapvendgallery.com.",
+        "software": "SnapVend Gallery è un'app mobile per fotografi con galleria QR, trasferimento FTP dalla fotocamera e consegna ZIP locale.",
+    },
+    "pt": {
+        "organization": "SnapVend Gallery é o app de galeria QR e entrega local de fotos para fotografos publicado em snapvendgallery.com.",
+        "software": "SnapVend Gallery é um app movel para fotografos com galeria QR, transferencia FTP da camera e entrega ZIP local.",
+    },
+    "ru": {
+        "organization": "SnapVend Gallery — опубликованное на snapvendgallery.com приложение QR-галереи и локальной выдачи фотографий для фотографов.",
+        "software": "SnapVend Gallery — мобильное приложение для фотографов с QR-галереей, FTP-передачей с камеры и локальной ZIP-выдачей.",
+    },
+    "ar": {
+        "organization": "SnapVend Gallery هو تطبيق معرض QR وتسليم صور محلي للمصورين منشور على snapvendgallery.com.",
+        "software": "SnapVend Gallery هو تطبيق جوال للمصورين يجمع معرض QR ونقل FTP من الكاميرا وتسليم ZIP المحلي.",
+    },
+    "hi": {
+        "organization": "SnapVend Gallery, snapvendgallery.com पर प्रकाशित फोटोग्राफरों के लिए QR गैलरी और स्थानीय फोटो डिलीवरी ऐप है।",
+        "software": "SnapVend Gallery फोटोग्राफरों के लिए मोबाइल QR गैलरी, FTP कैमरा ट्रांसफर और स्थानीय ZIP डिलीवरी ऐप है।",
+    },
+    "ja": {
+        "organization": "SnapVend Gallery は、snapvendgallery.com で公開されているフォトグラファー向け QR ギャラリーおよびローカル写真納品アプリです。",
+        "software": "SnapVend Gallery は、フォトグラファー向けのモバイル QR ギャラリー、FTP カメラ転送、ローカル ZIP 納品アプリです。",
+    },
+    "zh": {
+        "organization": "SnapVend Gallery 是发布在 snapvendgallery.com 的摄影师二维码画廊与本地照片交付应用。",
+        "software": "SnapVend Gallery 是面向摄影师的移动二维码画廊、FTP 相机传输和本地 ZIP 交付应用。",
+    },
+}
+
+
 FIELD_OPERATIONS_SECTION = {
     "tr": {
         "eyebrow": "Yeni Saha Gücü",
@@ -1370,22 +1437,22 @@ FIELD_OPERATIONS_SECTION = {
         ],
     },
     "hi": {
-        "eyebrow": "नई फील्ड पावर",
-        "title": "सेल्स, प्रिंट और लाइसेंस एक प्रोफेशनल फ्लो में",
-        "lead": "SnapVend अब सिर्फ QR गैलरी शेयरिंग नहीं है; यह लाइव प्रेजेंटेशन, स्टाफ अप्रूवल, वास्तविक प्रिंट तैयारी और डिवाइस आधारित Premium लाइसेंस को एक ही फील्ड ऑपरेशन में जोड़ता है।",
+        "eyebrow": "नई मैदानी क्षमता",
+        "title": "बिक्री, प्रिंट और लाइसेंस एक पेशेवर प्रवाह में",
+        "lead": "SnapVend अब केवल QR गैलरी साझा करने तक सीमित नहीं है; यह लाइव प्रस्तुति, टीम अनुमोदन, वास्तविक प्रिंट तैयारी और डिवाइस आधारित प्रीमियम लाइसेंस प्रबंधन को एक ही मैदानी संचालन में जोड़ता है।",
         "cards": [
-            {"title": "लाइव सेल्स प्रेजेंटेशन", "body": "फोटो को notebook, tablet या TV browser पर premium display की तरह दिखाइए; ग्राहक QR से अपनी gallery में प्रवेश करे।"},
-            {"title": "स्टाफ अप्रूवल और PAC कंट्रोल", "body": "ग्राहक चयन sales request बनता है। टीम approve, reject या PAC code से delivery को सुरक्षित रूप से validate कर सकती है।"},
-            {"title": "Wedding print तैयारी", "body": "चुनी हुई photos को print order list में भेजें; iOS पर 10x15 cm PDF तैयार करके AirPrint flow में भेजें।"},
-            {"title": "Reports और export", "body": "Gallery sales, live presentation और print revenue को अलग-अलग track करें; event के बाद PDF और Excel summary export करें।"},
+            {"title": "लाइव बिक्री प्रस्तुति", "body": "तस्वीरों को लैपटॉप, टैबलेट या टीवी ब्राउज़र पर प्रीमियम प्रदर्शन की तरह दिखाएँ; ग्राहक QR से अपनी गैलरी में प्रवेश करे।"},
+            {"title": "टीम अनुमोदन और PAC नियंत्रण", "body": "ग्राहक का चयन बिक्री अनुरोध में बदलता है। टीम उसे स्वीकृत, अस्वीकृत या PAC कोड से सुरक्षित रूप से सत्यापित कर सकती है।"},
+            {"title": "शादी प्रिंट तैयारी", "body": "चुनी हुई तस्वीरों को प्रिंट ऑर्डर सूची में भेजें; iOS पर 10x15 cm PDF तैयार करके AirPrint प्रवाह में भेजें।"},
+            {"title": "रिपोर्ट और निर्यात", "body": "गैलरी बिक्री, लाइव प्रस्तुति और प्रिंट आय को अलग-अलग देखें; कार्यक्रम के बाद PDF और Excel सारांश निर्यात करें।"},
         ],
-        "license_label": "Premium लाइसेंस",
-        "license_title": "1 phone + 1 tablet के साथ controlled Premium उपयोग",
-        "license_body": "Premium delivery, live presentation और print order list limits हटाता है। Verified license निर्धारित offline window में field work जारी रख सकता है।",
+        "license_label": "प्रीमियम लाइसेंस",
+        "license_title": "1 फोन + 1 टैबलेट के साथ नियंत्रित प्रीमियम उपयोग",
+        "license_body": "प्रीमियम योजना डिलीवरी, लाइव प्रस्तुति और प्रिंट ऑर्डर सूची की सीमाएँ हटाती है। सत्यापित लाइसेंस निर्धारित ऑफलाइन अवधि में भी मैदानी काम जारी रख सकता है।",
         "license_points": [
-            "Google Play और App Store subscriptions के लिए तैयार",
-            "Device activation और device replacement flow",
-            "Custom business name, logo और ZIP filename",
+            "Google Play और App Store सदस्यताओं के लिए तैयार",
+            "डिवाइस सक्रियण और डिवाइस बदलने का प्रवाह",
+            "कस्टम व्यवसाय नाम, लोगो और ZIP फ़ाइल नाम",
         ],
     },
     "ja": {
@@ -1680,7 +1747,7 @@ CONTACT_SECTION = {
         "topics": ["General Inquiry", "Demo Request", "Pricing", "Partnership", "Custom Request"],
         "name_label": "Full Name",
         "company_label": "Business / Brand",
-        "email_label": "Courriel",
+        "email_label": "Email",
         "message_label": "Message",
         "message_placeholder": "Briefly describe your need, event type or request.",
         "submit": "Send",
@@ -3601,12 +3668,12 @@ LICENSE_CONTENT_OVERRIDES = {
     "hi": {
         "pricing_note": "लाइसेंस प्लान और अवधि के आधार पर काम करता है। प्रो सुविधाएं आपकी सदस्यता सक्रिय रहने तक उपलब्ध रहती हैं; अतिरिक्त डिवाइस या टीम लाइसेंस के लिए हमसे संपर्क करें।",
         "why_card": {
-            "title": "दिखने वाला लाइसेंस फील्ड फ्लो को स्थिर रखता है",
-            "body": "प्लान स्तर और एक्सेस अधिकार ऐप के अंदर साफ दिखाई देते हैं, ताकि लाइव शूट के दौरान टीम तुरंत समझ सके कि कौन-सी सुविधाएं सक्रिय हैं।",
+            "title": "लाइसेंस की स्पष्टता मैदानी प्रवाह को स्थिर रखती है",
+            "body": "योजना स्तर और प्रवेश अधिकार ऐप के अंदर साफ दिखाई देते हैं, ताकि लाइव शूट के दौरान टीम तुरंत समझ सके कि कौन-सी सुविधाएं सक्रिय हैं।",
         },
         "faq": {
             "q": "लाइसेंसिंग कैसे काम करती है?",
-            "a": "SnapVend लाइसेंसिंग प्लान आधारित है। मुफ्त प्लान मुख्य वर्कफ्लो देता है, जबकि प्रो प्लान सक्रिय सदस्यता अवधि में उन्नत डिलीवरी, ब्रांडिंग और संचालन नियंत्रण खोलते हैं। अतिरिक्त डिवाइस या टीम लाइसेंस के लिए हमें लिखें।",
+            "a": "SnapVend लाइसेंसिंग योजना आधारित है। मुफ्त योजना मुख्य कार्यप्रवाह देती है, जबकि प्रो योजना सक्रिय सदस्यता अवधि में उन्नत डिलीवरी, ब्रांडिंग और संचालन नियंत्रण खोलती है। अतिरिक्त डिवाइस या टीम लाइसेंस के लिए हमें लिखें।",
         },
     },
     "ja": {
@@ -3906,8 +3973,9 @@ def build_language_menu(current_code: str) -> str:
         meta = LOCALE_META[locale_code]
         active = " language-option-active" if locale_code == current_code else ""
         flag = flag_markup(meta["app_store_country"], prefix)
+        display_name = localized_language_name(current_code, locale_code)
         items.append(
-            f'              <a class="language-option{active}" href="{relative_page_href(current_code, locale_code)}" lang="{locale_code}" hreflang="{meta["hreflang"][0]}">{flag}<span class="language-name">{e(meta["native"])}</span></a>'
+            f'              <a class="language-option{active}" href="{relative_page_href(current_code, locale_code)}" lang="{locale_code}" hreflang="{meta["hreflang"][0]}">{flag}<span class="language-name">{e(display_name)}</span></a>'
         )
     return "\n".join(items)
 
@@ -4093,6 +4161,7 @@ def build_field_operation_points(section: dict) -> str:
 
 
 def build_keyword_string(
+    locale_code: str,
     copy: dict,
     proof: dict,
     contact: dict,
@@ -4103,10 +4172,8 @@ def build_keyword_string(
     values = [
         PRODUCT_NAME,
         PRODUCT_SHORT_NAME,
-        "SnapVend Gallery app",
         "snapvendgallery.com",
-        "QR photo gallery app",
-        "photographer delivery app",
+        *SEO_KEYWORD_SEEDS_BY_LOCALE.get(locale_code, SEO_KEYWORD_SEEDS_BY_LOCALE["en"]),
         copy["brand_motto"],
         copy["hero_eyebrow"],
         copy["workflow_title"],
@@ -4234,6 +4301,8 @@ def build_schema(
     page_url = canonical_url(locale_code)
     logo_url = f"{SITE_URL}{BRAND_MARK_ASSET}"
     contact_point_id = f"{SITE_URL}/#sales-contact"
+    localized_language_names = [localized_language_name(locale_code, code) for code in LOCALE_ORDER]
+    disambiguation = SCHEMA_DISAMBIGUATION_BY_LOCALE.get(locale_code, SCHEMA_DISAMBIGUATION_BY_LOCALE["en"])
     screenshot_urls = [
         f"{SITE_URL}/{marketing_asset('hero_main')}",
         f"{SITE_URL}/{marketing_asset('hero_secondary')}",
@@ -4257,7 +4326,7 @@ def build_schema(
         page_url,
         "supported-languages",
         language_support["supported_label"],
-        [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+        localized_language_names,
     )
 
     contact_point = {
@@ -4266,7 +4335,7 @@ def build_schema(
         "contactType": "sales",
         "email": "snapvendinfo@gmail.com",
         "url": "mailto:snapvendinfo@gmail.com",
-        "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+        "availableLanguage": localized_language_names,
     }
 
     organization = {
@@ -4279,7 +4348,7 @@ def build_schema(
             "SnapVend Photo Delivery",
         ],
         "description": copy["meta_description"],
-        "disambiguatingDescription": "SnapVend Gallery is the photographer QR gallery and local photo delivery app published at snapvendgallery.com.",
+        "disambiguatingDescription": disambiguation["organization"],
         "slogan": copy["brand_motto"],
         "url": f"{SITE_URL}/",
         "logo": {
@@ -4345,14 +4414,14 @@ def build_schema(
             "SnapVend Photographer Gallery",
         ],
         "description": copy["meta_description"],
-        "disambiguatingDescription": "SnapVend Gallery is a mobile QR gallery, FTP camera transfer and local ZIP delivery app for photographers.",
+        "disambiguatingDescription": disambiguation["software"],
         "applicationCategory": "BusinessApplication",
         "applicationSubCategory": APPLICATION_SUBCATEGORY_BY_LOCALE.get(locale_code, "Photo workflow, print management and delivery"),
         "applicationSuite": PRODUCT_NAME,
         "identifier": "com.snapvend.gallery",
         "operatingSystem": "ANDROID, IOS",
         "inLanguage": locale_code,
-        "availableLanguage": [LOCALE_META[code]["native"] for code in LOCALE_ORDER],
+        "availableLanguage": localized_language_names,
         "url": page_url,
         "mainEntityOfPage": page_url,
         "image": logo_url,
@@ -4378,7 +4447,7 @@ def build_schema(
             {
                 "@type": "PropertyValue",
                 "name": language_support["supported_label"],
-                "value": ", ".join(LOCALE_META[code]["native"] for code in LOCALE_ORDER),
+                "value": ", ".join(localized_language_names),
             },
             {
                 "@type": "PropertyValue",
@@ -4518,7 +4587,7 @@ def render_page(locale_code: str) -> str:
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, field_operations_copy)
+    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, field_operations_copy)
     schema_json = build_schema(
         locale_code,
         copy,
