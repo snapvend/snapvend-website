@@ -1497,6 +1497,214 @@ FIELD_OPERATIONS_SECTION = {
 }
 
 
+LIVE_PRESENTATION_SECTION = {
+    "tr": {
+        "eyebrow": "Canlı Sunum",
+        "title": "Çekilen fotoğraf büyük ekrana düşer, satış akışı QR ile başlar",
+        "lead": "Profesyonel fotoğraf makinesinden FTP ile gelen kareler SnapVend uygulamasına aktarılır. Canlı sunum açıkken yeni fotoğraflar TV, tablet, notebook veya tarayıcı ekranındaki sunuma otomatik eklenir; müşteri QR ile kendi fotoğrafına geçip ödeme veya baskı talebi oluşturabilir.",
+        "flow_label": "Canlı akış mantığı",
+        "flow": [
+            "Kamera çeker, FTP ile uygulamaya gönderir.",
+            "Yeni kareler canlı sunum ekranında anlık çoğalır.",
+            "Müşteri QR kodu okutup fotoğrafını seçer.",
+            "Satın alınan veya baskıya gönderilen fotoğraf canlı ekrandan düşer.",
+        ],
+        "cards": [
+            {"title": "Etkinlik ve organizasyon ekranı", "body": "Fotoğraflar büyük ekranda döner. Kişi kendini gördüğünde QR kodu okutup ödeme ekranından fotoğrafını alabilir."},
+            {"title": "Düğünlerde baskı talebi", "body": "Misafir veya çift beğendiği kareyi baskı listesine gönderir; ekip hangi fotoğrafın basılacağını karışmadan takip eder."},
+            {"title": "TV, tablet ve notebook uyumu", "body": "Canlı sunum tarayıcı mantığıyla çalışacak şekilde tasarlanmıştır; saha ekranı, tablet veya büyük TV üzerinde kullanılabilir."},
+        ],
+    },
+    "en": {
+        "eyebrow": "Live Presentation",
+        "title": "New shots appear on the big screen, sales start through QR",
+        "lead": "Photos transferred from a professional camera through FTP arrive in the SnapVend app. When live presentation is open, new shots are added automatically to the presentation on a TV, tablet, notebook or browser screen; clients scan the QR code to open their own photo and continue to payment or print request.",
+        "flow_label": "How the live flow works",
+        "flow": [
+            "The camera shoots and sends photos to the app over FTP.",
+            "New frames appear live as the presentation grows.",
+            "The client scans the QR code and selects the photo.",
+            "Purchased or print-requested photos leave the live screen.",
+        ],
+        "cards": [
+            {"title": "Event and venue screen", "body": "Photos rotate on the big screen. When a guest sees themselves, they scan the QR code and buy the photo from the payment screen."},
+            {"title": "Wedding print requests", "body": "Guests or the couple can send selected frames to the print list, while the team tracks print demand without confusion."},
+            {"title": "TV, tablet and notebook ready", "body": "Live presentation is designed around a browser-based viewing flow, so it can run on field screens, tablets or large TVs."},
+        ],
+    },
+    "es": {
+        "eyebrow": "Presentacion En Vivo",
+        "title": "La foto nueva aparece en pantalla grande y la venta empieza con QR",
+        "lead": "Las fotos enviadas por FTP desde una camara profesional llegan a SnapVend. Con la presentacion en vivo abierta, cada nueva foto se suma automaticamente a la pantalla de TV, tablet, notebook o navegador; el cliente escanea el QR para abrir su foto y continuar con pago o solicitud de impresion.",
+        "flow_label": "Como funciona el flujo en vivo",
+        "flow": [
+            "La camara dispara y envia fotos a la app por FTP.",
+            "Las nuevas fotos aumentan en la presentacion en vivo.",
+            "El cliente escanea el QR y elige su foto.",
+            "La foto comprada o enviada a impresion sale de la pantalla en vivo.",
+        ],
+        "cards": [
+            {"title": "Pantalla para eventos", "body": "Las fotos giran en pantalla grande. Cuando una persona se ve, escanea el QR y compra su foto desde la pantalla de pago."},
+            {"title": "Solicitud de impresion en bodas", "body": "Invitados o pareja envian sus fotos elegidas a la lista de impresion; el equipo controla que se debe imprimir."},
+            {"title": "Compatible con TV, tablet y notebook", "body": "La presentacion en vivo esta pensada para navegador, por eso puede usarse en pantallas de campo, tablets o televisores grandes."},
+        ],
+    },
+    "fr": {
+        "eyebrow": "Presentation En Direct",
+        "title": "Les nouvelles photos arrivent sur grand ecran, la vente commence par QR",
+        "lead": "Les photos transferees par FTP depuis un appareil professionnel arrivent dans SnapVend. Quand la presentation en direct est ouverte, les nouvelles images s'ajoutent automatiquement sur TV, tablette, notebook ou navigateur; le client scanne le QR pour ouvrir sa photo et poursuivre vers paiement ou demande d'impression.",
+        "flow_label": "Logique du flux en direct",
+        "flow": [
+            "L'appareil photo envoie les images a l'app via FTP.",
+            "Les nouvelles photos enrichissent la presentation en direct.",
+            "Le client scanne le QR et choisit sa photo.",
+            "La photo achetee ou demandee en impression disparait de l'ecran live.",
+        ],
+        "cards": [
+            {"title": "Ecran evenementiel", "body": "Les photos tournent sur grand ecran. Quand une personne se voit, elle scanne le QR et recupere sa photo depuis l'ecran de paiement."},
+            {"title": "Demandes d'impression mariage", "body": "Invites ou couple envoient les images choisies vers la liste d'impression; l'equipe suit les tirages sans confusion."},
+            {"title": "Pret pour TV, tablette et notebook", "body": "La presentation en direct est concue pour un flux navigateur et peut fonctionner sur ecran de terrain, tablette ou grande TV."},
+        ],
+    },
+    "de": {
+        "eyebrow": "Live-Prasentation",
+        "title": "Neue Aufnahmen erscheinen auf dem Grossbildschirm, der Verkauf startet per QR",
+        "lead": "Fotos von einer professionellen Kamera kommen per FTP in der SnapVend App an. Wenn die Live-Prasentation aktiv ist, werden neue Bilder automatisch auf TV, Tablet, Notebook oder Browser-Bildschirm erganzt; Kunden scannen den QR-Code und gehen zu Zahlung oder Druckanfrage.",
+        "flow_label": "So funktioniert der Live-Ablauf",
+        "flow": [
+            "Die Kamera fotografiert und sendet per FTP an die App.",
+            "Neue Bilder erscheinen automatisch in der Live-Prasentation.",
+            "Der Kunde scannt den QR-Code und wahlt sein Foto.",
+            "Gekaufte oder zum Druck gesendete Fotos verschwinden vom Live-Bildschirm.",
+        ],
+        "cards": [
+            {"title": "Event- und Veranstaltungsbildschirm", "body": "Fotos laufen auf dem Grossbildschirm. Sieht sich eine Person, scannt sie den QR-Code und kauft das Foto im Zahlungsfluss."},
+            {"title": "Druckanfragen bei Hochzeiten", "body": "Gaste oder Paar senden ausgewahlte Bilder in die Druckliste; das Team verfolgt klar, was gedruckt werden soll."},
+            {"title": "Fur TV, Tablet und Notebook", "body": "Die Live-Prasentation ist als Browser-Flow gedacht und kann auf Field-Screens, Tablets oder grossen TVs laufen."},
+        ],
+    },
+    "it": {
+        "eyebrow": "Presentazione Live",
+        "title": "Le nuove foto arrivano sul grande schermo, la vendita parte dal QR",
+        "lead": "Le foto trasferite via FTP da una fotocamera professionale arrivano in SnapVend. Quando la presentazione live e aperta, i nuovi scatti si aggiungono automaticamente su TV, tablet, notebook o browser; il cliente scansiona il QR per aprire la propria foto e passare a pagamento o richiesta di stampa.",
+        "flow_label": "Come funziona il flusso live",
+        "flow": [
+            "La fotocamera scatta e invia alla app via FTP.",
+            "Le nuove foto aumentano nella presentazione live.",
+            "Il cliente scansiona il QR e sceglie la foto.",
+            "La foto acquistata o inviata alla stampa esce dallo schermo live.",
+        ],
+        "cards": [
+            {"title": "Schermo per eventi", "body": "Le foto scorrono sul grande schermo. Quando una persona si riconosce, scansiona il QR e acquista la foto dalla schermata di pagamento."},
+            {"title": "Richieste stampa per matrimoni", "body": "Invitati o sposi inviano le foto scelte alla lista stampa; il team segue cosa stampare senza confusione."},
+            {"title": "Pronto per TV, tablet e notebook", "body": "La presentazione live e pensata per browser, quindi puo funzionare su schermi evento, tablet o grandi TV."},
+        ],
+    },
+    "pt": {
+        "eyebrow": "Apresentacao Ao Vivo",
+        "title": "Novas fotos aparecem na tela grande e a venda começa pelo QR",
+        "lead": "As fotos transferidas por FTP de uma camera profissional chegam ao SnapVend. Com a apresentacao ao vivo aberta, novos cliques entram automaticamente na tela de TV, tablet, notebook ou navegador; o cliente le o QR para abrir sua foto e seguir para pagamento ou pedido de impressao.",
+        "flow_label": "Como funciona o fluxo ao vivo",
+        "flow": [
+            "A camera fotografa e envia para o app por FTP.",
+            "Novas fotos aumentam na apresentacao ao vivo.",
+            "O cliente le o QR e escolhe a foto.",
+            "A foto comprada ou enviada para impressao sai da tela ao vivo.",
+        ],
+        "cards": [
+            {"title": "Tela para eventos", "body": "As fotos passam na tela grande. Quando a pessoa se ve, le o QR e compra a foto na tela de pagamento."},
+            {"title": "Pedidos de impressao em casamentos", "body": "Convidados ou casal enviam fotos escolhidas para a lista de impressao; a equipe acompanha o que deve ser impresso."},
+            {"title": "Pronto para TV, tablet e notebook", "body": "A apresentacao ao vivo foi pensada para navegador e pode rodar em telas de campo, tablets ou TVs grandes."},
+        ],
+    },
+    "ru": {
+        "eyebrow": "Живая презентация",
+        "title": "Новые кадры появляются на большом экране, продажа начинается через QR",
+        "lead": "Фотографии с профессиональной камеры передаются в SnapVend по FTP. Когда включена живая презентация, новые кадры автоматически появляются на TV, планшете, ноутбуке или в браузере; клиент сканирует QR, открывает свое фото и переходит к оплате или запросу печати.",
+        "flow_label": "Как работает живой поток",
+        "flow": [
+            "Камера снимает и отправляет фото в приложение по FTP.",
+            "Новые кадры автоматически пополняют живую презентацию.",
+            "Клиент сканирует QR и выбирает свое фото.",
+            "Купленное или отправленное в печать фото исчезает с живого экрана.",
+        ],
+        "cards": [
+            {"title": "Экран для мероприятий", "body": "Фотографии показываются на большом экране. Когда человек видит себя, он сканирует QR и покупает фото на экране оплаты."},
+            {"title": "Запросы печати на свадьбах", "body": "Гости или пара отправляют выбранные кадры в список печати; команда ясно видит, что нужно печатать."},
+            {"title": "TV, планшет и ноутбук", "body": "Живая презентация рассчитана на браузерный просмотр, поэтому подходит для экранов на площадке, планшетов и больших TV."},
+        ],
+    },
+    "ar": {
+        "eyebrow": "العرض المباشر",
+        "title": "تظهر الصور الجديدة على الشاشة الكبيرة وتبدأ عملية البيع عبر QR",
+        "lead": "تصل الصور من الكاميرا الاحترافية إلى SnapVend عبر FTP. عند تشغيل العرض المباشر، تتم إضافة اللقطات الجديدة تلقائيا إلى شاشة TV أو جهاز لوحي أو notebook أو المتصفح؛ يمسح العميل رمز QR لفتح صورته والمتابعة إلى الدفع أو طلب الطباعة.",
+        "flow_label": "طريقة عمل التدفق المباشر",
+        "flow": [
+            "تلتقط الكاميرا الصور وترسلها إلى التطبيق عبر FTP.",
+            "تزداد الصور تلقائيا داخل شاشة العرض المباشر.",
+            "يمسح العميل رمز QR ويختار صورته.",
+            "تختفي الصورة المشتراة أو المرسلة للطباعة من شاشة العرض.",
+        ],
+        "cards": [
+            {"title": "شاشة الفعاليات", "body": "تظهر الصور على الشاشة الكبيرة. عندما يرى الشخص صورته، يمسح QR ويشتريها من شاشة الدفع."},
+            {"title": "طلبات الطباعة في الأعراس", "body": "يرسل الضيوف أو العروسان الصور المختارة إلى قائمة الطباعة، ويتابع الفريق ما يجب طباعته بوضوح."},
+            {"title": "جاهز للتلفاز والجهاز اللوحي والكمبيوتر", "body": "تم تصميم العرض المباشر للعمل بمنطق المتصفح، لذلك يمكن استخدامه على شاشات الميدان أو الأجهزة اللوحية أو الشاشات الكبيرة."},
+        ],
+    },
+    "hi": {
+        "eyebrow": "लाइव प्रस्तुति",
+        "title": "नई फोटो बड़ी स्क्रीन पर आती है, बिक्री QR से शुरू होती है",
+        "lead": "प्रोफेशनल कैमरे से FTP के जरिए आने वाली तस्वीरें SnapVend ऐप में पहुंचती हैं। लाइव प्रस्तुति खुली होने पर नई तस्वीरें TV, टैबलेट, नोटबुक या ब्राउज़र स्क्रीन पर अपने आप जुड़ती जाती हैं; ग्राहक QR स्कैन करके अपनी फोटो खोलता है और भुगतान या प्रिंट अनुरोध पर आगे बढ़ता है।",
+        "flow_label": "लाइव फ्लो कैसे काम करता है",
+        "flow": [
+            "कैमरा फोटो लेता है और FTP से ऐप में भेजता है।",
+            "नई तस्वीरें लाइव प्रस्तुति में अपने आप बढ़ती हैं।",
+            "ग्राहक QR स्कैन करके अपनी फोटो चुनता है।",
+            "खरीदी गई या प्रिंट में भेजी गई फोटो लाइव स्क्रीन से हट जाती है।",
+        ],
+        "cards": [
+            {"title": "इवेंट और वेन्यू स्क्रीन", "body": "तस्वीरें बड़ी स्क्रीन पर चलती हैं। व्यक्ति खुद को देखता है, QR स्कैन करता है और भुगतान स्क्रीन से फोटो ले सकता है।"},
+            {"title": "शादियों में प्रिंट अनुरोध", "body": "मेहमान या जोड़ा चुनी हुई तस्वीरों को प्रिंट सूची में भेजता है; टीम साफ देखती है कि क्या प्रिंट होना है।"},
+            {"title": "TV, टैबलेट और नोटबुक के लिए तैयार", "body": "लाइव प्रस्तुति ब्राउज़र आधारित अनुभव के लिए बनाई गई है, इसलिए इसे फील्ड स्क्रीन, टैबलेट या बड़ी TV पर चलाया जा सकता है।"},
+        ],
+    },
+    "ja": {
+        "eyebrow": "ライブ表示",
+        "title": "新しい写真が大画面に表示され、QR から販売が始まります",
+        "lead": "プロ用カメラから FTP で転送された写真は SnapVend アプリに入ります。ライブ表示を開いている間、新しい写真は TV、タブレット、ノート PC、ブラウザ画面の表示に自動で追加され、顧客は QR を読み取って自分の写真を開き、支払いまたはプリント依頼へ進めます。",
+        "flow_label": "ライブフローの仕組み",
+        "flow": [
+            "カメラで撮影し、FTP でアプリへ送信します。",
+            "新しい写真がライブ表示に自動で追加されます。",
+            "顧客が QR を読み取り、自分の写真を選びます。",
+            "購入済みまたはプリント依頼済みの写真はライブ画面から外れます。",
+        ],
+        "cards": [
+            {"title": "イベント会場の大画面", "body": "写真が大画面に流れます。本人が自分を見つけたら QR を読み取り、支払い画面から写真を入手できます。"},
+            {"title": "結婚式のプリント依頼", "body": "ゲストや新郎新婦が選んだ写真をプリントリストへ送り、チームは印刷対象を明確に管理できます。"},
+            {"title": "TV、タブレット、ノート PC に対応", "body": "ライブ表示はブラウザベースの閲覧フローとして設計されているため、現場スクリーン、タブレット、大型 TV で利用できます。"},
+        ],
+    },
+    "zh": {
+        "eyebrow": "实时展示",
+        "title": "新照片进入大屏展示，销售从二维码开始",
+        "lead": "专业相机通过 FTP 传入的照片会进入 SnapVend 应用。开启实时展示后，新照片会自动加入 TV、平板、笔记本或浏览器屏幕中的展示；客户扫描二维码打开自己的照片，并继续付款或提交打印请求。",
+        "flow_label": "实时流程如何运作",
+        "flow": [
+            "相机拍摄后通过 FTP 发送到应用。",
+            "新照片会自动加入实时展示画面。",
+            "客户扫描二维码并选择自己的照片。",
+            "已购买或已提交打印的照片会从实时屏幕移除。",
+        ],
+        "cards": [
+            {"title": "活动现场大屏", "body": "照片在大屏上轮播。客户看到自己后扫描二维码，并在付款页面获取照片。"},
+            {"title": "婚礼打印请求", "body": "宾客或新人可以把选中的照片发送到打印列表，团队能清楚跟踪需要打印的照片。"},
+            {"title": "适用于 TV、平板和笔记本", "body": "实时展示按浏览器观看流程设计，可用于现场屏幕、平板或大型电视。"},
+        ],
+    },
+}
+
+
 WHY_SNAPVEND_SECTION = {
     "tr": {
         "eyebrow": "Neden SnapVend?",
@@ -4737,6 +4945,22 @@ def build_why_snapvend_points(section: dict) -> str:
     return "\n".join(f"                <li>{e(point)}</li>" for point in section["panel_points"])
 
 
+def build_live_presentation_flow(section: dict) -> str:
+    return "\n".join(f"                  <li>{e(point)}</li>" for point in section["flow"])
+
+
+def build_live_presentation_cards(section: dict) -> str:
+    cards = []
+    for card in section["cards"]:
+        cards.append(
+            f"""              <article class="live-presentation-card reveal">
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
 def build_proof_cards(items: list[dict]) -> str:
     cards = []
     for card in items:
@@ -4827,6 +5051,7 @@ def build_keyword_string(
     why_snapvend: dict,
     quick_start: dict,
 ) -> str:
+    live_presentation = LIVE_PRESENTATION_SECTION[locale_code]
     values = [
         PRODUCT_NAME,
         PRODUCT_SHORT_NAME,
@@ -4841,8 +5066,12 @@ def build_keyword_string(
         contact["title"],
         language_support["title"],
         quick_start["title"],
+        live_presentation["title"],
+        live_presentation["flow_label"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in why_snapvend["cards"]],
+        *[card["title"] for card in live_presentation["cards"]],
+        *live_presentation["flow"],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in quick_start["steps"]],
@@ -4959,6 +5188,7 @@ def build_schema(
     contact_point_id = f"{SITE_URL}/#sales-contact"
     localized_language_names = [localized_language_name(locale_code, code) for code in LOCALE_ORDER]
     disambiguation = SCHEMA_DISAMBIGUATION_BY_LOCALE.get(locale_code, SCHEMA_DISAMBIGUATION_BY_LOCALE["en"])
+    live_presentation = LIVE_PRESENTATION_SECTION[locale_code]
     screenshot_urls = [
         f"{SITE_URL}/{marketing_asset('hero_main')}",
         f"{SITE_URL}/{marketing_asset('hero_secondary')}",
@@ -4972,6 +5202,7 @@ def build_schema(
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
+    live_presentation_list = build_item_list_schema(page_url, "live-presentation", live_presentation["title"], live_presentation["cards"])
     quick_start_list = build_item_list_schema(page_url, "quick-start", quick_start["title"], quick_start["steps"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
@@ -5048,6 +5279,7 @@ def build_schema(
             {"@id": audience_list["@id"]},
             {"@id": language_support_list["@id"]},
             {"@id": why_snapvend_list["@id"]},
+            {"@id": live_presentation_list["@id"]},
             {"@id": quick_start_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
@@ -5092,6 +5324,8 @@ def build_schema(
         "featureList": unique_strings(
             [card["title"] for card in copy["workflow_cards"]]
             + [card["title"] for card in why_snapvend["cards"]]
+            + [card["title"] for card in live_presentation["cards"]]
+            + live_presentation["flow"]
             + [card["title"] for card in quick_start["steps"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
@@ -5113,6 +5347,11 @@ def build_schema(
                 "@type": "PropertyValue",
                 "name": why_snapvend["panel_label"],
                 "value": " | ".join(why_snapvend["panel_points"]),
+            },
+            {
+                "@type": "PropertyValue",
+                "name": live_presentation["flow_label"],
+                "value": " | ".join(live_presentation["flow"]),
             },
             {
                 "@type": "PropertyValue",
@@ -5198,6 +5437,7 @@ def build_schema(
             audience_list,
             language_support_list,
             why_snapvend_list,
+            live_presentation_list,
             quick_start_list,
             use_case_list,
             reference_profile_list,
@@ -5224,6 +5464,7 @@ def render_page(locale_code: str) -> str:
     proof_copy = PROOF_SECTION[locale_code]
     language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
     why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
+    live_presentation_copy = LIVE_PRESENTATION_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     quick_start_copy = QUICK_START_SECTION[locale_code]
     metrics = build_metric_cards(copy)
@@ -5235,6 +5476,8 @@ def render_page(locale_code: str) -> str:
     language_support_badges = build_language_support_badges(locale_code)
     why_snapvend_cards = build_why_snapvend_cards(why_snapvend_copy)
     why_snapvend_points = build_why_snapvend_points(why_snapvend_copy)
+    live_presentation_flow = build_live_presentation_flow(live_presentation_copy)
+    live_presentation_cards = build_live_presentation_cards(live_presentation_copy)
     proof_use_cases = build_proof_cards(proof_copy["use_cases"])
     proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
@@ -5506,6 +5749,31 @@ def render_page(locale_code: str) -> str:
 {why_snapvend_points}
               </ul>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section live-presentation deferred-section" id="live-presentation">
+        <div class="container">
+          <div class="live-presentation-panel reveal">
+            <div class="section-head">
+              <p class="eyebrow">{e(live_presentation_copy["eyebrow"])}</p>
+              <h2>{e(live_presentation_copy["title"])}</h2>
+              <p>{e(live_presentation_copy["lead"])}</p>
+            </div>
+
+            <div class="live-presentation-layout">
+              <aside class="live-flow-card">
+                <span class="proof-label">{e(live_presentation_copy["flow_label"])}</span>
+                <ol class="live-flow-list">
+{live_presentation_flow}
+                </ol>
+              </aside>
+
+              <div class="live-presentation-grid">
+{live_presentation_cards}
+              </div>
+            </div>
           </div>
         </div>
       </section>
