@@ -17,6 +17,7 @@ APP_ICON_ASSET = "/assets/branding/app_icon_store_512.png"
 PRODUCT_NAME = "SnapVend Gallery"
 PRODUCT_SHORT_NAME = "SnapVend"
 GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.snapvend.gallery"
+APP_STORE_URL = "https://apps.apple.com/us/app/snapvend-gallery/id6764613281"
 DOWNLOAD_URL = f"{SITE_URL}/download/"
 DOWNLOAD_QR_ASSET = "/assets/marketing/download-qr.svg"
 
@@ -26,9 +27,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Cihazınıza göre indirme",
         "intro": "Cihazınız algılanıyor ve uygun indirme kanalına güvenli şekilde yönlendiriliyorsunuz.",
         "desktopNote": "Masaüstü veya notebook kullanıyorsanız, aşağıdan aktif mağazayı seçebilirsiniz.",
-        "iosPendingNote": "SnapVend Gallery’nin iPhone ve iPad sürümü şu anda kapalı test aşamasındadır. Bu nedenle iOS cihazlarda App Store aramasına yönlendirme yapılmaz. Şu an aktif indirme Android için Google Play üzerinden sunulmaktadır.",
+        "iosPendingNote": "SnapVend Gallery artık iPhone ve iPad için App Store üzerinden indirilebilir. Yönlendirme çalışmazsa App Store butonunu kullanabilirsiniz.",
         "googleSmall": "Android için indir",
-        "appleSmall": "iOS için test aşamasında",
+        "appleSmall": "iPhone ve iPad için indir",
         "backWebsite": "Web sitesine dön",
         "pageTitle": "SnapVend Gallery | Cihaza Göre İndirme",
     },
@@ -37,9 +38,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Download for your device",
         "intro": "We detect your device and route you to the right download channel securely.",
         "desktopNote": "If you are on a desktop or notebook, choose the active store below.",
-        "iosPendingNote": "SnapVend Gallery for iPhone and iPad is currently in closed testing. iOS devices are not sent to App Store search during this period. The active public download is currently available on Google Play for Android.",
+        "iosPendingNote": "SnapVend Gallery is now available for iPhone and iPad on the App Store. If automatic routing does not open, use the App Store button.",
         "googleSmall": "Download for Android",
-        "appleSmall": "iOS version in testing",
+        "appleSmall": "Download for iPhone and iPad",
         "backWebsite": "Back to website",
         "pageTitle": "SnapVend Gallery | Device Download",
     },
@@ -48,9 +49,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Descarga para tu dispositivo",
         "intro": "Detectamos tu dispositivo y te dirigimos de forma segura al canal de descarga adecuado.",
         "desktopNote": "Si estás en un ordenador, elige la tienda activa abajo.",
-        "iosPendingNote": "SnapVend Gallery para iPhone y iPad está actualmente en fase de prueba cerrada. Durante este periodo, los dispositivos iOS no se envían a la búsqueda de App Store. La descarga pública activa está disponible en Google Play para Android.",
+        "iosPendingNote": "SnapVend Gallery ya está disponible para iPhone y iPad en App Store. Si la redirección automática no se abre, use el botón App Store.",
         "googleSmall": "Descargar para Android",
-        "appleSmall": "Versión iOS en pruebas",
+        "appleSmall": "Descargar para iPhone y iPad",
         "backWebsite": "Volver al sitio web",
         "pageTitle": "SnapVend Gallery | Descarga por dispositivo",
     },
@@ -59,9 +60,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Téléchargement adapté",
         "intro": "Nous détectons votre appareil et vous orientons en toute sécurité vers le bon canal de téléchargement.",
         "desktopNote": "Si vous utilisez un ordinateur, choisissez la boutique active ci-dessous.",
-        "iosPendingNote": "SnapVend Gallery pour iPhone et iPad est actuellement en test fermé. Pendant cette période, les appareils iOS ne sont pas redirigés vers la recherche App Store. Le téléchargement public actif est disponible sur Google Play pour Android.",
+        "iosPendingNote": "SnapVend Gallery est maintenant disponible pour iPhone et iPad sur l'App Store. Si la redirection automatique ne s'ouvre pas, utilisez le bouton App Store.",
         "googleSmall": "Télécharger pour Android",
-        "appleSmall": "Version iOS en test",
+        "appleSmall": "Télécharger pour iPhone et iPad",
         "backWebsite": "Retour au site",
         "pageTitle": "SnapVend Gallery | Téléchargement par appareil",
     },
@@ -70,9 +71,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Passend zum Gerät laden",
         "intro": "Wir erkennen dein Gerät und leiten dich sicher zum passenden Download-Kanal.",
         "desktopNote": "Wenn du einen Desktop oder ein Notebook nutzt, wähle unten den aktiven Store.",
-        "iosPendingNote": "SnapVend Gallery für iPhone und iPad befindet sich derzeit im geschlossenen Test. iOS-Geräte werden in dieser Zeit nicht zur App-Store-Suche weitergeleitet. Der aktive öffentliche Download ist aktuell bei Google Play für Android verfügbar.",
+        "iosPendingNote": "SnapVend Gallery ist jetzt fuer iPhone und iPad im App Store verfuegbar. Falls die automatische Weiterleitung nicht startet, nutzen Sie den App-Store-Button.",
         "googleSmall": "Für Android herunterladen",
-        "appleSmall": "iOS-Version im Test",
+        "appleSmall": "Fuer iPhone und iPad laden",
         "backWebsite": "Zur Website zurück",
         "pageTitle": "SnapVend Gallery | Geräte-Download",
     },
@@ -81,9 +82,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Scarica per il tuo dispositivo",
         "intro": "Rileviamo il dispositivo e ti indirizziamo in modo sicuro al canale di download corretto.",
         "desktopNote": "Se usi un desktop o un notebook, scegli qui sotto lo store attivo.",
-        "iosPendingNote": "SnapVend Gallery per iPhone e iPad è attualmente in test chiuso. In questa fase i dispositivi iOS non vengono inviati alla ricerca su App Store. Il download pubblico attivo è disponibile su Google Play per Android.",
+        "iosPendingNote": "SnapVend Gallery è ora disponibile per iPhone e iPad su App Store. Se il reindirizzamento automatico non si apre, usa il pulsante App Store.",
         "googleSmall": "Scarica per Android",
-        "appleSmall": "Versione iOS in test",
+        "appleSmall": "Scarica per iPhone e iPad",
         "backWebsite": "Torna al sito",
         "pageTitle": "SnapVend Gallery | Download per dispositivo",
     },
@@ -92,9 +93,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Baixe para seu dispositivo",
         "intro": "Detectamos seu dispositivo e encaminhamos você com segurança para o canal de download correto.",
         "desktopNote": "Se estiver em um desktop ou notebook, escolha a loja ativa abaixo.",
-        "iosPendingNote": "O SnapVend Gallery para iPhone e iPad está atualmente em teste fechado. Durante esse período, dispositivos iOS não são enviados para a busca da App Store. O download público ativo está disponível no Google Play para Android.",
+        "iosPendingNote": "O SnapVend Gallery ja esta disponivel para iPhone e iPad na App Store. Se o redirecionamento automatico nao abrir, use o botao App Store.",
         "googleSmall": "Baixar para Android",
-        "appleSmall": "Versão iOS em teste",
+        "appleSmall": "Baixar para iPhone e iPad",
         "backWebsite": "Voltar ao site",
         "pageTitle": "SnapVend Gallery | Download por dispositivo",
     },
@@ -103,9 +104,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "Скачать для устройства",
         "intro": "Мы определяем ваше устройство и безопасно направляем к подходящему каналу загрузки.",
         "desktopNote": "Если вы используете компьютер или ноутбук, выберите активный магазин ниже.",
-        "iosPendingNote": "SnapVend Gallery для iPhone и iPad сейчас находится в закрытом тестировании. В этот период устройства iOS не перенаправляются в поиск App Store. Активная публичная загрузка доступна в Google Play для Android.",
+        "iosPendingNote": "SnapVend Gallery теперь доступен для iPhone и iPad в App Store. Если автоматическая переадресация не открылась, используйте кнопку App Store.",
         "googleSmall": "Скачать для Android",
-        "appleSmall": "iOS-версия в тестировании",
+        "appleSmall": "Скачать для iPhone и iPad",
         "backWebsite": "Вернуться на сайт",
         "pageTitle": "SnapVend Gallery | Загрузка по устройству",
     },
@@ -114,9 +115,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "حمّل حسب جهازك",
         "intro": "نكتشف جهازك ونوجهك بأمان إلى قناة التنزيل المناسبة.",
         "desktopNote": "إذا كنت تستخدم جهاز كمبيوتر، اختر المتجر النشط أدناه.",
-        "iosPendingNote": "تطبيق SnapVend Gallery لأجهزة iPhone و iPad حالياً في اختبار مغلق. خلال هذه الفترة لا يتم توجيه أجهزة iOS إلى بحث App Store. التنزيل العام النشط متاح حالياً على Google Play لأجهزة Android.",
+        "iosPendingNote": "اصبح SnapVend Gallery متاحا الان لاجهزة iPhone و iPad على App Store. اذا لم يفتح التوجيه التلقائي، استخدم زر App Store.",
         "googleSmall": "تنزيل لأجهزة Android",
-        "appleSmall": "إصدار iOS قيد الاختبار",
+        "appleSmall": "تنزيل لايفون وايباد",
         "backWebsite": "العودة إلى الموقع",
         "pageTitle": "SnapVend Gallery | تنزيل حسب الجهاز",
     },
@@ -125,9 +126,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "अपने डिवाइस के लिए डाउनलोड करें",
         "intro": "हम आपका डिवाइस पहचानकर सुरक्षित रूप से सही डाउनलोड चैनल पर भेजते हैं।",
         "desktopNote": "अगर आप डेस्कटॉप या नोटबुक पर हैं, तो नीचे सक्रिय स्टोर चुनें।",
-        "iosPendingNote": "iPhone और iPad के लिए SnapVend Gallery अभी बंद परीक्षण चरण में है। इस अवधि में iOS डिवाइस App Store खोज पर नहीं भेजे जाते। फिलहाल सार्वजनिक डाउनलोड Android के लिए Google Play पर उपलब्ध है।",
+        "iosPendingNote": "SnapVend Gallery अब iPhone और iPad के लिए App Store पर उपलब्ध है। अगर स्वचालित रीडायरेक्ट नहीं खुलता, तो App Store बटन का उपयोग करें।",
         "googleSmall": "Android के लिए डाउनलोड करें",
-        "appleSmall": "iOS संस्करण परीक्षण में",
+        "appleSmall": "iPhone और iPad के लिए डाउनलोड",
         "backWebsite": "वेबसाइट पर वापस जाएं",
         "pageTitle": "SnapVend Gallery | डिवाइस डाउनलोड",
     },
@@ -136,9 +137,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "端末に合わせてダウンロード",
         "intro": "端末を検出し、適切なダウンロード先へ安全に案内します。",
         "desktopNote": "デスクトップまたはノートブックの場合は、下の有効なストアを選択してください。",
-        "iosPendingNote": "iPhone と iPad 向け SnapVend Gallery は現在クローズドテスト中です。この期間、iOS 端末は App Store 検索へリダイレクトされません。現在公開されているダウンロードは Android 向け Google Play です。",
+        "iosPendingNote": "SnapVend Gallery は iPhone / iPad 向けに App Store で公開されています。自動リダイレクトが開かない場合は App Store ボタンを使用してください。",
         "googleSmall": "Android 用にダウンロード",
-        "appleSmall": "iOS 版はテスト中",
+        "appleSmall": "iPhone / iPad 版を入手",
         "backWebsite": "サイトへ戻る",
         "pageTitle": "SnapVend Gallery | 端末別ダウンロード",
     },
@@ -147,9 +148,9 @@ DOWNLOAD_ROUTE_COPY = {
         "headline": "根据设备下载",
         "intro": "我们会识别你的设备，并安全引导你前往正确的下载渠道。",
         "desktopNote": "如果你使用桌面电脑或笔记本，请在下方选择当前可用的商店。",
-        "iosPendingNote": "适用于 iPhone 和 iPad 的 SnapVend Gallery 目前处于封闭测试阶段。在此期间，iOS 设备不会跳转到 App Store 搜索。当前公开下载仅在 Android 的 Google Play 提供。",
+        "iosPendingNote": "SnapVend Gallery 现已在 App Store 提供 iPhone / iPad 版本。如果自动跳转未打开，请使用 App Store 按钮。",
         "googleSmall": "下载 Android 版本",
-        "appleSmall": "iOS 版本测试中",
+        "appleSmall": "下载 iPhone / iPad 版",
         "backWebsite": "返回网站",
         "pageTitle": "SnapVend Gallery | 按设备下载",
     },
@@ -332,52 +333,52 @@ MOBILE_MENU_LABELS = {
 
 APP_STORE_STATUS = {
     "tr": {
-        "small": "iPhone ve iPad için yakında",
-        "note": "Şu an test aşamasında olduğu için en kısa zamanda indirmeye açılacaktır.",
+        "small": "iPhone ve iPad için indir",
+        "note": "SnapVend Gallery artık App Store üzerinden indirilebilir.",
     },
     "en": {
-        "small": "Coming soon for iPhone and iPad",
-        "note": "SnapVend is currently in testing and will be available for download soon.",
+        "small": "Download for iPhone and iPad",
+        "note": "SnapVend Gallery is now available on the App Store.",
     },
     "es": {
-        "small": "Próximamente para iPhone y iPad",
-        "note": "SnapVend está actualmente en fase de pruebas y estará disponible para descarga muy pronto.",
+        "small": "Descargar para iPhone y iPad",
+        "note": "SnapVend Gallery ya está disponible en App Store.",
     },
     "fr": {
-        "small": "Bientôt pour iPhone et iPad",
-        "note": "SnapVend est actuellement en phase de test et sera bientôt disponible au téléchargement.",
+        "small": "Télécharger pour iPhone et iPad",
+        "note": "SnapVend Gallery est maintenant disponible sur l'App Store.",
     },
     "de": {
-        "small": "Bald für iPhone und iPad",
-        "note": "SnapVend befindet sich derzeit in der Testphase und wird in Kürze zum Download verfügbar sein.",
+        "small": "Fuer iPhone und iPad laden",
+        "note": "SnapVend Gallery ist jetzt im App Store verfuegbar.",
     },
     "it": {
-        "small": "Presto per iPhone e iPad",
-        "note": "SnapVend è attualmente in fase di test e sarà disponibile per il download a breve.",
+        "small": "Scarica per iPhone e iPad",
+        "note": "SnapVend Gallery è ora disponibile su App Store.",
     },
     "pt": {
-        "small": "Em breve para iPhone e iPad",
-        "note": "O SnapVend está em fase de testes e estará disponível para download em breve.",
+        "small": "Baixar para iPhone e iPad",
+        "note": "O SnapVend Gallery ja esta disponivel na App Store.",
     },
     "ru": {
-        "small": "Скоро для iPhone и iPad",
-        "note": "SnapVend сейчас находится на этапе тестирования и скоро будет доступен для загрузки.",
+        "small": "Скачать для iPhone и iPad",
+        "note": "SnapVend Gallery теперь доступен в App Store.",
     },
     "ar": {
-        "small": "قريبا لاجهزة iPhone و iPad",
-        "note": "SnapVend حاليا في مرحلة الاختبار وسيكون متاحا للتنزيل قريبا.",
+        "small": "تنزيل لايفون وايباد",
+        "note": "اصبح SnapVend Gallery متاحا الان على App Store.",
     },
     "hi": {
-        "small": "iPhone और iPad के लिए जल्द",
-        "note": "SnapVend अभी परीक्षण चरण में है और जल्द ही डाउनलोड के लिए उपलब्ध होगा।",
+        "small": "iPhone और iPad के लिए डाउनलोड",
+        "note": "SnapVend Gallery अब App Store पर उपलब्ध है।",
     },
     "ja": {
-        "small": "iPhone / iPad 版は近日公開",
-        "note": "SnapVend は現在テスト段階にあり、近日中にダウンロード可能になります。",
+        "small": "iPhone / iPad 版を入手",
+        "note": "SnapVend Gallery は App Store で公開されています。",
     },
     "zh": {
-        "small": "iPhone / iPad 版即将开放",
-        "note": "SnapVend 目前处于测试阶段，将很快开放下载。",
+        "small": "下载 iPhone / iPad 版",
+        "note": "SnapVend Gallery 现已在 App Store 上架。",
     },
 }
 
@@ -4317,51 +4318,51 @@ TRUST_SECTION = {
 FAQ_MARKETING_EXPANSION = {
     "tr": [
         {"q": "İlk kullanıma başlamak için teknik kurulum gerekir mi?", "a": "Hayır. Uygulamayı açıp fotoğrafları içe aldıktan sonra aynı cihazdan QR oturumu, müşteri seçimi, ödeme/PAC kontrolü ve ZIP teslim akışına geçebilirsiniz."},
-        {"q": "App Store yayını tamamlanınca web sitesi değişecek mi?", "a": "Evet. iOS yayına açıldığında App Store butonları, indirme QR kodu, yapılandırılmış veri ve mağaza açıklamaları doğrudan aktif bağlantıya göre güncellenir."},
+        {"q": "iPhone ve iPad için App Store indirmesi aktif mi?", "a": "Evet. SnapVend Gallery artık App Store üzerinden indirilebilir. Web sitesindeki App Store butonları ve indirme QR yönlendirmesi iOS cihazlarda doğrudan App Store sayfasını açar."},
     ],
     "en": [
         {"q": "Do I need technical setup for first use?", "a": "No. After opening the app and importing photos, you can run QR session, client selection, payment/PAC control and ZIP delivery from the same device."},
-        {"q": "Will the website change when App Store publishing is complete?", "a": "Yes. When iOS is live, App Store buttons, download QR, structured data and store copy can be updated to the active listing."},
+        {"q": "Is App Store download active for iPhone and iPad?", "a": "Yes. SnapVend Gallery is now available on the App Store. The website App Store buttons and download QR route iOS devices directly to the App Store listing."},
     ],
     "es": [
         {"q": "¿Necesito configuracion tecnica para empezar?", "a": "No. Tras abrir la app e importar fotos, puedes gestionar sesion QR, seleccion del cliente, control de pago/PAC y entrega ZIP desde el mismo dispositivo."},
-        {"q": "¿Cambiara la web cuando App Store este publicado?", "a": "Si. Cuando iOS este activo, botones de App Store, QR de descarga, datos estructurados y textos de tienda se actualizaran al enlace real."},
+        {"q": "¿La descarga de App Store está activa para iPhone y iPad?", "a": "Sí. SnapVend Gallery ya está disponible en App Store. Los botones App Store y el QR de descarga dirigen los dispositivos iOS a la ficha de App Store."},
     ],
     "fr": [
         {"q": "Faut-il une configuration technique pour commencer ?", "a": "Non. Apres ouverture de l'app et import des photos, vous pouvez gerer session QR, choix client, controle paiement/PAC et livraison ZIP depuis le meme appareil."},
-        {"q": "Le site changera-t-il apres la publication App Store ?", "a": "Oui. Quand iOS sera en ligne, les boutons App Store, le QR de telechargement, les donnees structurees et les textes seront relies a la fiche active."},
+        {"q": "Le telechargement App Store est-il actif pour iPhone et iPad ?", "a": "Oui. SnapVend Gallery est maintenant disponible sur l'App Store. Les boutons App Store et le QR de telechargement dirigent les appareils iOS vers la fiche App Store."},
     ],
     "de": [
         {"q": "Brauche ich technische Einrichtung fuer den Start?", "a": "Nein. Nach dem Oeffnen der App und dem Fotoimport koennen QR-Session, Kundenauswahl, Zahlungs-/PAC-Kontrolle und ZIP-Lieferung vom selben Geraet laufen."},
-        {"q": "Aendert sich die Website nach dem App-Store-Launch?", "a": "Ja. Sobald iOS live ist, werden App-Store-Buttons, Download-QR, strukturierte Daten und Store-Texte auf den aktiven Eintrag aktualisiert."},
+        {"q": "Ist der App-Store-Download fuer iPhone und iPad aktiv?", "a": "Ja. SnapVend Gallery ist jetzt im App Store verfuegbar. App-Store-Buttons und Download-QR leiten iOS-Geraete direkt zum App-Store-Eintrag."},
     ],
     "it": [
         {"q": "Serve una configurazione tecnica per iniziare?", "a": "No. Dopo aver aperto l'app e importato le foto puoi gestire sessione QR, scelta cliente, controllo pagamento/PAC e consegna ZIP dallo stesso dispositivo."},
-        {"q": "Il sito cambiera quando App Store sara pubblicato?", "a": "Si. Quando iOS sara live, pulsanti App Store, QR download, dati strutturati e testi saranno aggiornati alla scheda attiva."},
+        {"q": "Il download da App Store è attivo per iPhone e iPad?", "a": "Sì. SnapVend Gallery è ora disponibile su App Store. I pulsanti App Store e il QR download portano i dispositivi iOS direttamente alla scheda App Store."},
     ],
     "pt": [
         {"q": "Preciso de configuracao tecnica para comecar?", "a": "Nao. Depois de abrir o app e importar fotos, voce pode gerenciar sessao QR, selecao do cliente, controle pagamento/PAC e entrega ZIP no mesmo dispositivo."},
-        {"q": "O site muda quando a App Store estiver publicada?", "a": "Sim. Quando iOS estiver ativo, botoes App Store, QR de download, dados estruturados e textos serao atualizados para o link real."},
+        {"q": "O download na App Store esta ativo para iPhone e iPad?", "a": "Sim. O SnapVend Gallery ja esta disponivel na App Store. Os botoes App Store e o QR de download levam dispositivos iOS diretamente para a pagina da App Store."},
     ],
     "ru": [
         {"q": "Нужна ли техническая настройка для первого запуска?", "a": "Нет. После открытия приложения и импорта фото можно вести QR-сессию, выбор клиента, контроль оплаты/PAC и ZIP-выдачу с того же устройства."},
-        {"q": "Изменится ли сайт после публикации в App Store?", "a": "Да. Когда iOS станет доступен, кнопки App Store, QR загрузки, структурированные данные и тексты будут обновлены под активную страницу."},
+        {"q": "Загрузка из App Store активна для iPhone и iPad?", "a": "Да. SnapVend Gallery теперь доступен в App Store. Кнопки App Store и QR загрузки направляют устройства iOS прямо на страницу App Store."},
     ],
     "ar": [
         {"q": "هل احتاج اعدادا تقنيا للبدء؟", "a": "لا. بعد فتح التطبيق واستيراد الصور يمكنك تشغيل جلسة QR واختيار العميل وفحص الدفع/PAC وتسليم ZIP من الجهاز نفسه."},
-        {"q": "هل سيتغير الموقع بعد نشر App Store؟", "a": "نعم. عند توفر iOS سيتم تحديث ازرار App Store وQR التحميل والبيانات المنظمة ونصوص المتجر بالرابط الفعلي."},
+        {"q": "هل تنزيل App Store فعال لاجهزة iPhone و iPad؟", "a": "نعم. اصبح SnapVend Gallery متاحا الان على App Store. ازرار App Store وQR التنزيل توجه اجهزة iOS مباشرة الى صفحة App Store."},
     ],
     "hi": [
         {"q": "क्या पहली बार उपयोग के लिए तकनीकी सेटअप चाहिए?", "a": "नहीं। ऐप खोलकर फोटो इम्पोर्ट करने के बाद उसी डिवाइस से QR सेशन, ग्राहक चयन, भुगतान/PAC नियंत्रण और ZIP डिलीवरी चला सकते हैं।"},
-        {"q": "App Store प्रकाशन पूरा होने पर वेबसाइट बदलेगी?", "a": "हाँ। iOS लाइव होने पर App Store बटन, डाउनलोड QR, संरचित डेटा और स्टोर कॉपी सक्रिय लिंक के अनुसार अपडेट होंगे।"},
+        {"q": "क्या iPhone और iPad के लिए App Store डाउनलोड सक्रिय है?", "a": "हाँ। SnapVend Gallery अब App Store पर उपलब्ध है। वेबसाइट के App Store बटन और डाउनलोड QR iOS डिवाइस को सीधे App Store पेज पर ले जाते हैं।"},
     ],
     "ja": [
         {"q": "初回利用に技術的な設定は必要ですか？", "a": "いいえ。アプリを開いて写真を取り込めば、同じ端末から QR セッション、顧客選択、支払い/PAC 確認、ZIP 納品まで進められます。"},
-        {"q": "App Store 公開後にサイトは変わりますか？", "a": "はい。iOS 公開後、App Store ボタン、ダウンロード QR、構造化データ、ストア文言を実際の掲載ページへ更新します。"},
+        {"q": "iPhone / iPad 向け App Store ダウンロードは有効ですか？", "a": "はい。SnapVend Gallery は App Store で公開されています。サイトの App Store ボタンとダウンロード QR は iOS 端末を App Store ページへ直接案内します。"},
     ],
     "zh": [
         {"q": "第一次使用需要技术配置吗？", "a": "不需要。打开应用并导入照片后，可在同一设备完成 QR 会话、客户选片、支付/PAC 检查和 ZIP 交付。"},
-        {"q": "App Store 发布后网站会更新吗？", "a": "会。iOS 上线后，App Store 按钮、下载 QR、结构化数据和商店文案会更新到真实链接。"},
+        {"q": "iPhone / iPad 的 App Store 下载已启用吗？", "a": "是的。SnapVend Gallery 现已在 App Store 上架。网站中的 App Store 按钮和下载 QR 会将 iOS 设备直接引导到 App Store 页面。"},
     ],
 }
 
@@ -4912,7 +4913,7 @@ def store_badges(locale_code: str, copy: dict) -> str:
                 </span>
               </a>
 
-              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-alert="{e(app_store_status["note"])}" href="#" aria-label="{e(app_store_label)}">
+              <a class="store-badge store-badge-apple" data-store-link="appStore" data-app-store-alert="{e(app_store_status["note"])}" href="{APP_STORE_URL}" target="_blank" rel="noreferrer" aria-label="{e(app_store_label)}">
                 <span class="store-logo" aria-hidden="true">
                   <svg viewBox="0 0 48 48" role="img">
                     <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
@@ -5013,6 +5014,7 @@ def build_schema(
         "sameAs": [
             f"{SITE_URL}/",
             GOOGLE_PLAY_URL,
+            APP_STORE_URL,
         ],
         "contactPoint": [{"@id": contact_point_id}],
     }
@@ -5146,8 +5148,8 @@ def build_schema(
                 "url": f"{page_url}#pricing",
             },
         ],
-        "downloadUrl": GOOGLE_PLAY_URL,
-        "installUrl": GOOGLE_PLAY_URL,
+        "downloadUrl": [GOOGLE_PLAY_URL, APP_STORE_URL],
+        "installUrl": [GOOGLE_PLAY_URL, APP_STORE_URL],
         "dateModified": BUILD_DATE,
     }
 
@@ -5719,7 +5721,7 @@ def render_download_page() -> str:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SnapVend Gallery | Download Redirect</title>
-    <meta name="description" content="Automatic SnapVend Gallery download redirect for Android devices and iOS testing notice.">
+    <meta name="description" content="Automatic SnapVend Gallery download redirect for Android and iOS devices.">
     <meta name="robots" content="noindex,follow">
     <meta name="theme-color" content="#071b45">
     <link rel="canonical" href="{DOWNLOAD_URL}">
@@ -5733,7 +5735,7 @@ def render_download_page() -> str:
         const routeBackUrls = {json.dumps({code: ("../" if meta["path"] == "" else f"../{meta['path']}/") for code, meta in LOCALE_META.items()}, ensure_ascii=False)};
         const defaultConfig = {{
           googlePlayUrl: "{GOOGLE_PLAY_URL}",
-          appStoreUrl: "",
+          appStoreUrl: "{APP_STORE_URL}",
         }};
         const config = {{
           ...defaultConfig,
@@ -5794,7 +5796,7 @@ def render_download_page() -> str:
         <p data-download-intro>We detect your device and send you to the correct store.</p>
         <p class="download-redirect-note" data-download-note>If you are on a desktop or notebook, choose the active store below.</p>
         <p class="download-redirect-ios-note" data-ios-pending-note hidden aria-live="polite">
-          SnapVend Gallery for iPhone and iPad is currently in testing. The active public download is available on Google Play for Android.
+          SnapVend Gallery is now available on the App Store. If automatic routing does not open, use the App Store button.
         </p>
         <div class="download-redirect-actions">
           <a class="store-badge store-badge-play" data-download-google href="{GOOGLE_PLAY_URL}" target="_blank" rel="noreferrer">
@@ -5812,14 +5814,14 @@ def render_download_page() -> str:
             </span>
           </a>
 
-          <a class="store-badge store-badge-apple" data-download-app-store href="#ios-test">
+          <a class="store-badge store-badge-apple" data-download-app-store href="{APP_STORE_URL}" target="_blank" rel="noreferrer">
             <span class="store-logo" aria-hidden="true">
               <svg viewBox="0 0 48 48" role="img">
                 <path fill="currentColor" d="M32.7 24.8c0-5 4.1-7.4 4.3-7.6-2.4-3.3-6-3.8-7.3-3.9-3-.3-5.9 1.7-7.4 1.7-1.6 0-4-1.6-6.5-1.5-3.4.1-6.5 1.9-8.2 4.8-3.6 6-.9 15 2.6 19.9 1.7 2.4 3.7 5.1 6.3 5 2.5-.1 3.5-1.5 6.7-1.5 3.1 0 4 .1 6.6 1.5 2.7.2 4.5-2.3 6.2-4.7 1.9-2.8 2.7-5.5 2.7-5.6-.1 0-5.9-2.3-5.9-8.1Zm-4.8-14.2c1.5-1.8 2.5-4.2 2.2-6.6-2.2.1-4.8 1.5-6.4 3.3-1.4 1.6-2.6 4-2.3 6.3 2.4.2 4.8-1.2 6.5-3Z"></path>
               </svg>
             </span>
             <span class="store-copy">
-              <small data-download-apple-small>iOS version in testing</small>
+              <small data-download-apple-small>Download for iPhone and iPad</small>
               <strong>App Store</strong>
             </span>
           </a>
@@ -5842,11 +5844,11 @@ def render_download_page() -> str:
         const backLink = document.querySelector("[data-download-back]");
         const iosPendingNote = document.querySelector("[data-ios-pending-note]");
         const googlePlayUrl = String(config.googlePlayUrl || "{GOOGLE_PLAY_URL}").trim();
-        const appStoreUrl = String(config.appStoreUrl || "").trim();
+        const appStoreUrl = String(config.appStoreUrl || "{APP_STORE_URL}").trim();
         const backUrl = String(config.backUrl || "../").trim();
         const iosPendingMessage =
           copy.iosPendingNote ||
-          "SnapVend Gallery for iPhone and iPad is currently in testing. The active public download is available on Google Play for Android.";
+          "SnapVend Gallery is now available on the App Store. If automatic routing does not open, use the App Store button.";
 
         if (copy.pageTitle) document.title = copy.pageTitle;
         if (brandKicker && copy.brandKicker) brandKicker.textContent = copy.brandKicker;
@@ -5873,14 +5875,6 @@ def render_download_page() -> str:
           appleLink.href = appStoreUrl;
           appleLink.target = "_blank";
           appleLink.rel = "noreferrer";
-        }} else {{
-          appleLink.href = "#ios-test";
-          appleLink.removeAttribute("target");
-          appleLink.removeAttribute("rel");
-          appleLink.addEventListener("click", (event) => {{
-            event.preventDefault();
-            showIosPending(true);
-          }});
         }}
 
         if (config.isIOS && !appStoreUrl) {{

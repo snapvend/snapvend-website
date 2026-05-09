@@ -1,6 +1,6 @@
 window.snapVendMarketingConfig = {
   googlePlayUrl: "https://play.google.com/store/apps/details?id=com.snapvend.gallery",
-  appStoreUrl: "",
+  appStoreUrl: "https://apps.apple.com/us/app/snapvend-gallery/id6764613281",
   monthlyPrice: "399,99 TL",
   yearlyPrice: "3.999,99 TL",
   demoVideoUrl: "/assets/marketing/demo/snapvend-demo.mp4",

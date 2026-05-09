@@ -1,6 +1,6 @@
 const defaultMarketingConfig = {
   googlePlayUrl: "https://play.google.com/store/apps/details?id=com.snapvend.gallery",
-  appStoreUrl: "",
+  appStoreUrl: "https://apps.apple.com/us/app/snapvend-gallery/id6764613281",
   monthlyPrice: "",
   yearlyPrice: "",
   demoVideoUrl: "",
