@@ -4761,16 +4761,6 @@ def build_quick_start_steps(section: dict) -> str:
     return "\n".join(cards)
 
 
-def build_trust_cards(section: dict) -> str:
-    return "\n".join(
-        f"""              <article class="trust-card reveal">
-                <h3>{e(card["title"])}</h3>
-                <p>{e(card["body"])}</p>
-              </article>"""
-        for card in section["cards"]
-    )
-
-
 def build_feature_list(features: list[str]) -> str:
     return "\n".join(f"                <li>{e(feature)}</li>" for feature in features)
 
@@ -4835,7 +4825,6 @@ def build_keyword_string(
     language_support: dict,
     why_snapvend: dict,
     quick_start: dict,
-    trust: dict,
 ) -> str:
     values = [
         PRODUCT_NAME,
@@ -4851,13 +4840,11 @@ def build_keyword_string(
         contact["title"],
         language_support["title"],
         quick_start["title"],
-        trust["title"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in why_snapvend["cards"]],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in quick_start["steps"]],
-        *[card["title"] for card in trust["cards"]],
         *[card["title"] for card in proof["use_cases"]],
         *[card["title"] for card in proof["references"]],
         *copy["monthly_features"],
@@ -4963,7 +4950,6 @@ def build_schema(
     language_support: dict,
     why_snapvend: dict,
     quick_start: dict,
-    trust: dict,
     keywords: str,
 ) -> str:
     pricing = SCHEMA_PRICING[locale_code]
@@ -4986,7 +4972,6 @@ def build_schema(
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
     quick_start_list = build_item_list_schema(page_url, "quick-start", quick_start["title"], quick_start["steps"])
-    trust_list = build_item_list_schema(page_url, "trust", trust["title"], trust["cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
     contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
@@ -5062,7 +5047,6 @@ def build_schema(
             {"@id": language_support_list["@id"]},
             {"@id": why_snapvend_list["@id"]},
             {"@id": quick_start_list["@id"]},
-            {"@id": trust_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
             {"@id": f"{page_url}#faq"},
@@ -5107,7 +5091,6 @@ def build_schema(
             [card["title"] for card in copy["workflow_cards"]]
             + [card["title"] for card in why_snapvend["cards"]]
             + [card["title"] for card in quick_start["steps"]]
-            + [card["title"] for card in trust["cards"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
             + [card["title"] for card in language_support["cards"]]
@@ -5214,7 +5197,6 @@ def build_schema(
             language_support_list,
             why_snapvend_list,
             quick_start_list,
-            trust_list,
             use_case_list,
             reference_profile_list,
             contact_topic_set,
@@ -5242,13 +5224,11 @@ def render_page(locale_code: str) -> str:
     why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     quick_start_copy = QUICK_START_SECTION[locale_code]
-    trust_copy = TRUST_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
     workflow_cards = build_workflow_cards(copy)
     audience_cards = build_audience_cards(copy)
     quick_start_steps = build_quick_start_steps(quick_start_copy)
-    trust_cards = build_trust_cards(trust_copy)
     language_support_cards = build_language_support_cards(language_support_copy)
     language_support_badges = build_language_support_badges(locale_code)
     why_snapvend_cards = build_why_snapvend_cards(why_snapvend_copy)
@@ -5258,7 +5238,7 @@ def render_page(locale_code: str) -> str:
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, quick_start_copy, trust_copy)
+    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, quick_start_copy)
     schema_json = build_schema(
         locale_code,
         copy,
@@ -5268,7 +5248,6 @@ def render_page(locale_code: str) -> str:
         language_support_copy,
         why_snapvend_copy,
         quick_start_copy,
-        trust_copy,
         keyword_string,
     )
     active_flag = flag_markup(meta["app_store_country"], prefix)
@@ -5569,20 +5548,6 @@ def render_page(locale_code: str) -> str:
 {proof_references}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section trust-section deferred-section" id="trust">
-        <div class="container trust-shell reveal">
-          <div class="section-head">
-            <p class="eyebrow">{e(trust_copy["eyebrow"])}</p>
-            <h2>{e(trust_copy["title"])}</h2>
-            <p>{e(trust_copy["lead"])}</p>
-          </div>
-
-          <div class="trust-grid">
-{trust_cards}
           </div>
         </div>
       </section>
