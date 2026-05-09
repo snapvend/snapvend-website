@@ -4056,6 +4056,318 @@ for locale_code, values in PLAN_LICENSE_RULE_OVERRIDES.items():
             faq_item.update(values["faq"])
             break
 
+QUICK_START_SECTION = {
+    "tr": {
+        "eyebrow": "Hızlı Başlangıç",
+        "title": "İlk teslim akışını dakikalar içinde kurun",
+        "lead": "SnapVend'i yeni açan bir ekip, karmaşık panel öğrenmeden çekimden teslimata geçebilir.",
+        "steps": [
+            {"title": "Uygulamayı kur", "body": "Telefon veya tablette SnapVend'i açın, işletme bilgilerinizi ve lisans durumunuzu kontrol edin."},
+            {"title": "Fotoğrafları alın", "body": "Yerel galeriden seçin ya da FTP destekli profesyonel kameradan doğrudan uygulamaya aktarın."},
+            {"title": "QR ile müşteriye göster", "body": "Her çekim için ayrı oturum açın, müşteriyi QR galeriye alın ve seçimleri kontrollü şekilde toplayın."},
+            {"title": "Onayla ve teslim et", "body": "Ödeme/PAC kontrolünden sonra onaylanan dosyaları aynı cihazdan ZIP olarak teslim edin."},
+        ],
+    },
+    "en": {
+        "eyebrow": "Quick Start",
+        "title": "Set up the first delivery flow in minutes",
+        "lead": "A new SnapVend team can move from capture to delivery without learning a complex dashboard.",
+        "steps": [
+            {"title": "Install the app", "body": "Open SnapVend on a phone or tablet, then review business details and license status."},
+            {"title": "Bring photos in", "body": "Select from local media or transfer directly from an FTP-capable professional camera."},
+            {"title": "Show with QR", "body": "Open a separate session for each shoot, invite the client into the QR gallery and collect selections."},
+            {"title": "Approve and deliver", "body": "After payment/PAC control, deliver approved files as a ZIP from the same device."},
+        ],
+    },
+    "es": {
+        "eyebrow": "Inicio Rapido",
+        "title": "Configure la primera entrega en minutos",
+        "lead": "Un equipo nuevo puede pasar de la captura a la entrega sin aprender un panel complejo.",
+        "steps": [
+            {"title": "Instale la app", "body": "Abra SnapVend en telefono o tablet y revise datos del negocio y licencia."},
+            {"title": "Importe fotos", "body": "Seleccione desde la galeria local o transfiera desde una camara profesional con FTP."},
+            {"title": "Muestre con QR", "body": "Cree una sesion por trabajo, invite al cliente a la galeria QR y recoja selecciones."},
+            {"title": "Apruebe y entregue", "body": "Tras controlar pago/PAC, entregue los archivos aprobados en ZIP desde el mismo dispositivo."},
+        ],
+    },
+    "fr": {
+        "eyebrow": "Demarrage Rapide",
+        "title": "Configurez le premier flux de livraison en quelques minutes",
+        "lead": "Une nouvelle equipe peut passer de la prise de vue a la livraison sans apprendre un tableau de bord complexe.",
+        "steps": [
+            {"title": "Installez l'app", "body": "Ouvrez SnapVend sur telephone ou tablette, puis verifiez les infos business et la licence."},
+            {"title": "Importez les photos", "body": "Choisissez depuis la galerie locale ou transferez depuis un appareil photo pro compatible FTP."},
+            {"title": "Montrez par QR", "body": "Ouvrez une session par shooting, invitez le client dans la galerie QR et collectez les choix."},
+            {"title": "Validez et livrez", "body": "Apres controle paiement/PAC, livrez les fichiers approuves en ZIP depuis le meme appareil."},
+        ],
+    },
+    "de": {
+        "eyebrow": "Schnellstart",
+        "title": "Richten Sie den ersten Lieferablauf in Minuten ein",
+        "lead": "Ein neues Team kann von Aufnahme bis Auslieferung starten, ohne ein komplexes Dashboard zu lernen.",
+        "steps": [
+            {"title": "App installieren", "body": "SnapVend auf Telefon oder Tablet oeffnen und Geschaeftsdaten sowie Lizenzstatus pruefen."},
+            {"title": "Fotos importieren", "body": "Aus lokalen Medien waehlen oder direkt von einer FTP-faehigen Profikamera uebertragen."},
+            {"title": "Per QR zeigen", "body": "Fuer jedes Shooting eine Session oeffnen, Kunden in die QR-Galerie einladen und Auswahlen sammeln."},
+            {"title": "Freigeben und liefern", "body": "Nach Zahlungs-/PAC-Kontrolle freigegebene Dateien als ZIP vom selben Geraet ausliefern."},
+        ],
+    },
+    "it": {
+        "eyebrow": "Avvio Rapido",
+        "title": "Configura il primo flusso di consegna in pochi minuti",
+        "lead": "Un nuovo team puo passare dallo scatto alla consegna senza imparare un pannello complesso.",
+        "steps": [
+            {"title": "Installa l'app", "body": "Apri SnapVend su telefono o tablet e controlla dati attivita e stato licenza."},
+            {"title": "Importa le foto", "body": "Seleziona dalla galleria locale o trasferisci da una fotocamera professionale con FTP."},
+            {"title": "Mostra con QR", "body": "Apri una sessione per ogni servizio, invita il cliente nella galleria QR e raccogli le scelte."},
+            {"title": "Approva e consegna", "body": "Dopo controllo pagamento/PAC, consegna i file approvati in ZIP dallo stesso dispositivo."},
+        ],
+    },
+    "pt": {
+        "eyebrow": "Inicio Rapido",
+        "title": "Configure a primeira entrega em minutos",
+        "lead": "Uma equipe nova pode ir da captura a entrega sem aprender um painel complexo.",
+        "steps": [
+            {"title": "Instale o app", "body": "Abra o SnapVend no telefone ou tablet e confira dados do negocio e licenca."},
+            {"title": "Importe as fotos", "body": "Selecione da galeria local ou transfira de uma camera profissional com FTP."},
+            {"title": "Mostre por QR", "body": "Abra uma sessao para cada trabalho, convide o cliente para a galeria QR e colete escolhas."},
+            {"title": "Aprove e entregue", "body": "Apos controle de pagamento/PAC, entregue os arquivos aprovados em ZIP no mesmo dispositivo."},
+        ],
+    },
+    "ru": {
+        "eyebrow": "Быстрый старт",
+        "title": "Настройте первый процесс выдачи за несколько минут",
+        "lead": "Новая команда может перейти от съемки к выдаче без изучения сложной панели.",
+        "steps": [
+            {"title": "Установите приложение", "body": "Откройте SnapVend на телефоне или планшете и проверьте данные бизнеса и лицензию."},
+            {"title": "Загрузите фото", "body": "Выберите из локальной галереи или передайте с профессиональной камеры по FTP."},
+            {"title": "Покажите по QR", "body": "Откройте отдельную сессию для съемки, пригласите клиента в QR-галерею и соберите выбор."},
+            {"title": "Подтвердите и выдайте", "body": "После контроля оплаты/PAC выдайте одобренные файлы ZIP с того же устройства."},
+        ],
+    },
+    "ar": {
+        "eyebrow": "بدء سريع",
+        "title": "جهز اول تدفق تسليم خلال دقائق",
+        "lead": "يمكن للفريق الجديد الانتقال من الالتقاط الى التسليم بدون لوحة معقدة.",
+        "steps": [
+            {"title": "ثبت التطبيق", "body": "افتح SnapVend على الهاتف او الجهاز اللوحي وراجع بيانات النشاط وحالة الترخيص."},
+            {"title": "استورد الصور", "body": "اختر من المعرض المحلي او انقل مباشرة من كاميرا احترافية تدعم FTP."},
+            {"title": "اعرض عبر QR", "body": "افتح جلسة منفصلة لكل تصوير، وادخل العميل الى معرض QR واجمع الاختيارات."},
+            {"title": "اعتمد وسلم", "body": "بعد فحص الدفع/PAC سلم الملفات المعتمدة بصيغة ZIP من الجهاز نفسه."},
+        ],
+    },
+    "hi": {
+        "eyebrow": "त्वरित शुरुआत",
+        "title": "पहला डिलीवरी फ्लो मिनटों में तैयार करें",
+        "lead": "नई टीम जटिल डैशबोर्ड सीखे बिना कैप्चर से डिलीवरी तक जा सकती है।",
+        "steps": [
+            {"title": "ऐप इंस्टॉल करें", "body": "फोन या टैबलेट पर SnapVend खोलें और व्यवसाय जानकारी व लाइसेंस स्थिति देखें।"},
+            {"title": "फोटो अंदर लें", "body": "लोकल गैलरी से चुनें या FTP-सक्षम प्रोफेशनल कैमरे से सीधे ट्रांसफर करें।"},
+            {"title": "QR से दिखाएँ", "body": "हर शूट के लिए अलग सेशन खोलें, ग्राहक को QR गैलरी में लाएँ और चयन लें।"},
+            {"title": "स्वीकृत कर डिलीवर करें", "body": "भुगतान/PAC नियंत्रण के बाद मंजूर फाइलें उसी डिवाइस से ZIP में दें।"},
+        ],
+    },
+    "ja": {
+        "eyebrow": "クイックスタート",
+        "title": "最初の納品フローを数分で設定",
+        "lead": "新しいチームでも、複雑な管理画面を覚えずに撮影から納品へ進めます。",
+        "steps": [
+            {"title": "アプリを導入", "body": "スマホまたはタブレットで SnapVend を開き、事業情報とライセンス状態を確認します。"},
+            {"title": "写真を取り込む", "body": "ローカルギャラリーから選ぶか、FTP 対応のプロ向けカメラから直接転送します。"},
+            {"title": "QR で見せる", "body": "撮影ごとに個別セッションを開き、顧客を QR ギャラリーへ案内して選択を集めます。"},
+            {"title": "承認して納品", "body": "支払い/PAC 確認後、承認済みファイルを同じ端末から ZIP で納品します。"},
+        ],
+    },
+    "zh": {
+        "eyebrow": "快速开始",
+        "title": "几分钟内建立第一次交付流程",
+        "lead": "新团队无需学习复杂后台，也能从拍摄快速进入交付。",
+        "steps": [
+            {"title": "安装应用", "body": "在手机或平板打开 SnapVend，检查商家信息与授权状态。"},
+            {"title": "导入照片", "body": "从本地相册选择，或从支持 FTP 的专业相机直接传入应用。"},
+            {"title": "用 QR 展示", "body": "为每次拍摄建立独立会话，让客户进入 QR 画廊并收集选片。"},
+            {"title": "确认并交付", "body": "完成支付/PAC 检查后，从同一设备把批准文件以 ZIP 交付。"},
+        ],
+    },
+}
+
+TRUST_SECTION = {
+    "tr": {
+        "eyebrow": "Güven",
+        "title": "Yayına hazır, müşteriye anlatması kolay bir ürün deneyimi",
+        "lead": "Mağaza yayını tamamlandıkça bu alan gerçek yorumlar ve referanslarla genişletilebilir; şimdiden karar vericinin görmek istediği güven başlıklarını açıkça gösterir.",
+        "cards": [
+            {"title": "Şeffaf demo deneyimi", "body": "Android demosu temel ürün akışını gösterir; aynı galeri, QR, seçim ve teslim mantığı iPhone ve iPad tarafında da korunur."},
+            {"title": "Mağaza sonrası net indirme", "body": "Google Play aktif, App Store yayına alındığında indirme QR kodu ve mağaza yönlendirmeleri aynı yapıda güncellenir."},
+            {"title": "Referans alanı hazır", "body": "İlk gerçek kullanıcı yorumları, düğün/stüdyo senaryoları ve müşteri logoları bozulmadan bu alana eklenebilir."},
+        ],
+    },
+    "en": {
+        "eyebrow": "Trust",
+        "title": "A launch-ready product story that is easy to explain to clients",
+        "lead": "As store publishing progresses, this area can expand with real reviews and references while already showing the trust signals decision makers expect.",
+        "cards": [
+            {"title": "Transparent demo experience", "body": "The Android demo shows the core product flow; the same gallery, QR, selection and delivery logic is preserved on iPhone and iPad."},
+            {"title": "Clear store handoff", "body": "Google Play is active, and when App Store publishing is complete the download QR and store routing can be updated in the same structure."},
+            {"title": "Reference-ready layout", "body": "Real user comments, wedding/studio scenarios and customer logos can be added here without redesigning the page."},
+        ],
+    },
+    "es": {
+        "eyebrow": "Confianza",
+        "title": "Una historia de producto lista para publicar y facil de explicar",
+        "lead": "Cuando avance la publicacion en tiendas, esta area podra crecer con opiniones y referencias reales.",
+        "cards": [
+            {"title": "Demo transparente", "body": "La demo Android muestra el flujo central; la misma logica de galeria, QR, seleccion y entrega se mantiene en iPhone y iPad."},
+            {"title": "Descarga clara", "body": "Google Play esta activo y, cuando App Store este publicado, el QR y las rutas de tienda se actualizaran en la misma estructura."},
+            {"title": "Lista para referencias", "body": "Comentarios reales, escenarios de boda/estudio y logos de clientes se podran agregar sin redisenar la pagina."},
+        ],
+    },
+    "fr": {
+        "eyebrow": "Confiance",
+        "title": "Un discours produit pret pour le lancement et simple a expliquer",
+        "lead": "Au fur et a mesure de la publication en boutique, cette zone pourra accueillir avis reels et references.",
+        "cards": [
+            {"title": "Demo transparente", "body": "La demo Android montre le flux principal; la logique galerie, QR, selection et livraison reste la meme sur iPhone et iPad."},
+            {"title": "Telechargement clair", "body": "Google Play est actif et, apres publication App Store, le QR de telechargement et les liens seront mis a jour dans la meme structure."},
+            {"title": "Pret pour les references", "body": "Avis clients, scenarios mariage/studio et logos pourront etre ajoutes sans refonte de la page."},
+        ],
+    },
+    "de": {
+        "eyebrow": "Vertrauen",
+        "title": "Eine launchbereite Produktstory, die Kunden schnell verstehen",
+        "lead": "Mit dem Store-Launch kann dieser Bereich um echte Bewertungen und Referenzen erweitert werden.",
+        "cards": [
+            {"title": "Transparente Demo", "body": "Die Android-Demo zeigt den Kernablauf; Galerie, QR, Auswahl und Lieferung bleiben auf iPhone und iPad gleich."},
+            {"title": "Klare Store-Uebergabe", "body": "Google Play ist aktiv; nach App-Store-Freigabe werden QR und Store-Routing in derselben Struktur aktualisiert."},
+            {"title": "Bereit fuer Referenzen", "body": "Echte Nutzerstimmen, Hochzeits-/Studio-Szenarien und Kundenlogos koennen ohne Redesign ergaenzt werden."},
+        ],
+    },
+    "it": {
+        "eyebrow": "Fiducia",
+        "title": "Un racconto prodotto pronto al lancio e facile da spiegare",
+        "lead": "Con l'avanzare della pubblicazione negli store, questa area potra crescere con recensioni e riferimenti reali.",
+        "cards": [
+            {"title": "Demo trasparente", "body": "La demo Android mostra il flusso principale; galleria, QR, selezione e consegna restano coerenti su iPhone e iPad."},
+            {"title": "Download chiaro", "body": "Google Play e attivo e, quando App Store sara pubblicato, QR e routing store saranno aggiornati nella stessa struttura."},
+            {"title": "Pronta per referenze", "body": "Commenti reali, scenari matrimonio/studio e loghi clienti potranno essere aggiunti senza ridisegnare la pagina."},
+        ],
+    },
+    "pt": {
+        "eyebrow": "Confianca",
+        "title": "Uma historia de produto pronta para lancamento e facil de explicar",
+        "lead": "Com a publicacao nas lojas, esta area pode crescer com avaliacoes e referencias reais.",
+        "cards": [
+            {"title": "Demo transparente", "body": "A demo Android mostra o fluxo central; galeria, QR, selecao e entrega seguem a mesma logica no iPhone e iPad."},
+            {"title": "Download claro", "body": "Google Play esta ativo e, quando a App Store for publicada, o QR e as rotas de loja serao atualizados na mesma estrutura."},
+            {"title": "Pronta para referencias", "body": "Comentarios reais, cenarios de casamento/estudio e logos de clientes poderao entrar sem redesenhar a pagina."},
+        ],
+    },
+    "ru": {
+        "eyebrow": "Доверие",
+        "title": "Готовая к запуску история продукта, понятная клиентам",
+        "lead": "По мере публикации в магазинах этот блок можно расширить реальными отзывами и референсами.",
+        "cards": [
+            {"title": "Прозрачная демо-логика", "body": "Android-демо показывает основной сценарий; галерея, QR, выбор и выдача работают по той же логике на iPhone и iPad."},
+            {"title": "Понятная загрузка", "body": "Google Play активен, а после публикации в App Store QR и маршрутизация магазинов будут обновлены в той же структуре."},
+            {"title": "Готово для референсов", "body": "Реальные отзывы, свадебные/студийные сценарии и логотипы клиентов можно добавить без переработки страницы."},
+        ],
+    },
+    "ar": {
+        "eyebrow": "الثقة",
+        "title": "قصة منتج جاهزة للاطلاق وسهلة الشرح للعميل",
+        "lead": "مع تقدم النشر في المتاجر يمكن توسيع هذا القسم بتقييمات ومراجع حقيقية.",
+        "cards": [
+            {"title": "عرض تجريبي واضح", "body": "يعرض فيديو Android التدفق الاساسي، ونفس منطق المعرض وQR والاختيار والتسليم يبقى على iPhone وiPad."},
+            {"title": "تحميل واضح", "body": "Google Play فعال، وعند اكتمال نشر App Store سيتم تحديث QR وروابط المتاجر بنفس البنية."},
+            {"title": "جاهز للمراجع", "body": "يمكن اضافة آراء حقيقية وسيناريوهات اعراس/استوديو وشعارات عملاء بدون اعادة تصميم الصفحة."},
+        ],
+    },
+    "hi": {
+        "eyebrow": "विश्वास",
+        "title": "लॉन्च के लिए तैयार और ग्राहकों को आसानी से समझ आने वाली कहानी",
+        "lead": "स्टोर प्रकाशन आगे बढ़ने पर यह भाग वास्तविक समीक्षाओं और संदर्भों से बढ़ाया जा सकता है।",
+        "cards": [
+            {"title": "स्पष्ट डेमो अनुभव", "body": "Android डेमो मुख्य प्रवाह दिखाता है; वही गैलरी, QR, चयन और डिलीवरी अनुभव iPhone और iPad पर भी रहता है।"},
+            {"title": "साफ डाउनलोड मार्ग", "body": "Google Play सक्रिय है; App Store प्रकाशित होने पर डाउनलोड QR और स्टोर रूटिंग इसी संरचना में अपडेट होंगे।"},
+            {"title": "संदर्भों के लिए तैयार", "body": "वास्तविक उपयोगकर्ता टिप्पणी, शादी/स्टूडियो परिदृश्य और ग्राहक लोगो बिना नया डिजाइन किए जोड़े जा सकते हैं।"},
+        ],
+    },
+    "ja": {
+        "eyebrow": "信頼",
+        "title": "公開準備が整った、顧客に伝えやすい製品ストーリー",
+        "lead": "ストア公開が進んだら、実際のレビューや導入事例をこのエリアへ追加できます。",
+        "cards": [
+            {"title": "透明性のあるデモ", "body": "Android デモは基本フローを示します。ギャラリー、QR、選択、納品の考え方は iPhone / iPad でも同じです。"},
+            {"title": "明確なストア導線", "body": "Google Play は有効です。App Store 公開後、ダウンロード QR とストア導線を同じ構造で更新できます。"},
+            {"title": "事例追加に対応", "body": "実際の声、ウェディング/スタジオ事例、顧客ロゴをページを作り直さず追加できます。"},
+        ],
+    },
+    "zh": {
+        "eyebrow": "信任",
+        "title": "可用于发布、也容易向客户说明的产品故事",
+        "lead": "随着商店发布推进，这里可继续加入真实评价与客户参考。",
+        "cards": [
+            {"title": "透明的演示体验", "body": "Android 演示展示核心流程；画廊、QR、选片与交付逻辑在 iPhone 和 iPad 上保持一致。"},
+            {"title": "清晰的商店跳转", "body": "Google Play 已可用，App Store 发布后，下载 QR 与商店路由可在同一结构中更新。"},
+            {"title": "可加入真实参考", "body": "真实用户评价、婚礼/影棚场景和客户 logo 可直接加入，无需重做页面。"},
+        ],
+    },
+}
+
+FAQ_MARKETING_EXPANSION = {
+    "tr": [
+        {"q": "İlk kullanıma başlamak için teknik kurulum gerekir mi?", "a": "Hayır. Uygulamayı açıp fotoğrafları içe aldıktan sonra aynı cihazdan QR oturumu, müşteri seçimi, ödeme/PAC kontrolü ve ZIP teslim akışına geçebilirsiniz."},
+        {"q": "App Store yayını tamamlanınca web sitesi değişecek mi?", "a": "Evet. iOS yayına açıldığında App Store butonları, indirme QR kodu, yapılandırılmış veri ve mağaza açıklamaları doğrudan aktif bağlantıya göre güncellenir."},
+    ],
+    "en": [
+        {"q": "Do I need technical setup for first use?", "a": "No. After opening the app and importing photos, you can run QR session, client selection, payment/PAC control and ZIP delivery from the same device."},
+        {"q": "Will the website change when App Store publishing is complete?", "a": "Yes. When iOS is live, App Store buttons, download QR, structured data and store copy can be updated to the active listing."},
+    ],
+    "es": [
+        {"q": "¿Necesito configuracion tecnica para empezar?", "a": "No. Tras abrir la app e importar fotos, puedes gestionar sesion QR, seleccion del cliente, control de pago/PAC y entrega ZIP desde el mismo dispositivo."},
+        {"q": "¿Cambiara la web cuando App Store este publicado?", "a": "Si. Cuando iOS este activo, botones de App Store, QR de descarga, datos estructurados y textos de tienda se actualizaran al enlace real."},
+    ],
+    "fr": [
+        {"q": "Faut-il une configuration technique pour commencer ?", "a": "Non. Apres ouverture de l'app et import des photos, vous pouvez gerer session QR, choix client, controle paiement/PAC et livraison ZIP depuis le meme appareil."},
+        {"q": "Le site changera-t-il apres la publication App Store ?", "a": "Oui. Quand iOS sera en ligne, les boutons App Store, le QR de telechargement, les donnees structurees et les textes seront relies a la fiche active."},
+    ],
+    "de": [
+        {"q": "Brauche ich technische Einrichtung fuer den Start?", "a": "Nein. Nach dem Oeffnen der App und dem Fotoimport koennen QR-Session, Kundenauswahl, Zahlungs-/PAC-Kontrolle und ZIP-Lieferung vom selben Geraet laufen."},
+        {"q": "Aendert sich die Website nach dem App-Store-Launch?", "a": "Ja. Sobald iOS live ist, werden App-Store-Buttons, Download-QR, strukturierte Daten und Store-Texte auf den aktiven Eintrag aktualisiert."},
+    ],
+    "it": [
+        {"q": "Serve una configurazione tecnica per iniziare?", "a": "No. Dopo aver aperto l'app e importato le foto puoi gestire sessione QR, scelta cliente, controllo pagamento/PAC e consegna ZIP dallo stesso dispositivo."},
+        {"q": "Il sito cambiera quando App Store sara pubblicato?", "a": "Si. Quando iOS sara live, pulsanti App Store, QR download, dati strutturati e testi saranno aggiornati alla scheda attiva."},
+    ],
+    "pt": [
+        {"q": "Preciso de configuracao tecnica para comecar?", "a": "Nao. Depois de abrir o app e importar fotos, voce pode gerenciar sessao QR, selecao do cliente, controle pagamento/PAC e entrega ZIP no mesmo dispositivo."},
+        {"q": "O site muda quando a App Store estiver publicada?", "a": "Sim. Quando iOS estiver ativo, botoes App Store, QR de download, dados estruturados e textos serao atualizados para o link real."},
+    ],
+    "ru": [
+        {"q": "Нужна ли техническая настройка для первого запуска?", "a": "Нет. После открытия приложения и импорта фото можно вести QR-сессию, выбор клиента, контроль оплаты/PAC и ZIP-выдачу с того же устройства."},
+        {"q": "Изменится ли сайт после публикации в App Store?", "a": "Да. Когда iOS станет доступен, кнопки App Store, QR загрузки, структурированные данные и тексты будут обновлены под активную страницу."},
+    ],
+    "ar": [
+        {"q": "هل احتاج اعدادا تقنيا للبدء؟", "a": "لا. بعد فتح التطبيق واستيراد الصور يمكنك تشغيل جلسة QR واختيار العميل وفحص الدفع/PAC وتسليم ZIP من الجهاز نفسه."},
+        {"q": "هل سيتغير الموقع بعد نشر App Store؟", "a": "نعم. عند توفر iOS سيتم تحديث ازرار App Store وQR التحميل والبيانات المنظمة ونصوص المتجر بالرابط الفعلي."},
+    ],
+    "hi": [
+        {"q": "क्या पहली बार उपयोग के लिए तकनीकी सेटअप चाहिए?", "a": "नहीं। ऐप खोलकर फोटो इम्पोर्ट करने के बाद उसी डिवाइस से QR सेशन, ग्राहक चयन, भुगतान/PAC नियंत्रण और ZIP डिलीवरी चला सकते हैं।"},
+        {"q": "App Store प्रकाशन पूरा होने पर वेबसाइट बदलेगी?", "a": "हाँ। iOS लाइव होने पर App Store बटन, डाउनलोड QR, संरचित डेटा और स्टोर कॉपी सक्रिय लिंक के अनुसार अपडेट होंगे।"},
+    ],
+    "ja": [
+        {"q": "初回利用に技術的な設定は必要ですか？", "a": "いいえ。アプリを開いて写真を取り込めば、同じ端末から QR セッション、顧客選択、支払い/PAC 確認、ZIP 納品まで進められます。"},
+        {"q": "App Store 公開後にサイトは変わりますか？", "a": "はい。iOS 公開後、App Store ボタン、ダウンロード QR、構造化データ、ストア文言を実際の掲載ページへ更新します。"},
+    ],
+    "zh": [
+        {"q": "第一次使用需要技术配置吗？", "a": "不需要。打开应用并导入照片后，可在同一设备完成 QR 会话、客户选片、支付/PAC 检查和 ZIP 交付。"},
+        {"q": "App Store 发布后网站会更新吗？", "a": "会。iOS 上线后，App Store 按钮、下载 QR、结构化数据和商店文案会更新到真实链接。"},
+    ],
+}
+
+for locale_code, items in FAQ_MARKETING_EXPANSION.items():
+    FAQ_SECTION[locale_code]["items"].extend(items)
+
 BRAND_MOTTO_BY_LOCALE = {
     "tr": "Çek - Göster - Sat",
     "en": "Shoot - Show - Sell",
@@ -4436,6 +4748,29 @@ def build_proof_cards(items: list[dict]) -> str:
     return "\n".join(cards)
 
 
+def build_quick_start_steps(section: dict) -> str:
+    cards = []
+    for index, card in enumerate(section["steps"], start=1):
+        cards.append(
+            f"""              <article class="quick-start-card reveal">
+                <span class="quick-start-index">{index:02d}</span>
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_trust_cards(section: dict) -> str:
+    return "\n".join(
+        f"""              <article class="trust-card reveal">
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        for card in section["cards"]
+    )
+
+
 def build_feature_list(features: list[str]) -> str:
     return "\n".join(f"                <li>{e(feature)}</li>" for feature in features)
 
@@ -4499,6 +4834,8 @@ def build_keyword_string(
     contact: dict,
     language_support: dict,
     why_snapvend: dict,
+    quick_start: dict,
+    trust: dict,
 ) -> str:
     values = [
         PRODUCT_NAME,
@@ -4513,10 +4850,14 @@ def build_keyword_string(
         proof["title"],
         contact["title"],
         language_support["title"],
+        quick_start["title"],
+        trust["title"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in why_snapvend["cards"]],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
+        *[card["title"] for card in quick_start["steps"]],
+        *[card["title"] for card in trust["cards"]],
         *[card["title"] for card in proof["use_cases"]],
         *[card["title"] for card in proof["references"]],
         *copy["monthly_features"],
@@ -4621,6 +4962,8 @@ def build_schema(
     contact: dict,
     language_support: dict,
     why_snapvend: dict,
+    quick_start: dict,
+    trust: dict,
     keywords: str,
 ) -> str:
     pricing = SCHEMA_PRICING[locale_code]
@@ -4642,6 +4985,8 @@ def build_schema(
     audience_list = build_item_list_schema(page_url, "audience", copy["audience_title"], copy["audience_cards"])
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
+    quick_start_list = build_item_list_schema(page_url, "quick-start", quick_start["title"], quick_start["steps"])
+    trust_list = build_item_list_schema(page_url, "trust", trust["title"], trust["cards"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
     contact_topic_set = build_defined_term_set_schema(page_url, "contact-topics", contact["type_label"], contact["topics"])
@@ -4716,6 +5061,8 @@ def build_schema(
             {"@id": audience_list["@id"]},
             {"@id": language_support_list["@id"]},
             {"@id": why_snapvend_list["@id"]},
+            {"@id": quick_start_list["@id"]},
+            {"@id": trust_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
             {"@id": f"{page_url}#faq"},
@@ -4759,6 +5106,8 @@ def build_schema(
         "featureList": unique_strings(
             [card["title"] for card in copy["workflow_cards"]]
             + [card["title"] for card in why_snapvend["cards"]]
+            + [card["title"] for card in quick_start["steps"]]
+            + [card["title"] for card in trust["cards"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
             + [card["title"] for card in language_support["cards"]]
@@ -4864,6 +5213,8 @@ def build_schema(
             audience_list,
             language_support_list,
             why_snapvend_list,
+            quick_start_list,
+            trust_list,
             use_case_list,
             reference_profile_list,
             contact_topic_set,
@@ -4890,10 +5241,14 @@ def render_page(locale_code: str) -> str:
     language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
     why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
+    quick_start_copy = QUICK_START_SECTION[locale_code]
+    trust_copy = TRUST_SECTION[locale_code]
     metrics = build_metric_cards(copy)
     demo_steps = build_demo_steps(demo_copy)
     workflow_cards = build_workflow_cards(copy)
     audience_cards = build_audience_cards(copy)
+    quick_start_steps = build_quick_start_steps(quick_start_copy)
+    trust_cards = build_trust_cards(trust_copy)
     language_support_cards = build_language_support_cards(language_support_copy)
     language_support_badges = build_language_support_badges(locale_code)
     why_snapvend_cards = build_why_snapvend_cards(why_snapvend_copy)
@@ -4903,7 +5258,7 @@ def render_page(locale_code: str) -> str:
     faq_items = build_faq_items(faq_copy)
     contact_highlights = build_contact_highlights(contact_copy)
     contact_topics = build_contact_topics(contact_copy)
-    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy)
+    keyword_string = build_keyword_string(locale_code, copy, proof_copy, contact_copy, language_support_copy, why_snapvend_copy, quick_start_copy, trust_copy)
     schema_json = build_schema(
         locale_code,
         copy,
@@ -4912,6 +5267,8 @@ def render_page(locale_code: str) -> str:
         contact_copy,
         language_support_copy,
         why_snapvend_copy,
+        quick_start_copy,
+        trust_copy,
         keyword_string,
     )
     active_flag = flag_markup(meta["app_store_country"], prefix)
@@ -5030,6 +5387,20 @@ def render_page(locale_code: str) -> str:
               <span>SnapVend</span>
               <p class="visual-chip-motto">{e(copy["brand_motto"])}</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quick-start deferred-section" id="quick-start">
+        <div class="container quick-start-shell reveal">
+          <div class="section-head">
+            <p class="eyebrow">{e(quick_start_copy["eyebrow"])}</p>
+            <h2>{e(quick_start_copy["title"])}</h2>
+            <p>{e(quick_start_copy["lead"])}</p>
+          </div>
+
+          <div class="quick-start-grid">
+{quick_start_steps}
           </div>
         </div>
       </section>
@@ -5198,6 +5569,20 @@ def render_page(locale_code: str) -> str:
 {proof_references}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-section deferred-section" id="trust">
+        <div class="container trust-shell reveal">
+          <div class="section-head">
+            <p class="eyebrow">{e(trust_copy["eyebrow"])}</p>
+            <h2>{e(trust_copy["title"])}</h2>
+            <p>{e(trust_copy["lead"])}</p>
+          </div>
+
+          <div class="trust-grid">
+{trust_cards}
           </div>
         </div>
       </section>
