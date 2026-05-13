@@ -286,6 +286,21 @@ SCHEMA_PRICING = {
     "zh": {"currency": "CNY", "monthly": 61.14, "yearly": 611.43},
 }
 
+FREE_PLAN_DISPLAY = {
+    "tr": {"price": "0 TL", "period": "başlangıç paketi", "feature": "Aboneliğe geçmeden temel akışı test edin"},
+    "en": {"price": "US$0", "period": "starter plan", "feature": "Test the core workflow before subscribing"},
+    "es": {"price": "0 €", "period": "plan inicial", "feature": "Pruebe el flujo principal antes de suscribirse"},
+    "fr": {"price": "0 €", "period": "forfait initial", "feature": "Testez le flux principal avant de vous abonner"},
+    "de": {"price": "0 €", "period": "Startplan", "feature": "Kernablauf vor dem Abonnement testen"},
+    "it": {"price": "0 €", "period": "piano iniziale", "feature": "Prova il flusso principale prima dell'abbonamento"},
+    "pt": {"price": "R$ 0", "period": "plano inicial", "feature": "Teste o fluxo principal antes de assinar"},
+    "ru": {"price": "0 ₽", "period": "стартовый план", "feature": "Проверьте основной процесс перед подпиской"},
+    "ar": {"price": "0 ر.س", "period": "خطة بداية", "feature": "اختبر التدفق الاساسي قبل الاشتراك"},
+    "hi": {"price": "₹0", "period": "स्टार्टर प्लान", "feature": "सदस्यता से पहले मुख्य प्रवाह आज़माएँ"},
+    "ja": {"price": "¥0", "period": "スタートプラン", "feature": "サブスク前に基本フローを試せます"},
+    "zh": {"price": "CN¥0", "period": "入门方案", "feature": "订阅前先体验核心流程"},
+}
+
 POPULAR_LABELS = {
     "tr": "En Popüler",
     "en": "Most Popular",
@@ -4244,15 +4259,21 @@ PLAN_LICENSE_RULE_OVERRIDES = {
 for locale_code, values in PLAN_LICENSE_RULE_OVERRIDES.items():
     free_badge, monthly_badge, yearly_badge = values["badges"]
     free_title, monthly_title, yearly_title = values["titles"]
+    free_display = FREE_PLAN_DISPLAY[locale_code]
+    free_features = list(values["free"])
+    if free_display["feature"] not in free_features:
+        free_features.append(free_display["feature"])
     COPY[locale_code].update(
         {
             "free_badge": free_badge,
             "monthly_badge": monthly_badge,
             "yearly_badge": yearly_badge,
             "free_title": free_title,
+            "free_price": free_display["price"],
+            "free_period": free_display["period"],
             "monthly_title": monthly_title,
             "yearly_title": yearly_title,
-            "free_features": values["free"],
+            "free_features": free_features,
             "monthly_features": values["monthly"],
             "yearly_features": values["yearly"],
             "pricing_license_note": values["note"],
@@ -5647,6 +5668,15 @@ def build_schema(
         "offers": [
             {
                 "@type": "Offer",
+                "name": copy["free_badge"],
+                "description": " | ".join(copy["free_features"]),
+                "price": 0,
+                "priceCurrency": pricing["currency"],
+                "availability": "https://schema.org/InStock",
+                "url": f"{page_url}#pricing",
+            },
+            {
+                "@type": "Offer",
                 "name": copy["monthly_badge"],
                 "description": " | ".join(copy["monthly_features"]),
                 "price": pricing["monthly"],
@@ -6112,7 +6142,7 @@ def render_page(locale_code: str) -> str:
               <span class="plan-badge">{e(copy["free_badge"])}</span>
               <h3>{e(copy["free_title"])}</h3>
               <div class="price-line">
-                <span class="price-value">0</span>
+                <span class="price-value">{e(copy["free_price"])}</span>
                 <span class="price-period">{e(copy["free_period"])}</span>
               </div>
               <ul class="feature-list">
