@@ -1007,6 +1007,7 @@ h1 {
 .proof-grid,
 .contact-points,
 .language-support-grid,
+.field-operations-grid,
 .language-support-badges {
   display: grid;
   gap: 16px;
@@ -1373,6 +1374,8 @@ h1 {
 }
 
 .live-flow-card,
+.field-operation-card,
+.field-license-card,
 .live-presentation-card {
   border-radius: 24px;
   border: 1px solid rgba(123, 220, 255, 0.14);
@@ -1449,6 +1452,114 @@ h1 {
 .live-presentation-card p {
   margin: 14px 0 0;
   color: var(--text-secondary);
+}
+
+.field-operations-shell {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(26px, 4vw, 44px);
+  border-radius: 34px;
+  border: 1px solid rgba(123, 220, 255, 0.16);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(247, 180, 55, 0.12), transparent 28%),
+    radial-gradient(circle at 12% 80%, rgba(123, 220, 255, 0.12), transparent 32%),
+    linear-gradient(135deg, rgba(18, 44, 91, 0.9), rgba(8, 23, 52, 0.94));
+  box-shadow:
+    0 28px 70px rgba(0, 12, 32, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.field-operations-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.75fr);
+  gap: 22px;
+  margin-top: 30px;
+  align-items: stretch;
+}
+
+.field-operations-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field-operation-card {
+  min-height: 190px;
+  padding: 22px;
+}
+
+.field-operation-card h3,
+.field-license-card h3 {
+  margin: 0;
+  font-family: var(--menu-font);
+  font-size: clamp(1.05rem, 1.25vw, 1.3rem);
+  font-weight: 850;
+  letter-spacing: 0.01em;
+  line-height: 1.22;
+}
+
+.field-operation-card p,
+.field-license-card p {
+  margin: 12px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.58;
+}
+
+.field-license-card {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  border-color: rgba(247, 180, 55, 0.22);
+  background:
+    linear-gradient(180deg, rgba(247, 180, 55, 0.07), rgba(255, 255, 255, 0.015)),
+    rgba(6, 19, 45, 0.66);
+}
+
+.field-license-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(123, 220, 255, 0.16), rgba(247, 180, 55, 0.82), rgba(23, 196, 176, 0.16));
+}
+
+.field-license-card .proof-label,
+.field-license-card h3,
+.field-license-card p,
+.field-license-list {
+  position: relative;
+  z-index: 1;
+}
+
+.field-license-card h3 {
+  margin-top: 18px;
+}
+
+.field-license-list {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.field-license-list li {
+  position: relative;
+  padding: 12px 14px 12px 42px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 220, 255, 0.12);
+  background: rgba(8, 23, 52, 0.58);
+  color: var(--text-secondary);
+}
+
+.field-license-list li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
 }
 
 .demo-stage {
@@ -2682,6 +2793,7 @@ html[lang="ru"] .language-switcher summary {
   .workflow-grid,
   .why-snapvend-layout,
   .live-presentation-layout,
+  .field-operations-layout,
   .cta-panel {
     grid-template-columns: 1fr;
   }
@@ -2708,6 +2820,7 @@ html[lang="ru"] .language-switcher summary {
   .audience-grid,
   .language-support-grid,
   .live-presentation-grid,
+  .field-operations-grid,
   .why-snapvend-grid,
   .quick-start-grid,
   .trust-grid,
@@ -2832,6 +2945,7 @@ html[lang="ru"] .language-switcher summary {
 
   .language-support-grid,
   .live-presentation-grid,
+  .field-operations-grid,
   .why-snapvend-grid,
   .quick-start-grid,
   .trust-grid,
@@ -3046,12 +3160,20 @@ html[lang="ru"] .language-switcher summary {
     border-radius: 26px;
   }
 
+  .field-operations-shell {
+    padding: 22px;
+    border-radius: 26px;
+  }
+
   .live-flow-card,
+  .field-operation-card,
+  .field-license-card,
   .live-presentation-card {
     padding: 18px;
     border-radius: 20px;
   }
 
+  .field-operation-card,
   .live-presentation-card {
     min-height: 0;
   }

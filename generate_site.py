@@ -4702,120 +4702,120 @@ TRUST_SECTION = {
     "tr": {
         "eyebrow": "Güven",
         "title": "Yayına hazır, müşteriye anlatması kolay bir ürün deneyimi",
-        "lead": "Mağaza yayını tamamlandıkça bu alan gerçek yorumlar ve referanslarla genişletilebilir; şimdiden karar vericinin görmek istediği güven başlıklarını açıkça gösterir.",
+        "lead": "Google Play ve App Store yayını aktif. Demo, mağaza yönlendirmesi ve ileride eklenecek gerçek referans alanları karar vericinin görmek istediği güven sinyallerini netleştirir.",
         "cards": [
             {"title": "Şeffaf demo deneyimi", "body": "Android demosu temel ürün akışını gösterir; aynı galeri, QR, seçim ve teslim mantığı iPhone ve iPad tarafında da korunur."},
-            {"title": "Mağaza sonrası net indirme", "body": "Google Play aktif, App Store yayına alındığında indirme QR kodu ve mağaza yönlendirmeleri aynı yapıda güncellenir."},
+            {"title": "İki mağazada net indirme", "body": "Google Play ve App Store bağlantıları aktiftir; indirme QR kodu cihazı algılayıp kullanıcıyı doğru mağaza sayfasına yönlendirir."},
             {"title": "Referans alanı hazır", "body": "İlk gerçek kullanıcı yorumları, düğün/stüdyo senaryoları ve müşteri logoları bozulmadan bu alana eklenebilir."},
         ],
     },
     "en": {
         "eyebrow": "Trust",
         "title": "A launch-ready product story that is easy to explain to clients",
-        "lead": "As store publishing progresses, this area can expand with real reviews and references while already showing the trust signals decision makers expect.",
+        "lead": "Google Play and App Store publishing are active. The demo, store handoff and future reference area make the trust signals decision makers expect easier to understand.",
         "cards": [
             {"title": "Transparent demo experience", "body": "The Android demo shows the core product flow; the same gallery, QR, selection and delivery logic is preserved on iPhone and iPad."},
-            {"title": "Clear store handoff", "body": "Google Play is active, and when App Store publishing is complete the download QR and store routing can be updated in the same structure."},
+            {"title": "Clear download on both stores", "body": "Google Play and App Store links are active; the download QR detects the device and routes users to the right store listing."},
             {"title": "Reference-ready layout", "body": "Real user comments, wedding/studio scenarios and customer logos can be added here without redesigning the page."},
         ],
     },
     "es": {
         "eyebrow": "Confianza",
         "title": "Una historia de producto lista para publicar y facil de explicar",
-        "lead": "Cuando avance la publicacion en tiendas, esta area podra crecer con opiniones y referencias reales.",
+        "lead": "Google Play y App Store ya estan activos. La demo, la descarga y el area futura de referencias muestran con claridad las senales de confianza esperadas.",
         "cards": [
             {"title": "Demo transparente", "body": "La demo Android muestra el flujo central; la misma logica de galeria, QR, seleccion y entrega se mantiene en iPhone y iPad."},
-            {"title": "Descarga clara", "body": "Google Play esta activo y, cuando App Store este publicado, el QR y las rutas de tienda se actualizaran en la misma estructura."},
+            {"title": "Descarga clara en ambas tiendas", "body": "Los enlaces de Google Play y App Store estan activos; el QR detecta el dispositivo y dirige a la tienda correcta."},
             {"title": "Lista para referencias", "body": "Comentarios reales, escenarios de boda/estudio y logos de clientes se podran agregar sin redisenar la pagina."},
         ],
     },
     "fr": {
         "eyebrow": "Confiance",
         "title": "Un discours produit pret pour le lancement et simple a expliquer",
-        "lead": "Au fur et a mesure de la publication en boutique, cette zone pourra accueillir avis reels et references.",
+        "lead": "Google Play et App Store sont maintenant actifs. La demo, le telechargement et la future zone de references rendent les signaux de confiance plus clairs.",
         "cards": [
             {"title": "Demo transparente", "body": "La demo Android montre le flux principal; la logique galerie, QR, selection et livraison reste la meme sur iPhone et iPad."},
-            {"title": "Telechargement clair", "body": "Google Play est actif et, apres publication App Store, le QR de telechargement et les liens seront mis a jour dans la meme structure."},
+            {"title": "Telechargement clair sur les deux boutiques", "body": "Les liens Google Play et App Store sont actifs; le QR detecte l'appareil et dirige vers la bonne fiche boutique."},
             {"title": "Pret pour les references", "body": "Avis clients, scenarios mariage/studio et logos pourront etre ajoutes sans refonte de la page."},
         ],
     },
     "de": {
         "eyebrow": "Vertrauen",
         "title": "Eine launchbereite Produktstory, die Kunden schnell verstehen",
-        "lead": "Mit dem Store-Launch kann dieser Bereich um echte Bewertungen und Referenzen erweitert werden.",
+        "lead": "Google Play und App Store sind aktiv. Demo, Store-Uebergabe und spaetere Referenzen machen die erwarteten Vertrauenssignale klarer.",
         "cards": [
             {"title": "Transparente Demo", "body": "Die Android-Demo zeigt den Kernablauf; Galerie, QR, Auswahl und Lieferung bleiben auf iPhone und iPad gleich."},
-            {"title": "Klare Store-Uebergabe", "body": "Google Play ist aktiv; nach App-Store-Freigabe werden QR und Store-Routing in derselben Struktur aktualisiert."},
+            {"title": "Klarer Download in beiden Stores", "body": "Google Play- und App-Store-Links sind aktiv; der Download-QR erkennt das Geraet und leitet zur passenden Store-Seite."},
             {"title": "Bereit fuer Referenzen", "body": "Echte Nutzerstimmen, Hochzeits-/Studio-Szenarien und Kundenlogos koennen ohne Redesign ergaenzt werden."},
         ],
     },
     "it": {
         "eyebrow": "Fiducia",
         "title": "Un racconto prodotto pronto al lancio e facile da spiegare",
-        "lead": "Con l'avanzare della pubblicazione negli store, questa area potra crescere con recensioni e riferimenti reali.",
+        "lead": "Google Play e App Store sono attivi. Demo, download e futura area referenze rendono piu chiari i segnali di fiducia attesi.",
         "cards": [
             {"title": "Demo trasparente", "body": "La demo Android mostra il flusso principale; galleria, QR, selezione e consegna restano coerenti su iPhone e iPad."},
-            {"title": "Download chiaro", "body": "Google Play e attivo e, quando App Store sara pubblicato, QR e routing store saranno aggiornati nella stessa struttura."},
+            {"title": "Download chiaro su entrambi gli store", "body": "I link Google Play e App Store sono attivi; il QR download rileva il dispositivo e apre la scheda store corretta."},
             {"title": "Pronta per referenze", "body": "Commenti reali, scenari matrimonio/studio e loghi clienti potranno essere aggiunti senza ridisegnare la pagina."},
         ],
     },
     "pt": {
         "eyebrow": "Confianca",
         "title": "Uma historia de produto pronta para lancamento e facil de explicar",
-        "lead": "Com a publicacao nas lojas, esta area pode crescer com avaliacoes e referencias reais.",
+        "lead": "Google Play e App Store ja estao ativos. Demo, download e futura area de referencias tornam os sinais de confianca mais claros.",
         "cards": [
             {"title": "Demo transparente", "body": "A demo Android mostra o fluxo central; galeria, QR, selecao e entrega seguem a mesma logica no iPhone e iPad."},
-            {"title": "Download claro", "body": "Google Play esta ativo e, quando a App Store for publicada, o QR e as rotas de loja serao atualizados na mesma estrutura."},
+            {"title": "Download claro nas duas lojas", "body": "Os links Google Play e App Store estao ativos; o QR detecta o dispositivo e direciona para a loja correta."},
             {"title": "Pronta para referencias", "body": "Comentarios reais, cenarios de casamento/estudio e logos de clientes poderao entrar sem redesenhar a pagina."},
         ],
     },
     "ru": {
         "eyebrow": "Доверие",
         "title": "Готовая к запуску история продукта, понятная клиентам",
-        "lead": "По мере публикации в магазинах этот блок можно расширить реальными отзывами и референсами.",
+        "lead": "Google Play и App Store уже активны. Демо, загрузка и будущий блок референсов яснее показывают сигналы доверия.",
         "cards": [
             {"title": "Прозрачная демо-логика", "body": "Android-демо показывает основной сценарий; галерея, QR, выбор и выдача работают по той же логике на iPhone и iPad."},
-            {"title": "Понятная загрузка", "body": "Google Play активен, а после публикации в App Store QR и маршрутизация магазинов будут обновлены в той же структуре."},
+            {"title": "Понятная загрузка в обоих магазинах", "body": "Ссылки Google Play и App Store активны; QR загрузки определяет устройство и ведет на нужную страницу магазина."},
             {"title": "Готово для референсов", "body": "Реальные отзывы, свадебные/студийные сценарии и логотипы клиентов можно добавить без переработки страницы."},
         ],
     },
     "ar": {
         "eyebrow": "الثقة",
         "title": "قصة منتج جاهزة للاطلاق وسهلة الشرح للعميل",
-        "lead": "مع تقدم النشر في المتاجر يمكن توسيع هذا القسم بتقييمات ومراجع حقيقية.",
+        "lead": "اصبح Google Play و App Store فعالين. يوضح العرض التجريبي والتنزيل ومنطقة المراجع المستقبلية اشارات الثقة المطلوبة.",
         "cards": [
             {"title": "عرض تجريبي واضح", "body": "يعرض فيديو Android التدفق الاساسي، ونفس منطق المعرض وQR والاختيار والتسليم يبقى على iPhone وiPad."},
-            {"title": "تحميل واضح", "body": "Google Play فعال، وعند اكتمال نشر App Store سيتم تحديث QR وروابط المتاجر بنفس البنية."},
+            {"title": "تحميل واضح من المتجرين", "body": "روابط Google Play و App Store فعالة؛ QR التنزيل يتعرف على الجهاز ويوجه المستخدم الى صفحة المتجر المناسبة."},
             {"title": "جاهز للمراجع", "body": "يمكن اضافة آراء حقيقية وسيناريوهات اعراس/استوديو وشعارات عملاء بدون اعادة تصميم الصفحة."},
         ],
     },
     "hi": {
         "eyebrow": "विश्वास",
         "title": "लॉन्च के लिए तैयार और ग्राहकों को आसानी से समझ आने वाली कहानी",
-        "lead": "स्टोर प्रकाशन आगे बढ़ने पर यह भाग वास्तविक समीक्षाओं और संदर्भों से बढ़ाया जा सकता है।",
+        "lead": "Google Play और App Store अब सक्रिय हैं। डेमो, स्टोर डाउनलोड और भविष्य का संदर्भ क्षेत्र भरोसे के संकेत साफ दिखाते हैं।",
         "cards": [
             {"title": "स्पष्ट डेमो अनुभव", "body": "Android डेमो मुख्य प्रवाह दिखाता है; वही गैलरी, QR, चयन और डिलीवरी अनुभव iPhone और iPad पर भी रहता है।"},
-            {"title": "साफ डाउनलोड मार्ग", "body": "Google Play सक्रिय है; App Store प्रकाशित होने पर डाउनलोड QR और स्टोर रूटिंग इसी संरचना में अपडेट होंगे।"},
+            {"title": "दोनों स्टोर पर साफ डाउनलोड", "body": "Google Play और App Store लिंक सक्रिय हैं; डाउनलोड QR डिवाइस पहचानकर सही स्टोर पेज खोलता है।"},
             {"title": "संदर्भों के लिए तैयार", "body": "वास्तविक उपयोगकर्ता टिप्पणी, शादी/स्टूडियो परिदृश्य और ग्राहक लोगो बिना नया डिजाइन किए जोड़े जा सकते हैं।"},
         ],
     },
     "ja": {
         "eyebrow": "信頼",
         "title": "公開準備が整った、顧客に伝えやすい製品ストーリー",
-        "lead": "ストア公開が進んだら、実際のレビューや導入事例をこのエリアへ追加できます。",
+        "lead": "Google Play と App Store は公開済みです。デモ、ストア導線、今後の事例エリアが信頼材料をより明確に伝えます。",
         "cards": [
             {"title": "透明性のあるデモ", "body": "Android デモは基本フローを示します。ギャラリー、QR、選択、納品の考え方は iPhone / iPad でも同じです。"},
-            {"title": "明確なストア導線", "body": "Google Play は有効です。App Store 公開後、ダウンロード QR とストア導線を同じ構造で更新できます。"},
+            {"title": "両ストアへの明確な導線", "body": "Google Play と App Store のリンクは有効です。ダウンロード QR は端末を判定し、適切なストアページへ案内します。"},
             {"title": "事例追加に対応", "body": "実際の声、ウェディング/スタジオ事例、顧客ロゴをページを作り直さず追加できます。"},
         ],
     },
     "zh": {
         "eyebrow": "信任",
         "title": "可用于发布、也容易向客户说明的产品故事",
-        "lead": "随着商店发布推进，这里可继续加入真实评价与客户参考。",
+        "lead": "Google Play 与 App Store 均已启用。演示、下载跳转和未来参考区域会更清楚地呈现信任信号。",
         "cards": [
             {"title": "透明的演示体验", "body": "Android 演示展示核心流程；画廊、QR、选片与交付逻辑在 iPhone 和 iPad 上保持一致。"},
-            {"title": "清晰的商店跳转", "body": "Google Play 已可用，App Store 发布后，下载 QR 与商店路由可在同一结构中更新。"},
+            {"title": "两个商店均可清晰下载", "body": "Google Play 与 App Store 链接已启用；下载 QR 会识别设备并跳转到对应商店页面。"},
             {"title": "可加入真实参考", "body": "真实用户评价、婚礼/影棚场景和客户 logo 可直接加入，无需重做页面。"},
         ],
     },
@@ -5259,6 +5259,22 @@ def build_live_presentation_cards(section: dict) -> str:
     return "\n".join(cards)
 
 
+def build_field_operation_cards(section: dict) -> str:
+    cards = []
+    for card in section["cards"]:
+        cards.append(
+            f"""              <article class="field-operation-card reveal">
+                <h3>{e(card["title"])}</h3>
+                <p>{e(card["body"])}</p>
+              </article>"""
+        )
+    return "\n".join(cards)
+
+
+def build_field_operation_license_points(section: dict) -> str:
+    return "\n".join(f"                  <li>{e(point)}</li>" for point in section["license_points"])
+
+
 def build_proof_cards(items: list[dict]) -> str:
     cards = []
     for card in items:
@@ -5350,6 +5366,7 @@ def build_keyword_string(
     quick_start: dict,
 ) -> str:
     live_presentation = LIVE_PRESENTATION_SECTION[locale_code]
+    field_operations = FIELD_OPERATIONS_SECTION[locale_code]
     values = [
         PRODUCT_NAME,
         PRODUCT_SHORT_NAME,
@@ -5366,10 +5383,14 @@ def build_keyword_string(
         quick_start["title"],
         live_presentation["title"],
         live_presentation["flow_label"],
+        field_operations["title"],
+        field_operations["license_title"],
         *[card["title"] for card in copy["workflow_cards"]],
         *[card["title"] for card in why_snapvend["cards"]],
         *[card["title"] for card in live_presentation["cards"]],
         *live_presentation["flow"],
+        *[card["title"] for card in field_operations["cards"]],
+        *field_operations["license_points"],
         *[card["title"] for card in copy["audience_cards"]],
         *[card["title"] for card in language_support["cards"]],
         *[card["title"] for card in quick_start["steps"]],
@@ -5487,6 +5508,7 @@ def build_schema(
     localized_language_names = [localized_language_name(locale_code, code) for code in LOCALE_ORDER]
     disambiguation = SCHEMA_DISAMBIGUATION_BY_LOCALE.get(locale_code, SCHEMA_DISAMBIGUATION_BY_LOCALE["en"])
     live_presentation = LIVE_PRESENTATION_SECTION[locale_code]
+    field_operations = FIELD_OPERATIONS_SECTION[locale_code]
     screenshot_urls = [
         f"{SITE_URL}/{marketing_asset('hero_main')}",
         f"{SITE_URL}/{marketing_asset('hero_secondary')}",
@@ -5501,6 +5523,7 @@ def build_schema(
     language_support_list = build_item_list_schema(page_url, "language-support-benefits", language_support["title"], language_support["cards"])
     why_snapvend_list = build_item_list_schema(page_url, "why-snapvend", why_snapvend["title"], why_snapvend["cards"])
     live_presentation_list = build_item_list_schema(page_url, "live-presentation", live_presentation["title"], live_presentation["cards"])
+    field_operations_list = build_item_list_schema(page_url, "field-operations", field_operations["title"], field_operations["cards"])
     quick_start_list = build_item_list_schema(page_url, "quick-start", quick_start["title"], quick_start["steps"])
     use_case_list = build_item_list_schema(page_url, "use-cases", proof["use_label"], proof["use_cases"])
     reference_profile_list = build_item_list_schema(page_url, "reference-profiles", proof["reference_label"], proof["references"])
@@ -5578,6 +5601,7 @@ def build_schema(
             {"@id": language_support_list["@id"]},
             {"@id": why_snapvend_list["@id"]},
             {"@id": live_presentation_list["@id"]},
+            {"@id": field_operations_list["@id"]},
             {"@id": quick_start_list["@id"]},
             {"@id": use_case_list["@id"]},
             {"@id": reference_profile_list["@id"]},
@@ -5624,6 +5648,8 @@ def build_schema(
             + [card["title"] for card in why_snapvend["cards"]]
             + [card["title"] for card in live_presentation["cards"]]
             + live_presentation["flow"]
+            + [card["title"] for card in field_operations["cards"]]
+            + field_operations["license_points"]
             + [card["title"] for card in quick_start["steps"]]
             + copy["monthly_features"]
             + copy["yearly_features"]
@@ -5650,6 +5676,11 @@ def build_schema(
                 "@type": "PropertyValue",
                 "name": live_presentation["flow_label"],
                 "value": " | ".join(live_presentation["flow"]),
+            },
+            {
+                "@type": "PropertyValue",
+                "name": field_operations["license_label"],
+                "value": f'{field_operations["license_title"]}: {field_operations["license_body"]}',
             },
             {
                 "@type": "PropertyValue",
@@ -5745,6 +5776,7 @@ def build_schema(
             language_support_list,
             why_snapvend_list,
             live_presentation_list,
+            field_operations_list,
             quick_start_list,
             use_case_list,
             reference_profile_list,
@@ -5772,6 +5804,7 @@ def render_page(locale_code: str) -> str:
     language_support_copy = LANGUAGE_SUPPORT_SECTION[locale_code]
     why_snapvend_copy = WHY_SNAPVEND_SECTION[locale_code]
     live_presentation_copy = LIVE_PRESENTATION_SECTION[locale_code]
+    field_operations_copy = FIELD_OPERATIONS_SECTION[locale_code]
     contact_copy = CONTACT_SECTION[locale_code]
     quick_start_copy = QUICK_START_SECTION[locale_code]
     metrics = build_metric_cards(copy)
@@ -5785,6 +5818,8 @@ def render_page(locale_code: str) -> str:
     why_snapvend_points = build_why_snapvend_points(why_snapvend_copy)
     live_presentation_flow = build_live_presentation_flow(live_presentation_copy)
     live_presentation_cards = build_live_presentation_cards(live_presentation_copy)
+    field_operation_cards = build_field_operation_cards(field_operations_copy)
+    field_operation_license_points = build_field_operation_license_points(field_operations_copy)
     proof_use_cases = build_proof_cards(proof_copy["use_cases"])
     proof_references = build_proof_cards(proof_copy["references"])
     faq_items = build_faq_items(faq_copy)
@@ -6080,6 +6115,33 @@ def render_page(locale_code: str) -> str:
               <div class="live-presentation-grid">
 {live_presentation_cards}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section field-operations deferred-section" id="field-operations">
+        <div class="container">
+          <div class="field-operations-shell reveal">
+            <div class="section-head">
+              <p class="eyebrow">{e(field_operations_copy["eyebrow"])}</p>
+              <h2>{e(field_operations_copy["title"])}</h2>
+              <p>{e(field_operations_copy["lead"])}</p>
+            </div>
+
+            <div class="field-operations-layout">
+              <div class="field-operations-grid">
+{field_operation_cards}
+              </div>
+
+              <aside class="field-license-card reveal">
+                <span class="proof-label">{e(field_operations_copy["license_label"])}</span>
+                <h3>{e(field_operations_copy["license_title"])}</h3>
+                <p>{e(field_operations_copy["license_body"])}</p>
+                <ul class="field-license-list">
+{field_operation_license_points}
+                </ul>
+              </aside>
             </div>
           </div>
         </div>
